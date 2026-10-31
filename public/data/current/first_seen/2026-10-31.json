@@ -360,6 +360,56 @@
    "value": "Expected:Jared McCain|Ajay Mitchell|Shai Gilgeous-Alexander|Kenrich Williams|Isaiah Hartenstein",
    "first_seen_utc": "2026-10-31T17:16:12Z",
    "mins_before_start": 434
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892618",
+   "start_utc": "2026-10-31T20:00Z",
+   "team": "LA",
+   "what": "goalie",
+   "value": "Anton Forsberg",
+   "first_seen_utc": "2026-10-31T20:28:16Z",
+   "mins_before_start": -28
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892618",
+   "start_utc": "2026-10-31T20:00Z",
+   "team": "BUF",
+   "what": "goalie",
+   "value": "Ukko-Pekka Luukkonen",
+   "first_seen_utc": "2026-10-31T20:28:16Z",
+   "mins_before_start": -28
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892619",
+   "start_utc": "2026-10-31T20:00Z",
+   "team": "SJ",
+   "what": "goalie",
+   "value": "Alex Nedeljkovic",
+   "first_seen_utc": "2026-10-31T20:28:16Z",
+   "mins_before_start": -28
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909897",
+   "start_utc": "2026-10-31T22:00Z",
+   "team": "PHI",
+   "what": "starters",
+   "value": "Expected:VJ Edgecombe|Jaylen Brown|Tyrese Maxey|Dean Wade|Adem Bona",
+   "first_seen_utc": "2026-10-31T20:28:16Z",
+   "mins_before_start": 92
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909902",
+   "start_utc": "2026-11-01T00:30Z",
+   "team": "HOU",
+   "what": "starters",
+   "value": "Expected:Amen Thompson|Kevin Durant|Marcus Smart|Jabari Smith Jr.|Alperen Sengun",
+   "first_seen_utc": "2026-10-31T20:28:16Z",
+   "mins_before_start": 242
   }
  ]
 }
