@@ -410,6 +410,86 @@
    "value": "Expected:Amen Thompson|Kevin Durant|Marcus Smart|Jabari Smith Jr.|Alperen Sengun",
    "first_seen_utc": "2026-10-31T20:28:16Z",
    "mins_before_start": 242
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909899",
+   "start_utc": "2026-11-01T00:00Z",
+   "team": "MEM",
+   "what": "starters",
+   "value": "Confirmed:Cedric Coward|Jaylen Wells|Cam Spencer|Cameron Boozer|Zach Edey",
+   "first_seen_utc": "2026-11-01T00:09:38Z",
+   "mins_before_start": -10
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909899",
+   "start_utc": "2026-11-01T00:00Z",
+   "team": "SAC",
+   "what": "starters",
+   "value": "Confirmed:Zach LaVine|De'Andre Hunter|Darius Acuff Jr.|Precious Achiuwa|Domantas Sabonis",
+   "first_seen_utc": "2026-11-01T00:09:38Z",
+   "mins_before_start": -10
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909900",
+   "start_utc": "2026-11-01T00:00Z",
+   "team": "MIL",
+   "what": "starters",
+   "value": "Confirmed:Tyler Herro|Jaime Jaquez Jr.|Ryan Rollins|Kyle Kuzma|Myles Turner",
+   "first_seen_utc": "2026-11-01T00:09:38Z",
+   "mins_before_start": -10
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909900",
+   "start_utc": "2026-11-01T00:00Z",
+   "team": "CLE",
+   "what": "starters",
+   "value": "Confirmed:Donovan Mitchell|Peyton Watson|James Harden|Evan Mobley|Jarrett Allen",
+   "first_seen_utc": "2026-11-01T00:09:38Z",
+   "mins_before_start": -10
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909901",
+   "start_utc": "2026-11-01T00:00Z",
+   "team": "SA",
+   "what": "starters",
+   "value": "Confirmed:Dylan Harper|Stephon Castle|De'Aaron Fox|Devin Vassell|Victor Wembanyama",
+   "first_seen_utc": "2026-11-01T00:09:38Z",
+   "mins_before_start": -10
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909901",
+   "start_utc": "2026-11-01T00:00Z",
+   "team": "MIN",
+   "what": "starters",
+   "value": "Confirmed:Ayo Dosunmu|Jaden McDaniels|LaMelo Ball|Jonathan Kuminga|Joan Beringer",
+   "first_seen_utc": "2026-11-01T00:09:38Z",
+   "mins_before_start": -10
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909902",
+   "start_utc": "2026-11-01T00:30Z",
+   "team": "HOU",
+   "what": "starters",
+   "value": "Confirmed:Amen Thompson|Kevin Durant|Marcus Smart|Jabari Smith Jr.|Alperen Sengun",
+   "first_seen_utc": "2026-11-01T00:09:38Z",
+   "mins_before_start": 20
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909902",
+   "start_utc": "2026-11-01T00:30Z",
+   "team": "OKC",
+   "what": "starters",
+   "value": "Confirmed:Jared McCain|Ajay Mitchell|Shai Gilgeous-Alexander|Kenrich Williams|Isaiah Hartenstein",
+   "first_seen_utc": "2026-11-01T00:09:38Z",
+   "mins_before_start": 20
   }
  ]
 }
