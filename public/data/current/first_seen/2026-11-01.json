@@ -1,0 +1,105 @@
+{
+ "day": "2026-11-01",
+ "events": [
+  {
+   "sport": "nhl",
+   "game_id": "401892624",
+   "start_utc": "2026-11-01T18:00Z",
+   "team": "CAR",
+   "what": "goalie",
+   "value": "Pyotr Kochetkov",
+   "first_seen_utc": "2026-11-01T06:19:49Z",
+   "mins_before_start": 700
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892624",
+   "start_utc": "2026-11-01T18:00Z",
+   "team": "WPG",
+   "what": "goalie",
+   "value": "Stuart Skinner",
+   "first_seen_utc": "2026-11-01T06:19:49Z",
+   "mins_before_start": 700
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892625",
+   "start_utc": "2026-11-01T20:30Z",
+   "team": "WSH",
+   "what": "goalie",
+   "value": "Logan Thompson",
+   "first_seen_utc": "2026-11-01T06:19:49Z",
+   "mins_before_start": 850
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892625",
+   "start_utc": "2026-11-01T20:30Z",
+   "team": "MIN",
+   "what": "goalie",
+   "value": "Jesper Wallstedt",
+   "first_seen_utc": "2026-11-01T06:19:49Z",
+   "mins_before_start": 850
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892626",
+   "start_utc": "2026-11-01T21:00Z",
+   "team": "PHI",
+   "what": "goalie",
+   "value": "Dan Vladar",
+   "first_seen_utc": "2026-11-01T06:19:49Z",
+   "mins_before_start": 880
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892626",
+   "start_utc": "2026-11-01T21:00Z",
+   "team": "UTA",
+   "what": "goalie",
+   "value": "Karel Vejmelka",
+   "first_seen_utc": "2026-11-01T06:19:49Z",
+   "mins_before_start": 880
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892627",
+   "start_utc": "2026-11-01T23:00Z",
+   "team": "NYR",
+   "what": "goalie",
+   "value": "Dylan Garand",
+   "first_seen_utc": "2026-11-01T06:19:49Z",
+   "mins_before_start": 1000
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892627",
+   "start_utc": "2026-11-01T23:00Z",
+   "team": "EDM",
+   "what": "goalie",
+   "value": "Matt Tomkins",
+   "first_seen_utc": "2026-11-01T06:19:49Z",
+   "mins_before_start": 1000
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892628",
+   "start_utc": "2026-11-02T01:00Z",
+   "team": "ANA",
+   "what": "goalie",
+   "value": "Laurent Brossoit",
+   "first_seen_utc": "2026-11-01T06:19:49Z",
+   "mins_before_start": 1120
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892628",
+   "start_utc": "2026-11-02T01:00Z",
+   "team": "OTT",
+   "what": "goalie",
+   "value": "Jonas Johansson",
+   "first_seen_utc": "2026-11-01T06:19:49Z",
+   "mins_before_start": 1120
+  }
+ ]
+}
