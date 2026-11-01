@@ -180,6 +180,36 @@
    "value": "Expected:RJ Barrett|Ja'Kobe Walter|Immanuel Quickley|Scottie Barnes|Jakob Poeltl",
    "first_seen_utc": "2026-11-01T17:56:57Z",
    "mins_before_start": 483
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909904",
+   "start_utc": "2026-11-01T22:00Z",
+   "team": "IND",
+   "what": "starters",
+   "value": "Confirmed:Aaron Nesmith|Kelly Oubre Jr.|Andrew Nembhard|Pascal Siakam|Jay Huff",
+   "first_seen_utc": "2026-11-01T22:04:18Z",
+   "mins_before_start": -4
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909904",
+   "start_utc": "2026-11-01T22:00Z",
+   "team": "BKN",
+   "what": "starters",
+   "value": "Confirmed:Chaney Johnson|Michael Porter Jr.|Nolan Traore|Julius Randle|Day'Ron Sharpe",
+   "first_seen_utc": "2026-11-01T22:04:18Z",
+   "mins_before_start": -4
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909906",
+   "start_utc": "2026-11-02T02:00Z",
+   "team": "LAL",
+   "what": "starters",
+   "value": "Expected:Austin Reaves|Jake LaRavia|Luka Don\u010di\u0107|Matisse Thybulle|Walker Kessler",
+   "first_seen_utc": "2026-11-01T22:04:18Z",
+   "mins_before_start": 236
   }
  ]
 }
