@@ -1,0 +1,97 @@
+[
+ {
+  "sport": "nhl",
+  "game_id": "401892624",
+  "start_utc": "2026-11-01T18:00Z",
+  "status": "Final",
+  "sides": {
+   "home": {
+    "team": "CAR",
+    "probable_goalie": "Pyotr Kochetkov"
+   },
+   "away": {
+    "team": "WPG",
+    "probable_goalie": "Stuart Skinner"
+   }
+  },
+  "lineup_posted": false,
+  "spread": null,
+  "total": null
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892625",
+  "start_utc": "2026-11-01T20:30Z",
+  "status": "In Progress",
+  "sides": {
+   "home": {
+    "team": "WSH",
+    "probable_goalie": "Logan Thompson"
+   },
+   "away": {
+    "team": "MIN",
+    "probable_goalie": "Jesper Wallstedt"
+   }
+  },
+  "lineup_posted": false,
+  "spread": null,
+  "total": null
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892626",
+  "start_utc": "2026-11-01T21:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "PHI",
+    "probable_goalie": "Dan Vladar"
+   },
+   "away": {
+    "team": "UTA",
+    "probable_goalie": "Karel Vejmelka"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "UTAH -166",
+  "total": 6.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892627",
+  "start_utc": "2026-11-01T23:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "NYR",
+    "probable_goalie": "Dylan Garand"
+   },
+   "away": {
+    "team": "EDM",
+    "probable_goalie": "Matt Tomkins"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "NYR -130",
+  "total": 6.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892628",
+  "start_utc": "2026-11-02T01:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "ANA",
+    "probable_goalie": "Laurent Brossoit"
+   },
+   "away": {
+    "team": "OTT",
+    "probable_goalie": "Jonas Johansson"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "OTT -118",
+  "total": 6.5
+ }
+]

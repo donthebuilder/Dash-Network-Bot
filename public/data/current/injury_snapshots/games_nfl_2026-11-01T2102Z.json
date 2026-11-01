@@ -1,0 +1,230 @@
+[
+ {
+  "sport": "nfl",
+  "game_id": "401873026",
+  "start_utc": "2026-11-01T18:00Z",
+  "status": "In Progress",
+  "sides": {
+   "home": {
+    "team": "BUF",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "BAL",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": null,
+  "total": null
+ },
+ {
+  "sport": "nfl",
+  "game_id": "401873031",
+  "start_utc": "2026-11-01T18:00Z",
+  "status": "In Progress",
+  "sides": {
+   "home": {
+    "team": "CIN",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "TEN",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": null,
+  "total": null
+ },
+ {
+  "sport": "nfl",
+  "game_id": "401873024",
+  "start_utc": "2026-11-01T18:00Z",
+  "status": "In Progress",
+  "sides": {
+   "home": {
+    "team": "DAL",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "ARI",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": null,
+  "total": null
+ },
+ {
+  "sport": "nfl",
+  "game_id": "401873030",
+  "start_utc": "2026-11-01T18:00Z",
+  "status": "In Progress",
+  "sides": {
+   "home": {
+    "team": "DET",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "MIN",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": null,
+  "total": null
+ },
+ {
+  "sport": "nfl",
+  "game_id": "401873029",
+  "start_utc": "2026-11-01T18:00Z",
+  "status": "In Progress",
+  "sides": {
+   "home": {
+    "team": "NYJ",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "LV",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": null,
+  "total": null
+ },
+ {
+  "sport": "nfl",
+  "game_id": "401873027",
+  "start_utc": "2026-11-01T18:00Z",
+  "status": "In Progress",
+  "sides": {
+   "home": {
+    "team": "PIT",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "CLE",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": null,
+  "total": null
+ },
+ {
+  "sport": "nfl",
+  "game_id": "401873025",
+  "start_utc": "2026-11-01T18:00Z",
+  "status": "Final",
+  "sides": {
+   "home": {
+    "team": "TB",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "ATL",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": null,
+  "total": null
+ },
+ {
+  "sport": "nfl",
+  "game_id": "401873028",
+  "start_utc": "2026-11-01T18:00Z",
+  "status": "In Progress",
+  "sides": {
+   "home": {
+    "team": "JAX",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "IND",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": null,
+  "total": null
+ },
+ {
+  "sport": "nfl",
+  "game_id": "401873032",
+  "start_utc": "2026-11-01T21:05Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "LAR",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "LAC",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": "LAR -6.5",
+  "total": 46.5
+ },
+ {
+  "sport": "nfl",
+  "game_id": "401873033",
+  "start_utc": "2026-11-01T21:25Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "DEN",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "KC",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": "DEN -1.5",
+  "total": 41.5
+ },
+ {
+  "sport": "nfl",
+  "game_id": "401873034",
+  "start_utc": "2026-11-01T21:25Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "MIA",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "NE",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": "NE -7",
+  "total": 41.5
+ },
+ {
+  "sport": "nfl",
+  "game_id": "401873035",
+  "start_utc": "2026-11-02T01:20Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "WSH",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "PHI",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": "WSH -6",
+  "total": 40.5
+ }
+]
