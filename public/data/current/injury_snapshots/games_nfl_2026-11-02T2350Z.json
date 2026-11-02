@@ -1,0 +1,21 @@
+[
+ {
+  "sport": "nfl",
+  "game_id": "401873036",
+  "start_utc": "2026-11-03T01:15Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "SEA",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "CHI",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": "SEA -3",
+  "total": 46.5
+ }
+]

@@ -1,0 +1,78 @@
+[
+ {
+  "sport": "nhl",
+  "game_id": "401892629",
+  "start_utc": "2026-11-03T00:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "BOS",
+    "probable_goalie": "Jeremy Swayman"
+   },
+   "away": {
+    "team": "VGK",
+    "probable_goalie": "Carter Hart"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "VGK -118",
+  "total": 6.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892630",
+  "start_utc": "2026-11-03T00:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "FLA",
+    "probable_goalie": "Jacob Markstrom"
+   },
+   "away": {
+    "team": "DET",
+    "probable_goalie": "Daniil Tarasov"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "FLA -185",
+  "total": 5.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892631",
+  "start_utc": "2026-11-03T01:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "CHI",
+    "probable_goalie": "Spencer Knight"
+   },
+   "away": {
+    "team": "COL",
+    "probable_goalie": "Mackenzie Blackwood"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "COL -230",
+  "total": 6.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892632",
+  "start_utc": "2026-11-03T02:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "SJ",
+    "probable_goalie": "Yaroslav Askarov"
+   },
+   "away": {
+    "team": "CGY",
+    "probable_goalie": "Dustin Wolf"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "SJ -125",
+  "total": 6.5
+ }
+]
