@@ -50,6 +50,15 @@ MODELS = {
     # offenses into the top 15 — context modulates, it must never select.
     "REC_YDS": {
         "label": "Receiving yards", "pos": ["WR", "TE", "RB"], "bar": 100,   # v2 2026-10-17: was 40
+        # Investigated 2026-11-02 alongside the RUSH_YDS reweight below (same Donovan
+        # complaint, "barely beating recent form" -- live model vs FORM: 2024 +1.1,
+        # 2025 -4.4). bots/nfl/nfl_yards_resweep.py ran a 3000-sample random search over
+        # these same five components, tuned on each season and graded on the other:
+        # no candidate beat live on the season it was NOT tuned on, in either direction.
+        # This matches the SHADOW_MODELS note above ("no share beat live on 2024") --
+        # the weights are not the problem; these components don't carry enough signal to
+        # separate a 100+-yard outlier reliably. Left unchanged. A real fix needs a new
+        # feature (e.g. a volatility/ceiling signal), not a reweight -- out of scope here.
         "w": {
             "f_wopr":                 0.42,   # target share + air yards share
             "f_receiving_yards":      0.36,
@@ -68,11 +77,21 @@ MODELS = {
     },
     "RUSH_YDS": {
         "label": "Rushing yards", "pos": ["RB", "QB"], "bar": 100,   # v2 2026-10-17: was 50, + role-aware matchup
+        # v3 2026-11-02 (Donovan: "barely beating recent form"): the 2026-10-17 bar
+        # move to 100 was never re-swept for its own weights -- it kept the 40/50-yard
+        # shares. nfl_backtest.py confirmed the live model was LOSING to its own FORM
+        # proxy both directions (2024 -4.4, 2025 -2.2 at top-5/wk). Reweighted with
+        # bots/nfl/nfl_yards_resweep.py: 4000-sample random search tuned on one season,
+        # graded on the other, both directions shipped (beat live's gap on the untuned
+        # season); this is the average of the two tuned vectors, re-validated against
+        # BOTH seasons full-weight before shipping (2024 -4.4 -> -1.1, 2025 -2.2 -> +1.1,
+        # i.e. beats FORM outright on 2025). Shifts weight off raw carry volume and onto
+        # yards-per-week production and red-zone role; opp softness unchanged.
         "w": {
-            "f_carries":        0.553,
-            "f_rushing_yards":  0.17,
-            "f_rz_car":         0.127,   # goal-line role = he stays on the field
-            "oppr_rush_soft":   0.15,    # carries allowed to HIS depth role; swept at the 100 bar 2023-25: up in all 3 seasons at .1-.2
+            "f_carries":        0.186,
+            "f_rushing_yards":  0.497,
+            "f_rz_car":         0.151,   # goal-line role = he stays on the field
+            "oppr_rush_soft":   0.165,   # carries allowed to HIS depth role
         },
     },
     # The one place the NGS layer earned a slot. Separation, cushion, YAC-over-
