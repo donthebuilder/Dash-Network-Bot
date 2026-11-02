@@ -1,0 +1,85 @@
+{
+ "day": "2026-11-02",
+ "events": [
+  {
+   "sport": "nhl",
+   "game_id": "401892629",
+   "start_utc": "2026-11-03T00:00Z",
+   "team": "BOS",
+   "what": "goalie",
+   "value": "Jeremy Swayman",
+   "first_seen_utc": "2026-11-02T06:20:53Z",
+   "mins_before_start": 1059
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892629",
+   "start_utc": "2026-11-03T00:00Z",
+   "team": "VGK",
+   "what": "goalie",
+   "value": "Carter Hart",
+   "first_seen_utc": "2026-11-02T06:20:53Z",
+   "mins_before_start": 1059
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892630",
+   "start_utc": "2026-11-03T00:00Z",
+   "team": "FLA",
+   "what": "goalie",
+   "value": "Akira Schmid",
+   "first_seen_utc": "2026-11-02T06:20:53Z",
+   "mins_before_start": 1059
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892630",
+   "start_utc": "2026-11-03T00:00Z",
+   "team": "DET",
+   "what": "goalie",
+   "value": "John Gibson",
+   "first_seen_utc": "2026-11-02T06:20:53Z",
+   "mins_before_start": 1059
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892631",
+   "start_utc": "2026-11-03T01:00Z",
+   "team": "CHI",
+   "what": "goalie",
+   "value": "Spencer Knight",
+   "first_seen_utc": "2026-11-02T06:20:53Z",
+   "mins_before_start": 1119
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892631",
+   "start_utc": "2026-11-03T01:00Z",
+   "team": "COL",
+   "what": "goalie",
+   "value": "Mackenzie Blackwood",
+   "first_seen_utc": "2026-11-02T06:20:53Z",
+   "mins_before_start": 1119
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892632",
+   "start_utc": "2026-11-03T02:00Z",
+   "team": "SJ",
+   "what": "goalie",
+   "value": "Yaroslav Askarov",
+   "first_seen_utc": "2026-11-02T06:20:53Z",
+   "mins_before_start": 1179
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892632",
+   "start_utc": "2026-11-03T02:00Z",
+   "team": "CGY",
+   "what": "goalie",
+   "value": "Dustin Wolf",
+   "first_seen_utc": "2026-11-02T06:20:53Z",
+   "mins_before_start": 1179
+  }
+ ]
+}
