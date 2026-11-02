@@ -210,6 +210,26 @@
    "value": "Expected:Austin Reaves|Jake LaRavia|Luka Don\u010di\u0107|Matisse Thybulle|Walker Kessler",
    "first_seen_utc": "2026-11-01T22:04:18Z",
    "mins_before_start": 236
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909905",
+   "start_utc": "2026-11-02T01:30Z",
+   "team": "GS",
+   "what": "starters",
+   "value": "Confirmed:Brandin Podziemski|Georges Niang|De'Anthony Melton|Yaxel Lendeborg|Charles Bassey",
+   "first_seen_utc": "2026-11-02T01:30:51Z",
+   "mins_before_start": -1
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909905",
+   "start_utc": "2026-11-02T01:30Z",
+   "team": "LAC",
+   "what": "starters",
+   "value": "Confirmed:Kris Dunn|Derrick Jones Jr.|Darius Garland|Rui Hachimura|Isaiah Jackson",
+   "first_seen_utc": "2026-11-02T01:30:51Z",
+   "mins_before_start": -1
   }
  ]
 }
