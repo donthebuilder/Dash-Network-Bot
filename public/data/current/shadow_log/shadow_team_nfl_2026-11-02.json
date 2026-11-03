@@ -1,0 +1,1 @@
+{"date": "2026-11-02", "sport": "nfl", "games": {"CHI@SEA": {"espn_id": "401873036", "home": "SEA", "away": "CHI", "start": "2026-11-02 20:15", "status": "Scheduled", "model_spread_home": -4.6, "model_p_home": 0.6399, "book_spread_home": -3.0, "book_total": 46.5, "gap_pts": -1.6, "history_games": 58, "model_version": "nfl_team_v1"}}}
