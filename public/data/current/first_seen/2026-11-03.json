@@ -220,6 +220,56 @@
    "value": "Lukas Dostal",
    "first_seen_utc": "2026-11-03T06:57:11Z",
    "mins_before_start": 1143
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892633",
+   "start_utc": "2026-11-04T00:00Z",
+   "team": "UTA",
+   "what": "goalie",
+   "value": "Sebastian Cossa",
+   "first_seen_utc": "2026-11-03T19:31:53Z",
+   "mins_before_start": 268
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892638",
+   "start_utc": "2026-11-04T00:00Z",
+   "team": "PHI",
+   "what": "goalie",
+   "value": "Dan Vladar",
+   "first_seen_utc": "2026-11-03T19:31:53Z",
+   "mins_before_start": 268
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892641",
+   "start_utc": "2026-11-04T00:00Z",
+   "team": "CBJ",
+   "what": "goalie",
+   "value": "Cam Talbot",
+   "first_seen_utc": "2026-11-03T19:31:53Z",
+   "mins_before_start": 268
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892643",
+   "start_utc": "2026-11-04T02:00Z",
+   "team": "VAN",
+   "what": "goalie",
+   "value": "Kevin Lankinen",
+   "first_seen_utc": "2026-11-03T19:31:53Z",
+   "mins_before_start": 388
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892643",
+   "start_utc": "2026-11-04T02:00Z",
+   "team": "ANA",
+   "what": "goalie",
+   "value": "Laurent Brossoit",
+   "first_seen_utc": "2026-11-03T19:31:53Z",
+   "mins_before_start": 388
   }
  ]
 }
