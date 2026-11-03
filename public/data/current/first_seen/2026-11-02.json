@@ -400,6 +400,66 @@
    "value": "Expected:Klay Thompson|Andrew Wiggins|Davion Mitchell|Giannis Antetokounmpo|Bam Adebayo",
    "first_seen_utc": "2026-11-02T21:43:55Z",
    "mins_before_start": 316
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909919",
+   "start_utc": "2026-11-03T03:00Z",
+   "team": "GS",
+   "what": "starters",
+   "value": "Confirmed:Brandin Podziemski|Will Richard|Stephen Curry|Yaxel Lendeborg|Draymond Green",
+   "first_seen_utc": "2026-11-03T03:29:08Z",
+   "mins_before_start": -29
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909919",
+   "start_utc": "2026-11-03T03:00Z",
+   "team": "PHX",
+   "what": "starters",
+   "value": "Confirmed:Jalen Green|Dillon Brooks|Devin Booker|Miles Bridges|Khaman Maluach",
+   "first_seen_utc": "2026-11-03T03:29:08Z",
+   "mins_before_start": -29
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909920",
+   "start_utc": "2026-11-03T03:00Z",
+   "team": "LAC",
+   "what": "starters",
+   "value": "Confirmed:Kris Dunn|Gradey Dick|Darius Garland|Kobe Sanders|Brook Lopez",
+   "first_seen_utc": "2026-11-03T03:29:08Z",
+   "mins_before_start": -29
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909920",
+   "start_utc": "2026-11-03T03:00Z",
+   "team": "TOR",
+   "what": "starters",
+   "value": "Confirmed:RJ Barrett|Ja'Kobe Walter|Immanuel Quickley|Scottie Barnes|Collin Murray-Boyles",
+   "first_seen_utc": "2026-11-03T03:29:08Z",
+   "mins_before_start": -29
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909921",
+   "start_utc": "2026-11-03T03:00Z",
+   "team": "LAL",
+   "what": "starters",
+   "value": "Confirmed:Austin Reaves|Matisse Thybulle|Luka Don\u010di\u0107|Jake LaRavia|Walker Kessler",
+   "first_seen_utc": "2026-11-03T03:29:08Z",
+   "mins_before_start": -29
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909921",
+   "start_utc": "2026-11-03T03:00Z",
+   "team": "MIA",
+   "what": "starters",
+   "value": "Confirmed:Klay Thompson|Andrew Wiggins|Davion Mitchell|Giannis Antetokounmpo|Bam Adebayo",
+   "first_seen_utc": "2026-11-03T03:29:08Z",
+   "mins_before_start": -29
   }
  ]
 }
