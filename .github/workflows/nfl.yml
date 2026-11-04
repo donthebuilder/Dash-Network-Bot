@@ -436,6 +436,25 @@ jobs:
           python nfl_signal_audit.py --season 2026 \
             --out "$GITHUB_WORKSPACE/public/data/current"
 
+      # TD BOARD LOG (2026-11-03, Donovan: "treat it just like NHL"). Every rated
+      # player per game at the lock, graded -> public/data/current/nfl_td_log_2026.jsonl,
+      # and into Supabase nfl_td_log when SUPABASE_SERVICE_ROLE_KEY is set as a repo
+      # secret (insert-only: a graded row is never rewritten). Grading runs only
+      # (TNF grade, Sunday final grade, manual), so it adds no polling.
+      # The script refuses to write if its grade disagrees with the bot's own graded calls.
+      - name: TD board log
+        if: github.event.schedule == '3 7 * * 1' || github.event.schedule == '33 4 * * 5' || github.event_name == 'workflow_dispatch'
+        continue-on-error: true
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: |
+          set -euo pipefail
+          git fetch -q --depth=1 origin data:refs/remotes/origin/data
+          ARGS="--season 2026 --out public/data/current/nfl_td_log_2026.jsonl"
+          if [ -n "${SUPABASE_URL:-}" ] && [ -n "${SUPABASE_SERVICE_ROLE_KEY:-}" ]; then ARGS="$ARGS --apply"; fi
+          python bots/nfl/nfl_td_log.py $ARGS
+
       # A failed build must not publish an empty slate over a good one. The
       # site's fetch validates `players.length > 0` before accepting a payload,
       # but the cheaper place to stop it is here, before it ever ships.

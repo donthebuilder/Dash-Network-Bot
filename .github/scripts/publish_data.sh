@@ -147,6 +147,10 @@ PUBLISH_FILES=(
   # Written by bots/nfl/nfl_signal_audit.py; read as-is by the
   # Accountability tab's Signals view. A few KB, rewritten every run.
   nfl_signal_audit.json
+  # nfl_td_log_2026.jsonl (2026-11-03) -- TUDDY's TD board at the lock, every
+  # rated player per game, graded (bots/nfl/nfl_td_log.py). The NFL twin of
+  # LAMP's lamp_goal_log; rewritten whole on grading runs, absent otherwise.
+  nfl_td_log_2026.jsonl
   # NEXT WEEK (2026-09-18). The same four payloads the dashboard reads, one
   # week ahead, written by nfl.yml's "Build next week" step under the
   # nfl_next_ prefix. The site's This week / Next week switch swaps which set
