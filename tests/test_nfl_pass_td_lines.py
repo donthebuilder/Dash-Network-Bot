@@ -44,7 +44,8 @@ def test_pass_td_is_not_a_market():
 
 
 def test_gamelog_carries_g_patd_but_no_rates_block():
-    assert nfl_gamelog.LOG_ONLY == {"g_patd": "passing_tds"}
+    # g_tgt (per-game targets) joined the log-only fields 2026-11-03 (3b9b45b8); passing TDs must still be one of them
+    assert nfl_gamelog.LOG_ONLY.get("g_patd") == "passing_tds"
     assert "g_patd" not in {v[0] for v in nfl_gamelog.MARKET_VALUE.values()}
 
 
