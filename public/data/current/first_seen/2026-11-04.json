@@ -1,0 +1,85 @@
+{
+ "day": "2026-11-04",
+ "events": [
+  {
+   "sport": "nhl",
+   "game_id": "401892644",
+   "start_utc": "2026-11-05T00:30Z",
+   "team": "BUF",
+   "what": "goalie",
+   "value": "Colten Ellis",
+   "first_seen_utc": "2026-11-04T06:39:02Z",
+   "mins_before_start": 1071
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892644",
+   "start_utc": "2026-11-05T00:30Z",
+   "team": "OTT",
+   "what": "goalie",
+   "value": "Samuel Ersson",
+   "first_seen_utc": "2026-11-04T06:39:02Z",
+   "mins_before_start": 1071
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892645",
+   "start_utc": "2026-11-05T00:30Z",
+   "team": "FLA",
+   "what": "goalie",
+   "value": "Jacob Markstrom",
+   "first_seen_utc": "2026-11-04T06:39:02Z",
+   "mins_before_start": 1071
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892645",
+   "start_utc": "2026-11-05T00:30Z",
+   "team": "CHI",
+   "what": "goalie",
+   "value": "Spencer Knight",
+   "first_seen_utc": "2026-11-04T06:39:02Z",
+   "mins_before_start": 1071
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892646",
+   "start_utc": "2026-11-05T03:00Z",
+   "team": "LA",
+   "what": "goalie",
+   "value": "Darcy Kuemper",
+   "first_seen_utc": "2026-11-04T06:39:02Z",
+   "mins_before_start": 1221
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892646",
+   "start_utc": "2026-11-05T03:00Z",
+   "team": "SJ",
+   "what": "goalie",
+   "value": "Yaroslav Askarov",
+   "first_seen_utc": "2026-11-04T06:39:02Z",
+   "mins_before_start": 1221
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892647",
+   "start_utc": "2026-11-05T03:00Z",
+   "team": "SEA",
+   "what": "goalie",
+   "value": "Philipp Grubauer",
+   "first_seen_utc": "2026-11-04T06:39:02Z",
+   "mins_before_start": 1221
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892647",
+   "start_utc": "2026-11-05T03:00Z",
+   "team": "CGY",
+   "what": "goalie",
+   "value": "Dustin Wolf",
+   "first_seen_utc": "2026-11-04T06:39:02Z",
+   "mins_before_start": 1221
+  }
+ ]
+}
