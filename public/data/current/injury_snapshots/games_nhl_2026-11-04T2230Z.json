@@ -1,0 +1,78 @@
+[
+ {
+  "sport": "nhl",
+  "game_id": "401892644",
+  "start_utc": "2026-11-05T00:30Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "BUF",
+    "probable_goalie": "Colten Ellis"
+   },
+   "away": {
+    "team": "OTT",
+    "probable_goalie": "Samuel Ersson"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "BUF -125",
+  "total": 6.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892645",
+  "start_utc": "2026-11-05T00:30Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "FLA",
+    "probable_goalie": "Jacob Markstrom"
+   },
+   "away": {
+    "team": "CHI",
+    "probable_goalie": "Spencer Knight"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "FLA -258",
+  "total": 5.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892646",
+  "start_utc": "2026-11-05T03:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "LA",
+    "probable_goalie": "Darcy Kuemper"
+   },
+   "away": {
+    "team": "SJ",
+    "probable_goalie": "Yaroslav Askarov"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "LA -166",
+  "total": 6.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892647",
+  "start_utc": "2026-11-05T03:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "SEA",
+    "probable_goalie": "Joey Daccord"
+   },
+   "away": {
+    "team": "CGY",
+    "probable_goalie": "Dustin Wolf"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "SEA -135",
+  "total": 6.5
+ }
+]
