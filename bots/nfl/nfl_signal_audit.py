@@ -62,7 +62,7 @@ import urllib.request
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-REPO = "donthebuilder/MLB-HR-DASHBOARD-STREAMLIT"
+REPO = "donthebuilder/dash-network-bot"
 BRANCH = "data"
 DIR = "public/data/current"
 RAW = f"https://raw.githubusercontent.com/{REPO}/{BRANCH}/{DIR}"

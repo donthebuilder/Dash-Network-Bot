@@ -138,7 +138,7 @@ except Exception:  # pragma: no cover
 # follows the repo it's actually running in. The previous hardcoded value
 # still pointed at the OLD repo after the migration, so every fetch 404'd
 # and took the spray-cache and companion jobs down with it.
-GITHUB_REPO = os.environ.get("GITHUB_REPOSITORY", "").strip() or "donthebuilder/MLB-HR-DASHBOARD-STREAMLIT"
+GITHUB_REPO = os.environ.get("GITHUB_REPOSITORY", "").strip() or "donthebuilder/dash-network-bot"
 DATA_BRANCH = os.environ.get("DATA_BRANCH", "data").strip() or "data"
 RAW_BASE = f"https://raw.githubusercontent.com/{GITHUB_REPO}/{DATA_BRANCH}"
 

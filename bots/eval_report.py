@@ -143,7 +143,7 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 REPO_ROOT = SCRIPT_DIR.parent if SCRIPT_DIR.name == "bots" else SCRIPT_DIR
 
 RAW = ("https://raw.githubusercontent.com/donthebuilder/"
-       "MLB-HR-DASHBOARD-STREAMLIT/data/public/data/current")
+       "dash-network-bot/data/public/data/current")
 
 # (label, low_inclusive, high_exclusive), highest first -- the order this
 # list is in is also the order monotonicity is checked in.

@@ -89,7 +89,7 @@ import nfl_espn
 
 SUMMARY = "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary"
 WEEK_JSON = ("https://raw.githubusercontent.com/donthebuilder/"
-             "MLB-HR-DASHBOARD-STREAMLIT/data/public/data/current/nfl_week.json")
+             "dash-network-bot/data/public/data/current/nfl_week.json")
 TIMEOUT = 30
 
 PLAYER_KEYS = ("passing_yards", "passing_touchdowns", "interceptions",

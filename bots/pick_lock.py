@@ -92,7 +92,7 @@ PUBLIC = REPO_ROOT / "public" / "data"
 CURRENT = PUBLIC / "current"
 
 RAW = ("https://raw.githubusercontent.com/donthebuilder/"
-       "MLB-HR-DASHBOARD-STREAMLIT/data/public/data/current")
+       "dash-network-bot/data/public/data/current")
 
 CATEGORIES = ("TOP", "HR", "HIT", "HRR", "CONTACT")
 

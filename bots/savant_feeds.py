@@ -70,7 +70,7 @@ import urllib.request
 from typing import Any, Dict, Optional, Tuple
 
 SAVANT = "https://baseballsavant.mlb.com"
-UA = "moonshot-mlb/1.0 (+https://github.com/donthebuilder/moonshot-mlb)"
+UA = "moonshot-mlb/1.0 (+https://github.com/donthebuilder/dash-network)"
 TIMEOUT = 30
 
 # Process-lifetime cache. One bot run touches each feed once; a second call in

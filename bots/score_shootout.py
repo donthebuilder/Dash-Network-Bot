@@ -113,7 +113,7 @@ def wilson(ok: int, n: int) -> tuple[float, float]:
 
 
 RAW = ("https://raw.githubusercontent.com/donthebuilder/"
-       "MLB-HR-DASHBOARD-STREAMLIT/data/public/data/current")
+       "dash-network-bot/data/public/data/current")
 
 
 def _open(url: str):

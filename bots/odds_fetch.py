@@ -1507,7 +1507,7 @@ def fetch_theoddsapi(key: str, regions: str) -> list[dict]:
 # The runner's working copy is empty at the start of every run, so there is
 # nowhere else it could live.
 DATA_RAW = ("https://raw.githubusercontent.com/donthebuilder/"
-            "MLB-HR-DASHBOARD-STREAMLIT/data/public/data/current")
+            "dash-network-bot/data/public/data/current")
 
 
 def freeze_snapshot(fresh: dict, prev_rows: dict, start_by_pid: dict, now) -> tuple[dict, int, int]:

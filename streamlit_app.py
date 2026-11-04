@@ -48,7 +48,7 @@ import streamlit as st
 # ── CONFIG ──────────────────────────────────────────────────────────────────
 # Override without editing this file via Streamlit → Settings → Secrets:
 #     GITHUB_REPO = "yourname/your-repo-name"
-DEFAULT_REPO = "donthebuilder/MLB-HR-DASHBOARD-STREAMLIT"
+DEFAULT_REPO = "donthebuilder/dash-network-bot"
 
 st.set_page_config(
     page_title="MLB HR Dashboard",

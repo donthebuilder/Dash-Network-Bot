@@ -652,7 +652,7 @@ def fetch_finished(season: int, timeout: int = 30) -> list[FinishedGame]:
 
 
 DATA_RAW = ("https://raw.githubusercontent.com/donthebuilder/"
-            "MLB-HR-DASHBOARD-STREAMLIT/data/public/data/current/")
+            "dash-network-bot/data/public/data/current/")
 
 
 def fetch_published(name: str, timeout: int = 15):

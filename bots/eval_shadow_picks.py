@@ -16,7 +16,7 @@ leads over enough games for the gap to be bigger than the noise (printed).
 from __future__ import annotations
 import argparse, glob, json, math, os, sys, urllib.request
 
-RAW = "https://raw.githubusercontent.com/donthebuilder/MLB-HR-DASHBOARD-STREAMLIT/data/public/data/current"
+RAW = "https://raw.githubusercontent.com/donthebuilder/dash-network-bot/data/public/data/current"
 
 
 def load(dir_: str | None, fetch: bool):

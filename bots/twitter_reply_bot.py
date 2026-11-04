@@ -45,7 +45,7 @@ STATE_PATH = Path(os.environ.get("REPLY_STATE_PATH", HERE / "twitter_replies.jso
 NICK_PATH = HERE / "data" / "nicknames.json"
 DATA_BASE = os.environ.get(
     "REPLY_DATA_BASE",
-    "https://raw.githubusercontent.com/donthebuilder/MLB-HR-DASHBOARD-STREAMLIT/data/public/data/current",
+    "https://raw.githubusercontent.com/donthebuilder/dash-network-bot/data/public/data/current",
 )
 API = "https://api.x.com/2"
 

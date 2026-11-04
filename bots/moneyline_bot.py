@@ -580,7 +580,7 @@ def fetch_starters(slate_url: str = "") -> dict:
 
     url = slate_url or (
         "https://raw.githubusercontent.com/donthebuilder/"
-        "MLB-HR-DASHBOARD-STREAMLIT/data/public/data/current/today_slim.json")
+        "dash-network-bot/data/public/data/current/today_slim.json")
     try:
         rows = requests.get(url, timeout=45).json()
     except Exception as e:

@@ -630,7 +630,7 @@ def consensus(rows: list[dict]) -> dict:
 # NFL rides the same repo/data branch as MLB -- confirmed against
 # lib/nfl/dataSource.js's own REPO constant, so this is not a guess.
 DATA_RAW = ("https://raw.githubusercontent.com/donthebuilder/"
-            "MLB-HR-DASHBOARD-STREAMLIT/data/public/data/current")
+            "dash-network-bot/data/public/data/current")
 
 
 def published(name: str):

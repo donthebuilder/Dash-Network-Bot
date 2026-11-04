@@ -76,7 +76,7 @@ FEED_FIELDS = ("gameData,teams,home,away,abbreviation,liveData,plays,allPlays,"
                "about,halfInning,inning,playEvents,details,eventType,description,startTime,"
                "currentPlay,matchup,batter,id,fullName,"
                "linescore,currentInning,isTopInning,offense,first,second,third")
-SLATE_URL = ("https://raw.githubusercontent.com/donthebuilder/MLB-HR-DASHBOARD-STREAMLIT/"
+SLATE_URL = ("https://raw.githubusercontent.com/donthebuilder/dash-network-bot/"
              "data/public/data/current/today_slim.json")
 PITCH_LOOKBACK_MIN = 70  # generous vs. the 10-min cron grain; startTime keys do the real dedup
 STATE_PATH = Path("state/pen_door_state.json")

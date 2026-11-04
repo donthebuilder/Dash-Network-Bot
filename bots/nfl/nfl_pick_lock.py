@@ -101,7 +101,7 @@ from pathlib import Path
 from typing import Any
 
 RAW = ("https://raw.githubusercontent.com/donthebuilder/"
-       "MLB-HR-DASHBOARD-STREAMLIT/data/public/data/current")
+       "dash-network-bot/data/public/data/current")
 
 # Must match nfl_picks.DEPTH. Not imported from nfl_scoring/nfl_picks on
 # purpose -- this script only ever reads the already-published card JSON,

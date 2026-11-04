@@ -215,7 +215,7 @@ def _merge_lines(a: dict[str, dict[str, float]], b: dict[str, dict[str, float]])
 # Where the bot publishes. Same repo and branch publish_data.sh force-pushes to;
 # see nfl_bot's dataSource note on the site side for the same URL.
 DATA_BASE = ("https://raw.githubusercontent.com/donthebuilder/"
-             "MLB-HR-DASHBOARD-STREAMLIT/data/public/data/current")
+             "dash-network-bot/data/public/data/current")
 
 
 def _fetch_archived_card(season: int, week: int, prefix: str):

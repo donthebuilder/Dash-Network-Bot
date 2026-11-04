@@ -93,7 +93,7 @@ jobs:
           ev, sched = os.environ.get("EVENT", ""), os.environ.get("SCHED", "")
           go, why = True, "not a pregame-cadence slot"
           if ev == "schedule" and sched.startswith("8,23,38,53 "):
-              url = ("https://raw.githubusercontent.com/donthebuilder/MLB-HR-DASHBOARD-STREAMLIT/"
+              url = ("https://raw.githubusercontent.com/donthebuilder/dash-network-bot/"
                      "data/public/data/current/nfl_week.json")
               try:
                   with urllib.request.urlopen(url, timeout=20) as r:
