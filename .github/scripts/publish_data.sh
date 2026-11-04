@@ -151,6 +151,10 @@ PUBLISH_FILES=(
   # rated player per game, graded (bots/nfl/nfl_td_log.py). The NFL twin of
   # LAMP's lamp_goal_log; rewritten whole on grading runs, absent otherwise.
   nfl_td_log_2026.jsonl
+  # nfl_preplay_pools_2026.json (2026-11-04) -- TUDDY PREPLAY's inputs: every real
+  # snap so far by club, special teams, 4th-down choices (bots/nfl/nfl_preplay_pools.py).
+  # Read server-side by the site's /api/nfl/preplay. ~2 MB, rewritten twice a week.
+  nfl_preplay_pools_2026.json
   # NEXT WEEK (2026-09-18). The same four payloads the dashboard reads, one
   # week ahead, written by nfl.yml's "Build next week" step under the
   # nfl_next_ prefix. The site's This week / Next week switch swaps which set
