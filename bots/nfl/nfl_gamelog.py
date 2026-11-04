@@ -37,7 +37,9 @@ WINDOWS = {"l5": 5, "l10": 10, "l20": 20}
 # LOG-ONLY FIELDS (2026-10-20, site milestones): carried on every game row, but not a market -- no default
 # bar and no `rates` block, so nothing that walks MARKET_VALUE or `rates` (the site's market tables) changes.
 #   g_patd  passing TDs (the site's "career passing TDs" milestone and its hit rate)
-LOG_ONLY = {"g_patd": "passing_tds"}
+# ADDITIVE (2026-11-03, Donovan: yes to targets in the log): targets drive the two strongest TUDDY card flags (targets up 20% over
+# the last 3: +15% TDs; down 20%: -17%; 2024-25 nflverse, the site's lib/nfl/playerFlags.js).
+LOG_ONLY = {"g_patd": "passing_tds", "g_tgt": "targets"}
 
 _WD = {"Monday": "Mon", "Tuesday": "Tue", "Wednesday": "Wed", "Thursday": "Thu",
        "Friday": "Fri", "Saturday": "Sat", "Sunday": "Sun"}
@@ -120,7 +122,6 @@ def _shape(season: int) -> pl.DataFrame:
         pl.col("carries").alias("g_car"),
         pl.col("passing_yards").alias("g_payd"),
         (pl.col("fg_made") * 3 + pl.col("pat_made")).alias("g_kick"),
-        pl.col("targets").alias("g_tgt"),
         *[pl.col(src).alias(dst) for dst, src in LOG_ONLY.items()],
         pl.lit(season).alias("season"),
     ])
