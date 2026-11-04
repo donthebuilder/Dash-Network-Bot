@@ -455,6 +455,13 @@ jobs:
           if [ -n "${SUPABASE_URL:-}" ] && [ -n "${SUPABASE_SERVICE_ROLE_KEY:-}" ]; then ARGS="$ARGS --apply"; fi
           python bots/nfl/nfl_td_log.py $ARGS
 
+      # TUDDY PREPLAY's inputs (2026-11-04): every real snap so far, for the site's pregame simulator
+      # (lib/nfl/preplay.js). Same two runs as the TD log: Sunday night and after Thursday's game.
+      - name: PREPLAY pools
+        if: github.event.schedule == '3 7 * * 1' || github.event.schedule == '33 4 * * 5' || github.event_name == 'workflow_dispatch'
+        continue-on-error: true
+        run: python bots/nfl/nfl_preplay_pools.py --season 2026 --out public/data/current/nfl_preplay_pools_2026.json
+
       # A failed build must not publish an empty slate over a good one. The
       # site's fetch validates `players.length > 0` before accepting a payload,
       # but the cheaper place to stop it is here, before it ever ships.
