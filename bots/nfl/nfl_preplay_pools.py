@@ -47,7 +47,7 @@ def snaps(d):
 def row(r):
     if r.play_type == 'no_play':
         y = int(r.penalty_yards) if r.penalty_team == r.defteam else -int(r.penalty_yards)
-        return ['f', int(r.down), dist_b(r.ydstogo), int(r.yardline_100), y, 0, 0, 5, '', '', 1 if r.first_down_penalty == 1 else 0, r.game_id, 0]
+        return ['f', int(r.down), dist_b(r.ydstogo), int(r.yardline_100), y, 0, 0, 5, '', '', 1 if r.first_down_penalty == 1 else 0, '', 0]
     kind = 'k' if r.sack == 1 else ('p' if r.play_type == 'pass' else 'r')
     who = r.receiver_player_id if kind == 'p' else (r.rusher_player_id if kind == 'r' else None)
     name = r.receiver_player_name if kind == 'p' else (r.rusher_player_name if kind == 'r' else None)
@@ -59,7 +59,7 @@ def row(r):
     name = '' if (name is None or pd.isna(name)) else name
     g = 0 if pd.isna(r.yards_gained) else int(r.yards_gained)
     dtd = 1 if (to and r.touchdown == 1 and r.td_team == r.defteam) else 0   # returned for a touchdown
-    return [kind, int(r.down), dist_b(r.ydstogo), int(r.yardline_100), g, td, to, int(round(dur)), who, name, inc, r.game_id, dtd]
+    return [kind, int(r.down), dist_b(r.ydstogo), int(r.yardline_100), g, td, to, int(round(dur)), who, name, inc, '', dtd]   # slot 11 (the source game) left empty in the published file: ~0.5 MB smaller
 
 def pools(season, before_week, fill=260):
     cur = snaps(D[season][D[season].week < before_week])
