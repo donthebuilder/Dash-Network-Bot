@@ -1,0 +1,60 @@
+name: Archive the accumulating files (before the keep caps drop them)
+
+# LEFTOVERS B11 (2026-11-05). publish_data.sh keeps the newest N of each accumulating file on the `data` branch
+# (graded nights 150, outcome / POR logs 150, ...). With fall and spring lanes added, the 2026 nights would be pushed
+# off the branch with no copy anywhere. Once a week this copies every such file that is not archived yet to
+# bbe-history/public/data/archive/<name>.gz (gzip; a file is written once and never rewritten). prediction_log_* is
+# left out on purpose: por_rows_* carries the locked rows it exists for, and the raw per-run logs are ~13 a day.
+on:
+  schedule:
+    - cron: '20 10 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: archive-accumulating
+  cancel-in-progress: false
+
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout bbe-history (archive folder only) and read the data branch
+        run: |
+          set -euo pipefail
+          git config --global user.name  "moonshot-bot"
+          git config --global user.email "bot@users.noreply.github.com"
+          git clone --quiet --depth 1 --filter=blob:none --sparse --branch bbe-history \
+            "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" _data
+          # nothing of the archive is checked out (it only grows); what exists is read with ls-tree below
+          git -C _data sparse-checkout set --no-cone /.keep-nothing
+          mkdir -p _data/public/data/archive
+          git -C _data fetch --quiet --depth 1 origin '+refs/heads/data:refs/remotes/origin/data'
+      - name: Copy what is not archived yet
+        working-directory: _data
+        run: |
+          set -euo pipefail
+          A=public/data/archive
+          n=0
+          git ls-tree --name-only origin/data public/data/current/ > /tmp/names
+          git ls-tree --name-only HEAD "$A/" | sed 's#.*/##' > /tmp/have || true
+          while read -r path; do
+            name="${path##*/}"
+            case "$name" in
+              graded_results_*.json|graded_results_*.txt|outcome_log_*.jsonl|por_log_*.jsonl|por_rows_*.jsonl|odds_20*.json|moneyline_prices_20*.json|nfl_outcome_log_*.jsonl|nfl_por_log_*.jsonl|nfl_results_20*.json) ;;
+              *) continue ;;
+            esac
+            grep -qxF "$name.gz" /tmp/have && continue
+            git show "origin/data:$path" | gzip -9n > "$A/$name.gz"
+            n=$((n + 1))
+          done < /tmp/names
+          echo "archived $n new file(s); $(( $(wc -l < /tmp/have) + n )) in the archive"
+          [ "$n" -gt 0 ] || { echo "nothing new"; exit 0; }
+          git add --sparse "$A"
+          if git diff --cached --quiet; then echo "nothing new"; exit 0; fi
+          git commit -qm "archive: $n accumulating file(s) $(date -u +%F)"
+          for i in 1 2 3 4 5; do git pull -q --rebase origin bbe-history && git push -q origin HEAD:bbe-history && exit 0; echo "push race, retry $i"; sleep $((i * 5)); done
+          echo "::error::could not push the archive"; exit 1
