@@ -1,0 +1,211 @@
+[
+ {
+  "sport": "nhl",
+  "game_id": "401892648",
+  "start_utc": "2026-11-06T00:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "MTL",
+    "probable_goalie": "Jakub Dobes"
+   },
+   "away": {
+    "team": "UTA",
+    "probable_goalie": "Sebastian Cossa"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "UTAH -122",
+  "total": 6.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892649",
+  "start_utc": "2026-11-06T00:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "DET",
+    "probable_goalie": "Daniil Tarasov"
+   },
+   "away": {
+    "team": "VGK",
+    "probable_goalie": "Carter Hart"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "VGK -142",
+  "total": 5.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892650",
+  "start_utc": "2026-11-06T00:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "TB",
+    "probable_goalie": "Andrei Vasilevskiy"
+   },
+   "away": {
+    "team": "CHI",
+    "probable_goalie": "Arvid Soderblom"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "TB -470",
+  "total": 6.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892651",
+  "start_utc": "2026-11-06T00:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "NJ",
+    "probable_goalie": "Connor Hellebuyck"
+   },
+   "away": {
+    "team": "STL",
+    "probable_goalie": "Jordan Binnington"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "NJ -218",
+  "total": 5.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892652",
+  "start_utc": "2026-11-06T00:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "NYI",
+    "probable_goalie": "Semyon Varlamov"
+   },
+   "away": {
+    "team": "CAR",
+    "probable_goalie": "Brandon Bussi"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "CAR -198",
+  "total": 6.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892653",
+  "start_utc": "2026-11-06T00:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "NYR",
+    "probable_goalie": "Dylan Garand"
+   },
+   "away": {
+    "team": "PHI",
+    "probable_goalie": "Joseph Woll"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "NYR -148",
+  "total": 5.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892654",
+  "start_utc": "2026-11-06T00:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "PIT",
+    "probable_goalie": "Arturs Silovs"
+   },
+   "away": {
+    "team": "BOS",
+    "probable_goalie": "Jeremy Swayman"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "BOS -108",
+  "total": 6.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892655",
+  "start_utc": "2026-11-06T00:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "CBJ",
+    "probable_goalie": "Cam Talbot"
+   },
+   "away": {
+    "team": "DAL",
+    "probable_goalie": "Casey DeSmith"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "DAL -130",
+  "total": 5.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892656",
+  "start_utc": "2026-11-06T01:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "WPG",
+    "probable_goalie": "Stuart Skinner"
+   },
+   "away": {
+    "team": "VAN",
+    "probable_goalie": "Leevi Merilainen"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "WPG -218",
+  "total": 6.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892657",
+  "start_utc": "2026-11-06T01:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "EDM",
+    "probable_goalie": "Matt Tomkins"
+   },
+   "away": {
+    "team": "ANA",
+    "probable_goalie": "Laurent Brossoit"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "EDM -192",
+  "total": 6.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892658",
+  "start_utc": "2026-11-06T02:30Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "COL",
+    "probable_goalie": "Mackenzie Blackwood"
+   },
+   "away": {
+    "team": "NSH",
+    "probable_goalie": "Juuse Saros"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "COL -218",
+  "total": 6.5
+ }
+]
