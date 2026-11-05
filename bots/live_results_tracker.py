@@ -651,7 +651,7 @@ def _render_night_card(tally: dict, date_str: str) -> bytes:
     tp = (100.0 * tot_ok / tot_n) if tot_n else 0.0
     d.text((36, y + 22), f"NIGHT: {tot_ok}/{tot_n} · {tp:.0f}%", font=font(26),
            fill=GREEN if tp >= 50 else ORANGE)
-    d.text((W - 330, y + 30), "moonshot-mlb.vercel.app", font=font(15, False), fill=DIM)
+    d.text((W - 330, y + 30), "dashnetwork.vercel.app", font=font(15, False), fill=DIM)
     import io
     buf = io.BytesIO(); img.save(buf, format="PNG")
     return buf.getvalue()
