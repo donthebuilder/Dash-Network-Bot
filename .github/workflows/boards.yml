@@ -6,13 +6,25 @@ name: Model boards (NHL, NBA, NFL lanes, team lines, simulations)
 # Sunday morning and Monday night. Nothing here changes a pick or a score the site already shows; these are new files.
 on:
   schedule:
+    # SLOT GATE (2026-11-05): each ET slot is listed at its EDT and its EST hour; .github/scripts/slot_gate.py keeps the one that matches today's clock.
     - cron: '5 16 * * *'
+    - cron: '5 17 * * *'
     - cron: '5 21 * * *'
+    - cron: '5 22 * * *'
     - cron: '35 22 * * *'
+    - cron: '35 23 * * *'
     - cron: '30 12 * * 0'
+    - cron: '30 13 * * 0'
     - cron: '30 22 * * 4'
+    - cron: '30 23 * * 4'
     - cron: '30 22 * * 1'
+    - cron: '30 23 * * 1'
   workflow_dispatch:
+    inputs:
+      slot:
+        description: "the cron line this run stands in for (the Vercel restarter sets it)"
+        required: false
+        default: ""
 
 concurrency:
   group: boards
@@ -22,7 +34,25 @@ permissions:
   contents: write
 
 jobs:
+  # SLOT GATE (2026-11-05): the other season's twin slot exits; a late run skips when every nhl,nba,nfl game that ET day has started.
+  gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    outputs:
+      run: ${{ steps.g.outputs.run }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          sparse-checkout: .github/scripts
+      - id: g
+        env:
+          SLOT: ${{ github.event.schedule || inputs.slot }}
+        run: python3 .github/scripts/slot_gate.py --want "12:05,17:05,18:35,08:30,18:30" --sports nhl,nba,nfl
+
   boards:
+    needs: gate
+    if: needs.gate.outputs.run == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 60
     steps:

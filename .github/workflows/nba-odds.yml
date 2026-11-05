@@ -7,10 +7,21 @@ name: NBA odds (price history)
 # start. Manual run with probe=true is read-only and prints every market name.
 on:
   schedule:
-    - cron: "17 16,20,22 * * *"
-    - cron: "52 22 * * *"
+    # SLOT GATE (2026-11-05): each ET slot is listed at its EDT and its EST hour; .github/scripts/slot_gate.py keeps the one that matches today's clock.
+    - cron: '17 16 * * *'
+    - cron: '17 17 * * *'
+    - cron: '17 20 * * *'
+    - cron: '17 21 * * *'
+    - cron: '17 22 * * *'
+    - cron: '17 23 * * *'
+    - cron: '52 22 * * *'
+    - cron: '52 23 * * *'
   workflow_dispatch:
     inputs:
+      slot:
+        description: "the cron line this run stands in for (the Vercel restarter sets it)"
+        required: false
+        default: ""
       probe:
         description: "read-only: print what the books serve, write nothing"
         required: false
@@ -24,7 +35,25 @@ permissions:
   contents: write
 
 jobs:
+  # SLOT GATE (2026-11-05): the other season's twin slot exits; a late run skips when every nba game that ET day has started.
+  gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    outputs:
+      run: ${{ steps.g.outputs.run }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          sparse-checkout: .github/scripts
+      - id: g
+        env:
+          SLOT: ${{ github.event.schedule || inputs.slot }}
+        run: python3 .github/scripts/slot_gate.py --want "12:17,16:17,18:17,18:52" --sports nba
+
   odds:
+    needs: gate
+    if: needs.gate.outputs.run == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:

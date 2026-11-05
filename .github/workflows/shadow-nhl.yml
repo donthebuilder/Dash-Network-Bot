@@ -4,11 +4,19 @@ name: Shadow log - NHL lanes
 # Written once, never rewritten. Lives on bbe-history. Changes nothing a pick or a score reads.
 on:
   schedule:
+    # SLOT GATE (2026-11-05): each ET slot is listed at its EDT and its EST hour; .github/scripts/slot_gate.py keeps the one that matches today's clock.
     - cron: '45 18 * * *'
+    - cron: '45 19 * * *'
     - cron: '45 21 * * *'
     - cron: '45 22 * * *'
+    - cron: '45 23 * * *'
     - cron: '30 11 * * *'
   workflow_dispatch:
+    inputs:
+      slot:
+        description: "the cron line this run stands in for (the Vercel restarter sets it)"
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -18,7 +26,25 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # SLOT GATE (2026-11-05): the other season's twin slot exits; a late run skips when every nhl game that ET day has started.
+  gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    outputs:
+      run: ${{ steps.g.outputs.run }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          sparse-checkout: .github/scripts
+      - id: g
+        env:
+          SLOT: ${{ github.event.schedule || inputs.slot }}
+        run: python3 .github/scripts/slot_gate.py --want "14:45,17:45,18:45,06:30,07:30" --sports nhl
+
   log:
+    needs: gate
+    if: needs.gate.outputs.run == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 40
     steps:

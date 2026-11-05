@@ -18,7 +18,7 @@ on:
     - cron: "3 13 * * 2"    # Tue 6am PHX  — week opens, the league's data lands
     - cron: "3 23 * * 3"    # Wed 4pm PHX  — first practice report
     - cron: "3 21 * * 4"    # Thu 2pm PHX  — TNF lock
-    - cron: "33 4 * * 5"    # Thu 9:30pm PHX — grade TNF
+    - cron: "33 5 * * 5"    # Thu 10:30pm PHX — grade TNF (11-05: was 4:33Z, ~8 min after a TNF final in EST)
     - cron: "3 23 * * 5"    # Fri 4pm PHX  — official Q/D/O designations
     # ── Sunday ──
     - cron: "3 15 * * 0"    # Sun 8am PHX  — main slate build
@@ -440,10 +440,10 @@ jobs:
       # player per game at the lock, graded -> public/data/current/nfl_td_log_2026.jsonl,
       # and into Supabase nfl_td_log when SUPABASE_SERVICE_ROLE_KEY is set as a repo
       # secret (insert-only: a graded row is never rewritten). Grading runs only
-      # (TNF grade, Sunday final grade, manual), so it adds no polling.
+      # (TNF grade, Sunday final grade, Monday night close -- 11-05: MNF TDs waited till Friday --, manual), so it adds no polling.
       # The script refuses to write if its grade disagrees with the bot's own graded calls.
       - name: TD board log
-        if: github.event.schedule == '3 7 * * 1' || github.event.schedule == '33 4 * * 5' || github.event_name == 'workflow_dispatch'
+        if: github.event.schedule == '3 7 * * 1' || github.event.schedule == '33 6 * * 2' || github.event.schedule == '33 5 * * 5' || github.event_name == 'workflow_dispatch'
         continue-on-error: true
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
@@ -458,7 +458,7 @@ jobs:
       # TUDDY PREPLAY's inputs (2026-11-04): every real snap so far, for the site's pregame simulator
       # (lib/nfl/preplay.js). Same two runs as the TD log: Sunday night and after Thursday's game.
       - name: PREPLAY pools
-        if: github.event.schedule == '3 7 * * 1' || github.event.schedule == '33 4 * * 5' || github.event_name == 'workflow_dispatch'
+        if: github.event.schedule == '3 7 * * 1' || github.event.schedule == '33 6 * * 2' || github.event.schedule == '33 5 * * 5' || github.event_name == 'workflow_dispatch'
         continue-on-error: true
         run: python bots/nfl/nfl_preplay_pools.py --season 2026 --out public/data/current/nfl_preplay_pools_2026.json
 
