@@ -37,7 +37,24 @@ permissions:
   contents: write
 
 jobs:
+  guard:
+    # OFFSEASON GUARD (2026-11-05, LEFTOVERS B8; same as shadow-mlb.yml): no MLB game from 1 day back to 1 ahead -> skip.
+    # A hand-started run always goes; an unreadable schedule fails OPEN.
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      active: ${{ steps.g.outputs.active }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: bots/mlb_season_guard.py
+          sparse-checkout-cone-mode: false
+      - id: g
+        run: python3 bots/mlb_season_guard.py --back 1 --ahead 1
+
   shadow:
+    needs: [guard]
+    if: ${{ needs.guard.outputs.active == 'true' || github.event_name == 'workflow_dispatch' }}
     runs-on: ubuntu-latest
     timeout-minutes: 45
     steps:

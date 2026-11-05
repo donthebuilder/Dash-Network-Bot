@@ -92,6 +92,9 @@ jobs:
       - name: MLB hitter lanes (posted lineups)
         continue-on-error: true
         run: |
+          # no MLB game today: publish nothing (2026-11-05, LEFTOVERS B8: it published an empty board all winter)
+          G=$(python3 bots/mlb_season_guard.py --back 0 --ahead 0 || true); echo "$G"
+          case "$G" in *active=true*) ;; *) echo "no MLB game today: MLB lanes skipped"; exit 0 ;; esac
           D=public/data/current
           ET=$(python3 -c "from datetime import datetime,timedelta,timezone;print((datetime.now(timezone.utc)-timedelta(hours=5)).date())")
           [ -e $HOME/.cache/dash_mlbhits/games.json ] || python3 bots/mlb_hits_data.py $HOME/.cache/dash_mlbhits
