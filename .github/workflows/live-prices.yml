@@ -5,13 +5,22 @@ name: Live price log (price at the moment they hit)
 # assists, PRA, NHL points / assists and NFL anytime TD ticks are kept for later grading. Own schedule, own job; writes to `bbe-history` every 30 minutes.
 on:
   schedule:
+    # SLOT GATE (2026-11-05): each ET slot is listed at its EDT and its EST hour; .github/scripts/slot_gate.py keeps the one that matches today's clock.
     - cron: '45 22 * * *'
+    - cron: '45 23 * * *'
+    - cron: '15 4 * * *'
+    - cron: '15 5 * * *'
+    - cron: '15 15 * * 0'
     - cron: '15 16 * * 0'
-    - cron: '15 22 * * 0'
-    - cron: '45 23 * * 1'
-    - cron: '45 23 * * 4'
+    - cron: '45 20 * * 0'
+    - cron: '45 21 * * 0'
     - cron: '20 12 * * *'
   workflow_dispatch:
+    inputs:
+      slot:
+        description: "the cron line this run stands in for (the Vercel restarter sets it)"
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -21,7 +30,25 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # SLOT GATE (2026-11-05): the other season's twin slot exits; no game check (this job polls during the games).
+  gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    outputs:
+      run: ${{ steps.g.outputs.run }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          sparse-checkout: .github/scripts
+      - id: g
+        env:
+          SLOT: ${{ github.event.schedule || inputs.slot }}
+        run: python3 .github/scripts/slot_gate.py --want "18:45,00:15,11:15,16:45,07:20,08:20"
+
   poll:
+    needs: gate
+    if: needs.gate.outputs.run == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 355
     steps:
@@ -46,7 +73,10 @@ jobs:
           else
             SERIES="KXNBAPTS KXNBAREB KXNBAAST KXNBAPRA KXNHLGOAL KXNHLPTS KXNHLAST KXMLBHR KXMLBHIT KXMLBTB"
             if [ "$DOW" = "7" ] || [ "$DOW" = "1" ] || [ "$DOW" = "4" ]; then SERIES="$SERIES KXNFLANYTD"; fi
+            # every evening run polls in 30-min chunks until 2:30 am ET (2026-11-05: the late 00:xx ET slot picks up
+            # where the 18:xx run's 5.5 h cap ends, so West Coast games are covered; a queued run past 2:30 exits)
             for i in $(seq 1 11); do
+              ETHM=$(TZ=America/New_York date +%H%M); if [ $((10#$ETHM)) -ge 230 ] && [ $((10#$ETHM)) -lt 1100 ]; then echo "past 2:30 am ET: done"; break; fi
               python3 bots/live_price_log.py loop $D --minutes 30 --every 60 --series $SERIES || true
               (cd _data && git add public/data/current/live_prices && { git diff --cached --quiet || { git commit -qm "live prices $(date -u +%FT%H%MZ)"; for j in 1 2 3 4 5; do git pull -q --rebase origin bbe-history && git push -q origin HEAD:bbe-history && break; sleep $((j * 5)); done; }; })
             done

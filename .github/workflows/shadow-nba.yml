@@ -5,12 +5,17 @@ name: Shadow log - NBA lanes and first basket
 # projection; a game is frozen the moment it starts. Graded the next morning. Lives on bbe-history.
 on:
   schedule:
+    # SLOT GATE (2026-11-05): each ET slot is listed at its EDT and its EST hour; .github/scripts/slot_gate.py keeps the one that matches today's clock.
     - cron: '0 17,19,21 * * *'
     - cron: '0,30 22,23 * * *'
-    - cron: '0,30 0,1 * * *'
-    - cron: '0 2 * * *'
+    - cron: '0,30 0,1,2,3 * * *'
     - cron: '45 11 * * *'
   workflow_dispatch:
+    inputs:
+      slot:
+        description: "the cron line this run stands in for (the Vercel restarter sets it)"
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -20,7 +25,25 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # SLOT GATE (2026-11-05): the other season's twin slot exits; a late run skips when every nba game that ET day has started.
+  gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    outputs:
+      run: ${{ steps.g.outputs.run }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          sparse-checkout: .github/scripts
+      - id: g
+        env:
+          SLOT: ${{ github.event.schedule || inputs.slot }}
+        run: python3 .github/scripts/slot_gate.py --sports nba
+
   log:
+    needs: gate
+    if: needs.gate.outputs.run == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 45
     steps:
