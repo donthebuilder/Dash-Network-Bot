@@ -40,16 +40,18 @@ log = logging.getLogger("dash_models")
 # ---------------------------------------------------------------------------
 REGISTRY: List[Dict[str, str]] = [
     {"sport": "MLB", "name": "MOONSHOT hr_score",   "version": "mlb_hr_v4",     "status": "live",    "where": "bots/mlb_dashboard.py (MODEL_WEIGHTS hr_blend)",           "out": "today.json rows"},
-    {"sport": "MLB", "name": "MOONSHOT batter x matchup", "version": "mlb_hr_v5", "status": "live",    "where": "bots/moonshot_v4_scorer.py via dash_models.run_moonshot", "out": "public/data/current/moonshot_v4_latest.json"},
+    # 2026-11-05 (LEFTOVERS B16): the four "built, published, read by nothing on the site" boards are SHADOW, not live
+    # (grep of the site for moonshot_v4_latest / tuddy_v2_latest / nhl_board_latest / nba_board_latest: no reader)
+    {"sport": "MLB", "name": "MOONSHOT batter x matchup", "version": "mlb_hr_v5", "status": "shadow",    "where": "bots/moonshot_v4_scorer.py via dash_models.run_moonshot", "out": "public/data/current/moonshot_v4_latest.json"},
     {"sport": "MLB", "name": "Moneyline",           "version": "(unversioned)", "status": "live",    "where": "bots/moneyline_bot.py (playoff_odds.win_probability vs market)", "out": "moneyline bot output"},
     {"sport": "MLB", "name": "Spread / run line",   "version": "-",             "status": "planned", "where": "no model exists; odds_fetch.py only carries the lines",  "out": "-"},
     {"sport": "NFL", "name": "TUDDY TD",            "version": "nfl_td_v2",     "status": "live",    "where": "bots/nfl/nfl_scoring.py MODELS['TD']",                    "out": "nfl_bot.py output"},
     {"sport": "NFL", "name": "TUDDY TD shadow",     "version": "nfl_td_v3",     "status": "shadow",  "where": "bots/nfl/nfl_scoring.py SHADOW_MODELS['TD']",             "out": "nfl_bot.py output"},
-    {"sport": "NFL", "name": "TUDDY usage x lane",  "version": "nfl_td_v4",     "status": "live",    "where": "bots/tuddy_v2_scorer.py",                                  "out": "public/data/current/tuddy_v2_latest.json"},
+    {"sport": "NFL", "name": "TUDDY usage x lane",  "version": "nfl_td_v4",     "status": "shadow",    "where": "bots/tuddy_v2_scorer.py",                                  "out": "public/data/current/tuddy_v2_latest.json"},
     {"sport": "ALL", "name": "Availability (p_play)", "version": "-",             "status": "live",    "where": "bots/injury_status.py (ESPN injury feeds)",                "out": "p_play / expected_score on rows"},
     {"sport": "ALL", "name": "Lineups & lines",     "version": "-",             "status": "live",    "where": "bots/lineups.py (statsapi, ESPN)",                         "out": "lineup_status / p_start; spread, total"},
-    {"sport": "NHL", "name": "LAMP tuned board (every skater)", "version": "nhl_goal_v2", "status": "live", "where": "bots/nhl_live.py + models/nhl_goal_v2.json",       "out": "bots/outputs/nhl_board_latest.json"},
-    {"sport": "NBA", "name": "BUCKETS tuned board (every player)", "version": "nba_pts_v2", "status": "live", "where": "bots/nba_live.py + models/nba_pts_v2.json",    "out": "bots/outputs/nba_board_latest.json"},
+    {"sport": "NHL", "name": "LAMP tuned board (every skater)", "version": "nhl_goal_v2", "status": "shadow", "where": "bots/nhl_live.py + models/nhl_goal_v2.json",       "out": "bots/outputs/nhl_board_latest.json"},
+    {"sport": "NBA", "name": "BUCKETS tuned board (every player)", "version": "nba_pts_v2", "status": "shadow", "where": "bots/nba_live.py + models/nba_pts_v2.json",    "out": "bots/outputs/nba_board_latest.json"},
     {"sport": "NHL", "name": "LAMP shooter x goalie", "version": "nhl_goal_v1", "status": "planned", "where": "bots/nhl_scorer.py",                                       "out": "public/data/current/nhl_scorer_latest.json"},
     {"sport": "NBA", "name": "BUCKETS",             "version": "nba_pts_v1",    "status": "planned", "where": "bots/buckets_scorer.py",                                   "out": "public/data/current/buckets_scorer_latest.json"},
 ]
