@@ -87,6 +87,7 @@ jobs:
         run: |
           mkdir -p bots
           cp _src/bots/*.py bots/
+          cp _src/.github/scripts/push_data_files.sh /tmp/push_data_files.sh
           rm -rf _src
           python -c "import ast,sys,pathlib; [ast.parse(p.read_text()) for p in pathlib.Path('bots').glob('*.py')]" 
 
@@ -129,12 +130,5 @@ jobs:
           rm -rf bots
           git config user.name  "moonshot-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add public/data/current/season_memory.json \
-                  public/data/current/context_validation.json \
-                  public/data/current/autopsy_latest.json 2>/dev/null || true
-          if git diff --cached --quiet; then
-            echo "nothing changed"
-          else
-            git commit -m "accountability: memory + verdicts $(date -u +%F)"
-            git push
-          fi
+          bash /tmp/push_data_files.sh "accountability: memory + verdicts $(date -u +%F)" \
+            public/data/current/season_memory.json public/data/current/context_validation.json public/data/current/autopsy_latest.json

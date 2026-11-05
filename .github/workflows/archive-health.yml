@@ -86,13 +86,7 @@ jobs:
           cd _data
           git config user.name  "moonshot-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add public/data/current/archive_health.txt public/data/current/leak_scan.json 2>/dev/null || true
-          if git diff --cached --quiet; then
-            echo "archive health unchanged — nothing to commit"
-          else
-            git commit -m "archive health $(date -u +%F\ %H:%M) UTC"
-            git push
-          fi
+          bash ../.github/scripts/push_data_files.sh "archive health $(date -u +%F\ %H:%M) UTC" public/data/current/archive_health.txt public/data/current/leak_scan.json
 
       # The answer is on the data branch either way; NOW the run goes red if a
       # locked night is leaking.

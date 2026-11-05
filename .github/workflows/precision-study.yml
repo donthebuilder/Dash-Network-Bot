@@ -71,10 +71,4 @@ jobs:
           cd _data
           git config user.name  "moonshot-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add public/data/current/precision_study.txt public/data/current/precision_study.json 2>/dev/null || true
-          if git diff --cached --quiet; then
-            echo "study output unchanged — nothing to commit"
-          else
-            git commit -m "precision study $(date -u +%F\ %H:%M) UTC"
-            git push
-          fi
+          bash ../.github/scripts/push_data_files.sh "precision study $(date -u +%F\ %H:%M) UTC" public/data/current/precision_study.txt public/data/current/precision_study.json
