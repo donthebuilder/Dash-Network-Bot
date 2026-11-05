@@ -882,6 +882,7 @@ def build_payload(mode: str, season: int, week: int | None, out_dir: Path) -> di
             "opp": None,
             "position": r.get("position"),
             "carryover": bool(r.get("is_carryover") or 0),
+            "thin": bool(r.get("thin") or 0),
             "questionable": bool(r.get("inj_q") or 0),
             "on_bye": True,
             "low_sample": (
@@ -1330,6 +1331,8 @@ def build_nfl_prediction_log_lines(run_meta: dict, players: list[dict],
                 "score": sc,
                 "components": (pl_row.get("components") or {}).get(market, {}),
                 "carryover": pl_row.get("carryover", False),
+                # THIN (LEFTOVERS B14, 2026-11-05): no last-season baseline, scored on under MIN_GP games of his own
+                "thin": pl_row.get("thin", False),
                 "questionable": pl_row.get("questionable", False),
                 "low_sample": pl_row.get("low_sample", False),
             })

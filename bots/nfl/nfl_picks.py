@@ -64,6 +64,7 @@ def _rung(r: dict, key: str, rank: int) -> dict:
         "low_sample": bool(r.get("low_sample")),
         "questionable": bool(r.get("questionable")),
         "carryover": bool(r.get("carryover")),
+        "thin": bool(r.get("thin")),
     }
 
 
@@ -102,6 +103,7 @@ def shadow_ladder(rows: list[dict], shadow_scores: dict, depth: int = DEPTH) -> 
         "low_sample": bool(r.get("low_sample")),
         "questionable": bool(r.get("questionable")),
         "carryover": bool(r.get("carryover")),
+        "thin": bool(r.get("thin")),
     } for i, r in enumerate(use)]
 
 
