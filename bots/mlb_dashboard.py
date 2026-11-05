@@ -15537,10 +15537,11 @@ Use ALT LOOKS as quality variance, not primary plays.
                     # board. Film Room search is the video link, name-only
                     # (mlb.com /video player pages hit an access wall, but the
                     # Film Room SEARCH page is public).
-                    _SITE = "https://moonshot-mlb.vercel.app"
+                    # 2026-11-05: moonshot-mlb.vercel.app answers 404 (the site is DASH Network now); every "his card" link was dead.
+                    _SITE = "https://dashnetwork.vercel.app"
                     def _film(nm, pid=None):
                         if pid:
-                            return f"[📊 his card]({_SITE}/#tab=power&p={safe_int(pid, 0)})"
+                            return f"[📊 his card]({_SITE}/app#sport=mlb&tab=power&p={safe_int(pid, 0)})"
                         return f"[🎬 film](https://www.mlb.com/video/search?q={_up.quote(str(nm))})"
                     def _spot(angle):
                         if angle == 0:  # best park tonight
