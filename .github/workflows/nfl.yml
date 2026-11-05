@@ -18,7 +18,7 @@ on:
     - cron: "3 13 * * 2"    # Tue 6am PHX  — week opens, the league's data lands
     - cron: "3 23 * * 3"    # Wed 4pm PHX  — first practice report
     - cron: "3 21 * * 4"    # Thu 2pm PHX  — TNF lock
-    - cron: "33 4 * * 5"    # Thu 9:30pm PHX — grade TNF
+    - cron: "33 6 * * 5"    # Thu 11:30pm PHX — grade TNF (was 04:33Z: since Nov 1 TNF kicks off 01:15Z and was not final yet)
     - cron: "3 23 * * 5"    # Fri 4pm PHX  — official Q/D/O designations
     # ── Sunday ──
     - cron: "3 15 * * 0"    # Sun 8am PHX  — main slate build
@@ -41,13 +41,18 @@ on:
     # the published nfl_week.json kicks off within the next 125 min; every
     # other slot ends in seconds without building. Covered: TNF, Thanksgiving
     # Thu, Sun London 9:30am ET / 1pm / 4pm / SNF, MNF (incl. a 7pm double).
-    # Not covered yet: Saturday games (late season), Black Friday, Christmas.
+    # Added 2026-11-05: Saturdays (late season), Black Friday, Christmas (dated lines: update them each season).
     - cron: "8,23,38,53 14-23 * * 4"   # Thu: Thanksgiving + TNF windows
     - cron: "8,23,38,53 0-1 * * 5"     # Thu night ET (TNF in EST)
     - cron: "8,23,38,53 11-23 * * 0"   # Sun: London, 1pm, 4pm, SNF run-up
     - cron: "8,23,38,53 0-1 * * 1"     # Sun night ET (SNF kickoff, EST)
     - cron: "8,23,38,53 21-23 * * 1"   # Mon: MNF run-up
     - cron: "8,23,38,53 0-1 * * 2"     # Mon night ET (MNF kickoff, EST)
+    - cron: "8,23,38,53 15-23 * * 6"   # Sat: late-season games (the gate skips every Saturday without one)
+    - cron: "8,23,38,53 0-1 * * 0"     # Sat night ET
+    - cron: "8,23,38,53 16-20 27 11 *" # Black Friday 2026 (DEN@PIT 20:00Z)
+    - cron: "8,23,38,53 15-23 25 12 *" # Christmas 2026 (GB@CHI 18:00Z, BUF@DEN 21:30Z)
+    - cron: "8,23,38,53 0-1 26 12 *"   # Christmas night (LAR@SEA 01:15Z)
   workflow_dispatch:
     inputs:
       mode:
@@ -62,6 +67,10 @@ on:
         description: "also rebuild the report card (slow — full backtest)"
         required: false
         default: "false"
+      cron:
+        description: "the schedule slot this run stands for (the site's restarter sets it; empty = a hand-started run)"
+        required: false
+        default: ""
 
 # Its own group, per the lesson in today.yml: a group shared across workflows
 # made GitHub cancel queued runs and silently killed whole publishes.
@@ -86,13 +95,14 @@ jobs:
       - id: g
         env:
           EVENT: ${{ github.event_name }}
-          SCHED: ${{ github.event.schedule }}
+          SCHED: ${{ github.event.schedule || inputs.cron }}
         run: |
           python3 - <<'EOF'
           import datetime as dt, json, os, urllib.request
           ev, sched = os.environ.get("EVENT", ""), os.environ.get("SCHED", "")
           go, why = True, "not a pregame-cadence slot"
-          if ev == "schedule" and sched.startswith("8,23,38,53 "):
+          # a run the site's restarter started for a dropped pregame slot carries that slot (inputs.cron) and is gated the same way
+          if sched.startswith("8,23,38,53 "):
               url = ("https://raw.githubusercontent.com/donthebuilder/dash-network-bot/"
                      "data/public/data/current/nfl_week.json")
               try:
@@ -297,7 +307,7 @@ jobs:
       # a live Sunday wave where the runner should be turning a slate around
       # fast.
       - name: Rebuild report card
-        if: github.event.inputs.report == 'true' || github.event.schedule == '3 13 * * 2'
+        if: github.event.inputs.report == 'true' || (github.event.schedule || inputs.cron) == '3 13 * * 2'
         working-directory: bots/nfl
         run: |
           python export_report.py --seasons 2024 2025 \
@@ -440,10 +450,11 @@ jobs:
       # player per game at the lock, graded -> public/data/current/nfl_td_log_2026.jsonl,
       # and into Supabase nfl_td_log when SUPABASE_SERVICE_ROLE_KEY is set as a repo
       # secret (insert-only: a graded row is never rewritten). Grading runs only
-      # (TNF grade, Sunday final grade, manual), so it adds no polling.
+      # (TNF grade, Sunday final grade, Tuesday close of the week, manual), so it adds no polling. The Tuesday 06:33 slot was added
+      # 2026-11-05: nflverse posts Sunday's play-by-play the next day, so Sunday-midnight was too early and the week waited till Friday.
       # The script refuses to write if its grade disagrees with the bot's own graded calls.
       - name: TD board log
-        if: github.event.schedule == '3 7 * * 1' || github.event.schedule == '33 4 * * 5' || github.event_name == 'workflow_dispatch'
+        if: contains(fromJSON('["3 7 * * 1","33 6 * * 2","33 6 * * 5"]'), github.event.schedule || inputs.cron) || (github.event_name == 'workflow_dispatch' && inputs.cron == '')
         continue-on-error: true
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
@@ -458,7 +469,7 @@ jobs:
       # TUDDY PREPLAY's inputs (2026-11-04): every real snap so far, for the site's pregame simulator
       # (lib/nfl/preplay.js). Same two runs as the TD log: Sunday night and after Thursday's game.
       - name: PREPLAY pools
-        if: github.event.schedule == '3 7 * * 1' || github.event.schedule == '33 4 * * 5' || github.event_name == 'workflow_dispatch'
+        if: contains(fromJSON('["3 7 * * 1","33 6 * * 2","33 6 * * 5"]'), github.event.schedule || inputs.cron) || (github.event_name == 'workflow_dispatch' && inputs.cron == '')
         continue-on-error: true
         run: python bots/nfl/nfl_preplay_pools.py --season 2026 --out public/data/current/nfl_preplay_pools_2026.json
 

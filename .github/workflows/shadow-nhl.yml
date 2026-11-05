@@ -9,6 +9,11 @@ on:
     - cron: '45 22 * * *'
     - cron: '30 11 * * *'
   workflow_dispatch:
+    inputs:
+      cron:
+        description: "the schedule slot this run stands for (the site's restarter sets it; empty = by the clock)"
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -44,10 +49,11 @@ jobs:
         continue-on-error: true
         run: |
           D=_data/public/data/current/shadow_log
-          H=$(date -u +%H)
+          SLOT="${{ github.event.schedule || inputs.cron }}"   # which slot this run stands for (GitHub can start one hours late; the site's restarter passes it)
+          if [ -n "$SLOT" ]; then H=$(printf %02d "$(echo "$SLOT" | awk '{print $2}' | cut -d, -f1 | cut -d- -f1)"); else H=$(date -u +%H); fi
           ET=$(python3 -c "from datetime import datetime,timedelta,timezone;print((datetime.now(timezone.utc)-timedelta(hours=5)).date())")
           Y=$(python3 -c "from datetime import datetime,timedelta,timezone;print((datetime.now(timezone.utc)-timedelta(hours=5,days=1)).date())")
-          if [ "$H" -ge 17 ]; then
+          if [ "$H" != "11" ]; then                     # 11:30 is the morning grade; every other slot is an evening snapshot
             python3 bots/shadow_log.py snapshot nhl "$ET" $D
             python3 bots/team_live.py snapshot nhl "$ET" $D
             python3 bots/game_sim.py snapshot nhl "$ET" $D

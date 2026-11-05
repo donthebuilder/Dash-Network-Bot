@@ -1,16 +1,20 @@
 name: Shadow log - NBA lanes and first basket
 
 # Own schedule, own job. Lane probabilities (points, rebounds, assists, 3PM, PRA, double-double) are saved at 22:45 UTC and graded at 11:30 UTC.
-# FIRST BASKET is refreshed every 30 minutes from 22:00 to 02:30 UTC so the real starters (NBA's daily lineups: Expected, then Confirmed near tip) replace the
+# FIRST BASKET is refreshed every 30 minutes from 22:00 to 03:30 UTC (03:30 since the Nov 1 clock change: 10-10:30 PM ET tips are 03:00-03:30Z) so the real starters (NBA's daily lineups: Expected, then Confirmed near tip) replace the
 # projection; a game is frozen the moment it starts. Graded the next morning. Lives on bbe-history.
 on:
   schedule:
     - cron: '0 17,19,21 * * *'
     - cron: '0,30 22,23 * * *'
-    - cron: '0,30 0,1 * * *'
-    - cron: '0 2 * * *'
+    - cron: '0,30 0-3 * * *'
     - cron: '45 11 * * *'
   workflow_dispatch:
+    inputs:
+      cron:
+        description: "the schedule slot this run stands for (the site's restarter sets it; empty = by the clock)"
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -46,7 +50,8 @@ jobs:
         continue-on-error: true
         run: |
           D=_data/public/data/current/shadow_log
-          H=$(date -u +%H)
+          SLOT="${{ github.event.schedule || inputs.cron }}"   # which slot this run stands for (GitHub can start one hours late; the site's restarter passes it)
+          if [ -n "$SLOT" ]; then H=$(printf %02d "$(echo "$SLOT" | awk '{print $2}' | cut -d, -f1 | cut -d- -f1)"); else H=$(date -u +%H); fi
           ET=$(python3 -c "from datetime import datetime,timedelta,timezone;print((datetime.now(timezone.utc)-timedelta(hours=5)).date())")
           Y=$(python3 -c "from datetime import datetime,timedelta,timezone;print((datetime.now(timezone.utc)-timedelta(hours=5,days=1)).date())")
           if [ "$H" = "11" ]; then

@@ -8,14 +8,20 @@ name: NHL odds (price history)
 # start. Manual run with probe=true is read-only and prints every market name.
 on:
   schedule:
-    - cron: "17 16,20,22 * * *"
-    - cron: "52 22 * * *"
+    # EASTERN STANDARD TIME (2026-11-05): GitHub's cron is UTC, so after the Nov 1 clock change the old 16/20/22:17 + 22:52 slots landed an
+    # hour early (the "last fetch inside the 7 pm drop" was 5:52 pm ET). Same four Eastern times now. Move back an hour on Mar 8, 2027.
+    - cron: "17 17,21,23 * * *"
+    - cron: "52 23 * * *"
   workflow_dispatch:
     inputs:
       probe:
         description: "read-only: print what the books serve, write nothing"
         required: false
         default: "false"
+      cron:
+        description: "the schedule slot this run stands for (the site's restarter sets it; empty = by the clock)"
+        required: false
+        default: ""
 
 concurrency:
   group: nhl-odds
@@ -23,6 +29,7 @@ concurrency:
 
 permissions:
   contents: write
+  actions: read          # bots/slot_covered.py reads this workflow's own runs
 
 jobs:
   odds:
@@ -36,6 +43,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+      - name: Slot already done? (GitHub starts some slots hours late after the site's restarter already ran them)
+        id: slot
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python bots/slot_covered.py "${{ github.event.schedule || inputs.cron }}"
       - name: Probe (read-only)
         if: github.event.inputs.probe == 'true'
         env:
@@ -44,7 +56,7 @@ jobs:
           python bots/nhl/nhl_odds_fetch.py --probe --dump /tmp/nhl_odds_raw.json || true
           test -f /tmp/nhl_odds_raw.json && head -c 2500 /tmp/nhl_odds_raw.json || echo "no raw payload"
       - name: Restore today's and yesterday's history (so a started game keeps its pregame row)
-        if: github.event.inputs.probe != 'true'
+        if: github.event.inputs.probe != 'true' && steps.slot.outputs.covered != 'true'
         run: |
           set -euo pipefail
           mkdir -p public/data/current
@@ -55,12 +67,12 @@ jobs:
             echo "restored $(ls public/data/current/nhl_odds_20*.json 2>/dev/null | wc -l) dated file(s)"
           fi
       - name: Fetch NHL odds
-        if: github.event.inputs.probe != 'true'
+        if: github.event.inputs.probe != 'true' && steps.slot.outputs.covered != 'true'
         continue-on-error: true
         env:
           ODDSAPI_IO_KEY: ${{ secrets.ODDSAPI_IO_KEY }}
           NHL_ODDS_MIN_INTERVAL_MIN: ${{ vars.NHL_ODDS_MIN_INTERVAL_MIN }}
         run: python bots/nhl/nhl_odds_fetch.py --out "$GITHUB_WORKSPACE/public/data/current"
       - name: Publish to data branch
-        if: github.event.inputs.probe != 'true'
+        if: github.event.inputs.probe != 'true' && steps.slot.outputs.covered != 'true'
         run: bash .github/scripts/publish_data.sh "NHL odds"

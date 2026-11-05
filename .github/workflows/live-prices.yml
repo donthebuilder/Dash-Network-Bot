@@ -4,14 +4,21 @@ name: Live price log (price at the moment they hit)
 # read back as: price pregame, at the start, and in the minutes before the player actually hit. NBA points + NHL goals are joined to the play-by-play in the report; rebounds,
 # assists, PRA, NHL points / assists and NFL anytime TD ticks are kept for later grading. Own schedule, own job; writes to `bbe-history` every 30 minutes.
 on:
+  # RUNS TO THE LAST FINAL WHISTLE (2026-11-05). It was a fixed 11 x 30 min from 22:45 UTC, so since the Nov 1 clock change it stopped
+  # ~11:15 PM ET with West Coast games (03:00-03:30Z tips) still on, and the Mon/Thu 23:45 runs queued behind it and polled an empty
+  # night till 09:45Z. Now each half hour asks ESPN what is live or starts within 6 h (bots/slate_live.py) and polls only those sports'
+  # series; it stops when nothing is left. A job can run 6 h at most, so 04:30 picks up whatever is still being played.
   schedule:
     - cron: '45 22 * * *'
-    - cron: '15 16 * * 0'
-    - cron: '15 22 * * 0'
-    - cron: '45 23 * * 1'
-    - cron: '45 23 * * 4'
+    - cron: '45 17 * * 0'
+    - cron: '30 4 * * *'
     - cron: '20 12 * * *'
   workflow_dispatch:
+    inputs:
+      cron:
+        description: "the schedule slot this run stands for (the site's restarter sets it; empty = by the clock)"
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -38,13 +45,22 @@ jobs:
       - name: Poll through the games, push every 30 minutes (evening runs) / report (morning run)
         run: |
           D=_data/public/data/current/live_prices
-          H=$(date -u +%H); DOW=$(date -u +%u)
+          SLOT="${{ github.event.schedule || inputs.cron }}"   # which slot this run stands for (GitHub can start one hours late; the site's restarter passes it)
+          if [ -n "$SLOT" ]; then H=$(printf %02d "$(echo "$SLOT" | awk '{print $2}' | cut -d, -f1 | cut -d- -f1)"); else H=$(date -u +%H); fi
           if [ "$H" = "12" ]; then
             python3 bots/live_price_log.py report $D || true
           else
-            SERIES="KXNBAPTS KXNBAREB KXNBAAST KXNBAPRA KXNHLGOAL KXNHLPTS KXNHLAST KXMLBHR KXMLBHIT KXMLBTB"
-            if [ "$DOW" = "7" ] || [ "$DOW" = "1" ] || [ "$DOW" = "4" ]; then SERIES="$SERIES KXNFLANYTD"; fi
-            for i in $(seq 1 11); do
+            START=$(date +%s)
+            while [ $(( $(date +%s) - START )) -lt 18000 ]; do      # 300 min: the last 30-min block ends inside the 355-min job
+              LIVE=$(python3 bots/slate_live.py --sports nba nhl nfl mlb) || { echo "nothing live or about to start: done"; break; }
+              SERIES=""
+              for sp in $LIVE; do case $sp in
+                nba) SERIES="$SERIES KXNBAPTS KXNBAREB KXNBAAST KXNBAPRA";;
+                nhl) SERIES="$SERIES KXNHLGOAL KXNHLPTS KXNHLAST";;
+                nfl) SERIES="$SERIES KXNFLANYTD";;
+                mlb) SERIES="$SERIES KXMLBHR KXMLBHIT KXMLBTB";;
+              esac; done
+              echo "live: $LIVE"
               python3 bots/live_price_log.py loop $D --minutes 30 --every 60 --series $SERIES || true
               (cd _data && git add public/data/current/live_prices && { git diff --cached --quiet || { git commit -qm "live prices $(date -u +%FT%H%MZ)"; for j in 1 2 3 4 5; do git pull -q --rebase origin bbe-history && git push -q origin HEAD:bbe-history && break; sleep $((j * 5)); done; }; })
             done

@@ -4,14 +4,19 @@ name: Live edge log (live moneylines, spreads - paper trading)
 # and logs every price that is at least 4 points off after fees. Nothing is bet. The morning report settles each alert against the final score and shows whether taking them would have paid.
 # Starts before the first tip / puck drop / kickoff so the pregame line of every game is cached before ESPN drops it. Own schedule; writes to `bbe-history` every 30 minutes.
 on:
+  # RUNS TO THE LAST FINAL WHISTLE (2026-11-05): same as live-prices.yml -- each half hour asks ESPN what is live or starts within 6 h
+  # (bots/slate_live.py), stops when nothing is left; 04:35 picks up the late West Coast games the 6-hour job limit cuts off.
   schedule:
     - cron: '30 22 * * *'
-    - cron: '0 16 * * 0'
-    - cron: '0 22 * * 0'
-    - cron: '30 23 * * 1'
-    - cron: '30 23 * * 4'
+    - cron: '30 17 * * 0'
+    - cron: '35 4 * * *'
     - cron: '40 12 * * *'
   workflow_dispatch:
+    inputs:
+      cron:
+        description: "the schedule slot this run stands for (the site's restarter sets it; empty = by the clock)"
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -39,11 +44,15 @@ jobs:
       - name: Poll through the games (evening) / settle and report (morning)
         run: |
           D=_data/public/data/current/live_edges
-          H=$(date -u +%H)
+          SLOT="${{ github.event.schedule || inputs.cron }}"   # which slot this run stands for (GitHub can start one hours late; the site's restarter passes it)
+          if [ -n "$SLOT" ]; then H=$(printf %02d "$(echo "$SLOT" | awk '{print $2}' | cut -d, -f1 | cut -d- -f1)"); else H=$(date -u +%H); fi
           if [ "$H" = "12" ]; then
             python3 bots/live_edge.py report $D || true
           else
-            for i in $(seq 1 11); do
+            START=$(date +%s)
+            while [ $(( $(date +%s) - START )) -lt 18000 ]; do      # 300 min: the last 30-min block ends inside the 355-min job
+              LIVE=$(python3 bots/slate_live.py --sports nba nhl nfl) || { echo "nothing live or about to start: done"; break; }
+              echo "live: $LIVE"
               python3 bots/live_edge.py loop $D --minutes 30 --every 45 || true
               (cd _data && git add public/data/current/live_edges && { git diff --cached --quiet || { git commit -qm "live edges $(date -u +%FT%H%MZ)"; for j in 1 2 3 4 5; do git pull -q --rebase origin bbe-history && git push -q origin HEAD:bbe-history && break; sleep $((j * 5)); done; }; })
             done
