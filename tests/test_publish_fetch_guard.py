@@ -56,4 +56,11 @@ with tempfile.TemporaryDirectory() as td:
     assert r.returncode != 0, "a failed fetch must stop the publish"
     assert "FETCHED" not in r.stdout, "the publish must not go on after a failed fetch"
     assert "::error::" in r.stderr, r.stderr
+
+    # 4) the checkout is wiped before the second fetch (2026-11-05: the publish loop turns the workspace into an orphan
+    # branch and deletes every file, .github/ included). The helper must still run: it was copied out at the start.
+    sh(["git", "remote", "set-url", "origin", str(origin)], work)
+    (lib / "harness.sh").write_text("set -euo pipefail\n" + block + '\nrm -f "$(dirname "${BASH_SOURCE[0]}")/fetch_data_branch.sh"\nfetch_data\necho FETCHED\n')
+    r = sh(["bash", str(lib / "harness.sh")], work, env2)
+    assert r.returncode == 0 and "FETCHED" in r.stdout, ("helper lost with the checkout", r.returncode, r.stdout, r.stderr)
 print("test_publish_fetch_guard: ok")

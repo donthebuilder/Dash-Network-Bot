@@ -522,7 +522,14 @@ NFL_GAME_CALLS_TOTALS_KEEP=5
 # ("the branch does not exist yet, nothing to lose") and this run's files replaced the whole published branch. The
 # helper tells the two apart (fetch_data_branch.sh: 0 fetched, 3 the branch really is absent, 1 the fetch failed after
 # 3 tries). On a failed read we stop: the run is red, nothing is published, and the next scheduled run publishes.
-DATA_FETCH="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/fetch_data_branch.sh"
+# COPIED OUT OF THE CHECKOUT (2026-11-05). The publish loop below turns the
+# workspace into an orphan branch and deletes every file in it (.github/
+# included) before its second fetch_data, so a helper read from the checkout
+# was gone by then: bash exited 127, the guard read that as a failed fetch,
+# and every publishing job went red without publishing (first seen on nfl.yml
+# 20:34 UTC, minutes after this guard merged). The copy lives outside the repo.
+DATA_FETCH="$(mktemp "${RUNNER_TEMP:-/tmp}/fetch_data_branch.XXXXXX")"
+cp "$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/fetch_data_branch.sh" "$DATA_FETCH"
 fetch_data() {
   local rc=0
   bash "$DATA_FETCH" || rc=$?
