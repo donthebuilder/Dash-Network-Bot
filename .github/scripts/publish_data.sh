@@ -1031,8 +1031,12 @@ while [ "$attempt" -le "$MAX_ATTEMPTS" ]; do
 
   # -f because .gitignore excludes public/data on main; here we want it.
   git add -A -f public/data
-  if git diff --staged --quiet; then
-    echo "Nothing to publish."
+  # NOTHING TO PUBLISH (2026-11-05, LEFTOVERS B7). On a fresh orphan the index is
+  # always "new" against no parent, so `git diff --staged --quiet` never held and
+  # every run force-pushed a new commit of the same files. Compare the staged
+  # tree with the branch's own tree instead.
+  if [ -n "$remote_before" ] && [ "$(git write-tree)" = "$(git rev-parse "$remote_before^{tree}")" ]; then
+    echo "Nothing to publish: the data branch already holds exactly these files."
     exit 0
   fi
   git commit -q -m "$LABEL $(date -u +'%Y-%m-%d %H:%M') UTC"
