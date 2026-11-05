@@ -1,0 +1,21 @@
+[
+ {
+  "sport": "nfl",
+  "game_id": "401873037",
+  "start_utc": "2026-11-06T01:15Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "BAL",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "JAX",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": "JAX -10",
+  "total": 39.5
+ }
+]
