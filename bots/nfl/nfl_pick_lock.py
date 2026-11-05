@@ -115,7 +115,7 @@ STUB_FIELDS = ("player_id", "name", "team", "opp", "position")
 # locked rung rather than let a later recompute silently update them --
 # they were computed FOR the occupant standing at that instant, the same
 # reasoning as pick_lock.py's own TICKET_FIELDS comment.
-RUNG_META_FIELDS = ("score", "grade", "low_sample", "questionable", "carryover")
+RUNG_META_FIELDS = ("score", "grade", "low_sample", "questionable", "carryover", "thin")
 
 
 def now_utc() -> dt.datetime:
