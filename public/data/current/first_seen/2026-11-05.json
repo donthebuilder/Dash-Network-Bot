@@ -220,6 +220,156 @@
    "value": "Juuse Saros",
    "first_seen_utc": "2026-11-05T06:58:13Z",
    "mins_before_start": 1172
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892648",
+   "start_utc": "2026-11-06T00:00Z",
+   "team": "MTL",
+   "what": "goalie",
+   "value": "Jakub Dobes",
+   "first_seen_utc": "2026-11-05T19:59:07Z",
+   "mins_before_start": 241
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892648",
+   "start_utc": "2026-11-06T00:00Z",
+   "team": "UTA",
+   "what": "goalie",
+   "value": "Sebastian Cossa",
+   "first_seen_utc": "2026-11-05T19:59:07Z",
+   "mins_before_start": 241
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892649",
+   "start_utc": "2026-11-06T00:00Z",
+   "team": "DET",
+   "what": "goalie",
+   "value": "Daniil Tarasov",
+   "first_seen_utc": "2026-11-05T19:59:07Z",
+   "mins_before_start": 241
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892651",
+   "start_utc": "2026-11-06T00:00Z",
+   "team": "STL",
+   "what": "goalie",
+   "value": "Jordan Binnington",
+   "first_seen_utc": "2026-11-05T19:59:07Z",
+   "mins_before_start": 241
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892652",
+   "start_utc": "2026-11-06T00:00Z",
+   "team": "NYI",
+   "what": "goalie",
+   "value": "Semyon Varlamov",
+   "first_seen_utc": "2026-11-05T19:59:07Z",
+   "mins_before_start": 241
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892653",
+   "start_utc": "2026-11-06T00:00Z",
+   "team": "NYR",
+   "what": "goalie",
+   "value": "Dylan Garand",
+   "first_seen_utc": "2026-11-05T19:59:07Z",
+   "mins_before_start": 241
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892653",
+   "start_utc": "2026-11-06T00:00Z",
+   "team": "PHI",
+   "what": "goalie",
+   "value": "Joseph Woll",
+   "first_seen_utc": "2026-11-05T19:59:07Z",
+   "mins_before_start": 241
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892655",
+   "start_utc": "2026-11-06T00:00Z",
+   "team": "CBJ",
+   "what": "goalie",
+   "value": "Cam Talbot",
+   "first_seen_utc": "2026-11-05T19:59:07Z",
+   "mins_before_start": 241
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892655",
+   "start_utc": "2026-11-06T00:00Z",
+   "team": "DAL",
+   "what": "goalie",
+   "value": "Casey DeSmith",
+   "first_seen_utc": "2026-11-05T19:59:07Z",
+   "mins_before_start": 241
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892657",
+   "start_utc": "2026-11-06T01:00Z",
+   "team": "EDM",
+   "what": "goalie",
+   "value": "Matt Tomkins",
+   "first_seen_utc": "2026-11-05T19:59:07Z",
+   "mins_before_start": 301
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892657",
+   "start_utc": "2026-11-06T01:00Z",
+   "team": "ANA",
+   "what": "goalie",
+   "value": "Laurent Brossoit",
+   "first_seen_utc": "2026-11-05T19:59:07Z",
+   "mins_before_start": 301
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909936",
+   "start_utc": "2026-11-06T02:00Z",
+   "team": "PHX",
+   "what": "starters",
+   "value": "Expected:Jalen Green|Dillon Brooks|Devin Booker|Miles Bridges|Khaman Maluach",
+   "first_seen_utc": "2026-11-05T19:59:07Z",
+   "mins_before_start": 361
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909936",
+   "start_utc": "2026-11-06T02:00Z",
+   "team": "ORL",
+   "what": "starters",
+   "value": "Expected:Anthony Black|Desmond Bane|Jase Richardson|Franz Wagner|Wendell Carter Jr.",
+   "first_seen_utc": "2026-11-05T19:59:07Z",
+   "mins_before_start": 361
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909937",
+   "start_utc": "2026-11-06T03:00Z",
+   "team": "GS",
+   "what": "starters",
+   "value": "Expected:Brandin Podziemski|Will Richard|Stephen Curry|Yaxel Lendeborg|Draymond Green",
+   "first_seen_utc": "2026-11-05T19:59:07Z",
+   "mins_before_start": 421
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909937",
+   "start_utc": "2026-11-06T03:00Z",
+   "team": "MIA",
+   "what": "starters",
+   "value": "Expected:Klay Thompson|Andrew Wiggins|Davion Mitchell|Giannis Antetokounmpo|Bam Adebayo",
+   "first_seen_utc": "2026-11-05T19:59:07Z",
+   "mins_before_start": 421
   }
  ]
 }
