@@ -178,7 +178,9 @@ def main() -> int:
             skipped += 1
             print(f"  skip {day} {team} {r['scorer_name']}: no pregame run before {k.isoformat()}")
             continue
-        run = cands[-1]
+        # the LAST run before kickoff by its own generated_at (2026-11-05, LEFTOVERS B15): the file name carries only the time of
+        # day (wkNN.HHMMSSZ), so the last NAME was a late-in-the-day run from an earlier day, not the lock run
+        run = max(cands, key=lambda n: meta[n][1])
         if run not in cache:
             td = [x for x in read_log(run) if x.get("market") == "TD" and isinstance(x.get("score"), (int, float))]
             td.sort(key=lambda x: (-x["score"], x.get("player") or ""))
