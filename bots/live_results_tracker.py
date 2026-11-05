@@ -4584,12 +4584,15 @@ def main() -> int:
 
     txt_path.write_text(summary + "\n", encoding="utf-8")
     json_path.write_text(json.dumps(payload, indent=2), encoding="utf-8")
-    save_text_as_pdf(summary, pdf_path, f"{'Live ' if live_mode else ''}Results Tracker - {date_str}")
+    # the PDF is never published (publish_data.sh ships json/txt only): built only when asked (2026-11-05, LEFTOVERS B9)
+    if os.environ.get("RESULTS_PDF", "").strip() == "1":
+        save_text_as_pdf(summary, pdf_path, f"{'Live ' if live_mode else ''}Results Tracker - {date_str}")
     sync_results_to_website_repo_v2(date_str, live_mode, json_path, txt_path, pdf_path)
 
     print(f"\nSaved: {txt_path}")
     print(f"Saved: {json_path}")
-    print(f"Saved: {pdf_path}")
+    if pdf_path.exists():
+        print(f"Saved: {pdf_path}")
     return 0
 
 

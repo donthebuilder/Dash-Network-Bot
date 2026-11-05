@@ -71,7 +71,9 @@ jobs:
           if [ "$H" = "12" ]; then
             python3 bots/live_price_log.py report $D || true
           else
-            SERIES="KXNBAPTS KXNBAREB KXNBAAST KXNBAPRA KXNHLGOAL KXNHLPTS KXNHLAST KXMLBHR KXMLBHIT KXMLBTB"
+            SERIES="KXNBAPTS KXNBAREB KXNBAAST KXNBAPRA KXNHLGOAL KXNHLPTS KXNHLAST"
+            # MLB series only on an MLB day (2026-11-05, LEFTOVERS B8; fails open: an unreadable schedule keeps them)
+            G=$(python3 bots/mlb_season_guard.py --back 0 --ahead 0 || true); case "$G" in *active=true*) SERIES="$SERIES KXMLBHR KXMLBHIT KXMLBTB" ;; esac
             if [ "$DOW" = "7" ] || [ "$DOW" = "1" ] || [ "$DOW" = "4" ]; then SERIES="$SERIES KXNFLANYTD"; fi
             # every evening run polls in 30-min chunks until 2:30 am ET (2026-11-05: the late 00:xx ET slot picks up
             # where the 18:xx run's 5.5 h cap ends, so West Coast games are covered; a queued run past 2:30 exits)
