@@ -3525,11 +3525,13 @@ def get_player_split_stats(client: MLBClient, db: CacheDB, player_id: int) -> Di
         "avg_vs_rhp": 0.250, "avg_vs_lhp": 0.250,
         "iso_vs_rhp": 0.150, "iso_vs_lhp": 0.150,
     }
+    got = False   # 2026-11-05 (LEFTOVERS B10): a failed read is not cached as league average for a week
     try:
         blob = client.split_stats(player_id)
         stats = blob.get("stats") or []
         first = stats[0] if stats else {}
         for split in first.get("splits") or []:
+            got = True
             code = ((split.get("split") or {}).get("code")) or ""
             stat = split.get("stat", {}) or {}
             avg = safe_float(stat.get("avg"), 0.250)
@@ -3542,7 +3544,8 @@ def get_player_split_stats(client: MLBClient, db: CacheDB, player_id: int) -> Di
                 out["iso_vs_lhp"] = max(0.0, slg - avg)
     except Exception:
         pass
-    db.set(key, out)
+    if got:
+        db.set(key, out)
     return out
 
 
@@ -3671,11 +3674,13 @@ def parse_pitcher_handed_splits(client: MLBClient, db: CacheDB, pitcher_id: int)
         "weak_side_score_rhb": 0.0,
         "weak_side_gap": 0.0,         # 0-1, how lopsided the split is
     }
+    got = False   # 2026-11-05 (LEFTOVERS B10): a failed read is not cached as league average for two days
     try:
         blob = client.pitcher_split_stats(pitcher_id)
         stats = blob.get("stats") or []
         first = stats[0] if stats else {}
         for split in first.get("splits") or []:
+            got = True
             code = ((split.get("split") or {}).get("code")) or ""
             stat = split.get("stat", {}) or {}
             hr = safe_float(stat.get("homeRuns"), 0.0)
@@ -3760,7 +3765,8 @@ def parse_pitcher_handed_splits(client: MLBClient, db: CacheDB, pitcher_id: int)
     except Exception:
         pass
 
-    db.set(key, out)
+    if got:
+        db.set(key, out)
     return out
 
 
