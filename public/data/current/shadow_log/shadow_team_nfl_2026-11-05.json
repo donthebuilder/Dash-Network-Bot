@@ -1,0 +1,1 @@
+{"date": "2026-11-05", "sport": "nfl", "games": {"JAX@BAL": {"espn_id": "401873037", "home": "BAL", "away": "JAX", "start": "2026-11-05 20:15", "status": "Scheduled", "model_spread_home": 3.3, "model_p_home": 0.3978, "book_spread_home": 10.0, "book_total": 39.5, "gap_pts": -6.7, "history_games": 58, "model_version": "nfl_team_v1"}}}
