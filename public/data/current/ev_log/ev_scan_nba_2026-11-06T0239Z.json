@@ -1,0 +1,975 @@
+{
+ "sport": "nba",
+ "fetched_utc": "2026-11-06T0239Z",
+ "date_et": "2026-11-05",
+ "props": 43,
+ "matched": 18,
+ "rows": [
+  {
+   "sport": "nba",
+   "player": "Stephen Curry",
+   "game": "MIA@GSW",
+   "starts_at": "2026-11-06T03:00:00.000Z",
+   "market": "Rebounds",
+   "line": "3.5",
+   "book": "espnbet",
+   "price": -120,
+   "ticker": "KXNBAREB-26NOV05MIAGSW-GSWSCURRY30-4",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "-122/+117",
+   "resting_usd": [
+    151,
+    36
+   ],
+   "top_ev_pct": -0.2,
+   "fair_pct": 54.44,
+   "fetched_utc": "2026-11-06T02:39:22.417571+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "-122/+117",
+     "ev": -0.002,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side +113",
+     "quote": "-122/+113",
+     "ev": -0.0099,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side +108",
+     "quote": "-122/+108",
+     "ev": -0.0202,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -127",
+     "quote": "-127/+117",
+     "ev": 0.0071,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -133",
+     "quote": "-133/+117",
+     "ev": 0.0176,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "player": "Deanthony Melton",
+   "game": "MIA@GSW",
+   "starts_at": "2026-11-06T03:00:00.000Z",
+   "market": "Rebounds",
+   "line": "3.5",
+   "book": "bovada",
+   "price": -110,
+   "ticker": "KXNBAREB-26NOV05MIAGSW-GSWDMELTON8-4",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "-108/+104",
+   "resting_usd": [
+    2281,
+    73
+   ],
+   "top_ev_pct": -1.8,
+   "fair_pct": 51.45,
+   "fetched_utc": "2026-11-06T02:39:22.417571+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "-108/+104",
+     "ev": -0.0177,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -100",
+     "quote": "-108/-100",
+     "ev": -0.0271,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -104",
+     "quote": "-108/-104",
+     "ev": -0.0365,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -113",
+     "quote": "-113/+104",
+     "ev": -0.007,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -117",
+     "quote": "-117/+104",
+     "ev": 0.0013,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "player": "Yaxel Lendeborg",
+   "game": "MIA@GSW",
+   "starts_at": "2026-11-06T03:00:00.000Z",
+   "market": "Assists",
+   "line": "3.5",
+   "book": "espnbet",
+   "price": -130,
+   "ticker": "KXNBAAST-26NOV05MIAGSW-GSWYLENDEBORG1-4",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "-127/+122",
+   "resting_usd": [
+    4003,
+    265
+   ],
+   "top_ev_pct": -1.9,
+   "fair_pct": 55.45,
+   "fetched_utc": "2026-11-06T02:39:22.417571+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "-127/+122",
+     "ev": -0.0189,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side +117",
+     "quote": "-127/+117",
+     "ev": -0.0281,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side +113",
+     "quote": "-127/+113",
+     "ev": -0.0357,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -133",
+     "quote": "-133/+122",
+     "ev": -0.0089,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -138",
+     "quote": "-138/+122",
+     "ev": -0.0008,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "player": "Georges Niang",
+   "game": "MIA@GSW",
+   "starts_at": "2026-11-06T03:00:00.000Z",
+   "market": "Rebounds",
+   "line": "3.5",
+   "book": "bovada",
+   "price": 145,
+   "ticker": "KXNBAREB-26NOV05MIAGSW-GSWGNIANGPF-4",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+150/-156",
+   "resting_usd": [
+    1988,
+    6
+   ],
+   "top_ev_pct": -3.2,
+   "fair_pct": 39.53,
+   "fetched_utc": "2026-11-06T02:39:22.417571+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+150/-156",
+     "ev": -0.0315,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -163",
+     "quote": "+150/-163",
+     "ev": -0.0443,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -170",
+     "quote": "+150/-170",
+     "ev": -0.0565,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +144",
+     "quote": "+144/-156",
+     "ev": -0.0195,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +138",
+     "quote": "+138/-156",
+     "ev": -0.0069,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "player": "Andrew Wiggins",
+   "game": "MIA@GSW",
+   "starts_at": "2026-11-06T03:00:00.000Z",
+   "market": "Rebounds",
+   "line": "3.5",
+   "book": "betmgm",
+   "price": -111,
+   "ticker": "KXNBAREB-26NOV05MIAGSW-MIAAWIGGINS22-4",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "-104/-100",
+   "resting_usd": [
+    294,
+    227
+   ],
+   "top_ev_pct": -4.0,
+   "fair_pct": 50.49,
+   "fetched_utc": "2026-11-06T02:39:22.417571+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "-104/-100",
+     "ev": -0.0402,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -104",
+     "quote": "-104/-104",
+     "ev": -0.0495,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -108",
+     "quote": "-104/-108",
+     "ev": -0.0585,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -108",
+     "quote": "-108/-100",
+     "ev": -0.0313,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -113",
+     "quote": "-113/-100",
+     "ev": -0.0205,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "player": "Draymond Green",
+   "game": "MIA@GSW",
+   "starts_at": "2026-11-06T03:00:00.000Z",
+   "market": "Rebounds",
+   "line": "5.5",
+   "book": "fanduel",
+   "price": 126,
+   "ticker": "KXNBAREB-26NOV05MIAGSW-GSWDGREEN23-6",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+133/-138",
+   "resting_usd": [
+    6087,
+    528
+   ],
+   "top_ev_pct": -4.0,
+   "fair_pct": 42.47,
+   "fetched_utc": "2026-11-06T02:39:22.417571+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+133/-138",
+     "ev": -0.0402,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -144",
+     "quote": "+133/-144",
+     "ev": -0.052,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -150",
+     "quote": "+133/-150",
+     "ev": -0.0632,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +127",
+     "quote": "+127/-138",
+     "ev": -0.0275,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +122",
+     "quote": "+122/-138",
+     "ev": -0.0163,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "player": "Bobby Portis",
+   "game": "MIA@GSW",
+   "starts_at": "2026-11-06T03:00:00.000Z",
+   "market": "Rebounds",
+   "line": "5.5",
+   "book": "fanduel",
+   "price": 106,
+   "ticker": "KXNBAREB-26NOV05MIAGSW-MIABPORTIS95-6",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+113/-117",
+   "resting_usd": [
+    5131,
+    82
+   ],
+   "top_ev_pct": -4.2,
+   "fair_pct": 46.52,
+   "fetched_utc": "2026-11-06T02:39:22.417571+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+113/-117",
+     "ev": -0.0418,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -122",
+     "quote": "+113/-122",
+     "ev": -0.0525,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -127",
+     "quote": "+113/-127",
+     "ev": -0.0627,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +108",
+     "quote": "+108/-117",
+     "ev": -0.0302,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +104",
+     "quote": "+104/-117",
+     "ev": -0.0205,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "player": "Yaxel Lendeborg",
+   "game": "MIA@GSW",
+   "starts_at": "2026-11-06T03:00:00.000Z",
+   "market": "Rebounds",
+   "line": "7.5",
+   "book": "fanduel",
+   "price": 110,
+   "ticker": "KXNBAREB-26NOV05MIAGSW-GSWYLENDEBORG1-8",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+117/-122",
+   "resting_usd": [
+    6085,
+    3
+   ],
+   "top_ev_pct": -4.3,
+   "fair_pct": 45.56,
+   "fetched_utc": "2026-11-06T02:39:22.417571+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+117/-122",
+     "ev": -0.0432,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -127",
+     "quote": "+117/-127",
+     "ev": -0.0536,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -133",
+     "quote": "+117/-133",
+     "ev": -0.0656,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +113",
+     "quote": "+113/-122",
+     "ev": -0.0341,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +108",
+     "quote": "+108/-122",
+     "ev": -0.0223,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "player": "Bam Adebayo",
+   "game": "MIA@GSW",
+   "starts_at": "2026-11-06T03:00:00.000Z",
+   "market": "Assists",
+   "line": "3.5",
+   "book": "bovada",
+   "price": 120,
+   "ticker": "KXNBAAST-26NOV05MIAGSW-MIABADEBAYO13-4",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+127/-133",
+   "resting_usd": [
+    1054,
+    43
+   ],
+   "top_ev_pct": -4.3,
+   "fair_pct": 43.48,
+   "fetched_utc": "2026-11-06T02:39:22.417571+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+127/-133",
+     "ev": -0.0433,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -138",
+     "quote": "+127/-138",
+     "ev": -0.0533,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -144",
+     "quote": "+127/-144",
+     "ev": -0.0647,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +122",
+     "quote": "+122/-133",
+     "ev": -0.0324,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +117",
+     "quote": "+117/-133",
+     "ev": -0.0211,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "player": "Pelle Larsson",
+   "game": "MIA@GSW",
+   "starts_at": "2026-11-06T03:00:00.000Z",
+   "market": "Assists",
+   "line": "3.5",
+   "book": "draftkings",
+   "price": -107,
+   "ticker": "KXNBAAST-26NOV05MIAGSW-MIAPLARSSON9-4",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+104/-108",
+   "resting_usd": [
+    1640,
+    16
+   ],
+   "top_ev_pct": -6.1,
+   "fair_pct": 48.55,
+   "fetched_utc": "2026-11-06T02:39:22.417571+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+104/-108",
+     "ev": -0.0608,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -113",
+     "quote": "+104/-113",
+     "ev": -0.0717,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -117",
+     "quote": "+104/-117",
+     "ev": -0.0801,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -100",
+     "quote": "-100/-108",
+     "ev": -0.0513,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -104",
+     "quote": "-104/-108",
+     "ev": -0.0418,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "player": "Andrew Wiggins",
+   "game": "MIA@GSW",
+   "starts_at": "2026-11-06T03:00:00.000Z",
+   "market": "Assists",
+   "line": "1.5",
+   "book": "draftkings",
+   "price": -140,
+   "ticker": "KXNBAAST-26NOV05MIAGSW-MIAAWIGGINS22-2",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "-122/+117",
+   "resting_usd": [
+    1190,
+    19
+   ],
+   "top_ev_pct": -6.7,
+   "fair_pct": 54.44,
+   "fetched_utc": "2026-11-06T02:39:22.417571+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "-122/+117",
+     "ev": -0.0668,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side +113",
+     "quote": "-122/+113",
+     "ev": -0.0742,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side +108",
+     "quote": "-122/+108",
+     "ev": -0.0839,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -127",
+     "quote": "-127/+117",
+     "ev": -0.0583,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "player": "Brandin Podziemski",
+   "game": "MIA@GSW",
+   "starts_at": "2026-11-06T03:00:00.000Z",
+   "market": "Rebounds",
+   "line": "5.5",
+   "book": "fanduel",
+   "price": 104,
+   "ticker": "KXNBAREB-26NOV05MIAGSW-GSWBPODZIEMSKI2-6",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+117/-122",
+   "resting_usd": [
+    30,
+    511
+   ],
+   "top_ev_pct": -7.1,
+   "fair_pct": 45.56,
+   "fetched_utc": "2026-11-06T02:39:22.417571+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+117/-122",
+     "ev": -0.0705,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -127",
+     "quote": "+117/-127",
+     "ev": -0.0806,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -133",
+     "quote": "+117/-133",
+     "ev": -0.0923,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +113",
+     "quote": "+113/-122",
+     "ev": -0.0617,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +108",
+     "quote": "+108/-122",
+     "ev": -0.0502,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "player": "Klay Thompson",
+   "game": "MIA@GSW",
+   "starts_at": "2026-11-06T03:00:00.000Z",
+   "market": "Assists",
+   "line": "1.5",
+   "book": "bovada",
+   "price": -114,
+   "ticker": "KXNBAAST-26NOV05MIAGSW-MIAKTHOMPSON11-2",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "-100/-104",
+   "resting_usd": [
+    376,
+    254
+   ],
+   "top_ev_pct": -7.1,
+   "fair_pct": 49.51,
+   "fetched_utc": "2026-11-06T02:39:22.417571+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "-100/-104",
+     "ev": -0.0706,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -108",
+     "quote": "-100/-108",
+     "ev": -0.0795,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -113",
+     "quote": "-100/-113",
+     "ev": -0.0901,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -104",
+     "quote": "-104/-104",
+     "ev": -0.0614,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -108",
+     "quote": "-108/-104",
+     "ev": -0.0525,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "player": "Pelle Larsson",
+   "game": "MIA@GSW",
+   "starts_at": "2026-11-06T03:00:00.000Z",
+   "market": "Rebounds",
+   "line": "3.5",
+   "book": "bovada",
+   "price": -105,
+   "ticker": "KXNBAREB-26NOV05MIAGSW-MIAPLARSSON9-4",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+108/-113",
+   "resting_usd": [
+    302,
+    58
+   ],
+   "top_ev_pct": -7.2,
+   "fair_pct": 47.51,
+   "fetched_utc": "2026-11-06T02:39:22.417571+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+108/-113",
+     "ev": -0.0724,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -117",
+     "quote": "+108/-117",
+     "ev": -0.0808,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -122",
+     "quote": "+108/-122",
+     "ev": -0.091,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +104",
+     "quote": "+104/-113",
+     "ev": -0.0632,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -100",
+     "quote": "-100/-113",
+     "ev": -0.0536,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "player": "Giannis Antetokounmpo",
+   "game": "MIA@GSW",
+   "starts_at": "2026-11-06T03:00:00.000Z",
+   "market": "Rebounds",
+   "line": "11.5",
+   "book": "caesars",
+   "price": 106,
+   "ticker": "KXNBAREB-26NOV05MIAGSW-MIAGANTETOKOUNMPO7-12",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+122/-127",
+   "resting_usd": [
+    3002,
+    80
+   ],
+   "top_ev_pct": -8.2,
+   "fair_pct": 44.55,
+   "fetched_utc": "2026-11-06T02:39:22.417571+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+122/-127",
+     "ev": -0.0823,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -133",
+     "quote": "+122/-133",
+     "ev": -0.094,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -138",
+     "quote": "+122/-138",
+     "ev": -0.1034,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +117",
+     "quote": "+117/-127",
+     "ev": -0.0716,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +113",
+     "quote": "+113/-127",
+     "ev": -0.0627,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "player": "Davion Mitchell",
+   "game": "MIA@GSW",
+   "starts_at": "2026-11-06T03:00:00.000Z",
+   "market": "Assists",
+   "line": "7.5",
+   "book": "bovada",
+   "price": 110,
+   "ticker": "KXNBAAST-26NOV05MIAGSW-MIADMITCHELL2-8",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+127/-133",
+   "resting_usd": [
+    524,
+    362
+   ],
+   "top_ev_pct": -8.7,
+   "fair_pct": 43.48,
+   "fetched_utc": "2026-11-06T02:39:22.417571+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+127/-133",
+     "ev": -0.0868,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -138",
+     "quote": "+127/-138",
+     "ev": -0.0963,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -144",
+     "quote": "+127/-144",
+     "ev": -0.1072,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +122",
+     "quote": "+122/-133",
+     "ev": -0.0764,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +117",
+     "quote": "+117/-133",
+     "ev": -0.0656,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "player": "Bam Adebayo",
+   "game": "MIA@GSW",
+   "starts_at": "2026-11-06T03:00:00.000Z",
+   "market": "Rebounds",
+   "line": "9.5",
+   "book": "draftkings",
+   "price": 113,
+   "ticker": "KXNBAREB-26NOV05MIAGSW-MIABADEBAYO13-10",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+133/-138",
+   "resting_usd": [
+    1368,
+    821
+   ],
+   "top_ev_pct": -9.5,
+   "fair_pct": 42.47,
+   "fetched_utc": "2026-11-06T02:39:22.417571+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+133/-138",
+     "ev": -0.0954,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -144",
+     "quote": "+133/-144",
+     "ev": -0.1065,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -150",
+     "quote": "+133/-150",
+     "ev": -0.117,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +127",
+     "quote": "+127/-138",
+     "ev": -0.0834,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +122",
+     "quote": "+122/-138",
+     "ev": -0.0729,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "player": "Bam Adebayo",
+   "game": "MIA@GSW",
+   "starts_at": "2026-11-06T03:00:00.000Z",
+   "market": "Points",
+   "line": "19.5",
+   "book": "draftkings",
+   "price": 117,
+   "ticker": "KXNBAPTS-26NOV05MIAGSW-MIABADEBAYO13-20",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+138/-144",
+   "resting_usd": [
+    98,
+    196
+   ],
+   "top_ev_pct": -9.9,
+   "fair_pct": 41.5,
+   "fetched_utc": "2026-11-06T02:39:22.417571+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+138/-144",
+     "ev": -0.0995,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -150",
+     "quote": "+138/-150",
+     "ev": -0.1102,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -156",
+     "quote": "+138/-156",
+     "ev": -0.1204,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +133",
+     "quote": "+133/-144",
+     "ev": -0.0897,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +127",
+     "quote": "+127/-144",
+     "ev": -0.0775,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  }
+ ]
+}
