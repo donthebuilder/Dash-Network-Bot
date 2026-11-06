@@ -19,7 +19,7 @@ COLS = ['game_id','play_id','season','week','season_type','posteam','defteam','h
         'receiver_player_name','rusher_player_id','rusher_player_name','passer_player_id','game_seconds_remaining','half_seconds_remaining','qtr',
         'field_goal_result','kick_distance','extra_point_result','punt_blocked','touchback','drive','fixed_drive_result','return_yards','safety',
         'kickoff_attempt','punt_attempt','field_goal_attempt','incomplete_pass','complete_pass','two_point_attempt','penalty','penalty_team',
-        'penalty_yards','first_down_penalty']
+        'penalty_yards','first_down_penalty','two_point_conv_result']
 D: dict[int, pd.DataFrame] = {}
 
 
@@ -83,6 +83,10 @@ def league(season=2026, before_week=99):
     fgb = fg.assign(b=(fg.kick_distance // 5 * 5).clip(15, 65)).groupby('b').field_goal_result.apply(lambda s: round(float((s == 'made').mean()), 3)).to_dict()
     xp = L[L.extra_point_result.notna()]
     xp_rate = round(float((xp.extra_point_result == 'good').mean()), 3)
+    # the two-point try (2026-11-06, the site's PREPLAY v2 goes for two at the standard margins late): the league's real rate
+    # over the same seasons, every regular-season try
+    tp = L[(L.two_point_attempt == 1) & L.two_point_conv_result.notna()]
+    two_rate = round(float((tp.two_point_conv_result == 'success').mean()), 3) if len(tp) >= 100 else None
     # where the next drive starts after a kickoff / a punt (the receiving club's yards to go), real samples
     # the next SCRIMMAGE snap's spot and club (skips timeouts, penalties on the kick, end of quarter rows)
     scr = L.play_type.isin(['pass','run'])
@@ -105,7 +109,7 @@ def league(season=2026, before_week=99):
     for (yb, tb), g in f4.groupby(['yb','tb']):
         c = g.ch.value_counts(); n = int(c.sum())
         fourth[f'{int(yb)}|{int(tb)}'] = {k: round(float(c.get(k, 0)) / n, 3) for k in ('go','fg','punt')}
-    return {'fg': {int(k): v for k, v in fgb.items()}, 'xp': xp_rate, 'kickoff': [int(v) for v in k26.n.tolist()], 'punt': punt, 'fourth': fourth}
+    return {'fg': {int(k): v for k, v in fgb.items()}, 'xp': xp_rate, **({'two': two_rate} if two_rate is not None else {}), 'kickoff': [int(v) for v in k26.n.tolist()], 'punt': punt, 'fourth': fourth}
 
 
 
