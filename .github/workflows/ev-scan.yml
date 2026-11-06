@@ -68,14 +68,22 @@ jobs:
       - name: What to do
         id: what
         run: |
-          DOW=$(date -u +%u); H=$(date -u +%H)
+          # BY THE CRON LINE THAT STARTED THE RUN, NOT THE CLOCK (2026-11-06): GitHub started the 22:30 scan and the 10:00 grade hours
+          # late, the hour matched neither, and every late run fell through to an NFL scan (16 SGO objects): 26 NFL scans and no NBA / NHL
+          # scan from 10-26 to 11-05, about a third of the month's odds objects. A run with no schedule (by hand) keeps its input.
+          SCHED="${{ github.event.schedule }}"
           IN="${{ github.event.inputs.sport }}"
           SPORTS=""; GRADE=0
           if [ -n "$IN" ]; then
             if [ "$IN" = "grade" ]; then GRADE=1; else SPORTS="$IN"; fi
-          elif [ "$H" = "10" ]; then GRADE=1
-          elif [ "$H" = "22" ]; then SPORTS="nba nhl mlb"
-          else SPORTS="nfl"; fi
+          else
+            case "$SCHED" in
+              "0 10 * * *") GRADE=1 ;;
+              "30 22 * * *") SPORTS="nba nhl mlb" ;;
+              "30 16 * * 0"|"30 23 * * 4"|"30 23 * * 1") SPORTS="nfl" ;;
+              *) echo "unknown schedule '$SCHED': nothing to do" ;;
+            esac
+          fi
           echo "sports=$SPORTS" >> "$GITHUB_OUTPUT"
           echo "grade=$GRADE"   >> "$GITHUB_OUTPUT"
 
