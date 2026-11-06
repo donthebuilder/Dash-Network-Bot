@@ -1,0 +1,65 @@
+{
+ "day": "2026-11-06",
+ "events": [
+  {
+   "sport": "nhl",
+   "game_id": "401892659",
+   "start_utc": "2026-11-07T00:00Z",
+   "team": "BUF",
+   "what": "goalie",
+   "value": "Ukko-Pekka Luukkonen",
+   "first_seen_utc": "2026-11-06T06:57:00Z",
+   "mins_before_start": 1023
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892659",
+   "start_utc": "2026-11-07T00:00Z",
+   "team": "CBJ",
+   "what": "goalie",
+   "value": "Cam Talbot",
+   "first_seen_utc": "2026-11-06T06:57:00Z",
+   "mins_before_start": 1023
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892660",
+   "start_utc": "2026-11-07T01:00Z",
+   "team": "MIN",
+   "what": "goalie",
+   "value": "Jesper Wallstedt",
+   "first_seen_utc": "2026-11-06T06:57:00Z",
+   "mins_before_start": 1083
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892660",
+   "start_utc": "2026-11-07T01:00Z",
+   "team": "SJ",
+   "what": "goalie",
+   "value": "Yaroslav Askarov",
+   "first_seen_utc": "2026-11-06T06:57:00Z",
+   "mins_before_start": 1083
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892661",
+   "start_utc": "2026-11-07T01:00Z",
+   "team": "CGY",
+   "what": "goalie",
+   "value": "Dustin Wolf",
+   "first_seen_utc": "2026-11-06T06:57:00Z",
+   "mins_before_start": 1083
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892661",
+   "start_utc": "2026-11-07T01:00Z",
+   "team": "ANA",
+   "what": "goalie",
+   "value": "Lukas Dostal",
+   "first_seen_utc": "2026-11-06T06:57:00Z",
+   "mins_before_start": 1083
+  }
+ ]
+}
