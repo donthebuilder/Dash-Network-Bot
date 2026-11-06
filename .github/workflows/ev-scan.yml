@@ -97,7 +97,8 @@ jobs:
         run: |
           for S in ${{ steps.what.outputs.sports }}; do
             if [ "$S" = "mlb" ] && [ "${{ steps.mlb.outputs.active }}" != "true" ]; then echo "mlb: off season, skipped"; continue; fi
-            case "$S" in nfl) LIM=16; HRS=6;; *) LIM=12; HRS=8;; esac
+            # NBA / NHL 12 -> 6 games a night (Donovan, 2026-11-06: keeps the SGO cycle under the 2,200 soft cap; ~260 objects a cycle)
+            case "$S" in nfl) LIM=16; HRS=6;; *) LIM=6; HRS=8;; esac
             python3 bots/ev_log.py snapshot "$S" _data/public/data/current/ev_log --limit $LIM --hours $HRS || echo "$S scan failed (kept going)"
             sleep 8
           done
