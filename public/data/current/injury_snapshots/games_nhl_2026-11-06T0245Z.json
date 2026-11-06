@@ -1,0 +1,59 @@
+[
+ {
+  "sport": "nhl",
+  "game_id": "401892659",
+  "start_utc": "2026-11-07T00:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "BUF",
+    "probable_goalie": "Ukko-Pekka Luukkonen"
+   },
+   "away": {
+    "team": "CBJ",
+    "probable_goalie": "Cam Talbot"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "BUF -175",
+  "total": 6.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892660",
+  "start_utc": "2026-11-07T01:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "MIN",
+    "probable_goalie": "Jesper Wallstedt"
+   },
+   "away": {
+    "team": "SJ",
+    "probable_goalie": "Yaroslav Askarov"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "MIN -258",
+  "total": 6.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892661",
+  "start_utc": "2026-11-07T01:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "CGY",
+    "probable_goalie": "Dustin Wolf"
+   },
+   "away": {
+    "team": "ANA",
+    "probable_goalie": "Ville Husso"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "CGY -122",
+  "total": 6.5
+ }
+]
