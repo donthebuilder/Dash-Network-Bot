@@ -13,6 +13,7 @@ THE RULE (.claude-notes/BATCH-GAME-CALLS-PLAN.md on the site side):
          RB/WR/TE (the TD market's own `positions`), not on a bye, a finite TD
          score. A side whose best misses the floor gets a no_call row naming
          him and his rank. TOP is never floored.
+  WR     (v2) a WR outside the slate's top WR_RANK_MAX is passed over for his team's next eligible man.
   TIES   TD score, then xTD per game (stats.xTD), then each TD component in the
          market's weight order, then player_id -- deterministic, and logged on
          the call (tie_break) whenever a tie was actually broken.
@@ -40,7 +41,11 @@ from pathlib import Path
 
 MARKET = "TD"
 BOARD_SHARE = 1 / 3                 # lib/callStatus.js TD_BOARD_SHARE
-RULE = "game-calls-v1"              # the selection rule's version (not a model)
+RULE = "game-calls-v2"              # the selection rule's version (not a model); v2 2026-11-06: WR_RANK_MAX
+# v2 (Donovan 2026-11-06, "make them the best hit rates" + WR coverage): a WR is a team's call only inside the slate's top
+# WR_RANK_MAX of the TD board; outside it the team's next best RB / TE (or a WR inside it) is the call. Weeks 1-8 2026
+# (nfl_td_log, 242 team picks): the 26 picks it changes went 6/26 (v1) -> 8/26 (v2); WRs inside the top 25 still called (17, 47%).
+WR_RANK_MAX = 25
 DEFAULT_POSITIONS = ["RB", "WR", "TE"]
 PROBABILITY_SOURCE = "Poisson on xTD per game; not a calibrated model probability"
 PROBABILITY_NOTE = ("td_game_probability is logged only -- not shown on any page "
@@ -170,7 +175,8 @@ def select_game(game: dict, board: list[dict], legs: list[str]) -> dict:
     rank_of = {id(p): i + 1 for i, p in enumerate(board)}
     sides = []
     for team in (game.get("away"), game.get("home")):
-        mine = [p for p in board if p.get("team") == team]
+        mine = [p for p in board if p.get("team") == team
+                and not (p.get("position") == "WR" and rank_of[id(p)] > WR_RANK_MAX)]
         sides.append((team, mine[0] if mine else None, mine[1] if len(mine) > 1 else None))
     calls, no_call = [], []
     present = [s for s in sides if s[1] is not None]

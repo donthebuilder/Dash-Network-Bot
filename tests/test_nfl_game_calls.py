@@ -66,6 +66,24 @@ def test_top_and_second_and_floor():
     assert g["calls"][0]["probability_source"] == gc.PROBABILITY_SOURCE
 
 
+def test_v2_wr_outside_top25_passed_over_for_team_next_best():
+    """v2 (2026-11-06): a WR ranked past WR_RANK_MAX on the slate is not his team's call; the team's next eligible
+    man is. A WR inside the top WR_RANK_MAX is still called. TEST DATA, MADE UP."""
+    ko = NOW + dt.timedelta(hours=3)
+    # 30 fillers outrank AAA's men, so A_WR sits at #31 (> 25); A_RB at #32. BBB's WR ranks #1.
+    ps = [player("B_WR", "BBB", "AAA", 99, pos="WR"), *[player(f"X{i}", "XXX", "YYY", 90 - i * 0.1) for i in range(30)],
+          player("A_WR", "AAA", "BBB", 50, pos="WR"), player("A_RB", "AAA", "BBB", 49, pos="RB"), *filler(60)]
+    doc = gc.build_calls(payload(ps, [game("g1", "AAA", "BBB", ko)]))
+    g = by_gid(doc)["g1"]
+    assert gc.RULE == "game-calls-v2"
+    top = g["calls"][0]
+    assert (top["role"], top["player_id"], top["position"]) == ("TOP", "B_WR", "WR"), "a WR inside the top 25 is still called"
+    called = {c["player_id"] for c in g["calls"]} | {n.get("best_player_id") for n in g["no_call"]}
+    assert "A_WR" not in called, "the #31 WR is passed over"
+    assert "A_RB" in called, "his team's next eligible man is considered instead"
+    assert gc.WR_RANK_MAX == 25
+
+
 def test_no_call_side_below_floor_and_top_never_floored():
     ko = NOW + dt.timedelta(hours=3)
     ps = [player("A1", "AAA", "BBB", 50), player("B1", "BBB", "AAA", 40),
