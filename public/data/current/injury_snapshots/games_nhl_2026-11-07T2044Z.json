@@ -1,0 +1,230 @@
+[
+ {
+  "sport": "nhl",
+  "game_id": "401892662",
+  "start_utc": "2026-11-07T17:30Z",
+  "status": "Final",
+  "sides": {
+   "home": {
+    "team": "WSH",
+    "probable_goalie": "Logan Thompson"
+   },
+   "away": {
+    "team": "FLA",
+    "probable_goalie": "Akira Schmid"
+   }
+  },
+  "lineup_posted": false,
+  "spread": null,
+  "total": null
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892663",
+  "start_utc": "2026-11-07T18:00Z",
+  "status": "Final",
+  "sides": {
+   "home": {
+    "team": "NSH",
+    "probable_goalie": "Juuse Saros"
+   },
+   "away": {
+    "team": "STL",
+    "probable_goalie": "Joel Hofer"
+   }
+  },
+  "lineup_posted": false,
+  "spread": null,
+  "total": null
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892664",
+  "start_utc": "2026-11-07T22:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "SEA",
+    "probable_goalie": "Philipp Grubauer"
+   },
+   "away": {
+    "team": "NYR",
+    "probable_goalie": "Joonas Korpisalo"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "NYR -135",
+  "total": 6.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892665",
+  "start_utc": "2026-11-08T00:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "TOR",
+    "probable_goalie": "Sergei Bobrovsky"
+   },
+   "away": {
+    "team": "MTL",
+    "probable_goalie": "Jacob Fowler"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "MTL -122",
+  "total": 6.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892666",
+  "start_utc": "2026-11-08T00:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "OTT",
+    "probable_goalie": "Samuel Ersson"
+   },
+   "away": {
+    "team": "UTA",
+    "probable_goalie": "Karel Vejmelka"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "UTAH -120",
+  "total": 6.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892667",
+  "start_utc": "2026-11-08T00:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "NYI",
+    "probable_goalie": "Ilya Sorokin"
+   },
+   "away": {
+    "team": "NJ",
+    "probable_goalie": "Jake Allen"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "NJ -148",
+  "total": 5.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892668",
+  "start_utc": "2026-11-08T01:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "CAR",
+    "probable_goalie": "Pyotr Kochetkov"
+   },
+   "away": {
+    "team": "CHI",
+    "probable_goalie": "Spencer Knight"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "CAR -440",
+  "total": 6.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892669",
+  "start_utc": "2026-11-08T01:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "DAL",
+    "probable_goalie": "Jake Oettinger"
+   },
+   "away": {
+    "team": "SJ",
+    "probable_goalie": "Alex Nedeljkovic"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "DAL -290",
+  "total": 6.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892670",
+  "start_utc": "2026-11-08T01:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "MIN",
+    "probable_goalie": "Calvin Pickard"
+   },
+   "away": {
+    "team": "TB",
+    "probable_goalie": "Dennis Hildeby"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "TB -135",
+  "total": 6.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892671",
+  "start_utc": "2026-11-08T02:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "COL",
+    "probable_goalie": "Mackenzie Blackwood"
+   },
+   "away": {
+    "team": "DET",
+    "probable_goalie": "John Gibson"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "COL -225",
+  "total": 6.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892672",
+  "start_utc": "2026-11-08T02:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "LA",
+    "probable_goalie": "Darcy Kuemper"
+   },
+   "away": {
+    "team": "PIT",
+    "probable_goalie": "Sergei Murashov"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "LA -122",
+  "total": 6.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892673",
+  "start_utc": "2026-11-08T03:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "EDM",
+    "probable_goalie": "Devon Levi"
+   },
+   "away": {
+    "team": "VAN",
+    "probable_goalie": "Leevi Merilainen"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "EDM -375",
+  "total": 6.5
+ }
+]
