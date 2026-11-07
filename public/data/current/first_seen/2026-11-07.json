@@ -240,6 +240,176 @@
    "value": "Leevi Merilainen",
    "first_seen_utc": "2026-11-07T06:08:43Z",
    "mins_before_start": 1251
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892662",
+   "start_utc": "2026-11-07T17:30Z",
+   "team": "FLA",
+   "what": "goalie",
+   "value": "Akira Schmid",
+   "first_seen_utc": "2026-11-07T17:44:53Z",
+   "mins_before_start": -15
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892667",
+   "start_utc": "2026-11-08T00:00Z",
+   "team": "NJ",
+   "what": "goalie",
+   "value": "Jake Allen",
+   "first_seen_utc": "2026-11-07T17:44:53Z",
+   "mins_before_start": 375
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892670",
+   "start_utc": "2026-11-08T01:00Z",
+   "team": "TB",
+   "what": "goalie",
+   "value": "Dennis Hildeby",
+   "first_seen_utc": "2026-11-07T17:44:53Z",
+   "mins_before_start": 435
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909938",
+   "start_utc": "2026-11-07T22:00Z",
+   "team": "IND",
+   "what": "starters",
+   "value": "Expected:Kelly Oubre Jr.|Aaron Nesmith|Andrew Nembhard|Pascal Siakam|Ivica Zubac",
+   "first_seen_utc": "2026-11-07T17:44:53Z",
+   "mins_before_start": 255
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909938",
+   "start_utc": "2026-11-07T22:00Z",
+   "team": "DEN",
+   "what": "starters",
+   "value": "Expected:Christian Braun|Cameron Johnson|Jamal Murray|Aaron Gordon|Nikola Joki\u0107",
+   "first_seen_utc": "2026-11-07T17:44:53Z",
+   "mins_before_start": 255
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909939",
+   "start_utc": "2026-11-08T00:30Z",
+   "team": "ATL",
+   "what": "starters",
+   "value": "Expected:Nickeil Alexander-Walker|Dyson Daniels|Kingston Flemings|Luguentz Dort|Onyeka Okongwu",
+   "first_seen_utc": "2026-11-07T17:44:53Z",
+   "mins_before_start": 405
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909939",
+   "start_utc": "2026-11-08T00:30Z",
+   "team": "BKN",
+   "what": "starters",
+   "value": "Expected:Michael Porter Jr.|Chaney Johnson|Nolan Traore|Julius Randle|Day'Ron Sharpe",
+   "first_seen_utc": "2026-11-07T17:44:53Z",
+   "mins_before_start": 405
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909940",
+   "start_utc": "2026-11-08T01:00Z",
+   "team": "CLE",
+   "what": "starters",
+   "value": "Expected:Donovan Mitchell|Peyton Watson|James Harden|Evan Mobley|Jarrett Allen",
+   "first_seen_utc": "2026-11-07T17:44:53Z",
+   "mins_before_start": 435
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909940",
+   "start_utc": "2026-11-08T01:00Z",
+   "team": "NY",
+   "what": "starters",
+   "value": "Expected:Mikal Bridges|Landry Shamet|Jalen Brunson|OG Anunoby|Karl-Anthony Towns",
+   "first_seen_utc": "2026-11-07T17:44:53Z",
+   "mins_before_start": 435
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909941",
+   "start_utc": "2026-11-08T01:00Z",
+   "team": "OKC",
+   "what": "starters",
+   "value": "Expected:Ajay Mitchell|Alex Caruso|Shai Gilgeous-Alexander|Aday Mara|Isaiah Hartenstein",
+   "first_seen_utc": "2026-11-07T17:44:53Z",
+   "mins_before_start": 435
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909941",
+   "start_utc": "2026-11-08T01:00Z",
+   "team": "WSH",
+   "what": "starters",
+   "value": "Expected:Kyshawn George|Bilal Coulibaly|Trae Young|AJ Dybantsa|Alex Sarr",
+   "first_seen_utc": "2026-11-07T17:44:53Z",
+   "mins_before_start": 435
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909942",
+   "start_utc": "2026-11-08T01:30Z",
+   "team": "GS",
+   "what": "starters",
+   "value": "Expected:Brandin Podziemski|Yaxel Lendeborg|Stephen Curry|Gui Santos|Draymond Green",
+   "first_seen_utc": "2026-11-07T17:44:53Z",
+   "mins_before_start": 465
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909942",
+   "start_utc": "2026-11-08T01:30Z",
+   "team": "ORL",
+   "what": "starters",
+   "value": "Expected:Anthony Black|Desmond Bane|Jase Richardson|Franz Wagner|Wendell Carter Jr.",
+   "first_seen_utc": "2026-11-07T17:44:53Z",
+   "mins_before_start": 465
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909943",
+   "start_utc": "2026-11-08T02:00Z",
+   "team": "PHX",
+   "what": "starters",
+   "value": "Expected:Jalen Green|Dillon Brooks|Devin Booker|Miles Bridges|Khaman Maluach",
+   "first_seen_utc": "2026-11-07T17:44:53Z",
+   "mins_before_start": 495
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909943",
+   "start_utc": "2026-11-08T02:00Z",
+   "team": "HOU",
+   "what": "starters",
+   "value": "Expected:Amen Thompson|Kevin Durant|Fred VanVleet|Jabari Smith Jr.|Alperen Sengun",
+   "first_seen_utc": "2026-11-07T17:44:53Z",
+   "mins_before_start": 495
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909944",
+   "start_utc": "2026-11-08T03:00Z",
+   "team": "POR",
+   "what": "starters",
+   "value": "Expected:Scoot Henderson|Toumani Camara|Damian Lillard|Deni Avdija|Donovan Clingan",
+   "first_seen_utc": "2026-11-07T17:44:53Z",
+   "mins_before_start": 555
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909944",
+   "start_utc": "2026-11-08T03:00Z",
+   "team": "SA",
+   "what": "starters",
+   "value": "Expected:Stephon Castle|Dylan Harper|De'Aaron Fox|Devin Vassell|Victor Wembanyama",
+   "first_seen_utc": "2026-11-07T17:44:53Z",
+   "mins_before_start": 555
   }
  ]
 }
