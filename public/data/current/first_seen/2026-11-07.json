@@ -410,6 +410,146 @@
    "value": "Expected:Stephon Castle|Dylan Harper|De'Aaron Fox|Devin Vassell|Victor Wembanyama",
    "first_seen_utc": "2026-11-07T17:44:53Z",
    "mins_before_start": 555
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892664",
+   "start_utc": "2026-11-07T22:00Z",
+   "team": "SEA",
+   "what": "goalie",
+   "value": "Joey Daccord",
+   "first_seen_utc": "2026-11-07T21:52:28Z",
+   "mins_before_start": 8
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892664",
+   "start_utc": "2026-11-07T22:00Z",
+   "team": "NYR",
+   "what": "goalie",
+   "value": "Joonas Korpisalo",
+   "first_seen_utc": "2026-11-07T21:52:28Z",
+   "mins_before_start": 8
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892671",
+   "start_utc": "2026-11-08T02:00Z",
+   "team": "DET",
+   "what": "goalie",
+   "value": "Daniil Tarasov",
+   "first_seen_utc": "2026-11-07T21:52:28Z",
+   "mins_before_start": 248
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892672",
+   "start_utc": "2026-11-08T02:00Z",
+   "team": "LA",
+   "what": "goalie",
+   "value": "Darcy Kuemper",
+   "first_seen_utc": "2026-11-07T21:52:28Z",
+   "mins_before_start": 248
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892672",
+   "start_utc": "2026-11-08T02:00Z",
+   "team": "PIT",
+   "what": "goalie",
+   "value": "Sergei Murashov",
+   "first_seen_utc": "2026-11-07T21:52:28Z",
+   "mins_before_start": 248
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892673",
+   "start_utc": "2026-11-08T03:00Z",
+   "team": "EDM",
+   "what": "goalie",
+   "value": "Devon Levi",
+   "first_seen_utc": "2026-11-07T21:52:28Z",
+   "mins_before_start": 308
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909938",
+   "start_utc": "2026-11-07T22:00Z",
+   "team": "IND",
+   "what": "starters",
+   "value": "Confirmed:Andrew Nembhard|Aaron Nesmith|Braden Smith|Pascal Siakam|Ivica Zubac",
+   "first_seen_utc": "2026-11-07T21:52:28Z",
+   "mins_before_start": 8
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909938",
+   "start_utc": "2026-11-07T22:00Z",
+   "team": "DEN",
+   "what": "starters",
+   "value": "Confirmed:Jamal Murray|Cameron Johnson|Christian Braun|Aaron Gordon|Nikola Joki\u0107",
+   "first_seen_utc": "2026-11-07T21:52:28Z",
+   "mins_before_start": 8
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909939",
+   "start_utc": "2026-11-08T00:30Z",
+   "team": "ATL",
+   "what": "starters",
+   "value": "Expected:Nickeil Alexander-Walker|Dyson Daniels|Kingston Flemings|Jalen Johnson|Onyeka Okongwu",
+   "first_seen_utc": "2026-11-07T21:52:28Z",
+   "mins_before_start": 158
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909940",
+   "start_utc": "2026-11-08T01:00Z",
+   "team": "CLE",
+   "what": "starters",
+   "value": "Expected:Donovan Mitchell|Meleek Thomas|James Harden|Peyton Watson|Evan Mobley",
+   "first_seen_utc": "2026-11-07T21:52:28Z",
+   "mins_before_start": 188
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909941",
+   "start_utc": "2026-11-08T01:00Z",
+   "team": "OKC",
+   "what": "starters",
+   "value": "Expected:Ajay Mitchell|Alex Caruso|Shai Gilgeous-Alexander|Kenrich Williams|Isaiah Hartenstein",
+   "first_seen_utc": "2026-11-07T21:52:28Z",
+   "mins_before_start": 188
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909941",
+   "start_utc": "2026-11-08T01:00Z",
+   "team": "WSH",
+   "what": "starters",
+   "value": "Expected:Kyshawn George|AJ Dybantsa|Trae Young|Anthony Davis|Alex Sarr",
+   "first_seen_utc": "2026-11-07T21:52:28Z",
+   "mins_before_start": 188
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909942",
+   "start_utc": "2026-11-08T01:30Z",
+   "team": "ORL",
+   "what": "starters",
+   "value": "Expected:Anthony Black|Tristan da Silva|Jase Richardson|Franz Wagner|Wendell Carter Jr.",
+   "first_seen_utc": "2026-11-07T21:52:28Z",
+   "mins_before_start": 218
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909943",
+   "start_utc": "2026-11-08T02:00Z",
+   "team": "PHX",
+   "what": "starters",
+   "value": "Expected:Jalen Green|Dillon Brooks|Devin Booker|Miles Bridges|Oso Ighodaro",
+   "first_seen_utc": "2026-11-07T21:52:28Z",
+   "mins_before_start": 248
   }
  ]
 }
