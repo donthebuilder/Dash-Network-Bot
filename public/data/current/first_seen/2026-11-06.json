@@ -250,6 +250,76 @@
    "value": "Expected:Stephon Castle|Dylan Harper|De'Aaron Fox|Devin Vassell|Victor Wembanyama",
    "first_seen_utc": "2026-11-06T19:25:49Z",
    "mins_before_start": 454
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909287",
+   "start_utc": "2026-11-07T00:00Z",
+   "team": "ATL",
+   "what": "starters",
+   "value": "Confirmed:Nickeil Alexander-Walker|Dyson Daniels|Kingston Flemings|Luguentz Dort|Onyeka Okongwu",
+   "first_seen_utc": "2026-11-07T00:07:21Z",
+   "mins_before_start": -7
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909287",
+   "start_utc": "2026-11-07T00:00Z",
+   "team": "WSH",
+   "what": "starters",
+   "value": "Confirmed:AJ Dybantsa|Kyshawn George|Trae Young|Alex Sarr|Deandre Ayton",
+   "first_seen_utc": "2026-11-07T00:07:21Z",
+   "mins_before_start": -7
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909288",
+   "start_utc": "2026-11-07T00:00Z",
+   "team": "CHA",
+   "what": "starters",
+   "value": "Confirmed:Brandon Miller|Grayson Allen|Coby White|Naz Reid|Ryan Kalkbrenner",
+   "first_seen_utc": "2026-11-07T00:07:21Z",
+   "mins_before_start": -7
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909288",
+   "start_utc": "2026-11-07T00:00Z",
+   "team": "BOS",
+   "what": "starters",
+   "value": "Confirmed:Jordan Walsh|Paul George|Derrick White|Jayson Tatum|Neemias Queta",
+   "first_seen_utc": "2026-11-07T00:07:21Z",
+   "mins_before_start": -7
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909289",
+   "start_utc": "2026-11-07T00:30Z",
+   "team": "CLE",
+   "what": "starters",
+   "value": "Confirmed:Donovan Mitchell|Peyton Watson|James Harden|Sam Merrill|Evan Mobley",
+   "first_seen_utc": "2026-11-07T00:07:21Z",
+   "mins_before_start": 23
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909289",
+   "start_utc": "2026-11-07T00:30Z",
+   "team": "PHI",
+   "what": "starters",
+   "value": "Confirmed:VJ Edgecombe|Jaylen Brown|Tyrese Maxey|LeBron James|Joel Embiid",
+   "first_seen_utc": "2026-11-07T00:07:21Z",
+   "mins_before_start": 23
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909292",
+   "start_utc": "2026-11-07T01:00Z",
+   "team": "TOR",
+   "what": "starters",
+   "value": "Expected:RJ Barrett|Ja'Kobe Walter|Jamal Shead|Collin Murray-Boyles|Jakob Poeltl",
+   "first_seen_utc": "2026-11-07T00:07:21Z",
+   "mins_before_start": 53
   }
  ]
 }
