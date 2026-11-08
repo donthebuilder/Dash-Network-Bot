@@ -1,0 +1,1737 @@
+{
+ "sport": "nba",
+ "fetched_utc": "2026-11-08T0139Z",
+ "date_et": "2026-11-07",
+ "props": 94,
+ "matched": 33,
+ "rows": [
+  {
+   "sport": "nba",
+   "player": "Jabari Smith",
+   "game": "HOU@PHX",
+   "starts_at": "2026-11-08T02:00:00.000Z",
+   "market": "Points",
+   "line": "14.5",
+   "book": "draftkings",
+   "price": 113,
+   "ticker": "KXNBAPTS-26NOV07HOUPHX-HOUJSMITH10-15",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+108/-113",
+   "resting_usd": [
+    3962,
+    102
+   ],
+   "top_ev_pct": 1.2,
+   "fair_pct": 47.51,
+   "fetched_utc": "2026-11-08T01:39:32.012149+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+108/-113",
+     "ev": 0.012,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -117",
+     "quote": "+108/-117",
+     "ev": 0.0028,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -122",
+     "quote": "+108/-122",
+     "ev": -0.0083,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +104",
+     "quote": "+104/-113",
+     "ev": 0.022,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -100",
+     "quote": "-100/-113",
+     "ev": 0.0325,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "player": "Alperen Sengun",
+   "game": "HOU@PHX",
+   "starts_at": "2026-11-08T02:00:00.000Z",
+   "market": "Rebounds",
+   "line": "9.5",
+   "book": "betmgm",
+   "price": 105,
+   "ticker": "KXNBAREB-26NOV07HOUPHX-HOUASENGUN28-10",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "-104/-113",
+   "resting_usd": [
+    1418,
+    538
+   ],
+   "top_ev_pct": 0.4,
+   "fair_pct": 48.96,
+   "fetched_utc": "2026-11-08T01:39:32.012149+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "-104/-113",
+     "ev": 0.0037,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -117",
+     "quote": "-104/-117",
+     "ev": -0.0052,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -122",
+     "quote": "-104/-122",
+     "ev": -0.0159,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -108",
+     "quote": "-108/-113",
+     "ev": 0.0134,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -113",
+     "quote": "-113/-113",
+     "ev": 0.025,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "player": "Fred Vanvleet",
+   "game": "HOU@PHX",
+   "starts_at": "2026-11-08T02:00:00.000Z",
+   "market": "Rebounds",
+   "line": "3.5",
+   "book": "draftkings",
+   "price": 141,
+   "ticker": "KXNBAREB-26NOV07HOUPHX-HOUFVANVLEET5-4",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+138/-150",
+   "resting_usd": [
+    1148,
+    241
+   ],
+   "top_ev_pct": -1.2,
+   "fair_pct": 41.01,
+   "fetched_utc": "2026-11-08T01:39:32.012149+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+138/-150",
+     "ev": -0.0118,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -156",
+     "quote": "+138/-156",
+     "ev": -0.0232,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -163",
+     "quote": "+138/-163",
+     "ev": -0.0358,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +133",
+     "quote": "+133/-150",
+     "ev": -0.001,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +127",
+     "quote": "+127/-150",
+     "ev": 0.0126,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "player": "Toumani Camara",
+   "game": "SAS@POR",
+   "starts_at": "2026-11-08T03:00:00.000Z",
+   "market": "Assists",
+   "line": "1.5",
+   "book": "fanduel",
+   "price": 112,
+   "ticker": "KXNBAAST-26NOV07SASPOR-PORTCAMARA33-2",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+113/-117",
+   "resting_usd": [
+    5608,
+    5
+   ],
+   "top_ev_pct": -1.4,
+   "fair_pct": 46.52,
+   "fetched_utc": "2026-11-08T01:39:32.012149+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+113/-117",
+     "ev": -0.0139,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -122",
+     "quote": "+113/-122",
+     "ev": -0.0249,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -127",
+     "quote": "+113/-127",
+     "ev": -0.0355,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +108",
+     "quote": "+108/-117",
+     "ev": -0.0019,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +104",
+     "quote": "+104/-117",
+     "ev": 0.0081,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "player": "Victor Wembanyama",
+   "game": "SAS@POR",
+   "starts_at": "2026-11-08T03:00:00.000Z",
+   "market": "Rebounds",
+   "line": "11.5",
+   "book": "fanduel",
+   "price": 102,
+   "ticker": "KXNBAREB-26NOV07SASPOR-SASVWEMBANYAMA1-12",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+104/-108",
+   "resting_usd": [
+    3397,
+    199
+   ],
+   "top_ev_pct": -1.9,
+   "fair_pct": 48.55,
+   "fetched_utc": "2026-11-08T01:39:32.012149+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+104/-108",
+     "ev": -0.0193,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -113",
+     "quote": "+104/-113",
+     "ev": -0.0307,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -117",
+     "quote": "+104/-117",
+     "ev": -0.0395,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -100",
+     "quote": "-100/-108",
+     "ev": -0.0094,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -104",
+     "quote": "-104/-108",
+     "ev": 0.0005,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "player": "Kevin Durant",
+   "game": "HOU@PHX",
+   "starts_at": "2026-11-08T02:00:00.000Z",
+   "market": "Assists",
+   "line": "3.5",
+   "book": "fanduel",
+   "price": 142,
+   "ticker": "KXNBAAST-26NOV07HOUPHX-HOUKDURANT7-4",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+144/-150",
+   "resting_usd": [
+    4792,
+    40
+   ],
+   "top_ev_pct": -2.0,
+   "fair_pct": 40.49,
+   "fetched_utc": "2026-11-08T01:39:32.012149+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+144/-150",
+     "ev": -0.0201,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -156",
+     "quote": "+144/-156",
+     "ev": -0.0315,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -163",
+     "quote": "+144/-163",
+     "ev": -0.0442,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +138",
+     "quote": "+138/-150",
+     "ev": -0.0077,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +133",
+     "quote": "+133/-150",
+     "ev": 0.0032,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "player": "Devin Booker",
+   "game": "HOU@PHX",
+   "starts_at": "2026-11-08T02:00:00.000Z",
+   "market": "Rebounds",
+   "line": "3.5",
+   "book": "fanduel",
+   "price": 136,
+   "ticker": "KXNBAREB-26NOV07HOUPHX-PHXDBOOKER15-4",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+138/-144",
+   "resting_usd": [
+    110,
+    585
+   ],
+   "top_ev_pct": -2.1,
+   "fair_pct": 41.5,
+   "fetched_utc": "2026-11-08T01:39:32.012149+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+138/-144",
+     "ev": -0.0206,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -150",
+     "quote": "+138/-150",
+     "ev": -0.0323,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -156",
+     "quote": "+138/-156",
+     "ev": -0.0434,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +133",
+     "quote": "+133/-144",
+     "ev": -0.01,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +127",
+     "quote": "+127/-144",
+     "ev": 0.0033,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "player": "Donovan Clingan",
+   "game": "SAS@POR",
+   "starts_at": "2026-11-08T03:00:00.000Z",
+   "market": "PRA",
+   "line": "24.5",
+   "book": "fanduel",
+   "price": -104,
+   "ticker": "KXNBAPRA-26NOV07SASPOR-PORDCLINGAN23-25",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "-100/-104",
+   "resting_usd": [
+    2500,
+    119
+   ],
+   "top_ev_pct": -2.9,
+   "fair_pct": 49.51,
+   "fetched_utc": "2026-11-08T01:39:32.012149+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "-100/-104",
+     "ev": -0.0288,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -113",
+     "quote": "-100/-113",
+     "ev": -0.0492,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -117",
+     "quote": "-100/-117",
+     "ev": -0.0577,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -104",
+     "quote": "-104/-104",
+     "ev": -0.0192,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "player": "Collin Gillespie",
+   "game": "HOU@PHX",
+   "starts_at": "2026-11-08T02:00:00.000Z",
+   "market": "Assists",
+   "line": "3.5",
+   "book": "draftkings",
+   "price": 117,
+   "ticker": "KXNBAAST-26NOV07HOUPHX-PHXCGILLESPIE12-4",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+122/-127",
+   "resting_usd": [
+    440,
+    26
+   ],
+   "top_ev_pct": -3.3,
+   "fair_pct": 44.55,
+   "fetched_utc": "2026-11-08T01:39:32.012149+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+122/-127",
+     "ev": -0.0333,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -133",
+     "quote": "+122/-133",
+     "ev": -0.0456,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -138",
+     "quote": "+122/-138",
+     "ev": -0.0555,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +117",
+     "quote": "+117/-127",
+     "ev": -0.0221,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +113",
+     "quote": "+113/-127",
+     "ev": -0.0127,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "player": "Tari Eason",
+   "game": "HOU@PHX",
+   "starts_at": "2026-11-08T02:00:00.000Z",
+   "market": "Rebounds",
+   "line": "5.5",
+   "book": "bovada",
+   "price": -105,
+   "ticker": "KXNBAREB-26NOV07HOUPHX-HOUTEASON17-6",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "-100/-104",
+   "resting_usd": [
+    99,
+    528
+   ],
+   "top_ev_pct": -3.3,
+   "fair_pct": 49.51,
+   "fetched_utc": "2026-11-08T01:39:32.012149+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "-100/-104",
+     "ev": -0.0334,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -108",
+     "quote": "-100/-108",
+     "ev": -0.0426,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -113",
+     "quote": "-100/-113",
+     "ev": -0.0536,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -104",
+     "quote": "-104/-104",
+     "ev": -0.0238,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -108",
+     "quote": "-108/-104",
+     "ev": -0.0146,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "player": "Devin Booker",
+   "game": "HOU@PHX",
+   "starts_at": "2026-11-08T02:00:00.000Z",
+   "market": "Assists",
+   "line": "5.5",
+   "book": "fanduel",
+   "price": 126,
+   "ticker": "KXNBAAST-26NOV07HOUPHX-PHXDBOOKER15-6",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+133/-138",
+   "resting_usd": [
+    361,
+    16
+   ],
+   "top_ev_pct": -4.0,
+   "fair_pct": 42.47,
+   "fetched_utc": "2026-11-08T01:39:32.012149+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+133/-138",
+     "ev": -0.0402,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -144",
+     "quote": "+133/-144",
+     "ev": -0.052,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -150",
+     "quote": "+133/-150",
+     "ev": -0.0632,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +127",
+     "quote": "+127/-138",
+     "ev": -0.0275,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +122",
+     "quote": "+122/-138",
+     "ev": -0.0163,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "player": "Oso Ighodaro",
+   "game": "HOU@PHX",
+   "starts_at": "2026-11-08T02:00:00.000Z",
+   "market": "Rebounds",
+   "line": "5.5",
+   "book": "fanduel",
+   "price": 102,
+   "ticker": "KXNBAREB-26NOV07HOUPHX-PHXOIGHODARO11-6",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+108/-113",
+   "resting_usd": [
+    5962,
+    48
+   ],
+   "top_ev_pct": -4.0,
+   "fair_pct": 47.51,
+   "fetched_utc": "2026-11-08T01:39:32.012149+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+108/-113",
+     "ev": -0.0402,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -117",
+     "quote": "+108/-117",
+     "ev": -0.049,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -122",
+     "quote": "+108/-122",
+     "ev": -0.0595,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -100",
+     "quote": "-100/-113",
+     "ev": -0.0208,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "player": "Damian Lillard",
+   "game": "SAS@POR",
+   "starts_at": "2026-11-08T03:00:00.000Z",
+   "market": "Rebounds",
+   "line": "3.5",
+   "book": "draftkings",
+   "price": -103,
+   "ticker": "KXNBAREB-26NOV07SASPOR-PORDLILLARD0-4",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+104/-108",
+   "resting_usd": [
+    690,
+    59
+   ],
+   "top_ev_pct": -4.3,
+   "fair_pct": 48.55,
+   "fetched_utc": "2026-11-08T01:39:32.012149+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+104/-108",
+     "ev": -0.0432,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -113",
+     "quote": "+104/-113",
+     "ev": -0.0543,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -117",
+     "quote": "+104/-117",
+     "ev": -0.0629,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -100",
+     "quote": "-100/-108",
+     "ev": -0.0335,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -104",
+     "quote": "-104/-108",
+     "ev": -0.0239,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "player": "Donovan Clingan",
+   "game": "SAS@POR",
+   "starts_at": "2026-11-08T03:00:00.000Z",
+   "market": "Assists",
+   "line": "1.5",
+   "book": "espnbet",
+   "price": -150,
+   "ticker": "KXNBAAST-26NOV07SASPOR-PORDCLINGAN23-2",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "-138/+127",
+   "resting_usd": [
+    1262,
+    1
+   ],
+   "top_ev_pct": -5.1,
+   "fair_pct": 56.97,
+   "fetched_utc": "2026-11-08T01:39:32.012149+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "-138/+127",
+     "ev": -0.0505,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side +122",
+     "quote": "-138/+122",
+     "ev": -0.0588,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side +117",
+     "quote": "-138/+117",
+     "ev": -0.0674,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -144",
+     "quote": "-144/+127",
+     "ev": -0.0419,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -150",
+     "quote": "-150/+127",
+     "ev": -0.0336,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "player": "Victor Wembanyama",
+   "game": "SAS@POR",
+   "starts_at": "2026-11-08T03:00:00.000Z",
+   "market": "Assists",
+   "line": "3.5",
+   "book": "bovada",
+   "price": 160,
+   "ticker": "KXNBAAST-26NOV07SASPOR-SASVWEMBANYAMA1-4",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+170/-178",
+   "resting_usd": [
+    3306,
+    8
+   ],
+   "top_ev_pct": -5.1,
+   "fair_pct": 36.5,
+   "fetched_utc": "2026-11-08T01:39:32.012149+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+170/-178",
+     "ev": -0.0509,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -186",
+     "quote": "+170/-186",
+     "ev": -0.0641,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -194",
+     "quote": "+170/-194",
+     "ev": -0.0766,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +163",
+     "quote": "+163/-178",
+     "ev": -0.0382,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "player": "Jalen Green",
+   "game": "HOU@PHX",
+   "starts_at": "2026-11-08T02:00:00.000Z",
+   "market": "Rebounds",
+   "line": "3.5",
+   "book": "fanduel",
+   "price": 108,
+   "ticker": "KXNBAREB-26NOV07HOUPHX-PHXJGREEN4-4",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+117/-122",
+   "resting_usd": [
+    2,
+    373
+   ],
+   "top_ev_pct": -5.2,
+   "fair_pct": 45.56,
+   "fetched_utc": "2026-11-08T01:39:32.012149+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+117/-122",
+     "ev": -0.0523,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -127",
+     "quote": "+117/-127",
+     "ev": -0.0626,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -133",
+     "quote": "+117/-133",
+     "ev": -0.0745,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +113",
+     "quote": "+113/-122",
+     "ev": -0.0433,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +108",
+     "quote": "+108/-122",
+     "ev": -0.0316,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "player": "Kevin Durant",
+   "game": "HOU@PHX",
+   "starts_at": "2026-11-08T02:00:00.000Z",
+   "market": "Rebounds",
+   "line": "5.5",
+   "book": "fanduel",
+   "price": 128,
+   "ticker": "KXNBAREB-26NOV07HOUPHX-HOUKDURANT7-6",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+138/-144",
+   "resting_usd": [
+    29,
+    731
+   ],
+   "top_ev_pct": -5.4,
+   "fair_pct": 41.5,
+   "fetched_utc": "2026-11-08T01:39:32.012149+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+138/-144",
+     "ev": -0.0538,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -150",
+     "quote": "+138/-150",
+     "ev": -0.0651,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -156",
+     "quote": "+138/-156",
+     "ev": -0.0758,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +133",
+     "quote": "+133/-144",
+     "ev": -0.0436,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +127",
+     "quote": "+127/-144",
+     "ev": -0.0307,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "player": "Deaaron Fox",
+   "game": "SAS@POR",
+   "starts_at": "2026-11-08T03:00:00.000Z",
+   "market": "Assists",
+   "line": "5.5",
+   "book": "fanduel",
+   "price": -106,
+   "ticker": "KXNBAAST-26NOV07SASPOR-SASDFOX4-6",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+104/-108",
+   "resting_usd": [
+    905,
+    9
+   ],
+   "top_ev_pct": -5.7,
+   "fair_pct": 48.55,
+   "fetched_utc": "2026-11-08T01:39:32.012149+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+104/-108",
+     "ev": -0.0565,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -113",
+     "quote": "+104/-113",
+     "ev": -0.0675,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -117",
+     "quote": "+104/-117",
+     "ev": -0.0759,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -100",
+     "quote": "-100/-108",
+     "ev": -0.047,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -104",
+     "quote": "-104/-108",
+     "ev": -0.0375,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "player": "Keldon Johnson",
+   "game": "SAS@POR",
+   "starts_at": "2026-11-08T03:00:00.000Z",
+   "market": "Points",
+   "line": "9.5",
+   "book": "fanduel",
+   "price": 100,
+   "ticker": "KXNBAPTS-26NOV07SASPOR-SASKJOHNSON3-10",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+108/-117",
+   "resting_usd": [
+    0,
+    0
+   ],
+   "top_ev_pct": -5.8,
+   "fair_pct": 47.08,
+   "fetched_utc": "2026-11-08T01:39:32.012149+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+108/-117",
+     "ev": -0.0584,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -122",
+     "quote": "+108/-122",
+     "ev": -0.0688,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -127",
+     "quote": "+108/-127",
+     "ev": -0.0788,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +104",
+     "quote": "+104/-117",
+     "ev": -0.049,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -100",
+     "quote": "-100/-117",
+     "ev": -0.0392,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "player": "Deaaron Fox",
+   "game": "SAS@POR",
+   "starts_at": "2026-11-08T03:00:00.000Z",
+   "market": "Rebounds",
+   "line": "3.5",
+   "book": "draftkings",
+   "price": 106,
+   "ticker": "KXNBAREB-26NOV07SASPOR-SASDFOX4-4",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+117/-122",
+   "resting_usd": [
+    913,
+    106
+   ],
+   "top_ev_pct": -6.1,
+   "fair_pct": 45.56,
+   "fetched_utc": "2026-11-08T01:39:32.012149+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+117/-122",
+     "ev": -0.0614,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -127",
+     "quote": "+117/-127",
+     "ev": -0.0716,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -133",
+     "quote": "+117/-133",
+     "ev": -0.0834,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +113",
+     "quote": "+113/-122",
+     "ev": -0.0525,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "player": "Donovan Clingan",
+   "game": "SAS@POR",
+   "starts_at": "2026-11-08T03:00:00.000Z",
+   "market": "Rebounds",
+   "line": "11.5",
+   "book": "caesars",
+   "price": 101,
+   "ticker": "KXNBAREB-26NOV07SASPOR-PORDCLINGAN23-12",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+113/-117",
+   "resting_usd": [
+    553,
+    70
+   ],
+   "top_ev_pct": -6.5,
+   "fair_pct": 46.52,
+   "fetched_utc": "2026-11-08T01:39:32.012149+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+113/-117",
+     "ev": -0.065,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -122",
+     "quote": "+113/-122",
+     "ev": -0.0755,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -127",
+     "quote": "+113/-127",
+     "ev": -0.0855,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +108",
+     "quote": "+108/-117",
+     "ev": -0.0537,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +104",
+     "quote": "+104/-117",
+     "ev": -0.0443,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "player": "Devin Booker",
+   "game": "HOU@PHX",
+   "starts_at": "2026-11-08T02:00:00.000Z",
+   "market": "Points",
+   "line": "24.5",
+   "book": "draftkings",
+   "price": 101,
+   "ticker": "KXNBAPTS-26NOV07HOUPHX-PHXDBOOKER15-25",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+113/-117",
+   "resting_usd": [
+    3813,
+    1
+   ],
+   "top_ev_pct": -6.5,
+   "fair_pct": 46.52,
+   "fetched_utc": "2026-11-08T01:39:32.012149+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+113/-117",
+     "ev": -0.065,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -122",
+     "quote": "+113/-122",
+     "ev": -0.0755,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +108",
+     "quote": "+108/-117",
+     "ev": -0.0537,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +104",
+     "quote": "+104/-117",
+     "ev": -0.0443,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "player": "Dillon Brooks",
+   "game": "HOU@PHX",
+   "starts_at": "2026-11-08T02:00:00.000Z",
+   "market": "Rebounds",
+   "line": "3.5",
+   "book": "fanduel",
+   "price": -115,
+   "ticker": "KXNBAREB-26NOV07HOUPHX-PHXDBROOKS3-4",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "-100/-104",
+   "resting_usd": [
+    612,
+    13
+   ],
+   "top_ev_pct": -7.4,
+   "fair_pct": 49.51,
+   "fetched_utc": "2026-11-08T01:39:32.012149+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "-100/-104",
+     "ev": -0.0744,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -108",
+     "quote": "-100/-108",
+     "ev": -0.0832,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -113",
+     "quote": "-100/-113",
+     "ev": -0.0938,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -104",
+     "quote": "-104/-104",
+     "ev": -0.0652,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -108",
+     "quote": "-108/-104",
+     "ev": -0.0564,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "player": "Dylan Harper",
+   "game": "SAS@POR",
+   "starts_at": "2026-11-08T03:00:00.000Z",
+   "market": "Rebounds",
+   "line": "5.5",
+   "book": "caesars",
+   "price": 112,
+   "ticker": "KXNBAREB-26NOV07SASPOR-SASDHARPER2-6",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+127/-133",
+   "resting_usd": [
+    1287,
+    125
+   ],
+   "top_ev_pct": -7.8,
+   "fair_pct": 43.48,
+   "fetched_utc": "2026-11-08T01:39:32.012149+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+127/-133",
+     "ev": -0.0781,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -138",
+     "quote": "+127/-138",
+     "ev": -0.0877,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -144",
+     "quote": "+127/-144",
+     "ev": -0.0987,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +122",
+     "quote": "+122/-133",
+     "ev": -0.0676,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +117",
+     "quote": "+117/-133",
+     "ev": -0.0567,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "player": "Stephon Castle",
+   "game": "SAS@POR",
+   "starts_at": "2026-11-08T03:00:00.000Z",
+   "market": "Rebounds",
+   "line": "5.5",
+   "book": "fanduel",
+   "price": 110,
+   "ticker": "KXNBAREB-26NOV07SASPOR-SASSCASTLE5-6",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+127/-133",
+   "resting_usd": [
+    479,
+    11
+   ],
+   "top_ev_pct": -8.7,
+   "fair_pct": 43.48,
+   "fetched_utc": "2026-11-08T01:39:32.012149+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+127/-133",
+     "ev": -0.0868,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -138",
+     "quote": "+127/-138",
+     "ev": -0.0963,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -144",
+     "quote": "+127/-144",
+     "ev": -0.1072,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +122",
+     "quote": "+122/-133",
+     "ev": -0.0764,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +117",
+     "quote": "+117/-133",
+     "ev": -0.0656,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "player": "Khaman Maluach",
+   "game": "HOU@PHX",
+   "starts_at": "2026-11-08T02:00:00.000Z",
+   "market": "Rebounds",
+   "line": "5.5",
+   "book": "bovada",
+   "price": 125,
+   "ticker": "KXNBAREB-26NOV07HOUPHX-PHXKMALUACH10-6",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+144/-156",
+   "resting_usd": [
+    1025,
+    69
+   ],
+   "top_ev_pct": -10.0,
+   "fair_pct": 40.02,
+   "fetched_utc": "2026-11-08T01:39:32.012149+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+144/-156",
+     "ev": -0.0995,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -163",
+     "quote": "+144/-163",
+     "ev": -0.1113,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +133",
+     "quote": "+133/-156",
+     "ev": -0.078,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +127",
+     "quote": "+127/-156",
+     "ev": -0.0653,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "player": "Collin Gillespie",
+   "game": "HOU@PHX",
+   "starts_at": "2026-11-08T02:00:00.000Z",
+   "market": "Rebounds",
+   "line": "3.5",
+   "book": "bovada",
+   "price": 150,
+   "ticker": "KXNBAREB-26NOV07HOUPHX-PHXCGILLESPIE12-4",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+170/-186",
+   "resting_usd": [
+    62,
+    4
+   ],
+   "top_ev_pct": -10.0,
+   "fair_pct": 36.0,
+   "fetched_utc": "2026-11-08T01:39:32.012149+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+170/-186",
+     "ev": -0.1001,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -194",
+     "quote": "+170/-194",
+     "ev": -0.1122,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -203",
+     "quote": "+170/-203",
+     "ev": -0.125,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +163",
+     "quote": "+163/-186",
+     "ev": -0.0879,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +156",
+     "quote": "+156/-186",
+     "ev": -0.0751,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "player": "Miles Bridges",
+   "game": "HOU@PHX",
+   "starts_at": "2026-11-08T02:00:00.000Z",
+   "market": "Assists",
+   "line": "3.5",
+   "book": "draftkings",
+   "price": 161,
+   "ticker": "KXNBAAST-26NOV07HOUPHX-PHXMBRIDGES22-4",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+178/-203",
+   "resting_usd": [
+    6129,
+    66
+   ],
+   "top_ev_pct": -10.0,
+   "fair_pct": 34.48,
+   "fetched_utc": "2026-11-08T01:39:32.012149+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+178/-203",
+     "ev": -0.1002,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -212",
+     "quote": "+178/-212",
+     "ev": -0.1129,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -223",
+     "quote": "+178/-223",
+     "ev": -0.1275,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +170",
+     "quote": "+170/-203",
+     "ev": -0.0865,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +163",
+     "quote": "+163/-203",
+     "ev": -0.0739,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "player": "Jalen Green",
+   "game": "HOU@PHX",
+   "starts_at": "2026-11-08T02:00:00.000Z",
+   "market": "Assists",
+   "line": "3.5",
+   "book": "bovada",
+   "price": 160,
+   "ticker": "KXNBAAST-26NOV07HOUPHX-PHXJGREEN4-4",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+186/-212",
+   "resting_usd": [
+    0,
+    4
+   ],
+   "top_ev_pct": -12.9,
+   "fair_pct": 33.5,
+   "fetched_utc": "2026-11-08T01:39:32.012149+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+186/-212",
+     "ev": -0.1291,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -223",
+     "quote": "+186/-223",
+     "ev": -0.1436,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +170",
+     "quote": "+170/-212",
+     "ev": -0.1027,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "player": "Deaaron Fox",
+   "game": "SAS@POR",
+   "starts_at": "2026-11-08T03:00:00.000Z",
+   "market": "PRA",
+   "line": "24.5",
+   "book": "draftkings",
+   "price": -101,
+   "ticker": "KXNBAPRA-26NOV07SASPOR-SASDFOX4-25",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+127/-133",
+   "resting_usd": [
+    621,
+    81
+   ],
+   "top_ev_pct": -13.5,
+   "fair_pct": 43.48,
+   "fetched_utc": "2026-11-08T01:39:32.012149+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+127/-133",
+     "ev": -0.1346,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -138",
+     "quote": "+127/-138",
+     "ev": -0.1436,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -144",
+     "quote": "+127/-144",
+     "ev": -0.154,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +122",
+     "quote": "+122/-133",
+     "ev": -0.1248,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +117",
+     "quote": "+117/-133",
+     "ev": -0.1145,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "player": "Sidy Cissoko",
+   "game": "SAS@POR",
+   "starts_at": "2026-11-08T03:00:00.000Z",
+   "market": "PRA",
+   "line": "9.5",
+   "book": "draftkings",
+   "price": -101,
+   "ticker": "KXNBAPRA-26NOV07SASPOR-PORSCISSOKO91-10",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+104/-170",
+   "resting_usd": [
+    1,
+    0
+   ],
+   "top_ev_pct": -14.5,
+   "fair_pct": 42.95,
+   "fetched_utc": "2026-11-08T01:39:32.012149+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+104/-170",
+     "ev": -0.1453,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -163",
+     "quote": "+104/-163",
+     "ev": -0.1351,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -100",
+     "quote": "-100/-170",
+     "ev": -0.1357,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -104",
+     "quote": "-104/-170",
+     "ev": -0.1261,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "player": "Alperen Sengun",
+   "game": "HOU@PHX",
+   "starts_at": "2026-11-08T02:00:00.000Z",
+   "market": "Assists",
+   "line": "7.5",
+   "book": "bovada",
+   "price": 130,
+   "ticker": "KXNBAAST-26NOV07HOUPHX-HOUASENGUN28-8",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+170/-178",
+   "resting_usd": [
+    79,
+    37
+   ],
+   "top_ev_pct": -16.0,
+   "fair_pct": 36.5,
+   "fetched_utc": "2026-11-08T01:39:32.012149+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+170/-178",
+     "ev": -0.1604,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -186",
+     "quote": "+170/-186",
+     "ev": -0.1721,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -194",
+     "quote": "+170/-194",
+     "ev": -0.1832,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +163",
+     "quote": "+163/-178",
+     "ev": -0.1492,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +156",
+     "quote": "+156/-178",
+     "ev": -0.1373,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "player": "Keldon Johnson",
+   "game": "SAS@POR",
+   "starts_at": "2026-11-08T03:00:00.000Z",
+   "market": "PRA",
+   "line": "14.5",
+   "book": "bovada",
+   "price": -120,
+   "ticker": "KXNBAPRA-26NOV07SASPOR-SASKJOHNSON3-15",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "-163/-900",
+   "resting_usd": [
+    1,
+    0
+   ],
+   "top_ev_pct": -42.7,
+   "fair_pct": 31.27,
+   "fetched_utc": "2026-11-08T01:39:32.012149+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "-163/-900",
+     "ev": -0.4268,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -900",
+     "quote": "-163/-900",
+     "ev": -0.4268,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -1011",
+     "quote": "-163/-1011",
+     "ev": -0.4459,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -150",
+     "quote": "-150/-900",
+     "ev": -0.4434,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -156",
+     "quote": "-156/-900",
+     "ev": -0.4356,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  }
+ ]
+}
