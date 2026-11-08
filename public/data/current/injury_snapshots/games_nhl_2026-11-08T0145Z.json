@@ -1,0 +1,116 @@
+[
+ {
+  "sport": "nhl",
+  "game_id": "401892674",
+  "start_utc": "2026-11-08T18:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "BOS",
+    "probable_goalie": "Jeremy Swayman"
+   },
+   "away": {
+    "team": "FLA",
+    "probable_goalie": "Jacob Markstrom"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "BOS -135",
+  "total": 6.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892675",
+  "start_utc": "2026-11-08T20:30Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "BUF",
+    "probable_goalie": "Colten Ellis"
+   },
+   "away": {
+    "team": "VGK",
+    "probable_goalie": "Carter Hart"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "VGK -112",
+  "total": 6.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892677",
+  "start_utc": "2026-11-08T23:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "WPG",
+    "probable_goalie": "Stuart Skinner"
+   },
+   "away": {
+    "team": "TB",
+    "probable_goalie": "Andrei Vasilevskiy"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "TB -142",
+  "total": 6.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892676",
+  "start_utc": "2026-11-09T00:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "TOR",
+    "probable_goalie": "Anthony Stolarz"
+   },
+   "away": {
+    "team": "NJ",
+    "probable_goalie": "Connor Hellebuyck"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "NJ -142",
+  "total": 6.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892678",
+  "start_utc": "2026-11-09T00:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "CGY",
+    "probable_goalie": "Dustin Wolf"
+   },
+   "away": {
+    "team": "PHI",
+    "probable_goalie": "Dan Vladar"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "PHI -112",
+  "total": 5.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892679",
+  "start_utc": "2026-11-09T01:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "ANA",
+    "probable_goalie": "Laurent Brossoit"
+   },
+   "away": {
+    "team": "PIT",
+    "probable_goalie": "Arturs Silovs"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "ANA -120",
+  "total": 6.5
+ }
+]
