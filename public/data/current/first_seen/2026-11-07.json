@@ -550,6 +550,66 @@
    "value": "Expected:Jalen Green|Dillon Brooks|Devin Booker|Miles Bridges|Oso Ighodaro",
    "first_seen_utc": "2026-11-07T21:52:28Z",
    "mins_before_start": 248
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909940",
+   "start_utc": "2026-11-08T01:00Z",
+   "team": "CLE",
+   "what": "starters",
+   "value": "Confirmed:Donovan Mitchell|Meleek Thomas|James Harden|Peyton Watson|Evan Mobley",
+   "first_seen_utc": "2026-11-08T01:27:25Z",
+   "mins_before_start": -27
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909940",
+   "start_utc": "2026-11-08T01:00Z",
+   "team": "NY",
+   "what": "starters",
+   "value": "Confirmed:Landry Shamet|Mikal Bridges|Jalen Brunson|OG Anunoby|Karl-Anthony Towns",
+   "first_seen_utc": "2026-11-08T01:27:25Z",
+   "mins_before_start": -27
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909941",
+   "start_utc": "2026-11-08T01:00Z",
+   "team": "OKC",
+   "what": "starters",
+   "value": "Confirmed:Ajay Mitchell|Kenrich Williams|Shai Gilgeous-Alexander|Aday Mara|Isaiah Hartenstein",
+   "first_seen_utc": "2026-11-08T01:27:25Z",
+   "mins_before_start": -27
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909941",
+   "start_utc": "2026-11-08T01:00Z",
+   "team": "WSH",
+   "what": "starters",
+   "value": "Confirmed:AJ Dybantsa|Kyshawn George|Trae Young|Bilal Coulibaly|Alex Sarr",
+   "first_seen_utc": "2026-11-08T01:27:25Z",
+   "mins_before_start": -27
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909942",
+   "start_utc": "2026-11-08T01:30Z",
+   "team": "GS",
+   "what": "starters",
+   "value": "Confirmed:Brandin Podziemski|Gui Santos|Stephen Curry|Yaxel Lendeborg|Draymond Green",
+   "first_seen_utc": "2026-11-08T01:27:25Z",
+   "mins_before_start": 3
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909942",
+   "start_utc": "2026-11-08T01:30Z",
+   "team": "ORL",
+   "what": "starters",
+   "value": "Confirmed:Anthony Black|Tristan da Silva|Jase Richardson|Franz Wagner|Wendell Carter Jr.",
+   "first_seen_utc": "2026-11-08T01:27:25Z",
+   "mins_before_start": 3
   }
  ]
 }
