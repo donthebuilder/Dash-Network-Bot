@@ -1,0 +1,249 @@
+[
+ {
+  "sport": "nfl",
+  "game_id": "401873040",
+  "start_utc": "2026-11-08T18:00Z",
+  "status": "In Progress",
+  "sides": {
+   "home": {
+    "team": "IND",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "DAL",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": null,
+  "total": null
+ },
+ {
+  "sport": "nfl",
+  "game_id": "401873045",
+  "start_utc": "2026-11-08T18:00Z",
+  "status": "In Progress",
+  "sides": {
+   "home": {
+    "team": "KC",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "NYJ",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": null,
+  "total": null
+ },
+ {
+  "sport": "nfl",
+  "game_id": "401873039",
+  "start_utc": "2026-11-08T18:00Z",
+  "status": "In Progress",
+  "sides": {
+   "home": {
+    "team": "NO",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "CLE",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": null,
+  "total": null
+ },
+ {
+  "sport": "nfl",
+  "game_id": "401873044",
+  "start_utc": "2026-11-08T18:00Z",
+  "status": "In Progress",
+  "sides": {
+   "home": {
+    "team": "PHI",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "NYG",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": null,
+  "total": null
+ },
+ {
+  "sport": "nfl",
+  "game_id": "401873043",
+  "start_utc": "2026-11-08T18:00Z",
+  "status": "In Progress",
+  "sides": {
+   "home": {
+    "team": "WSH",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "LAR",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": null,
+  "total": null
+ },
+ {
+  "sport": "nfl",
+  "game_id": "401873041",
+  "start_utc": "2026-11-08T18:00Z",
+  "status": "In Progress",
+  "sides": {
+   "home": {
+    "team": "CAR",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "DEN",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": null,
+  "total": null
+ },
+ {
+  "sport": "nfl",
+  "game_id": "401873038",
+  "start_utc": "2026-11-08T14:30Z",
+  "status": "Final",
+  "sides": {
+   "home": {
+    "team": "ATL",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "CIN",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": null,
+  "total": null
+ },
+ {
+  "sport": "nfl",
+  "game_id": "401873042",
+  "start_utc": "2026-11-08T18:00Z",
+  "status": "Final",
+  "sides": {
+   "home": {
+    "team": "MIA",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "DET",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": null,
+  "total": null
+ },
+ {
+  "sport": "nfl",
+  "game_id": "401873046",
+  "start_utc": "2026-11-08T21:05Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "LAC",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "HOU",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": "HOU -5.5",
+  "total": 40.5
+ },
+ {
+  "sport": "nfl",
+  "game_id": "401873049",
+  "start_utc": "2026-11-08T21:25Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "NE",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "GB",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": "NE -3",
+  "total": 44.5
+ },
+ {
+  "sport": "nfl",
+  "game_id": "401873047",
+  "start_utc": "2026-11-08T21:25Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "SF",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "LV",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": "SF -8.5",
+  "total": 51.5
+ },
+ {
+  "sport": "nfl",
+  "game_id": "401873048",
+  "start_utc": "2026-11-08T21:25Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "SEA",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "ARI",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": "SEA -8.5",
+  "total": 39.5
+ },
+ {
+  "sport": "nfl",
+  "game_id": "401873050",
+  "start_utc": "2026-11-09T01:20Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "CHI",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "TB",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": "CHI -6",
+  "total": 47.5
+ }
+]
