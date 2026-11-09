@@ -6,14 +6,16 @@
 //   SITE  the site (default https://dashnetwork.vercel.app)
 //   OUT   where the PNGs go (default /tmp/writeup-shots)
 //   PLAYER + GAME  one shot by hand (workflow_dispatch test), skips the window
+//   CHECK_ONLY=1   (2026-11-09, L4) only work out the shot list: write it to JOBS_FILE and go=true|false to
+//                  $GITHUB_OUTPUT, then exit -- before Playwright / Chromium are installed. The shooting run
+//                  then reads JOBS_FILE, so it shoots exactly the list the check saw.
 //
 // SIGNED OUT, ALWAYS: a fresh browser context per player, no storage, no
 // cookies -- so nothing personal ("You starred him N nights") can reach a post.
 // A card that still carries a personal line is refused, not published.
 // File name: <game_id>_<player_id>.png (the site's lib/writeups/post.js shotUrl).
 // The page: /app#sport=nfl&tab=boards&card=<id>&cm=TD -- the player card on the TD market.
-import { chromium } from 'playwright'
-import { mkdirSync } from 'node:fs'
+import { mkdirSync, writeFileSync, readFileSync, existsSync, appendFileSync } from 'node:fs'
 
 const SITE = (process.env.SITE || 'https://dashnetwork.vercel.app').replace(/\/+$/, '')
 const OUT = process.env.OUT || '/tmp/writeup-shots'
@@ -22,8 +24,12 @@ const WINDOW = [95 * 60e3, 150 * 60e3]   // shoot 95-150 min before kickoff; the
 const PERSONAL = /you starred|you highlighted|signed in as|nights? on your/i
 mkdirSync(OUT, { recursive: true })
 
+const JOBS_FILE = process.env.JOBS_FILE || ''
 let jobs = []
-if (process.env.PLAYER) {
+if (!process.env.CHECK_ONLY && JOBS_FILE && existsSync(JOBS_FILE)) {
+  jobs = JSON.parse(readFileSync(JOBS_FILE, 'utf8'))
+  console.log(`${jobs.length} shot(s) from the window check`)
+} else if (process.env.PLAYER) {
   jobs = [{ game_id: process.env.GAME || 'test', player_id: process.env.PLAYER }]
 } else {
   // LOCKDOWN (site, 2026-11-09): before a game's write-up goes out the site lists its players only to the cron bearer
@@ -41,8 +47,15 @@ if (process.env.PLAYER) {
     }
   }
 }
+if (process.env.CHECK_ONLY) {
+  if (JOBS_FILE) writeFileSync(JOBS_FILE, JSON.stringify(jobs))
+  if (process.env.GITHUB_OUTPUT) appendFileSync(process.env.GITHUB_OUTPUT, `go=${jobs.length ? 'true' : 'false'}\n`)
+  console.log(jobs.length ? `${jobs.length} shot(s) to take` : 'no featured game in the shot window -- nothing to do')
+  process.exit(0)
+}
 if (!jobs.length) { console.log('no featured game in the shot window -- nothing to do'); process.exit(0) }
 
+const { chromium } = await import('playwright')
 const browser = await chromium.launch()
 let made = 0, refused = 0
 for (const job of jobs) {
