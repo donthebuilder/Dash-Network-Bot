@@ -1,0 +1,65 @@
+{
+ "day": "2026-11-09",
+ "events": [
+  {
+   "sport": "nhl",
+   "game_id": "401892680",
+   "start_utc": "2026-11-10T01:00Z",
+   "team": "EDM",
+   "what": "goalie",
+   "value": "Devon Levi",
+   "first_seen_utc": "2026-11-09T06:48:03Z",
+   "mins_before_start": 1092
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892680",
+   "start_utc": "2026-11-10T01:00Z",
+   "team": "NYR",
+   "what": "goalie",
+   "value": "Joonas Korpisalo",
+   "first_seen_utc": "2026-11-09T06:48:03Z",
+   "mins_before_start": 1092
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892681",
+   "start_utc": "2026-11-10T02:30Z",
+   "team": "VAN",
+   "what": "goalie",
+   "value": "Leevi Merilainen",
+   "first_seen_utc": "2026-11-09T06:48:03Z",
+   "mins_before_start": 1182
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892681",
+   "start_utc": "2026-11-10T02:30Z",
+   "team": "PHI",
+   "what": "goalie",
+   "value": "Joseph Woll",
+   "first_seen_utc": "2026-11-09T06:48:03Z",
+   "mins_before_start": 1182
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892682",
+   "start_utc": "2026-11-10T03:00Z",
+   "team": "SJ",
+   "what": "goalie",
+   "value": "Yaroslav Askarov",
+   "first_seen_utc": "2026-11-09T06:48:03Z",
+   "mins_before_start": 1212
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892682",
+   "start_utc": "2026-11-10T03:00Z",
+   "team": "NYI",
+   "what": "goalie",
+   "value": "Ilya Sorokin",
+   "first_seen_utc": "2026-11-09T06:48:03Z",
+   "mins_before_start": 1212
+  }
+ ]
+}
