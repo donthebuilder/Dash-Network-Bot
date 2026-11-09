@@ -182,12 +182,13 @@ def report(out_dir):
 
 
 def main():
-    ap = argparse.ArgumentParser(); ap.add_argument("sport", choices=["nhl", "nba", "report", "snapshot"]); ap.add_argument("day", nargs="?"); ap.add_argument("extra", nargs="?"); ap.add_argument("--sims", type=int, default=20000); ap.add_argument("--out", default=None)
+    ap = argparse.ArgumentParser(); ap.add_argument("sport", choices=["nhl", "nba", "report", "snapshot"]); ap.add_argument("day", nargs="?"); ap.add_argument("extra", nargs="?"); ap.add_argument("dir", nargs="?", default=".")      # snapshot SPORT DAY DIR (the 4th positional was refused, 2026-11-09)
+    ap.add_argument("--sims", type=int, default=20000); ap.add_argument("--out", default=None)
     a = ap.parse_args()
     if a.sport == "report":
         return report(a.day)
     if a.sport == "snapshot":
-        return snapshot(a.day, a.extra, sys.argv[4] if len(sys.argv) > 4 else ".")
+        return snapshot(a.day, a.extra, a.dir)
     rng = np.random.default_rng(7)
     rows = (sim_nhl if a.sport == "nhl" else sim_nba)(a.day, a.sims, rng)
     out = Path(a.out) if a.out else HERE / "outputs" / f"{a.sport}_sim_latest.json"
