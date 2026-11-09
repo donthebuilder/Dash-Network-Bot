@@ -43,7 +43,27 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  guard:
+    # OFFSEASON GUARD (bots/mlb_season_guard.py; added here 2026-11-09, L4): no MLB game from
+    # 8 day(s) back to 3 ahead -> the job below skips (8 back keeps the nightly memory and one Monday verdict running after the last game). It re-checks the graded
+    # MLB archive, which does not change until games return; its last files stay on the data
+    # branch (publish_data.sh carry_forward keeps them). Postseason counts; a hand-started run
+    # always goes; an unreadable schedule fails OPEN. Resumes on its own in March.
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      active: ${{ steps.g.outputs.active }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: bots/mlb_season_guard.py
+          sparse-checkout-cone-mode: false
+      - id: g
+        run: python3 bots/mlb_season_guard.py --back 8 --ahead 3
+
   run:
+    needs: [guard]
+    if: ${{ needs.guard.outputs.active == 'true' || github.event_name == 'workflow_dispatch' }}
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:

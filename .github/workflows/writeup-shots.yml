@@ -42,19 +42,35 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
+      # WINDOW FIRST (2026-11-09, L4): the shot list is worked out before Playwright + Chromium are installed (~1-2 min a run),
+      # so a run with no featured game 95-150 min away ends here. The shooting step reads the same list (JOBS_FILE).
+      - name: Any featured game in the shot window?
+        id: w
+        env:
+          SITE: https://dashnetwork.vercel.app
+          DASH_CRON_SECRET: ${{ secrets.DASH_CRON_SECRET }}
+          PLAYER: ${{ github.event.inputs.player }}
+          GAME: ${{ github.event.inputs.game }}
+          CHECK_ONLY: '1'
+          JOBS_FILE: /tmp/writeup-jobs.json
+        run: node .github/scripts/writeup_shots.mjs
       - name: Playwright (chromium only)
+        if: steps.w.outputs.go == 'true'
         run: |
           npm install --no-save --no-package-lock playwright@1.48.2
           npx playwright install --with-deps chromium
       - name: Shoot the cards
+        if: steps.w.outputs.go == 'true'
         env:
           SITE: https://dashnetwork.vercel.app
           DASH_CRON_SECRET: ${{ secrets.DASH_CRON_SECRET }}
           OUT: /tmp/writeup-shots
           PLAYER: ${{ github.event.inputs.player }}
           GAME: ${{ github.event.inputs.game }}
+          JOBS_FILE: /tmp/writeup-jobs.json
         run: node .github/scripts/writeup_shots.mjs
       - name: Publish to the writeup-shots branch
+        if: steps.w.outputs.go == 'true'
         run: |
           shopt -s nullglob
           files=(/tmp/writeup-shots/*.png)
