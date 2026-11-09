@@ -1,6 +1,6 @@
 """The bbe-history writers clone ONLY the folder they write (known-issues #107, 2026-10-26).
 `git clone --depth 1 --branch bbe-history` pulled the whole branch (about 1.5 GB of files, 1.3 GB of it bbe_history/, which most of these jobs never
-open) into every run: live-prices and live-edge start every half hour. The clone is now partial + sparse: only the folder the job writes is
+open) into every run: live-prices and live-edge (now live-markets.yml) start every half hour. The clone is now partial + sparse: only the folder the job writes is
 downloaded and checked out; the commit / `pull --rebase` / `push` loop is unchanged.
 
 Two parts:
@@ -18,9 +18,9 @@ env = {**os.environ, "GIT_AUTHOR_NAME": "t", "GIT_AUTHOR_EMAIL": "t@t", "GIT_COM
        "GIT_TERMINAL_PROMPT": "0"}
 
 # ---- 1. the workflows -------------------------------------------------------------------------------------------
-WRITES = {   # workflow -> the folders (and files) it writes under public/data/current
-    "live-prices.yml": ["live_prices"],
-    "live-edge.yml": ["live_edges"],
+WRITES = {   # workflow -> the folders (and files) it writes under public/data/current; one entry per clone, in order
+    # live-markets.yml (2026-11-09, L4): live prices + live edge on one runner, a clone each (each loop rebases on its own clock)
+    "live-markets.yml": [("_prices", ["live_prices"]), ("_edge", ["live_edges"])],
     "injury-snapshot.yml": ["injury_snapshots", "numerology_log"],
     "first-seen.yml": ["first_seen"],
     "ev-scan.yml": ["ev_log"],
@@ -31,20 +31,22 @@ WRITES = {   # workflow -> the folders (and files) it writes under public/data/c
     "shadow-nfl.yml": ["shadow_log"],
     "shadow-nhl.yml": ["shadow_log"],
 }
-for wf, dirs in WRITES.items():
+for wf, spec in WRITES.items():
     text = (ROOT / ".github/workflows" / wf).read_text()
+    spec = spec if isinstance(spec[0], tuple) else [("_data", spec)]
     clones = [m for m in re.finditer(r"git clone[^\n]*?--branch bbe-history[^\n]*(?:\\\n[^\n]*)?", text)]
-    assert len(clones) == 1, f"{wf}: expected one bbe-history clone, found {len(clones)}"
-    c = clones[0].group(0)
-    assert "--depth 1" in c and "--filter=blob:none" in c and "--sparse" in c, f"{wf}: the clone must be shallow, blob-less and sparse: {c!r}"
-    after = text[clones[0].end():clones[0].end() + 400]
-    m = re.search(r"git -C _data sparse-checkout set ([^\n]+)", after)
-    assert m, f"{wf}: no `sparse-checkout set` right after the clone"
-    listed = m.group(1).split()
-    for d in dirs:
-        assert f"{CUR}/{d}" in listed, f"{wf}: writes {d} but the sparse list is {listed}"
-    # nothing else may be in the list that the job does not write (an extra folder is an extra download)
-    assert len(listed) == len(dirs), f"{wf}: sparse list {listed} is longer than the folders it writes {dirs}"
+    assert len(clones) == len(spec), f"{wf}: expected {len(spec)} bbe-history clone(s), found {len(clones)}"
+    for clone_m, (where, dirs) in zip(clones, spec):
+        c = clone_m.group(0)
+        assert "--depth 1" in c and "--filter=blob:none" in c and "--sparse" in c, f"{wf}: the clone must be shallow, blob-less and sparse: {c!r}"
+        after = text[clone_m.end():clone_m.end() + 400]
+        m = re.search(rf"git -C {where} sparse-checkout set ([^\n]+)", after)
+        assert m, f"{wf}: no `sparse-checkout set` right after the clone into {where}"
+        listed = m.group(1).split()
+        for d in dirs:
+            assert f"{CUR}/{d}" in listed, f"{wf}: writes {d} but the sparse list is {listed}"
+        # nothing else may be in the list that the job does not write (an extra folder is an extra download)
+        assert len(listed) == len(dirs), f"{wf}: sparse list {listed} is longer than the folders it writes {dirs}"
 
 assert "+refs/heads/data:refs/remotes/origin/data" in (ROOT / ".github/workflows/odds-log.yml").read_text(), "odds-log.yml must fetch `data` with an explicit refspec"
 

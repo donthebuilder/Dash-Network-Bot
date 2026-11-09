@@ -56,10 +56,15 @@ def mlb_outs_left(text, inning):
     return float(max(3, 54 - 3 * halves))
 
 
+SCOREBOARD = {}   # sport -> [(state, start time)] of every event on the scoreboard live_games() just read, or None when that read failed (the stop check fails open on it)
+
+
 def live_games(sport):
     cfg = SPORTS[sport]
     out = []
-    for e in curl(f"https://site.api.espn.com/apis/site/v2/sports/{cfg['espn']}/scoreboard").get("events", []):
+    sb = curl(f"https://site.api.espn.com/apis/site/v2/sports/{cfg['espn']}/scoreboard")
+    SCOREBOARD[sport] = [((e.get("status") or {}).get("type", {}).get("state"), e.get("date")) for e in sb["events"]] if isinstance(sb.get("events"), list) else None
+    for e in sb.get("events", []):
         t = e["status"]["type"]
         if t["state"] not in ("in", "pre"):
             continue
@@ -283,9 +288,40 @@ def once(min_edge, sports=("nba", "nfl", "nhl", "mlb")):
     return found
 
 
-def loop(out_dir, minutes, every, min_edge):
+def cutoff_et(now=None):
+    """the next 2:30 am ET: where the workflow's evening chunks stop (live-markets.yml)."""
+    from datetime import timedelta
+    from zoneinfo import ZoneInfo
+    et = (now or datetime.now(timezone.utc)).astimezone(ZoneInfo("America/New_York"))
+    c = et.replace(hour=2, minute=30, second=0, microsecond=0)
+    return c if c > et else c + timedelta(days=1)
+
+
+def nothing_left(until):
+    """True when the scoreboards the last once() pass read show no game in progress and no game still to start before `until` (finals, postponements and
+    games after the cutoff do not count). Nothing more could be logged tonight: alerts come only from games in progress, and the pregame line cache only
+    matters for a game that goes live before the cutoff. Fails open: a sport whose scoreboard did not read, or no pass yet, means keep polling."""
+    if not SCOREBOARD or any(v is None for v in SCOREBOARD.values()):
+        return False
+    for evs in SCOREBOARD.values():
+        for state, start in evs:
+            if state == "in":
+                return False
+            if state == "pre":
+                try:
+                    if datetime.fromisoformat(str(start).replace("Z", "+00:00")) <= until:
+                        return False
+                except ValueError:
+                    return False
+    return True
+
+
+DONE = 3   # loop's exit code when it stopped because nothing is left tonight (the workflow ends its chunks on it)
+
+
+def loop(out_dir, minutes, every, min_edge, stop_when_done=False):
     Path(out_dir).mkdir(parents=True, exist_ok=True)
-    seen, end, n = {}, time.time() + 60 * minutes, 0
+    seen, end, n, idle = {}, time.time() + 60 * minutes, 0, 0
     pf = Path(out_dir) / "_pre_margins.json"
     if pf.exists():
         saved = json.load(open(pf))
@@ -300,8 +336,16 @@ def loop(out_dir, minutes, every, min_edge):
             seen[k] = r["edge"]; r["t"] = now.strftime("%Y-%m-%dT%H:%M:%SZ"); n += 1
             with open(Path(out_dir) / f"alerts_{now.date().isoformat()}.jsonl", "a") as f:
                 f.write(json.dumps(r, separators=(",", ":")) + "\n")
+        # STOP WHEN DONE (2026-11-09, L4): two passes in a row with every game of the night final (or none left before the 2:30 am ET cutoff) end the
+        # night. Read from the scoreboards this pass already fetched: no extra call.
+        idle = idle + 1 if stop_when_done and nothing_left(cutoff_et()) else 0
+        if idle >= 2:
+            pf.write_text(json.dumps({"margin": PRE, "total": PRE_T}))
+            print(f"{n} alerts logged; no game in progress and none left to start before 2:30 am ET: done for the night")
+            return DONE
         time.sleep(every)
     print(f"{n} alerts logged")
+    return 0
 
 
 _SUMMARY = {}
@@ -374,7 +418,9 @@ def report(out_dir):
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser(); ap.add_argument("cmd", choices=["loop", "once", "report"]); ap.add_argument("out", nargs="?"); ap.add_argument("--minutes", type=float, default=330); ap.add_argument("--every", type=float, default=45)
-    ap.add_argument("--min-edge", type=float, default=0.04); a = ap.parse_args()
+    ap.add_argument("--min-edge", type=float, default=0.04)
+    ap.add_argument("--stop-when-done", action="store_true", help=f"loop: exit {DONE} once no game is in progress and none starts before 2:30 am ET")
+    a = ap.parse_args()
     if a.cmd == "once":
         r = once(a.min_edge)
         print(f"{len(r)} edges >= {100 * a.min_edge:.0f} pts after fees across live games" + (f"; {len(STATE_MISMATCH)} game(s) skipped by the state check (our win probability vs the market's moneyline more than 10 points apart): {STATE_MISMATCH}" if STATE_MISMATCH else ""))
@@ -382,6 +428,6 @@ if __name__ == "__main__":
             s = x["state"]
             print(f"  {x['game']:<9}{x['kind']:<7}{x['desc'][:38]:<40}BUY {x['side']:<3}@{100 * x['price']:.0f}c fair {100 * x['fair']:.0f}% edge {100 * x['edge']:+.1f}  (score {s['as']}-{s['hs']}, {int(s['left'] // 60)}:{int(s['left'] % 60):02d} left)")
     elif a.cmd == "loop":
-        loop(a.out, a.minutes, a.every, a.min_edge)
+        sys.exit(loop(a.out, a.minutes, a.every, a.min_edge, a.stop_when_done))
     else:
         report(a.out)
