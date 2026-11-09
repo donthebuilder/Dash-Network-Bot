@@ -26,8 +26,13 @@ let jobs = []
 if (process.env.PLAYER) {
   jobs = [{ game_id: process.env.GAME || 'test', player_id: process.env.PLAYER }]
 } else {
-  const r = await fetch(`${SITE}/api/writeups/featured?sport=nfl`, { cache: 'no-store' })
+  // LOCKDOWN (site, 2026-11-09): before a game's write-up goes out the site lists its players only to the cron bearer
+  // (DASH_CRON_SECRET here = CRON_SECRET on Vercel); without it the list is empty until 75 min before kickoff.
+  const headers = process.env.DASH_CRON_SECRET ? { authorization: `Bearer ${process.env.DASH_CRON_SECRET}` } : {}
+  const r = await fetch(`${SITE}/api/writeups/featured?sport=nfl`, { cache: 'no-store', headers })
   const j = r.ok ? await r.json() : { games: [] }
+  const named = (j.games || []).reduce((n, g) => n + (g.players || []).length, 0)
+  console.log(`featured: ${(j.games || []).length} games, ${named} players named (bearer ${headers.authorization ? 'sent' : 'not set'})`)
   const now = Date.now()
   for (const g of j.games || []) {
     const lead = new Date(g.kickoff).getTime() - now
