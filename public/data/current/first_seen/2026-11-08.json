@@ -300,6 +300,46 @@
    "value": "Expected:Jeremiah Fears|Trey Murphy III|Dejounte Murray|Zion Williamson|Karlo Matkovi\u0107",
    "first_seen_utc": "2026-11-08T22:07:30Z",
    "mins_before_start": 232
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909950",
+   "start_utc": "2026-11-09T02:00Z",
+   "team": "LAC",
+   "what": "starters",
+   "value": "Confirmed:Kris Dunn|Derrick Jones Jr.|Darius Garland|Rui Hachimura|Brook Lopez",
+   "first_seen_utc": "2026-11-09T01:44:16Z",
+   "mins_before_start": 16
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909950",
+   "start_utc": "2026-11-09T02:00Z",
+   "team": "NO",
+   "what": "starters",
+   "value": "Confirmed:Dejounte Murray|Trey Murphy III|Jeremiah Fears|Zion Williamson|Karlo Matkovi\u0107",
+   "first_seen_utc": "2026-11-09T01:44:16Z",
+   "mins_before_start": 16
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909951",
+   "start_utc": "2026-11-09T02:00Z",
+   "team": "SAC",
+   "what": "starters",
+   "value": "Confirmed:Zach LaVine|De'Andre Hunter|Darius Acuff Jr.|Precious Achiuwa|Dylan Cardwell",
+   "first_seen_utc": "2026-11-09T01:44:16Z",
+   "mins_before_start": 16
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909951",
+   "start_utc": "2026-11-09T02:00Z",
+   "team": "MIA",
+   "what": "starters",
+   "value": "Confirmed:Klay Thompson|Pelle Larsson|Davion Mitchell|Giannis Antetokounmpo|Bam Adebayo",
+   "first_seen_utc": "2026-11-09T01:44:16Z",
+   "mins_before_start": 16
   }
  ]
 }
