@@ -112,7 +112,12 @@ def event_times(sport, game_id, cache):
             if not p.get("scoringPlay"):
                 continue
             who = ((p.get("participants") or [{}])[0].get("athlete") or {}).get("displayName")
-            t = p.get("wallclock") if sport == "nba" else (p.get("modified") + ":00Z" if p.get("modified") and len(p["modified"]) == 17 else p.get("modified"))
+            # the play's own wall-clock time (ESPN gives it for NHL goals too). NHL `modified` is when ESPN last edited the play, often hours after the game, and its
+            # "YYYY-MM-DDTHH:MMZ" form crashed the report (":00Z" was appended after the Z): it is only the fallback now, with the seconds put before the Z.
+            t = p.get("wallclock")
+            if not t and sport == "nhl" and p.get("modified"):
+                m = p["modified"]
+                t = m[:-1] + ":00Z" if len(m) == 17 and m.endswith("Z") else m
             if not who or not t:
                 continue
             n = int(p.get("scoreValue") or 1) if sport == "nba" else 1
