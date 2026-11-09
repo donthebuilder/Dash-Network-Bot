@@ -72,3 +72,12 @@ def test_no_key_drops_stale_copies_of_rebuilt_files(tmp_path):
     assert r.returncode == 0, r.stderr
     assert not (tmp_path / "nfl_week.json.sealed").exists()
     assert (tmp_path / "nfl_picks.json.sealed").read_text() == "DSEAL1.carried"
+
+
+if __name__ == "__main__":   # tests.yml runs each file as a script
+    import tempfile
+    for fn in (test_round_trip_and_same_bytes, test_changed_or_wrong_key_is_refused,
+               test_only_listed_files_and_orphans, test_no_key_drops_stale_copies_of_rebuilt_files):
+        with tempfile.TemporaryDirectory() as d:
+            fn(Path(d))
+    print("test_seal_data: ok")
