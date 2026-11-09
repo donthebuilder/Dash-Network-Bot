@@ -112,4 +112,6 @@ jobs:
             python3 bots/team_live.py board nfl "$ET" --out $D/team_board_nfl_latest.json || true
           fi
       - name: Publish to data branch
+        env:
+          DATA_SEAL_KEY: ${{ secrets.DATA_SEAL_KEY }}   # seal_data.sh: sealed copies of the files that name tonight's calls (2026-11-09)
         run: bash .github/scripts/publish_data.sh "Model boards"

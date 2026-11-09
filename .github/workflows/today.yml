@@ -412,6 +412,8 @@ jobs:
           key: sqlite-cache-${{ github.run_id }}
 
       - name: Publish to data branch
+        env:
+          DATA_SEAL_KEY: ${{ secrets.DATA_SEAL_KEY }}   # seal_data.sh: sealed copies of the files that name tonight's calls (2026-11-09)
         run: bash .github/scripts/publish_data.sh "Today slate"
 
   run-tomorrow-bot:
@@ -516,4 +518,6 @@ jobs:
       # Streamlit Cloud clone. It now publishes the same way every other bot
       # job does -- small files, data branch, single orphan commit, never main.
       - name: Publish to data branch
+        env:
+          DATA_SEAL_KEY: ${{ secrets.DATA_SEAL_KEY }}   # seal_data.sh: sealed copies of the files that name tonight's calls (2026-11-09)
         run: bash .github/scripts/publish_data.sh "Tomorrow slate"

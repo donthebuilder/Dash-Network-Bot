@@ -982,9 +982,19 @@ carry_forward() {
   return 0
 }
 
+# SEALED COPIES (2026-11-09, the site's lockdown): seal_data.sh writes <name>.sealed beside each file that names
+# tonight's calls. Sourced from a copy outside the tree for the same reason as fetch_data_branch.sh above.
+SEAL_LIB="$(mktemp)"
+cp "$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/seal_data.sh" "$SEAL_LIB"
+# shellcheck source=/dev/null
+source "$SEAL_LIB"
+FRESH_LIST="$(mktemp)"
+
 attempt=1
 while [ "$attempt" -le "$MAX_ATTEMPTS" ]; do
   stage_local
+  # what THIS run rebuilt (before carry_forward adds the branch's other files): seal_tree drops a stale sealed copy of these when there is no key
+  ls -1 "$STAGE/public/data/current" > "$FRESH_LIST" 2>/dev/null || : > "$FRESH_LIST"
 
   fetch_data
   remote_before=""
@@ -1025,6 +1035,8 @@ while [ "$attempt" -le "$MAX_ATTEMPTS" ]; do
       echo "publish: detail/${label} matches its slate (${want})."
     fi
   done
+
+  seal_tree "$STAGE/public/data/current" "$FRESH_LIST"
 
   # Fresh orphan branch: no parent, so no history to inherit or grow.
   git checkout -q --orphan data-publish-$attempt
