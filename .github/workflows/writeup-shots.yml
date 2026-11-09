@@ -49,6 +49,7 @@ jobs:
       - name: Shoot the cards
         env:
           SITE: https://dashnetwork.vercel.app
+          DASH_CRON_SECRET: ${{ secrets.DASH_CRON_SECRET }}
           OUT: /tmp/writeup-shots
           PLAYER: ${{ github.event.inputs.player }}
           GAME: ${{ github.event.inputs.game }}
