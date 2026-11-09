@@ -1,0 +1,59 @@
+[
+ {
+  "sport": "nhl",
+  "game_id": "401892680",
+  "start_utc": "2026-11-10T01:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "EDM",
+    "probable_goalie": "Devon Levi"
+   },
+   "away": {
+    "team": "NYR",
+    "probable_goalie": "Joonas Korpisalo"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "EDM -155",
+  "total": 6.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892681",
+  "start_utc": "2026-11-10T02:30Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "VAN",
+    "probable_goalie": "Leevi Merilainen"
+   },
+   "away": {
+    "team": "PHI",
+    "probable_goalie": "Joseph Woll"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "PHI -130",
+  "total": 6.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892682",
+  "start_utc": "2026-11-10T03:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "SJ",
+    "probable_goalie": "Yaroslav Askarov"
+   },
+   "away": {
+    "team": "NYI",
+    "probable_goalie": "Ilya Sorokin"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "NYI -135",
+  "total": 6.5
+ }
+]
