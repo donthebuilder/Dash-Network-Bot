@@ -140,6 +140,136 @@
    "value": "Juuse Saros",
    "first_seen_utc": "2026-11-10T07:27:32Z",
    "mins_before_start": 1172
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892685",
+   "start_utc": "2026-11-11T00:00Z",
+   "team": "OTT",
+   "what": "goalie",
+   "value": "Samuel Ersson",
+   "first_seen_utc": "2026-11-10T19:45:14Z",
+   "mins_before_start": 255
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909960",
+   "start_utc": "2026-11-11T00:30Z",
+   "team": "NY",
+   "what": "starters",
+   "value": "Expected:Mikal Bridges|Landry Shamet|Jalen Brunson|OG Anunoby|Karl-Anthony Towns",
+   "first_seen_utc": "2026-11-10T19:45:14Z",
+   "mins_before_start": 285
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909960",
+   "start_utc": "2026-11-11T00:30Z",
+   "team": "MIL",
+   "what": "starters",
+   "value": "Expected:Tyler Herro|Jaime Jaquez Jr.|Brayden Burries|Kyle Kuzma|Myles Turner",
+   "first_seen_utc": "2026-11-10T19:45:14Z",
+   "mins_before_start": 285
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909961",
+   "start_utc": "2026-11-11T01:00Z",
+   "team": "PHI",
+   "what": "starters",
+   "value": "Expected:VJ Edgecombe|Jaylen Brown|Tyrese Maxey|LeBron James|Joel Embiid",
+   "first_seen_utc": "2026-11-10T19:45:14Z",
+   "mins_before_start": 315
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909961",
+   "start_utc": "2026-11-11T01:00Z",
+   "team": "BOS",
+   "what": "starters",
+   "value": "Expected:Derrick White|Jayson Tatum|Mike Conley|Paul George|Neemias Queta",
+   "first_seen_utc": "2026-11-10T19:45:14Z",
+   "mins_before_start": 315
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909962",
+   "start_utc": "2026-11-11T02:00Z",
+   "team": "PHX",
+   "what": "starters",
+   "value": "Expected:Jalen Green|Dillon Brooks|Devin Booker|Miles Bridges|Oso Ighodaro",
+   "first_seen_utc": "2026-11-10T19:45:14Z",
+   "mins_before_start": 375
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909962",
+   "start_utc": "2026-11-11T02:00Z",
+   "team": "LAC",
+   "what": "starters",
+   "value": "Expected:Kris Dunn|Rui Hachimura|Darius Garland|Derrick Jones Jr.|Brook Lopez",
+   "first_seen_utc": "2026-11-10T19:45:14Z",
+   "mins_before_start": 375
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909963",
+   "start_utc": "2026-11-11T02:00Z",
+   "team": "UTAH",
+   "what": "starters",
+   "value": "Expected:Darryn Peterson|Josh Green|Isaiah Collier|Ace Bailey|Jaxson Hayes",
+   "first_seen_utc": "2026-11-10T19:45:14Z",
+   "mins_before_start": 375
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909963",
+   "start_utc": "2026-11-11T02:00Z",
+   "team": "MIA",
+   "what": "starters",
+   "value": "Expected:Klay Thompson|Andrew Wiggins|Davion Mitchell|Giannis Antetokounmpo|Bam Adebayo",
+   "first_seen_utc": "2026-11-10T19:45:14Z",
+   "mins_before_start": 375
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909964",
+   "start_utc": "2026-11-11T03:00Z",
+   "team": "SAC",
+   "what": "starters",
+   "value": "Expected:Zach LaVine|De'Andre Hunter|Darius Acuff Jr.|Precious Achiuwa|Domantas Sabonis",
+   "first_seen_utc": "2026-11-10T19:45:14Z",
+   "mins_before_start": 435
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909964",
+   "start_utc": "2026-11-11T03:00Z",
+   "team": "ORL",
+   "what": "starters",
+   "value": "Expected:Anthony Black|Desmond Bane|Jase Richardson|Franz Wagner|Wendell Carter Jr.",
+   "first_seen_utc": "2026-11-10T19:45:14Z",
+   "mins_before_start": 435
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909965",
+   "start_utc": "2026-11-11T04:00Z",
+   "team": "POR",
+   "what": "starters",
+   "value": "Expected:Scoot Henderson|Toumani Camara|Damian Lillard|Deni Avdija|Donovan Clingan",
+   "first_seen_utc": "2026-11-10T19:45:14Z",
+   "mins_before_start": 495
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909965",
+   "start_utc": "2026-11-11T04:00Z",
+   "team": "OKC",
+   "what": "starters",
+   "value": "Expected:Ajay Mitchell|Kenrich Williams|Shai Gilgeous-Alexander|Aday Mara|Isaiah Hartenstein",
+   "first_seen_utc": "2026-11-10T19:45:14Z",
+   "mins_before_start": 495
   }
  ]
 }
