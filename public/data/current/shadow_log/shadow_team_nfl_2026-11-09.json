@@ -1,0 +1,1 @@
+{"date": "2026-11-09", "sport": "nfl", "games": {"BUF@MIN": {"espn_id": "401873051", "home": "MIN", "away": "BUF", "start": "2026-11-09 20:15", "status": "Scheduled", "model_spread_home": -0.2, "model_p_home": 0.5055, "book_spread_home": 3.0, "book_total": 45.5, "gap_pts": -3.2, "history_games": 58, "model_version": "nfl_team_v1"}}}
