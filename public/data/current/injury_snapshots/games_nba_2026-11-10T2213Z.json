@@ -1,0 +1,116 @@
+[
+ {
+  "sport": "nba",
+  "game_id": "401909960",
+  "start_utc": "2026-11-11T00:30Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "NY",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "MIL",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": "NY -15.5",
+  "total": 222.5
+ },
+ {
+  "sport": "nba",
+  "game_id": "401909961",
+  "start_utc": "2026-11-11T01:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "PHI",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "BOS",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": "BOS -1.5",
+  "total": 217.5
+ },
+ {
+  "sport": "nba",
+  "game_id": "401909962",
+  "start_utc": "2026-11-11T02:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "PHX",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "LAC",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": "PHX -3.5",
+  "total": 224.5
+ },
+ {
+  "sport": "nba",
+  "game_id": "401909963",
+  "start_utc": "2026-11-11T02:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "UTAH",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "MIA",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": "MIA -9.5",
+  "total": 227.5
+ },
+ {
+  "sport": "nba",
+  "game_id": "401909964",
+  "start_utc": "2026-11-11T03:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "SAC",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "ORL",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": "ORL -5.5",
+  "total": 222.5
+ },
+ {
+  "sport": "nba",
+  "game_id": "401909965",
+  "start_utc": "2026-11-11T04:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "POR",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "OKC",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": "OKC -1.5",
+  "total": 226.5
+ }
+]

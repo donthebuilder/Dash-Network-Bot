@@ -1,0 +1,135 @@
+[
+ {
+  "sport": "nhl",
+  "game_id": "401892683",
+  "start_utc": "2026-11-11T00:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "TOR",
+    "probable_goalie": "Sergei Bobrovsky"
+   },
+   "away": {
+    "team": "COL",
+    "probable_goalie": "Mackenzie Blackwood"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "COL -175",
+  "total": 6.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892684",
+  "start_utc": "2026-11-11T00:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "MTL",
+    "probable_goalie": "Jacob Fowler"
+   },
+   "away": {
+    "team": "MIN",
+    "probable_goalie": "Jesper Wallstedt"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "MIN -125",
+  "total": 6.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892685",
+  "start_utc": "2026-11-11T00:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "OTT",
+    "probable_goalie": "Samuel Ersson"
+   },
+   "away": {
+    "team": "WSH",
+    "probable_goalie": "Logan Thompson"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "WSH -112",
+  "total": 6.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892688",
+  "start_utc": "2026-11-11T00:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "WPG",
+    "probable_goalie": "Nico Daws"
+   },
+   "away": {
+    "team": "NJ",
+    "probable_goalie": "Jake Allen"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "NJ -142",
+  "total": 6.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892686",
+  "start_utc": "2026-11-11T00:30Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "CBJ",
+    "probable_goalie": "Cam Talbot"
+   },
+   "away": {
+    "team": "FLA",
+    "probable_goalie": "Jacob Markstrom"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "FLA -120",
+  "total": 5.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892687",
+  "start_utc": "2026-11-11T01:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "STL",
+    "probable_goalie": "Joel Hofer"
+   },
+   "away": {
+    "team": "DET",
+    "probable_goalie": "John Gibson"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "STL -142",
+  "total": 5.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892689",
+  "start_utc": "2026-11-11T03:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "LA",
+    "probable_goalie": "Anton Forsberg"
+   },
+   "away": {
+    "team": "NSH",
+    "probable_goalie": "Juuse Saros"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "LA -130",
+  "total": 6.5
+ }
+]
