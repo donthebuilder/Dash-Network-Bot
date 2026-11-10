@@ -1,0 +1,145 @@
+{
+ "day": "2026-11-10",
+ "events": [
+  {
+   "sport": "nhl",
+   "game_id": "401892683",
+   "start_utc": "2026-11-11T00:00Z",
+   "team": "TOR",
+   "what": "goalie",
+   "value": "Sergei Bobrovsky",
+   "first_seen_utc": "2026-11-10T07:27:32Z",
+   "mins_before_start": 992
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892683",
+   "start_utc": "2026-11-11T00:00Z",
+   "team": "COL",
+   "what": "goalie",
+   "value": "Mackenzie Blackwood",
+   "first_seen_utc": "2026-11-10T07:27:32Z",
+   "mins_before_start": 992
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892684",
+   "start_utc": "2026-11-11T00:00Z",
+   "team": "MTL",
+   "what": "goalie",
+   "value": "Jacob Fowler",
+   "first_seen_utc": "2026-11-10T07:27:32Z",
+   "mins_before_start": 992
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892684",
+   "start_utc": "2026-11-11T00:00Z",
+   "team": "MIN",
+   "what": "goalie",
+   "value": "Jesper Wallstedt",
+   "first_seen_utc": "2026-11-10T07:27:32Z",
+   "mins_before_start": 992
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892685",
+   "start_utc": "2026-11-11T00:00Z",
+   "team": "OTT",
+   "what": "goalie",
+   "value": "Linus Ullmark",
+   "first_seen_utc": "2026-11-10T07:27:32Z",
+   "mins_before_start": 992
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892685",
+   "start_utc": "2026-11-11T00:00Z",
+   "team": "WSH",
+   "what": "goalie",
+   "value": "Logan Thompson",
+   "first_seen_utc": "2026-11-10T07:27:32Z",
+   "mins_before_start": 992
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892688",
+   "start_utc": "2026-11-11T00:00Z",
+   "team": "WPG",
+   "what": "goalie",
+   "value": "Nico Daws",
+   "first_seen_utc": "2026-11-10T07:27:32Z",
+   "mins_before_start": 992
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892688",
+   "start_utc": "2026-11-11T00:00Z",
+   "team": "NJ",
+   "what": "goalie",
+   "value": "Jake Allen",
+   "first_seen_utc": "2026-11-10T07:27:32Z",
+   "mins_before_start": 992
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892686",
+   "start_utc": "2026-11-11T00:30Z",
+   "team": "CBJ",
+   "what": "goalie",
+   "value": "Cam Talbot",
+   "first_seen_utc": "2026-11-10T07:27:32Z",
+   "mins_before_start": 1022
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892686",
+   "start_utc": "2026-11-11T00:30Z",
+   "team": "FLA",
+   "what": "goalie",
+   "value": "Jacob Markstrom",
+   "first_seen_utc": "2026-11-10T07:27:32Z",
+   "mins_before_start": 1022
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892687",
+   "start_utc": "2026-11-11T01:00Z",
+   "team": "STL",
+   "what": "goalie",
+   "value": "Joel Hofer",
+   "first_seen_utc": "2026-11-10T07:27:32Z",
+   "mins_before_start": 1052
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892687",
+   "start_utc": "2026-11-11T01:00Z",
+   "team": "DET",
+   "what": "goalie",
+   "value": "John Gibson",
+   "first_seen_utc": "2026-11-10T07:27:32Z",
+   "mins_before_start": 1052
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892689",
+   "start_utc": "2026-11-11T03:00Z",
+   "team": "LA",
+   "what": "goalie",
+   "value": "Darcy Kuemper",
+   "first_seen_utc": "2026-11-10T07:27:32Z",
+   "mins_before_start": 1172
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892689",
+   "start_utc": "2026-11-11T03:00Z",
+   "team": "NSH",
+   "what": "goalie",
+   "value": "Juuse Saros",
+   "first_seen_utc": "2026-11-10T07:27:32Z",
+   "mins_before_start": 1172
+  }
+ ]
+}
