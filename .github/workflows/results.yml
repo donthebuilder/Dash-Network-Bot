@@ -85,6 +85,11 @@ concurrency:
 permissions:
   contents: write
 
+env:
+  # seal move 3: the data branch holds only sealed copies of the files that name tonight's calls; every step that
+  # reads or publishes the branch needs the key (open_data_branch.sh, bots/sealed_data.py, publish_data.sh)
+  DATA_SEAL_KEY: ${{ secrets.DATA_SEAL_KEY }}
+
 jobs:
   guard:
     # OFFSEASON GUARD (bots/mlb_season_guard.py, 2026-09-27): no MLB game from
@@ -143,7 +148,7 @@ jobs:
       # Best effort: with no baseline the tracker skips the digest and says so.
       - name: Restore last published live results (digest baseline)
         run: |
-          git fetch origin data --depth 1 -q 2>/dev/null || true
+          bash .github/scripts/fetch_data_branch.sh || true
           if git cat-file -e origin/data:public/data/current/results_live.json 2>/dev/null; then
             mkdir -p public/data/current
             git show origin/data:public/data/current/results_live.json > public/data/current/results_live.json
@@ -168,7 +173,7 @@ jobs:
       # (player_id + game_pk), which the breakdown file was never needed for.
       - name: Restore recent outcome logs for the stale-game recheck
         run: |
-          git fetch origin data --depth 1 2>/dev/null || true
+          bash .github/scripts/fetch_data_branch.sh || true
           if git rev-parse --verify origin/data >/dev/null 2>&1; then
             rm -rf /tmp/outcome-restore && mkdir -p /tmp/outcome-restore
             git archive origin/data public/data 2>/dev/null | tar -x -C /tmp/outcome-restore || true
@@ -215,7 +220,7 @@ jobs:
           echo "PHX_TODAY=${PHX_TODAY}" >> "$GITHUB_ENV"
           ATTEMPT=0
           MAX_ATTEMPTS=3
-          until git fetch origin data --depth 1 -q; do
+          until bash .github/scripts/fetch_data_branch.sh; do
             ATTEMPT=$((ATTEMPT + 1))
             if [ "$ATTEMPT" -ge "$MAX_ATTEMPTS" ]; then
               echo "::error::could not fetch origin/data after ${MAX_ATTEMPTS} attempts -- cannot determine whether outcome_log_${PHX_TODAY}.jsonl already exists there, and silently assuming it doesn't is exactly the failure mode this guard exists to catch. Refusing to continue."
@@ -333,7 +338,7 @@ jobs:
       # is where the backlog actually lives.
       - name: Restore graded history from data branch
         run: |
-          git fetch origin data --depth 1 2>/dev/null || true
+          bash .github/scripts/fetch_data_branch.sh || true
           if git rev-parse --verify origin/data >/dev/null 2>&1; then
             rm -rf /tmp/histout && mkdir -p /tmp/histout public/data
             git archive origin/data public/data 2>/dev/null | tar -x -C /tmp/histout || true

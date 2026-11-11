@@ -108,6 +108,11 @@ concurrency:
 permissions:
   contents: write
 
+env:
+  # seal move 3: the data branch holds only sealed copies of the files that name tonight's calls; every step that
+  # reads or publishes the branch needs the key (open_data_branch.sh, bots/sealed_data.py, publish_data.sh)
+  DATA_SEAL_KEY: ${{ secrets.DATA_SEAL_KEY }}
+
 jobs:
   guard:
     # OFFSEASON GUARD (bots/mlb_season_guard.py, 2026-09-27): no MLB game from
@@ -250,7 +255,7 @@ jobs:
       - name: Restore prediction-of-record locks from the data branch
         continue-on-error: true
         run: |
-          git fetch origin data --depth 1 2>/dev/null || true
+          bash .github/scripts/fetch_data_branch.sh || true
           if git rev-parse --verify origin/data >/dev/null 2>&1; then
             rm -rf /tmp/por-restore && mkdir -p /tmp/por-restore
             git archive origin/data public/data 2>/dev/null | tar -x -C /tmp/por-restore || true

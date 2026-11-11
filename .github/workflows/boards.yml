@@ -33,6 +33,11 @@ concurrency:
 permissions:
   contents: write
 
+env:
+  # seal move 3: the data branch holds only sealed copies of the files that name tonight's calls; every step that
+  # reads or publishes the branch needs the key (open_data_branch.sh, bots/sealed_data.py, publish_data.sh)
+  DATA_SEAL_KEY: ${{ secrets.DATA_SEAL_KEY }}
+
 jobs:
   # SLOT GATE (2026-11-05): the other season's twin slot exits; a late run skips when every nhl,nba,nfl game that ET day has started.
   gate:

@@ -81,7 +81,7 @@ def get_with_retry(url, *, timeout=60, tries=5, base=2.0, label=""):
     last = None
     for attempt in range(1, tries + 1):
         try:
-            resp = requests.get(url, timeout=timeout)
+            resp = sealed_data.requests_get(url, timeout=timeout)   # the slate and the pairs file are published sealed
             last = resp
             if resp.status_code not in TRANSIENT_STATUS:
                 return resp
@@ -140,6 +140,8 @@ except Exception:  # pragma: no cover
 # and took the spray-cache and companion jobs down with it.
 GITHUB_REPO = os.environ.get("GITHUB_REPOSITORY", "").strip() or "donthebuilder/dash-network-bot"
 DATA_BRANCH = os.environ.get("DATA_BRANCH", "data").strip() or "data"
+import sealed_data
+
 RAW_BASE = f"https://raw.githubusercontent.com/{GITHUB_REPO}/{DATA_BRANCH}"
 
 REPO_ROOT = Path(__file__).resolve().parent.parent

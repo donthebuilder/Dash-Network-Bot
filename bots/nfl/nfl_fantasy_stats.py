@@ -88,6 +88,9 @@ import requests
 import nfl_espn
 
 SUMMARY = "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary"
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))   # bots/sealed_data.py
+import sealed_data  # noqa: E402
+
 WEEK_JSON = ("https://raw.githubusercontent.com/donthebuilder/"
              "dash-network-bot/data/public/data/current/nfl_week.json")
 TIMEOUT = 30
@@ -340,7 +343,7 @@ def main() -> int:
         week_json = json.loads(Path(a.slate).read_text())
     else:
         try:
-            r = requests.get(WEEK_JSON, timeout=TIMEOUT)
+            r = sealed_data.requests_get(WEEK_JSON, timeout=TIMEOUT)   # nfl_week.json is published sealed
             r.raise_for_status()
             week_json = r.json()
         except Exception as exc:

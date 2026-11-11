@@ -142,6 +142,8 @@ from typing import Any
 SCRIPT_DIR = Path(__file__).resolve().parent
 REPO_ROOT = SCRIPT_DIR.parent if SCRIPT_DIR.name == "bots" else SCRIPT_DIR
 
+import sealed_data   # pick_lock.json is published sealed
+
 RAW = ("https://raw.githubusercontent.com/donthebuilder/"
        "dash-network-bot/data/public/data/current")
 
@@ -976,8 +978,7 @@ def fetch_live(dest: Path) -> None:
     names = ["pick_lock.json", "today_run_meta.json"]
     for name in names:
         try:
-            with urllib.request.urlopen(f"{RAW}/{name}", timeout=20) as r:
-                (dest / name).write_bytes(r.read())
+            (dest / name).write_bytes(sealed_data.urlopen_read(f"{RAW}/{name}", timeout=20))
         except Exception as e:
             print(f"  · could not fetch {name}: {e}", file=sys.stderr)
 

@@ -91,6 +91,8 @@ REPO_ROOT = SCRIPT_DIR.parent if SCRIPT_DIR.name == "bots" else SCRIPT_DIR
 PUBLIC = REPO_ROOT / "public" / "data"
 CURRENT = PUBLIC / "current"
 
+import sealed_data
+
 RAW = ("https://raw.githubusercontent.com/donthebuilder/"
        "dash-network-bot/data/public/data/current")
 
@@ -216,8 +218,9 @@ def fetch_lock(date: str) -> dict:
 
     url = f"{RAW}/pick_lock.json?t={int(now_utc().timestamp())}"
     try:
-        with urllib.request.urlopen(url, timeout=20) as r:
-            j = json.loads(r.read().decode())
+        # published sealed (seal move 3). 404 only when neither copy is on the branch; a sealed file that
+        # cannot be opened raises and lands in "unreadable" below, never in "starting fresh".
+        j = json.loads(sealed_data.urlopen_read(url, timeout=20).decode())
         if isinstance(j, dict) and j.get("date") == date:
             return j
         # A ledger for a different slate is not this slate's ledger.

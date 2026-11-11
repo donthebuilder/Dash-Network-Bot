@@ -223,10 +223,10 @@ def _fetch_archived_card(season: int, week: int, prefix: str):
     import tempfile, urllib.request
     url = f"{DATA_BASE}/{prefix}picks_{season}_w{week:02d}.json"
     try:
-        with urllib.request.urlopen(url, timeout=20) as r:
-            if r.status != 200:
-                return None
-            body = r.read()
+        import sys
+        sys.path.insert(0, str(Path(__file__).resolve().parent.parent))   # bots/sealed_data.py
+        import sealed_data
+        body = sealed_data.urlopen_read(url, timeout=20)   # the week's card is published sealed
         json.loads(body)          # refuse to hand the grader a half-file
         tmp = Path(tempfile.mkdtemp()) / f"{prefix}picks_{season}_w{week:02d}.json"
         tmp.write_bytes(body)

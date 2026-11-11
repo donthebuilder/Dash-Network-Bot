@@ -582,7 +582,8 @@ def fetch_starters(slate_url: str = "") -> dict:
         "https://raw.githubusercontent.com/donthebuilder/"
         "dash-network-bot/data/public/data/current/today_slim.json")
     try:
-        rows = requests.get(url, timeout=45).json()
+        import sealed_data   # today_slim.json is published sealed
+        rows = sealed_data.requests_get(url, timeout=45).json()
     except Exception as e:
         print(f"moneyline: could not read the slate ({type(e).__name__}) — "
               "picks will fall back to records only", file=sys.stderr)

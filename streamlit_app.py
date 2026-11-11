@@ -71,6 +71,20 @@ def _cfg(key: str, default: str) -> str:
 GITHUB_REPO = _cfg("GITHUB_REPO", DEFAULT_REPO)
 DATA_BRANCH = _cfg("DATA_BRANCH", "data")
 RAW_BASE = f"https://raw.githubusercontent.com/{GITHUB_REPO}/{DATA_BRANCH}"
+
+
+def _data_get(url, **kw):
+    """The slate, pairs and live results are published sealed (seal move 3, 2026-11-11). This app can read them only
+    with DATA_SEAL_KEY in its environment or its Streamlit secrets; without it those files read as unavailable."""
+    import os, sys
+    sys.path.insert(0, str(Path(__file__).resolve().parent / "bots"))
+    import sealed_data
+    if not os.environ.get("DATA_SEAL_KEY"):
+        try:
+            os.environ["DATA_SEAL_KEY"] = str(st.secrets["DATA_SEAL_KEY"])
+        except Exception:
+            pass
+    return sealed_data.requests_get(url, **kw)
 CACHE_TTL = 300
 REPO_ROOT = Path(__file__).resolve().parent
 
@@ -315,7 +329,7 @@ def load_json(rel_path: str) -> Any:
         except Exception:
             return None
     try:
-        r = requests.get(f"{RAW_BASE}/{rel_path}", headers=_headers(), timeout=45)
+        r = _data_get(f"{RAW_BASE}/{rel_path}", headers=_headers(), timeout=45)
         if r.status_code == 200:
             return r.json()
     except Exception:
@@ -329,7 +343,7 @@ def load_text(rel_path: str) -> Optional[str]:
     if local.exists() and local.stat().st_size > 0:
         return local.read_text(encoding="utf-8", errors="replace")
     try:
-        r = requests.get(f"{RAW_BASE}/{rel_path}", headers=_headers(), timeout=45)
+        r = _data_get(f"{RAW_BASE}/{rel_path}", headers=_headers(), timeout=45)
         if r.status_code == 200:
             return r.text
     except Exception:

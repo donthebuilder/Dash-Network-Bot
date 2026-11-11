@@ -28,6 +28,8 @@ with tempfile.TemporaryDirectory() as td:
     td = Path(td)
     lib = td / "scripts"; lib.mkdir()
     shutil.copy(HELPER, lib / "fetch_data_branch.sh")
+    for other in ("open_data_branch.sh", "seal_data.sh"):   # the block copies these out of the tree too (seal move 3)
+        shutil.copy(HELPER.parent / other, lib / other)
     (lib / "harness.sh").write_text("set -euo pipefail\n" + block + '\nfetch_data\necho FETCHED\n')
     fast = td / "bin"; fast.mkdir()                      # skip the 5-second waits between the helper's retries
     (fast / "sleep").write_text("#!/bin/sh\nexit 0\n"); (fast / "sleep").chmod(0o755)
