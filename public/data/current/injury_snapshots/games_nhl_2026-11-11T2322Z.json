@@ -1,0 +1,116 @@
+[
+ {
+  "sport": "nhl",
+  "game_id": "401892690",
+  "start_utc": "2026-11-12T00:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "BUF",
+    "probable_goalie": "Ukko-Pekka Luukkonen"
+   },
+   "away": {
+    "team": "TB",
+    "probable_goalie": "Andrei Vasilevskiy"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "TB -130",
+  "total": 6.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892691",
+  "start_utc": "2026-11-12T00:30Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "CGY",
+    "probable_goalie": "Devin Cooley"
+   },
+   "away": {
+    "team": "NYR",
+    "probable_goalie": "Joonas Korpisalo"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "NYR -142",
+  "total": 5.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892692",
+  "start_utc": "2026-11-12T02:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "EDM",
+    "probable_goalie": "Tristan Jarry"
+   },
+   "away": {
+    "team": "PHI",
+    "probable_goalie": "Dan Vladar"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "EDM -192",
+  "total": 6.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892693",
+  "start_utc": "2026-11-12T02:30Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "VGK",
+    "probable_goalie": "Carter Hart"
+   },
+   "away": {
+    "team": "UTA",
+    "probable_goalie": "Sebastian Cossa"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "VGK -125",
+  "total": 6.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892694",
+  "start_utc": "2026-11-12T03:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "ANA",
+    "probable_goalie": "Laurent Brossoit"
+   },
+   "away": {
+    "team": "NSH",
+    "probable_goalie": "Justus Annunen"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "ANA -142",
+  "total": 6.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892695",
+  "start_utc": "2026-11-12T03:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "SJ",
+    "probable_goalie": "Yaroslav Askarov"
+   },
+   "away": {
+    "team": "PIT",
+    "probable_goalie": "Sergei Murashov"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "PIT -148",
+  "total": 6.5
+ }
+]
