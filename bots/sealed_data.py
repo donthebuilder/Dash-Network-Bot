@@ -27,9 +27,12 @@ import urllib.request
 SEALED_RE = re.compile(
     r"^(nfl_(next_)?(week|game_calls|picks)\.json|(today|tomorrow)_slim\.json|results_live\.json|pick_changes\.json"
     r"|pair_builder_latest\.json|nfl_pick_lock\.json|pick_lock\.json|nhl_board_latest\.json|nba_board_latest\.json"
-    r"|nba_first_board_latest\.json|nfl_(next_)?picks_[0-9]{4}_w[0-9]{2}\.json|nfl_td_log_[0-9]{4}\.jsonl"
+    r"|nba_first_board_latest\.json|(nhl|nba)_sim_latest\.json|nfl_(next_)?picks_[0-9]{4}_w[0-9]{2}\.json|nfl_td_log_[0-9]{4}\.jsonl"
     r"|nfl_game_calls_log_[0-9]{4}_w[0-9]{2}\.jsonl|por_rows_[0-9]{4}-[0-9]{2}-[0-9]{2}\.jsonl)$"
 )
+# Run logs are sealed only while their game is still ahead (seal_data.sh log_is_live); an older one is plain. A reader
+# cannot tell which from the name, so it asks for the sealed copy first and takes the plain one on a 404.
+LOG_RE = re.compile(r"^(nfl_(next_)?(prediction|signal)_log|prediction_log)_.*\.jsonl$")
 MAGIC = b"DSEAL1."
 
 
@@ -38,7 +41,8 @@ class SealError(RuntimeError):
 
 
 def is_sealed_name(name: str) -> bool:
-    return bool(SEALED_RE.match(name.rsplit("/", 1)[-1]))
+    base = name.rsplit("/", 1)[-1]
+    return bool(SEALED_RE.match(base) or LOG_RE.match(base))
 
 
 def sealed_url(url: str) -> str:

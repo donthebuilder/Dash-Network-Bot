@@ -19,7 +19,34 @@
 #   seal_data.sh unseal <in.sealed> <out>        (also used by tests)
 set -euo pipefail
 
-SEALED_RE='^(nfl_(next_)?(week|game_calls|picks)\.json|(today|tomorrow)_slim\.json|results_live\.json|pick_changes\.json|pair_builder_latest\.json|nfl_pick_lock\.json|pick_lock\.json|nhl_board_latest\.json|nba_board_latest\.json|nba_first_board_latest\.json|nfl_(next_)?picks_[0-9]{4}_w[0-9]{2}\.json|nfl_td_log_[0-9]{4}\.jsonl|nfl_game_calls_log_[0-9]{4}_w[0-9]{2}\.jsonl|por_rows_[0-9]{4}-[0-9]{2}-[0-9]{2}\.jsonl)$'
+SEALED_RE='^(nfl_(next_)?(week|game_calls|picks)\.json|(today|tomorrow)_slim\.json|results_live\.json|pick_changes\.json|pair_builder_latest\.json|nfl_pick_lock\.json|pick_lock\.json|nhl_board_latest\.json|nba_board_latest\.json|nba_first_board_latest\.json|(nhl|nba)_sim_latest\.json|nfl_(next_)?picks_[0-9]{4}_w[0-9]{2}\.json|nfl_td_log_[0-9]{4}\.jsonl|nfl_game_calls_log_[0-9]{4}_w[0-9]{2}\.jsonl|por_rows_[0-9]{4}-[0-9]{2}-[0-9]{2}\.jsonl)$'
+
+# RUN LOGS (2026-11-11, Donovan: "Yes, seal them"): every model run's per-player scores. Sealed only while LIVE:
+#   ..._<season>-wkNN.<run>.jsonl  while NN is the newest week on the branch or later (nfl_next_* is next week's, so it is)
+#   ..._<YYYY-MM-DD>.<run>.jsonl   while the date is yesterday (Phoenix) or later
+# An older log is a past game: it goes back to plain and its sealed copy is dropped, so the branch does not carry
+# 260 MB of logs as text that cannot be compressed. por_log / nfl_por_log are left plain: a lock line names a run,
+# it holds no score, and it is written after the game starts.
+LOG_RE='^(nfl_(next_)?(prediction|signal)_log|prediction_log)_.*\.jsonl$'
+seal_cutoff() {   # yesterday in Phoenix (UTC-7), GNU date or BSD date; SEAL_CUTOFF overrides (tests)
+  [ -n "${SEAL_CUTOFF:-}" ] && { echo "$SEAL_CUTOFF"; return; }
+  date -u -d '-31 hours' +%F 2>/dev/null || date -u -v-31H +%F
+}
+live_week() {     # the newest "<season>-wkNN" among the dir's nfl_prediction_log files, or ''
+  local f b best=""
+  for f in "$1"/nfl_prediction_log_*-wk[0-9][0-9].*; do
+    [ -e "$f" ] || continue
+    b="$(basename "$f")"; b="${b#nfl_prediction_log_}"; b="${b%%.*}"
+    [[ "$b" > "$best" ]] && best="$b"
+  done
+  echo "$best"
+}
+log_is_live() {   # name live_week cutoff
+  local n="$1"
+  if [[ "$n" =~ _([0-9]{4}-wk[0-9]{2})\. ]]; then [[ ! "${BASH_REMATCH[1]}" < "$2" ]]; return; fi
+  if [[ "$n" =~ _([0-9]{4}-[0-9]{2}-[0-9]{2})\. ]]; then [[ ! "${BASH_REMATCH[1]}" < "$3" ]]; return; fi
+  return 0        # a shape this does not know: seal it
+}
 
 _hmac() { openssl dgst -sha256 -mac HMAC -macopt "hexkey:$1" | awk '{print $NF}'; }
 _keys_ok() { [[ "${DATA_SEAL_KEY:-}" =~ ^[0-9a-fA-F]{128}$ ]]; }
@@ -42,25 +69,37 @@ unseal_file() {   # in.sealed out
   printf '%s' "$ct" | base64 -d | openssl enc -d -aes-256-cbc -K "$enc" -iv "$iv" > "$2"
 }
 
-# seal_tree <dir>: seal every listed file in <dir>, then remove its plain copy. Returns 1 (publish nothing) when a
-# listed plain file is there and this job has no key.
+# seal_tree <dir>: seal every listed file and every live run log in <dir>, then remove its plain copy. Returns 1
+# (publish nothing) when one of those is staged and this job has no key.
 seal_tree() {
-  local dir="$1" f base n=0 listed=0
-  for f in "$dir"/*; do
-    [ -f "$f" ] || continue
-    [[ "$(basename "$f")" =~ $SEALED_RE ]] && listed=$((listed + 1))
-  done
-  if ! _keys_ok; then
-    [ "$listed" -eq 0 ] && { echo "seal: no key in this job and nothing listed to seal"; return 0; }
-    echo "::error::seal: $listed file(s) that name tonight's calls are staged and DATA_SEAL_KEY is not set in this job. They are never published in plain text, so nothing was published." >&2
-    return 1
-  fi
+  local dir="$1" f base n=0 aged=0 wk cut want="$(mktemp)"
+  wk="$(live_week "$dir")"; cut="$(seal_cutoff)"
   for f in "$dir"/*; do
     [ -f "$f" ] || continue
     base="$(basename "$f")"
-    [[ "$base" =~ $SEALED_RE ]] || continue
-    seal_file "$f" "$f.sealed"; n=$((n + 1))
+    case "$base" in *.sealed) continue ;; esac
+    if [[ "$base" =~ $SEALED_RE ]]; then echo "$f" >> "$want"
+    elif [[ "$base" =~ $LOG_RE ]]; then
+      if log_is_live "$base" "$wk" "$cut"; then echo "$f" >> "$want"; else echo "$f" >> "$want.aged"; fi
+    fi
   done
+  if ! _keys_ok; then
+    [ -s "$want" ] || { echo "seal: no key in this job and nothing listed to seal"; rm -f "$want" "$want.aged"; return 0; }
+    echo "::error::seal: $(wc -l < "$want" | tr -d ' ') file(s) that name tonight's calls are staged and DATA_SEAL_KEY is not set in this job. They are never published in plain text, so nothing was published." >&2
+    rm -f "$want" "$want.aged"
+    return 1
+  fi
+  while read -r f; do
+    [ -n "$f" ] || continue
+    seal_file "$f" "$f.sealed"; n=$((n + 1))
+  done < "$want"
+  # a run log whose game is over goes back to plain
+  if [ -f "$want.aged" ]; then
+    while read -r f; do
+      [ -f "$f.sealed" ] && { rm -f "$f.sealed"; aged=$((aged + 1)); }
+    done < "$want.aged"
+  fi
+  rm -f "$want" "$want.aged"
   # a sealed copy whose plain file is gone (trimmed by the keep caps) goes too
   for f in "$dir"/*.sealed; do
     [ -f "$f" ] || continue
@@ -71,7 +110,7 @@ seal_tree() {
     [ -f "$f" ] || continue
     rm -f "${f%.sealed}"
   done
-  echo "seal: $n sealed, plain copies left out"
+  echo "seal: $n sealed, plain copies left out (run logs: week $wk and later, dates $cut and later; $aged older log(s) back to plain)"
 }
 
 if [ "${BASH_SOURCE[0]}" = "$0" ]; then
