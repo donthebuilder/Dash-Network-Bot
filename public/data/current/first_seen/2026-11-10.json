@@ -270,6 +270,56 @@
    "value": "Expected:Ajay Mitchell|Kenrich Williams|Shai Gilgeous-Alexander|Aday Mara|Isaiah Hartenstein",
    "first_seen_utc": "2026-11-10T19:45:14Z",
    "mins_before_start": 495
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892689",
+   "start_utc": "2026-11-11T03:00Z",
+   "team": "LA",
+   "what": "goalie",
+   "value": "Anton Forsberg",
+   "first_seen_utc": "2026-11-11T00:40:38Z",
+   "mins_before_start": 139
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909960",
+   "start_utc": "2026-11-11T00:30Z",
+   "team": "NY",
+   "what": "starters",
+   "value": "Confirmed:Jalen Brunson|OG Anunoby|Landry Shamet|Mikal Bridges|Karl-Anthony Towns",
+   "first_seen_utc": "2026-11-11T00:40:38Z",
+   "mins_before_start": -11
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909960",
+   "start_utc": "2026-11-11T00:30Z",
+   "team": "MIL",
+   "what": "starters",
+   "value": "Confirmed:Brayden Burries|Jaime Jaquez Jr.|Ryan Rollins|Kyle Kuzma|Myles Turner",
+   "first_seen_utc": "2026-11-11T00:40:38Z",
+   "mins_before_start": -11
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909961",
+   "start_utc": "2026-11-11T01:00Z",
+   "team": "PHI",
+   "what": "starters",
+   "value": "Confirmed:VJ Edgecombe|Jaylen Brown|Tyrese Maxey|LeBron James|Joel Embiid",
+   "first_seen_utc": "2026-11-11T00:40:38Z",
+   "mins_before_start": 19
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909961",
+   "start_utc": "2026-11-11T01:00Z",
+   "team": "BOS",
+   "what": "starters",
+   "value": "Confirmed:Jordan Walsh|Paul George|Derrick White|Jayson Tatum|Neemias Queta",
+   "first_seen_utc": "2026-11-11T00:40:38Z",
+   "mins_before_start": 19
   }
  ]
 }
