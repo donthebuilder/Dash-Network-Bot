@@ -1,0 +1,125 @@
+{
+ "day": "2026-11-11",
+ "events": [
+  {
+   "sport": "nhl",
+   "game_id": "401892690",
+   "start_utc": "2026-11-12T00:00Z",
+   "team": "BUF",
+   "what": "goalie",
+   "value": "Ukko-Pekka Luukkonen",
+   "first_seen_utc": "2026-11-11T06:39:12Z",
+   "mins_before_start": 1041
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892690",
+   "start_utc": "2026-11-12T00:00Z",
+   "team": "TB",
+   "what": "goalie",
+   "value": "Andrei Vasilevskiy",
+   "first_seen_utc": "2026-11-11T06:39:12Z",
+   "mins_before_start": 1041
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892691",
+   "start_utc": "2026-11-12T00:30Z",
+   "team": "CGY",
+   "what": "goalie",
+   "value": "Dustin Wolf",
+   "first_seen_utc": "2026-11-11T06:39:12Z",
+   "mins_before_start": 1071
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892691",
+   "start_utc": "2026-11-12T00:30Z",
+   "team": "NYR",
+   "what": "goalie",
+   "value": "Dylan Garand",
+   "first_seen_utc": "2026-11-11T06:39:12Z",
+   "mins_before_start": 1071
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892692",
+   "start_utc": "2026-11-12T02:00Z",
+   "team": "EDM",
+   "what": "goalie",
+   "value": "Devon Levi",
+   "first_seen_utc": "2026-11-11T06:39:12Z",
+   "mins_before_start": 1161
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892692",
+   "start_utc": "2026-11-12T02:00Z",
+   "team": "PHI",
+   "what": "goalie",
+   "value": "Dan Vladar",
+   "first_seen_utc": "2026-11-11T06:39:12Z",
+   "mins_before_start": 1161
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892693",
+   "start_utc": "2026-11-12T02:30Z",
+   "team": "VGK",
+   "what": "goalie",
+   "value": "Carter Hart",
+   "first_seen_utc": "2026-11-11T06:39:12Z",
+   "mins_before_start": 1191
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892693",
+   "start_utc": "2026-11-12T02:30Z",
+   "team": "UTA",
+   "what": "goalie",
+   "value": "Karel Vejmelka",
+   "first_seen_utc": "2026-11-11T06:39:12Z",
+   "mins_before_start": 1191
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892694",
+   "start_utc": "2026-11-12T03:00Z",
+   "team": "ANA",
+   "what": "goalie",
+   "value": "Laurent Brossoit",
+   "first_seen_utc": "2026-11-11T06:39:12Z",
+   "mins_before_start": 1221
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892694",
+   "start_utc": "2026-11-12T03:00Z",
+   "team": "NSH",
+   "what": "goalie",
+   "value": "Justus Annunen",
+   "first_seen_utc": "2026-11-11T06:39:12Z",
+   "mins_before_start": 1221
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892695",
+   "start_utc": "2026-11-12T03:00Z",
+   "team": "SJ",
+   "what": "goalie",
+   "value": "Yaroslav Askarov",
+   "first_seen_utc": "2026-11-11T06:39:12Z",
+   "mins_before_start": 1221
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892695",
+   "start_utc": "2026-11-12T03:00Z",
+   "team": "PIT",
+   "what": "goalie",
+   "value": "Arturs Silovs",
+   "first_seen_utc": "2026-11-11T06:39:12Z",
+   "mins_before_start": 1221
+  }
+ ]
+}
