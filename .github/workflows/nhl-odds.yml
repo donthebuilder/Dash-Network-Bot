@@ -35,6 +35,11 @@ concurrency:
 permissions:
   contents: write
 
+env:
+  # seal move 3: the data branch holds only sealed copies of the files that name tonight's calls; every step that
+  # reads or publishes the branch needs the key (open_data_branch.sh, bots/sealed_data.py, publish_data.sh)
+  DATA_SEAL_KEY: ${{ secrets.DATA_SEAL_KEY }}
+
 jobs:
   # SLOT GATE (2026-11-05): the other season's twin slot exits; a late run skips when every nhl game that ET day has started.
   gate:
@@ -77,7 +82,7 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p public/data/current
-          if git fetch origin data --depth 1; then
+          if bash .github/scripts/fetch_data_branch.sh; then
             rm -rf /tmp/nhl-restore && mkdir -p /tmp/nhl-restore
             git archive origin/data public/data | tar -x -C /tmp/nhl-restore
             cp /tmp/nhl-restore/public/data/current/nhl_odds_20*.json public/data/current/ 2>/dev/null || true

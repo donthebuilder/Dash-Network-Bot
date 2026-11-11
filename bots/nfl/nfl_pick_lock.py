@@ -100,6 +100,10 @@ import urllib.request
 from pathlib import Path
 from typing import Any
 
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))   # bots/sealed_data.py
+import sealed_data  # noqa: E402
+
 RAW = ("https://raw.githubusercontent.com/donthebuilder/"
        "dash-network-bot/data/public/data/current")
 
@@ -160,8 +164,9 @@ def fetch_lock(prefix: str, season: int, week: int, current_dir: Path) -> dict:
 
     url = f"{RAW}/{prefix}pick_lock.json?t={int(now_utc().timestamp())}"
     try:
-        with urllib.request.urlopen(url, timeout=20) as r:
-            j = json.loads(r.read().decode())
+        # published sealed (seal move 3). 404 only when neither copy is on the branch; a sealed file that
+        # cannot be opened raises and lands in "unreadable" below, never in "starting fresh".
+        j = json.loads(sealed_data.urlopen_read(url, timeout=20).decode())
         if isinstance(j, dict) and j.get("season") == season and j.get("week") == week:
             return j
         return {}

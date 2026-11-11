@@ -10,8 +10,10 @@
 #         nothing new still finds "nothing to publish" (publish_data.sh's tree check)
 #   tag = HMAC(mac, "tag|" + iv + "." + ciphertext base64), checked before anything is decrypted
 #
-# MOVE 1 (this file's first version): the plaintext stays beside the sealed copy; nothing that reads the branch
-# changes. Move 3 drops the plaintext once the site reads only the sealed copies.
+# MOVE 3 (2026-11-11): the plain copy is NOT published. seal_tree seals each listed file and then removes the plain
+# one from the tree about to be pushed. Readers in this repo open the sealed copies after they fetch
+# (open_data_branch.sh for git reads, bots/sealed_data.py for reads over https). A job with no key never publishes a
+# listed file: seal_tree stops the publish instead.
 #
 #   source seal_data.sh; seal_tree <dir> <fresh-list-file>
 #   seal_data.sh unseal <in.sealed> <out>        (also used by tests)
@@ -40,27 +42,36 @@ unseal_file() {   # in.sealed out
   printf '%s' "$ct" | base64 -d | openssl enc -d -aes-256-cbc -K "$enc" -iv "$iv" > "$2"
 }
 
-# seal_tree <dir> <fresh-list>: write <name>.sealed for every listed file in <dir>.
-# With no key, a file this run regenerated (named in <fresh-list>) loses its old .sealed copy, so nothing reads a
-# sealed copy older than the plaintext beside it (the site falls back to the plaintext while move 1 stands).
+# seal_tree <dir>: seal every listed file in <dir>, then remove its plain copy. Returns 1 (publish nothing) when a
+# listed plain file is there and this job has no key.
 seal_tree() {
-  local dir="$1" fresh="${2:-/dev/null}" f base n=0
+  local dir="$1" f base n=0 listed=0
+  for f in "$dir"/*; do
+    [ -f "$f" ] || continue
+    [[ "$(basename "$f")" =~ $SEALED_RE ]] && listed=$((listed + 1))
+  done
+  if ! _keys_ok; then
+    [ "$listed" -eq 0 ] && { echo "seal: no key in this job and nothing listed to seal"; return 0; }
+    echo "::error::seal: $listed file(s) that name tonight's calls are staged and DATA_SEAL_KEY is not set in this job. They are never published in plain text, so nothing was published." >&2
+    return 1
+  fi
   for f in "$dir"/*; do
     [ -f "$f" ] || continue
     base="$(basename "$f")"
     [[ "$base" =~ $SEALED_RE ]] || continue
-    if _keys_ok; then
-      seal_file "$f" "$f.sealed"; n=$((n + 1))
-    elif grep -qxF "$base" "$fresh" 2>/dev/null; then
-      rm -f "$f.sealed"
-    fi
+    seal_file "$f" "$f.sealed"; n=$((n + 1))
   done
-  # a sealed copy whose plaintext is gone (trimmed by the keep caps) goes too
+  # a sealed copy whose plain file is gone (trimmed by the keep caps) goes too
   for f in "$dir"/*.sealed; do
     [ -f "$f" ] || continue
     [ -f "${f%.sealed}" ] || rm -f "$f"
   done
-  if _keys_ok; then echo "seal: $n sealed copies written"; else echo "::warning::seal: DATA_SEAL_KEY not set in this job -- no sealed copies written; sealed copies of files this run rebuilt were dropped (the site falls back to the plaintext)"; fi
+  # the plain copies stay on the runner; they do not go out
+  for f in "$dir"/*.sealed; do
+    [ -f "$f" ] || continue
+    rm -f "${f%.sealed}"
+  done
+  echo "seal: $n sealed, plain copies left out"
 }
 
 if [ "${BASH_SOURCE[0]}" = "$0" ]; then

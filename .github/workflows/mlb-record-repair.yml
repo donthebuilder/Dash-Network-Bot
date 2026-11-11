@@ -22,6 +22,11 @@ concurrency:
 permissions:
   contents: write
 
+env:
+  # seal move 3: the data branch holds only sealed copies of the files that name tonight's calls; every step that
+  # reads or publishes the branch needs the key (open_data_branch.sh, bots/sealed_data.py, publish_data.sh)
+  DATA_SEAL_KEY: ${{ secrets.DATA_SEAL_KEY }}
+
 jobs:
   repair:
     runs-on: ubuntu-latest
@@ -41,7 +46,7 @@ jobs:
           DATES: ${{ github.event.inputs.dates }}
         run: |
           set -euo pipefail
-          git fetch origin data --depth 1
+          bash .github/scripts/fetch_data_branch.sh
           rm -rf /tmp/mlb-restore && mkdir -p /tmp/mlb-restore public/data/current
           git archive origin/data public/data | tar -x -C /tmp/mlb-restore
           for d in $(echo "$DATES" | tr ',' ' '); do

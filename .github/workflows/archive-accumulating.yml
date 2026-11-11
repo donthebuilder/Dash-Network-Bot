@@ -17,11 +17,22 @@ concurrency:
   group: archive-accumulating
   cancel-in-progress: false
 
+env:
+  # seal move 3: the data branch holds only sealed copies of the files that name tonight's calls; every step that
+  # reads or publishes the branch needs the key (open_data_branch.sh, bots/sealed_data.py, publish_data.sh)
+  DATA_SEAL_KEY: ${{ secrets.DATA_SEAL_KEY }}
+
 jobs:
   archive:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
+      # the two scripts that open the branch's sealed files (por_rows_* is sealed since seal move 3)
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          path: _src
+          sparse-checkout: .github/scripts
       - name: Checkout bbe-history (archive folder only) and read the data branch
         run: |
           set -euo pipefail
@@ -33,6 +44,7 @@ jobs:
           git -C _data sparse-checkout set --no-cone /.keep-nothing
           mkdir -p _data/public/data/archive
           git -C _data fetch --quiet --depth 1 origin '+refs/heads/data:refs/remotes/origin/data'
+          (cd _data && bash ../_src/.github/scripts/open_data_branch.sh)
       - name: Copy what is not archived yet
         working-directory: _data
         run: |
@@ -47,6 +59,8 @@ jobs:
               graded_results_*.json|graded_results_*.txt|outcome_log_*.jsonl|por_log_*.jsonl|por_rows_*.jsonl|odds_20*.json|moneyline_prices_20*.json|nfl_outcome_log_*.jsonl|nfl_por_log_*.jsonl|nfl_results_20*.json) ;;
               *) continue ;;
             esac
+            # bbe-history is public too: a day's locked rows are archived in plain only once that day is over
+            case "$name" in por_rows_*) d="${name#por_rows_}"; d="${d%.jsonl}"; [[ "$d" < "$(date -u -d '-1 day' +%F)" ]] || continue ;; esac
             grep -qxF "$name.gz" /tmp/have && continue
             git show "origin/data:$path" | gzip -9n > "$A/$name.gz"
             n=$((n + 1))

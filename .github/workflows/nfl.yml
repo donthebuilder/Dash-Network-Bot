@@ -72,6 +72,11 @@ concurrency:
 permissions:
   contents: write
 
+env:
+  # seal move 3: the data branch holds only sealed copies of the files that name tonight's calls; every step that
+  # reads or publishes the branch needs the key (open_data_branch.sh, bots/sealed_data.py, publish_data.sh)
+  DATA_SEAL_KEY: ${{ secrets.DATA_SEAL_KEY }}
+
 jobs:
   # THE GATE (2026-10-01). Only the pregame-cadence crons (minute 8/23/38/53)
   # are gated; the spine, a manual run and a Vercel-dispatched backup always
@@ -83,21 +88,28 @@ jobs:
     outputs:
       go: ${{ steps.g.outputs.go }}
     steps:
+      # nfl_week.json is published sealed (seal move 3); the gate opens it with bots/sealed_data.py
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: bots/sealed_data.py
+          sparse-checkout-cone-mode: false
       - id: g
         env:
           EVENT: ${{ github.event_name }}
           SCHED: ${{ github.event.schedule }}
         run: |
           python3 - <<'EOF'
-          import datetime as dt, json, os, urllib.request
+          import datetime as dt, json, os, sys
+          sys.path.insert(0, "bots")
+          import sealed_data
           ev, sched = os.environ.get("EVENT", ""), os.environ.get("SCHED", "")
           go, why = True, "not a pregame-cadence slot"
           if ev == "schedule" and sched.startswith("8,23,38,53 "):
               url = ("https://raw.githubusercontent.com/donthebuilder/dash-network-bot/"
                      "data/public/data/current/nfl_week.json")
               try:
-                  with urllib.request.urlopen(url, timeout=20) as r:
-                      games = (json.loads(r.read()) or {}).get("games") or []
+                  games = (json.loads(sealed_data.urlopen_read(url, timeout=20)) or {}).get("games") or []
                   now = dt.datetime.now(dt.timezone.utc)
                   soon = []
                   for g in games:
@@ -450,7 +462,7 @@ jobs:
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
         run: |
           set -euo pipefail
-          git fetch -q --depth=1 origin data:refs/remotes/origin/data
+          bash .github/scripts/fetch_data_branch.sh
           ARGS="--season 2026 --out public/data/current/nfl_td_log_2026.jsonl"
           if [ -n "${SUPABASE_URL:-}" ] && [ -n "${SUPABASE_SERVICE_ROLE_KEY:-}" ]; then ARGS="$ARGS --apply"; fi
           python bots/nfl/nfl_td_log.py $ARGS

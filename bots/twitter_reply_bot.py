@@ -211,7 +211,8 @@ def find_player(text: str, idx: dict, names_by_sport: dict[str, set[str]]) -> tu
 # --------------------------------------------------------------------------- data
 
 def fetch(name: str):
-    r = requests.get(f"{DATA_BASE}/{name}", timeout=60)
+    import sealed_data   # the slate and week files are published sealed
+    r = sealed_data.requests_get(f"{DATA_BASE}/{name}", timeout=60)
     r.raise_for_status()
     return r.json()
 

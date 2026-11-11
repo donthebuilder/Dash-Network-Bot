@@ -1541,10 +1541,10 @@ def freeze_snapshot(fresh: dict, prev_rows: dict, start_by_pid: dict, now) -> tu
 def published(name: str):
     """The current published copy of a data-branch file, or None."""
     try:
-        req = urllib.request.Request(f"{DATA_RAW}/{name}",
-                                     headers={"User-Agent": "moonshot-odds"})
-        with urllib.request.urlopen(req, timeout=20) as r:
-            return json.loads(r.read().decode("utf-8"))
+        import sealed_data   # the slate, week and lock files are published sealed
+        body = sealed_data.urlopen_read(f"{DATA_RAW}/{name}", timeout=20,
+                                        headers={"User-Agent": "moonshot-odds"})
+        return json.loads(body.decode("utf-8"))
     except Exception:
         return None
 

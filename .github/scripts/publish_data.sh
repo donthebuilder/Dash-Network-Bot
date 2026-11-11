@@ -524,8 +524,17 @@ NFL_GAME_CALLS_TOTALS_KEEP=5
 # 3 tries). On a failed read we stop: the run is red, nothing is published, and the next scheduled run publishes.
 # A COPY OUTSIDE THE TREE (2026-11-05): the second fetch_data runs after `git checkout --orphan` + the tree wipe below,
 # when .github/scripts/ no longer exists, so every publish failed "Could not read the data branch" (NFL run 42114213694).
+# SEAL MOVE 3 (2026-11-11): after it fetches, the helper opens the branch's sealed files into origin/data
+# (open_data_branch.sh) and leaves the commit GitHub really holds at origin/data-published. Both of its helpers are
+# copied out of the tree too, and it is told where they are.
 DATA_FETCH="$(mktemp -t fetch_data_branch.XXXXXX)"
-cp "$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/fetch_data_branch.sh" "$DATA_FETCH"
+_scripts="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+cp "$_scripts/fetch_data_branch.sh" "$DATA_FETCH"
+DATA_OPEN="$(mktemp -t open_data_branch.XXXXXX)"
+cp "$_scripts/open_data_branch.sh" "$DATA_OPEN"
+DATA_SEAL_LIB="$(mktemp -t seal_data.XXXXXX)"
+cp "$_scripts/seal_data.sh" "$DATA_SEAL_LIB"
+export DATA_OPEN DATA_SEAL_LIB
 fetch_data() {
   local rc=0
   bash "$DATA_FETCH" || rc=$?
@@ -982,24 +991,21 @@ carry_forward() {
   return 0
 }
 
-# SEALED COPIES (2026-11-09, the site's lockdown): seal_data.sh writes <name>.sealed beside each file that names
-# tonight's calls. Sourced from a copy outside the tree for the same reason as fetch_data_branch.sh above.
-SEAL_LIB="$(mktemp)"
-cp "$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/seal_data.sh" "$SEAL_LIB"
+# SEALED, NOT PLAIN (move 1 2026-11-09, move 3 2026-11-11): seal_data.sh writes <name>.sealed for each file that names
+# tonight's calls and removes the plain copy from what is pushed. fetch_data (above) opens the branch's sealed files
+# into origin/data for the merge below, and leaves the commit GitHub really holds at origin/data-published.
 # shellcheck source=/dev/null
-source "$SEAL_LIB"
-FRESH_LIST="$(mktemp)"
+source "$DATA_SEAL_LIB"
+published_sha() { git rev-parse --verify -q refs/remotes/origin/data-published 2>/dev/null || git rev-parse origin/data; }
 
 attempt=1
 while [ "$attempt" -le "$MAX_ATTEMPTS" ]; do
   stage_local
-  # what THIS run rebuilt (before carry_forward adds the branch's other files): seal_tree drops a stale sealed copy of these when there is no key
-  ls -1 "$STAGE/public/data/current" > "$FRESH_LIST" 2>/dev/null || : > "$FRESH_LIST"
 
   fetch_data
   remote_before=""
   if git rev-parse --verify origin/data >/dev/null 2>&1; then
-    remote_before="$(git rev-parse origin/data)"
+    remote_before="$(published_sha)"
     carry_forward origin/data
     guard_slate_regression origin/data
     snapshot_dated_slates
@@ -1036,7 +1042,7 @@ while [ "$attempt" -le "$MAX_ATTEMPTS" ]; do
     fi
   done
 
-  seal_tree "$STAGE/public/data/current" "$FRESH_LIST"
+  seal_tree "$STAGE/public/data/current" || exit 1
 
   # Fresh orphan branch: no parent, so no history to inherit or grow.
   git checkout -q --orphan data-publish-$attempt
@@ -1060,7 +1066,7 @@ while [ "$attempt" -le "$MAX_ATTEMPTS" ]; do
   # against their commit instead of force-pushing over the top of it.
   fetch_data
   remote_now=""
-  git rev-parse --verify origin/data >/dev/null 2>&1 && remote_now="$(git rev-parse origin/data)"
+  git rev-parse --verify origin/data >/dev/null 2>&1 && remote_now="$(published_sha)"
 
   if [ "$remote_before" = "$remote_now" ]; then
     # --force-with-lease, not --force. The check above and the push below are

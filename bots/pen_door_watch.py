@@ -97,9 +97,9 @@ STATUS_SECTIONS_ON = words.STATUS_SECTIONS_ON   # which status sections post; ed
 
 def get_json(url: str) -> dict | None:
     try:
-        req = urllib.request.Request(url, headers={"User-Agent": "moonshot-live-watch/2.0"})
-        with urllib.request.urlopen(req, timeout=20) as r:
-            return json.loads(r.read().decode("utf-8"))
+        import sealed_data   # today_slim.json is published sealed; any other url is read as it was
+        body = sealed_data.urlopen_read(url, timeout=20, headers={"User-Agent": "moonshot-live-watch/2.0"})
+        return json.loads(body.decode("utf-8"))
     except Exception as exc:
         print(f"fetch failed {url[:80]}: {exc}", file=sys.stderr)
         return None

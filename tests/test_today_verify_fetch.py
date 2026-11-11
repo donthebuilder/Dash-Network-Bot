@@ -41,7 +41,8 @@ with tempfile.TemporaryDirectory() as td:
     work = td / "work"
     sh(["git", "clone", "-q", str(origin), str(work)], td)
     (work / ".github/scripts").mkdir(parents=True)
-    shutil.copy(ROOT / ".github/scripts/fetch_data_branch.sh", work / ".github/scripts/fetch_data_branch.sh")
+    for name in ("fetch_data_branch.sh", "open_data_branch.sh", "seal_data.sh"):   # the fetch helper opens sealed files (seal move 3)
+        shutil.copy(ROOT / ".github/scripts" / name, work / ".github/scripts" / name)
     (work / "a").write_text("x")
     sh(["git", "add", "-A"], work); sh(["git", "commit", "-qm", "m"], work); sh(["git", "push", "-q", "origin", "main"], work)
     fast = td / "bin"; fast.mkdir()

@@ -13,6 +13,11 @@ concurrency:
   group: pairhist-v2
   cancel-in-progress: false
 
+env:
+  # seal move 3: the data branch holds only sealed copies of the files that name tonight's calls; every step that
+  # reads or publishes the branch needs the key (open_data_branch.sh, bots/sealed_data.py, publish_data.sh)
+  DATA_SEAL_KEY: ${{ secrets.DATA_SEAL_KEY }}
+
 jobs:
   run:
     runs-on: ubuntu-latest
