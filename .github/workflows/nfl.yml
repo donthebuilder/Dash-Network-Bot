@@ -472,7 +472,12 @@ jobs:
       - name: PREPLAY pools
         if: github.event.schedule == '3 7 * * 1' || github.event.schedule == '33 6 * * 2' || github.event.schedule == '33 5 * * 5' || github.event_name == 'workflow_dispatch'
         continue-on-error: true
-        run: python bots/nfl/nfl_preplay_pools.py --season 2026 --out public/data/current/nfl_preplay_pools_2026.json
+        # numpy / pandas / pyarrow are this step's alone (the script turns the play-by-play into a pandas frame), so they
+        # are installed here and not in bots/nfl/requirements.txt, which every NFL run pays for. Without them the step
+        # died on "No module named 'numpy'" every time and, being continue-on-error, never turned the run red (11-11).
+        run: |
+          pip install -q "numpy>=1.26" "pandas>=2.1" "pyarrow>=15"
+          python bots/nfl/nfl_preplay_pools.py --season 2026 --out public/data/current/nfl_preplay_pools_2026.json
 
       # A failed build must not publish an empty slate over a good one. The
       # site's fetch validates `players.length > 0` before accepting a payload,
