@@ -113,6 +113,16 @@ def _get(url: str, headers: dict | None = None, timeout: int = 30) -> bytes:
         return r.read()
 
 
+SEALED: set[str] = set()   # names that are on the branch sealed only (filled by list_branch)
+
+
+def _sealed_body(name: str, timeout: int = 60) -> bytes:
+    import sys
+    sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))   # bots/sealed_data.py
+    import sealed_data
+    return sealed_data.unseal(_get(f"{RAW}/{name}.sealed", timeout=timeout))
+
+
 def list_branch() -> list[str]:
     """Every filename in DIR on the data branch, one API call."""
     hdr = {"Accept": "application/vnd.github+json"}
@@ -123,7 +133,13 @@ def list_branch() -> list[str]:
     tree = json.loads(_get(url, hdr))
     if tree.get("truncated"):
         print("  warning: tree listing truncated")
-    return [e["path"] for e in tree.get("tree", []) if e.get("type") == "blob"]
+    names = [e["path"] for e in tree.get("tree", []) if e.get("type") == "blob"]
+    # a live week's run logs are on the branch only as <name>.sealed (seal_data.sh): list them under their own name
+    have = set(names)
+    for n in names:
+        if n.endswith(".sealed") and n[:-7] not in have:
+            SEALED.add(n[:-7])
+    return [n for n in names if not n.endswith(".sealed")] + sorted(SEALED)
 
 
 def read_header(name: str) -> dict | None:
@@ -131,7 +147,8 @@ def read_header(name: str) -> dict | None:
     4 KB in week 5 (the shadow-model block), and a cut line read as unreadable
     -- weeks 5 and 6 dropped out of the audit without a word (fixed 2026-10-20)."""
     try:
-        body = _get(f"{RAW}/{name}", {"Range": "bytes=0-65535"})
+        # a sealed file cannot be read in part: open the whole of it
+        body = _sealed_body(name) if name in SEALED else _get(f"{RAW}/{name}", {"Range": "bytes=0-65535"})
         line = body.split(b"\n", 1)[0]
         return json.loads(line)
     except Exception as exc:
@@ -140,7 +157,7 @@ def read_header(name: str) -> dict | None:
 
 
 def read_jsonl(name: str) -> list[dict]:
-    body = _get(f"{RAW}/{name}", timeout=60)
+    body = _sealed_body(name) if name in SEALED else _get(f"{RAW}/{name}", timeout=60)
     out = []
     for i, line in enumerate(body.splitlines()):
         if i == 0 or not line.strip():

@@ -103,10 +103,51 @@ def test_no_key_never_publishes_a_listed_file(tmp_path):
     assert (tmp_path / "nba_odds_2026-11-11.json").exists()
 
 
+def test_run_logs_sealed_only_while_live(tmp_path):
+    key = secrets.token_hex(64)
+    live = ["nfl_prediction_log_2026-wk10.202108Z.gha-1.jsonl", "nfl_signal_log_2026-wk10.202108Z.gha-1.jsonl",
+            "nfl_next_prediction_log_2026-wk11.202114Z.gha-1.jsonl", "prediction_log_2026-11-11.221951Z.gha-1.jsonl",
+            "prediction_log_2026-11-10.221951Z.gha-1.jsonl", "nhl_sim_latest.json"]
+    past = ["nfl_prediction_log_2026-wk09.202108Z.gha-1.jsonl", "nfl_signal_log_2026-wk09.202108Z.gha-1.jsonl",
+            "prediction_log_2026-11-09.221951Z.gha-1.jsonl", "nfl_prediction_log_2026-09-04.1Z.gha-1.jsonl",
+            "nfl_next_prediction_log_2026-wk09.202114Z.gha-1.jsonl"]
+    plain = ["nfl_por_log_2026_w10.jsonl", "por_log_2026-11-11.jsonl", "graded_results_2026-11-10.json"]
+    for n in live + past + plain:
+        (tmp_path / n).write_text('{"TEST": "' + n + '"}\n')
+    # an older log that was sealed while it was live: it goes back to plain
+    (tmp_path / (past[0] + ".sealed")).write_text("DSEAL1.was-live")
+    r = _run(f'source "{SCRIPT}"; SEAL_CUTOFF=2026-11-10 seal_tree "{tmp_path}"', key, tmp_path)
+    assert r.returncode == 0, r.stderr
+    names = {p.name for p in tmp_path.iterdir()}
+    for n in live:
+        assert n + ".sealed" in names and n not in names, n
+    for n in past + plain:
+        assert n in names and n + ".sealed" not in names, n
+    assert not any(x.endswith(".sealed.sealed") for x in names)
+    # again, same tree: nothing changes (a second publish finds nothing to publish)
+    before = {p.name: p.read_bytes() for p in tmp_path.iterdir()}
+    for n in live:
+        (tmp_path / n).write_text('{"TEST": "' + n + '"}\n')      # carried forward opened, as the publish does
+    _run(f'source "{SCRIPT}"; SEAL_CUTOFF=2026-11-10 seal_tree "{tmp_path}"', key, tmp_path)
+    assert {p.name: p.read_bytes() for p in tmp_path.iterdir()} == before
+    # no key: a live log is never published plain
+    (tmp_path / live[0]).write_text("{}")
+    r = _run(f'source "{SCRIPT}"; SEAL_CUTOFF=2026-11-10 seal_tree "{tmp_path}"', None, tmp_path)
+    assert r.returncode != 0
+    import sys
+    sys.path.insert(0, str(SCRIPT.parent.parent.parent / "bots"))
+    import sealed_data
+    for n in live + past:
+        assert sealed_data.is_sealed_name(n), n        # a reader asks for the sealed copy first, plain on a 404
+    for n in plain:
+        assert not sealed_data.is_sealed_name(n), n
+
+
 if __name__ == "__main__":   # tests.yml runs each file as a script
     import tempfile
     for fn in (test_round_trip_and_same_bytes, test_changed_or_wrong_key_is_refused,
-               test_only_listed_files_and_orphans, test_no_key_never_publishes_a_listed_file):
+               test_only_listed_files_and_orphans, test_no_key_never_publishes_a_listed_file,
+               test_run_logs_sealed_only_while_live):
         with tempfile.TemporaryDirectory() as d:
             fn(Path(d))
     print("test_seal_data: ok")
