@@ -1,0 +1,21 @@
+[
+ {
+  "sport": "nfl",
+  "game_id": "401873052",
+  "start_utc": "2026-11-13T01:15Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "NYG",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "WSH",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": "NYG -1.5",
+  "total": 40.5
+ }
+]
