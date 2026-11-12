@@ -1,0 +1,1 @@
+{"date": "2026-11-12", "sport": "nfl", "games": {"WAS@NYG": {"espn_id": "401873052", "home": "NYG", "away": "WAS", "start": "2026-11-12 20:15", "status": "Scheduled", "model_spread_home": -4.5, "model_p_home": 0.6383, "book_spread_home": -2.5, "book_total": 40.5, "gap_pts": -2.0, "history_games": 59, "model_version": "nfl_team_v1"}}}
