@@ -350,6 +350,56 @@
    "value": "Expected:Jared McCain|Ajay Mitchell|Shai Gilgeous-Alexander|Kenrich Williams|Isaiah Hartenstein",
    "first_seen_utc": "2026-11-11T19:37:15Z",
    "mins_before_start": 443
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892693",
+   "start_utc": "2026-11-12T02:30Z",
+   "team": "UTA",
+   "what": "goalie",
+   "value": "Sebastian Cossa",
+   "first_seen_utc": "2026-11-12T01:55:15Z",
+   "mins_before_start": 35
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892695",
+   "start_utc": "2026-11-12T03:00Z",
+   "team": "PIT",
+   "what": "goalie",
+   "value": "Sergei Murashov",
+   "first_seen_utc": "2026-11-12T01:55:15Z",
+   "mins_before_start": 65
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909973",
+   "start_utc": "2026-11-12T02:00Z",
+   "team": "UTAH",
+   "what": "starters",
+   "value": "Confirmed:Darryn Peterson|Josh Green|Keyonte George|Ace Bailey|Jaxson Hayes",
+   "first_seen_utc": "2026-11-12T01:55:15Z",
+   "mins_before_start": 5
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909973",
+   "start_utc": "2026-11-12T02:00Z",
+   "team": "ORL",
+   "what": "starters",
+   "value": "Confirmed:Desmond Bane|Alex Morales|Anthony Black|Franz Wagner|Wendell Carter Jr.",
+   "first_seen_utc": "2026-11-12T01:55:15Z",
+   "mins_before_start": 5
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909975",
+   "start_utc": "2026-11-12T03:00Z",
+   "team": "OKC",
+   "what": "starters",
+   "value": "Expected:Jared McCain|Alex Caruso|Shai Gilgeous-Alexander|Kenrich Williams|Isaiah Hartenstein",
+   "first_seen_utc": "2026-11-12T01:55:15Z",
+   "mins_before_start": 65
   }
  ]
 }
