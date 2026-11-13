@@ -1,0 +1,45 @@
+{
+ "day": "2026-11-13",
+ "events": [
+  {
+   "sport": "nhl",
+   "game_id": "401892706",
+   "start_utc": "2026-11-14T02:00Z",
+   "team": "VAN",
+   "what": "goalie",
+   "value": "Leevi Merilainen",
+   "first_seen_utc": "2026-11-13T06:54:00Z",
+   "mins_before_start": 1146
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892706",
+   "start_utc": "2026-11-14T02:00Z",
+   "team": "NYR",
+   "what": "goalie",
+   "value": "Dylan Garand",
+   "first_seen_utc": "2026-11-13T06:54:00Z",
+   "mins_before_start": 1146
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892707",
+   "start_utc": "2026-11-14T03:00Z",
+   "team": "VGK",
+   "what": "goalie",
+   "value": "Adin Hill",
+   "first_seen_utc": "2026-11-13T06:54:00Z",
+   "mins_before_start": 1206
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892707",
+   "start_utc": "2026-11-14T03:00Z",
+   "team": "NSH",
+   "what": "goalie",
+   "value": "Juuse Saros",
+   "first_seen_utc": "2026-11-13T06:54:00Z",
+   "mins_before_start": 1206
+  }
+ ]
+}
