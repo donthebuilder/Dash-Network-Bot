@@ -330,6 +330,36 @@
    "value": "Expected:Grayson Allen|Sion James|Coby White|Naz Reid|Moussa Diabat\u00e9",
    "first_seen_utc": "2026-11-12T19:55:34Z",
    "mins_before_start": 364
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892702",
+   "start_utc": "2026-11-13T01:00Z",
+   "team": "BUF",
+   "what": "goalie",
+   "value": "Alex Lyon",
+   "first_seen_utc": "2026-11-13T01:05:39Z",
+   "mins_before_start": -6
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909978",
+   "start_utc": "2026-11-13T01:00Z",
+   "team": "MIN",
+   "what": "starters",
+   "value": "Confirmed:Ayo Dosunmu|Jaden McDaniels|LaMelo Ball|Jonathan Kuminga|Rudy Gobert",
+   "first_seen_utc": "2026-11-13T01:05:39Z",
+   "mins_before_start": -6
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909978",
+   "start_utc": "2026-11-13T01:00Z",
+   "team": "DAL",
+   "what": "starters",
+   "value": "Confirmed:Cooper Flagg|Caleb Martin|Kyrie Irving|P.J. Washington|Daniel Gafford",
+   "first_seen_utc": "2026-11-13T01:05:39Z",
+   "mins_before_start": -6
   }
  ]
 }
