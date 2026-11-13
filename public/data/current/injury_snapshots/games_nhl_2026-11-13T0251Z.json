@@ -1,0 +1,40 @@
+[
+ {
+  "sport": "nhl",
+  "game_id": "401892706",
+  "start_utc": "2026-11-14T02:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "VAN",
+    "probable_goalie": "Leevi Merilainen"
+   },
+   "away": {
+    "team": "NYR",
+    "probable_goalie": "Dylan Garand"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "NYR -225",
+  "total": 6.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892707",
+  "start_utc": "2026-11-14T03:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "VGK",
+    "probable_goalie": "Adin Hill"
+   },
+   "away": {
+    "team": "NSH",
+    "probable_goalie": "Juuse Saros"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "VGK -185",
+  "total": 5.5
+ }
+]
