@@ -140518,5 +140518,6665 @@
   "two_min_before": null,
   "just_before": null,
   "ticks": 33
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-UTAKGEORGE3-30",
+  "player": "Keyonte George",
+  "strike": 30,
+  "hit": false,
+  "pre": 0.125,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 86
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-UTAKGEORGE3-25",
+  "player": "Keyonte George",
+  "strike": 25,
+  "hit": false,
+  "pre": 0.295,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 56
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-UTAKGEORGE3-20",
+  "player": "Keyonte George",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.535,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 52
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-UTAKGEORGE3-15",
+  "player": "Keyonte George",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.775,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 66
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-UTAJHAYES11-15",
+  "player": "Jaxson Hayes",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.095,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 51
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-UTAJGREEN5-15",
+  "player": "Josh Green",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.030000000000000002,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 104
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-UTAICOLLIER8-15",
+  "player": "Isaiah Collier",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.055,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 76
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-UTADPETERSON22-25",
+  "player": "Darryn Peterson",
+  "strike": 25,
+  "hit": false,
+  "pre": 0.2,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 81
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-UTADPETERSON22-20",
+  "player": "Darryn Peterson",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.395,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 71
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-UTADPETERSON22-15",
+  "player": "Darryn Peterson",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.665,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 57
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-UTADPETERSON22-10",
+  "player": "Darryn Peterson",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.875,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 51
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-UTAABAILEY19-20",
+  "player": "Ace Bailey",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.225,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 63
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-UTAABAILEY19-15",
+  "player": "Ace Bailey",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.435,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 50
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-UTAABAILEY19-10",
+  "player": "Ace Bailey",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.735,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 55
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-HOUTEASON17-20",
+  "player": "Tari Eason",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.065,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 102
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-HOUTEASON17-15",
+  "player": "Tari Eason",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.185,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 84
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-HOUTEASON17-10",
+  "player": "Tari Eason",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.495,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 33
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-HOURSHEPPARD15-20",
+  "player": "Reed Sheppard",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.125,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 73
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-HOUJSMITH10-25",
+  "player": "Jabari Smith Jr.",
+  "strike": 25,
+  "hit": false,
+  "pre": 0.07500000000000001,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 76
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-HOUJSMITH10-20",
+  "player": "Jabari Smith Jr.",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.20500000000000002,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 71
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-HOUJSMITH10-15",
+  "player": "Jabari Smith Jr.",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.495,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 66
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-HOUJSMITH10-10",
+  "player": "Jabari Smith Jr.",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.805,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 71
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-HOUFVANVLEET5-20",
+  "player": "Fred VanVleet",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.165,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 72
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-HOUFVANVLEET5-15",
+  "player": "Fred VanVleet",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.375,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 46
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-HOUFVANVLEET5-10",
+  "player": "Fred VanVleet",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.665,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 48
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-UTAJHAYES11-10",
+  "player": "Jaxson Hayes",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.385,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 34
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-UTAJGREEN5-10",
+  "player": "Josh Green",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.09,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 109
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-UTAICOLLIER8-10",
+  "player": "Isaiah Collier",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.245,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 53
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-HOURSHEPPARD15-15",
+  "player": "Reed Sheppard",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.305,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 67
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-HOURSHEPPARD15-10",
+  "player": "Reed Sheppard",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.585,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 65
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-SACZLAVINE8-25",
+  "player": "Zach LaVine",
+  "strike": 25,
+  "hit": false,
+  "pre": 0.245,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 138
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-SACZLAVINE8-20",
+  "player": "Zach LaVine",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.495,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 138
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-SACZLAVINE8-15",
+  "player": "Zach LaVine",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.735,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 151
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-SACZLAVINE8-10",
+  "player": "Zach LaVine",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.92,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 125
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-SACPACHIUWA9-15",
+  "player": "Precious Achiuwa",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.14500000000000002,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 39
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-SACPACHIUWA9-10",
+  "player": "Precious Achiuwa",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.41000000000000003,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 45
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-SACKMURRAY13-20",
+  "player": "Keegan Murray",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.09,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 141
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-SACKMURRAY13-15",
+  "player": "Keegan Murray",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.28500000000000003,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 141
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-SACKMURRAY13-10",
+  "player": "Keegan Murray",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.595,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 83
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-SACDSABONIS11-20",
+  "player": "Domantas Sabonis",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.135,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 129
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-SACDSABONIS11-15",
+  "player": "Domantas Sabonis",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.355,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 133
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-SACDSABONIS11-10",
+  "player": "Domantas Sabonis",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.695,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 75
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-SACDHUNTER15-20",
+  "player": "De'Andre Hunter",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.155,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 136
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-SACDHUNTER15-15",
+  "player": "De'Andre Hunter",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.385,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 91
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-SACDHUNTER15-10",
+  "player": "De'Andre Hunter",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.715,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 104
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-SACDACUFF5-35",
+  "player": "Darius Acuff Jr.",
+  "strike": 35,
+  "hit": false,
+  "pre": 0.13,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 118
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-SACDACUFF5-30",
+  "player": "Darius Acuff Jr.",
+  "strike": 30,
+  "hit": false,
+  "pre": 0.295,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 114
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-SACDACUFF5-25",
+  "player": "Darius Acuff Jr.",
+  "strike": 25,
+  "hit": false,
+  "pre": 0.515,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 138
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-SACDACUFF5-20",
+  "player": "Darius Acuff Jr.",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.735,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 136
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-SACDACUFF5-15",
+  "player": "Darius Acuff Jr.",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.895,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 120
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-PORTCAMARA33-20",
+  "player": "Toumani Camara",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.15000000000000002,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 152
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-PORTCAMARA33-15",
+  "player": "Toumani Camara",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.375,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 156
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-PORTCAMARA33-10",
+  "player": "Toumani Camara",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.705,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 58
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-PORSCISSOKO91-15",
+  "player": "Sidy Cissoko",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.165,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 118
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-PORSCISSOKO91-10",
+  "player": "Sidy Cissoko",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.435,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 116
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-PORDLILLARD0-30",
+  "player": "Damian Lillard",
+  "strike": 30,
+  "hit": false,
+  "pre": 0.16,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 154
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-PORDLILLARD0-25",
+  "player": "Damian Lillard",
+  "strike": 25,
+  "hit": false,
+  "pre": 0.365,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 149
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-PORDLILLARD0-20",
+  "player": "Damian Lillard",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.585,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 106
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-PORDLILLARD0-15",
+  "player": "Damian Lillard",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.805,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 114
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-PORDCLINGAN23-20",
+  "player": "Donovan Clingan",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.095,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 125
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-PORDCLINGAN23-15",
+  "player": "Donovan Clingan",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.28500000000000003,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 144
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-PORDCLINGAN23-10",
+  "player": "Donovan Clingan",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.625,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 105
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-PORDAVDIJA8-30",
+  "player": "Deni Avdija",
+  "strike": 30,
+  "hit": false,
+  "pre": 0.245,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 131
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-PORDAVDIJA8-25",
+  "player": "Deni Avdija",
+  "strike": 25,
+  "hit": false,
+  "pre": 0.475,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 137
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-PORDAVDIJA8-20",
+  "player": "Deni Avdija",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.725,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 97
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-PORDAVDIJA8-15",
+  "player": "Deni Avdija",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.895,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 121
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-UTAABAILEY19-25",
+  "player": "Ace Bailey",
+  "strike": 25,
+  "hit": false,
+  "pre": 0.08499999999999999,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 95
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-HOUASENGUN28-15",
+  "player": "Alperen Sengun",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.765,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 68
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-HOUKDURANT7-30",
+  "player": "Kevin Durant",
+  "strike": 30,
+  "hit": false,
+  "pre": 0.12000000000000001,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 76
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-HOUKDURANT7-25",
+  "player": "Kevin Durant",
+  "strike": 25,
+  "hit": false,
+  "pre": 0.28500000000000003,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 86
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-HOUKDURANT7-20",
+  "player": "Kevin Durant",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.555,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 106
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-HOUKDURANT7-15",
+  "player": "Kevin Durant",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.815,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 67
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-OKCSGILGEOUSALEXANDER2-40",
+  "player": "Shai Gilgeous-Alexander",
+  "strike": 40,
+  "hit": false,
+  "pre": 0.215,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 157
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-OKCSGILGEOUSALEXANDER2-35",
+  "player": "Shai Gilgeous-Alexander",
+  "strike": 35,
+  "hit": false,
+  "pre": 0.405,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 173
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-OKCSGILGEOUSALEXANDER2-30",
+  "player": "Shai Gilgeous-Alexander",
+  "strike": 30,
+  "hit": false,
+  "pre": 0.63,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 121
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-OKCSGILGEOUSALEXANDER2-25",
+  "player": "Shai Gilgeous-Alexander",
+  "strike": 25,
+  "hit": false,
+  "pre": 0.8200000000000001,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 87
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-OKCKWILLIAMSSF-15",
+  "player": "Kenrich Williams",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.11,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 160
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-OKCKWILLIAMSSF-10",
+  "player": "Kenrich Williams",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.365,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 170
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-OKCIHARTENSTEIN55-20",
+  "player": "Isaiah Hartenstein",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.045,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 130
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-OKCIHARTENSTEIN55-15",
+  "player": "Isaiah Hartenstein",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.2,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 125
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-OKCIHARTENSTEIN55-10",
+  "player": "Isaiah Hartenstein",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.515,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 106
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-OKCAMITCHELL25-30",
+  "player": "Ajay Mitchell",
+  "strike": 30,
+  "hit": false,
+  "pre": 0.060000000000000005,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 49
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-OKCAMITCHELL25-25",
+  "player": "Ajay Mitchell",
+  "strike": 25,
+  "hit": false,
+  "pre": 0.16999999999999998,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 65
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-OKCAMITCHELL25-20",
+  "player": "Ajay Mitchell",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.395,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 48
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-OKCAMITCHELL25-15",
+  "player": "Ajay Mitchell",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.665,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 49
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-OKCAMITCHELL25-10",
+  "player": "Ajay Mitchell",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.885,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 53
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-OKCAMARA15-20",
+  "player": "Aday Mara",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.075,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 222
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-OKCAMARA15-15",
+  "player": "Aday Mara",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.275,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 167
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-OKCAMARA15-10",
+  "player": "Aday Mara",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.61,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 144
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-LACRHACHIMURA28-20",
+  "player": "Rui Hachimura",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.235,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 164
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-LACRHACHIMURA28-15",
+  "player": "Rui Hachimura",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.525,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 188
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-LACRHACHIMURA28-10",
+  "player": "Rui Hachimura",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.795,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 186
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-LACKDUNN8-15",
+  "player": "Kris Dunn",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.08499999999999999,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 113
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-LACKDUNN8-10",
+  "player": "Kris Dunn",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.305,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 125
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-LACDJONES5-20",
+  "player": "Derrick Jones Jr.",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.060000000000000005,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 137
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-LACDJONES5-15",
+  "player": "Derrick Jones Jr.",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.195,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 159
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-LACDJONES5-10",
+  "player": "Derrick Jones Jr.",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.54,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 113
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-LACDGARLAND10-25",
+  "player": "Darius Garland",
+  "strike": 25,
+  "hit": false,
+  "pre": 0.245,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 149
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-LACDGARLAND10-20",
+  "player": "Darius Garland",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.485,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 147
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-LACDGARLAND10-15",
+  "player": "Darius Garland",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.745,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 128
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-LACDGARLAND10-10",
+  "player": "Darius Garland",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.905,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 117
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-LACBLOPEZ11-20",
+  "player": "Brook Lopez",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.08,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 145
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-LACBLOPEZ11-15",
+  "player": "Brook Lopez",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.275,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 106
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-LACBLOPEZ11-10",
+  "player": "Brook Lopez",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.595,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 72
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-HOUATHOMPSON1-25",
+  "player": "Amen Thompson",
+  "strike": 25,
+  "hit": false,
+  "pre": 0.095,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 93
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-HOUATHOMPSON1-20",
+  "player": "Amen Thompson",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.295,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 66
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-HOUATHOMPSON1-15",
+  "player": "Amen Thompson",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.565,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 108
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-HOUATHOMPSON1-10",
+  "player": "Amen Thompson",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.8400000000000001,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 91
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-HOUASENGUN28-30",
+  "player": "Alperen Sengun",
+  "strike": 30,
+  "hit": false,
+  "pre": 0.07500000000000001,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 60
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-HOUASENGUN28-25",
+  "player": "Alperen Sengun",
+  "strike": 25,
+  "hit": false,
+  "pre": 0.245,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 38
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-SACZLAVINE8-30",
+  "player": "Zach LaVine",
+  "strike": 30,
+  "hit": false,
+  "pre": 0.095,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 121
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-HOUASENGUN28-20",
+  "player": "Alperen Sengun",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.495,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 44
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-CHIPWILLIAMS44-15",
+  "player": "Patrick Williams",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.09,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 115
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-CHIPWILLIAMS44-10",
+  "player": "Patrick Williams",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.325,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 92
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-CHINPOWELL24-30",
+  "player": "Norman Powell",
+  "strike": 30,
+  "hit": false,
+  "pre": 0.12000000000000001,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 129
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-CHINPOWELL24-25",
+  "player": "Norman Powell",
+  "strike": 25,
+  "hit": false,
+  "pre": 0.295,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 102
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-CHIMBUZELIS14-25",
+  "player": "Matas Buzelis",
+  "strike": 25,
+  "hit": false,
+  "pre": 0.115,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 126
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-CHIMBUZELIS14-20",
+  "player": "Matas Buzelis",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.325,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 116
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-CHIMBUZELIS14-15",
+  "player": "Matas Buzelis",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.63,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 137
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-CHIMBUZELIS14-10",
+  "player": "Matas Buzelis",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.835,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 120
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-CHIJSMITH25-25",
+  "player": "Jalen Smith",
+  "strike": 25,
+  "hit": false,
+  "pre": 0.055,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 81
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-CHIJSMITH25-20",
+  "player": "Jalen Smith",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.18,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 140
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-CHIJSMITH25-15",
+  "player": "Jalen Smith",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.425,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 51
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-CHIJSMITH25-10",
+  "player": "Jalen Smith",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.715,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 79
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-CHIJGIDDEY3-20",
+  "player": "Josh Giddey",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.165,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 132
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-CHIJGIDDEY3-15",
+  "player": "Josh Giddey",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.385,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 111
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-CHIJGIDDEY3-10",
+  "player": "Josh Giddey",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.725,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 81
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-CHIIOKORO35-15",
+  "player": "Isaac Okoro",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.07500000000000001,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 91
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-CHIIOKORO35-10",
+  "player": "Isaac Okoro",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.285,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 90
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-MIAPLARSSON9-20",
+  "player": "Pelle Larsson",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.135,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 82
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-MIAKTHOMPSON11-20",
+  "player": "Klay Thompson",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.22,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 90
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-MIAKTHOMPSON11-15",
+  "player": "Klay Thompson",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.475,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 86
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-MIAKTHOMPSON11-10",
+  "player": "Klay Thompson",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.745,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 65
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-MIAGANTETOKOUNMPO7-20",
+  "player": "Giannis Antetokounmpo",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.855,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 106
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-MIADMITCHELL2-20",
+  "player": "Davion Mitchell",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.215,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 119
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-MIADMITCHELL2-15",
+  "player": "Davion Mitchell",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.485,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 71
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-MIADMITCHELL2-10",
+  "player": "Davion Mitchell",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.77,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 79
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-MIABADEBAYO13-25",
+  "player": "Bam Adebayo",
+  "strike": 25,
+  "hit": false,
+  "pre": 0.175,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 94
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-MIABADEBAYO13-20",
+  "player": "Bam Adebayo",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.455,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 94
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-MIABADEBAYO13-15",
+  "player": "Bam Adebayo",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.655,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 66
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-MIABADEBAYO13-10",
+  "player": "Bam Adebayo",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.895,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 105
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-MIAAWIGGINS22-20",
+  "player": "Andrew Wiggins",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.085,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 98
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-MIAAWIGGINS22-15",
+  "player": "Andrew Wiggins",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.26,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 92
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-MIAAWIGGINS22-10",
+  "player": "Andrew Wiggins",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.5800000000000001,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 111
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-CLEPWATSON8-20",
+  "player": "Peyton Watson",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.15000000000000002,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 70
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-CLEPWATSON8-15",
+  "player": "Peyton Watson",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.395,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 52
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-CLEPWATSON8-10",
+  "player": "Peyton Watson",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.7,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 103
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-CLEJHARDEN1-25",
+  "player": "James Harden",
+  "strike": 25,
+  "hit": false,
+  "pre": 0.16999999999999998,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 92
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-CLEJHARDEN1-20",
+  "player": "James Harden",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.365,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 80
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-CLEJHARDEN1-15",
+  "player": "James Harden",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.635,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 84
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-CLEJHARDEN1-10",
+  "player": "James Harden",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.855,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 84
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-CLEJALLEN31-25",
+  "player": "Jarrett Allen",
+  "strike": 25,
+  "hit": false,
+  "pre": 0.055,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 52
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-CLEJALLEN31-20",
+  "player": "Jarrett Allen",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.175,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 63
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-CLEJALLEN31-15",
+  "player": "Jarrett Allen",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.445,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 83
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-CLEJALLEN31-10",
+  "player": "Jarrett Allen",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.74,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 97
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-CLEDMITCHELL45-35",
+  "player": "Donovan Mitchell",
+  "strike": 35,
+  "hit": false,
+  "pre": 0.135,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 51
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-CLEDMITCHELL45-30",
+  "player": "Donovan Mitchell",
+  "strike": 30,
+  "hit": false,
+  "pre": 0.315,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 79
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-CLEDMITCHELL45-25",
+  "player": "Donovan Mitchell",
+  "strike": 25,
+  "hit": false,
+  "pre": 0.555,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 73
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-CLEDMITCHELL45-20",
+  "player": "Donovan Mitchell",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.75,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 131
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-CHINPOWELL24-20",
+  "player": "Norman Powell",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.535,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 80
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-CHINPOWELL24-15",
+  "player": "Norman Powell",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.765,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 104
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-MIAPLARSSON9-15",
+  "player": "Pelle Larsson",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.33499999999999996,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 52
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-MIAPLARSSON9-10",
+  "player": "Pelle Larsson",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.665,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 40
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-MIAGANTETOKOUNMPO7-40",
+  "player": "Giannis Antetokounmpo",
+  "strike": 40,
+  "hit": false,
+  "pre": 0.10500000000000001,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 86
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-MIAGANTETOKOUNMPO7-35",
+  "player": "Giannis Antetokounmpo",
+  "strike": 35,
+  "hit": false,
+  "pre": 0.255,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 113
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-MIAGANTETOKOUNMPO7-30",
+  "player": "Giannis Antetokounmpo",
+  "strike": 30,
+  "hit": false,
+  "pre": 0.475,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 74
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-MIAGANTETOKOUNMPO7-25",
+  "player": "Giannis Antetokounmpo",
+  "strike": 25,
+  "hit": false,
+  "pre": 0.6799999999999999,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 74
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-OKCJMCCAIN3-25",
+  "player": "Jared McCain",
+  "strike": 25,
+  "hit": false,
+  "pre": 0.115,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 136
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-OKCJMCCAIN3-20",
+  "player": "Jared McCain",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.295,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 122
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-OKCJMCCAIN3-15",
+  "player": "Jared McCain",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.555,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 85
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-OKCJMCCAIN3-10",
+  "player": "Jared McCain",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.78,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 102
+ },
+ {
+  "market": "KXNBAPTS-26NOV13GSWSAS-SASVWEMBANYAMA1-35",
+  "player": "Victor Wembanyama",
+  "strike": 35,
+  "hit": false,
+  "pre": 0.21000000000000002,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 89
+ },
+ {
+  "market": "KXNBAPTS-26NOV13GSWSAS-SASVWEMBANYAMA1-30",
+  "player": "Victor Wembanyama",
+  "strike": 30,
+  "hit": false,
+  "pre": 0.425,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 133
+ },
+ {
+  "market": "KXNBAPTS-26NOV13GSWSAS-SASVWEMBANYAMA1-25",
+  "player": "Victor Wembanyama",
+  "strike": 25,
+  "hit": false,
+  "pre": 0.665,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 116
+ },
+ {
+  "market": "KXNBAPTS-26NOV13GSWSAS-SASVWEMBANYAMA1-20",
+  "player": "Victor Wembanyama",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.855,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 162
+ },
+ {
+  "market": "KXNBAPTS-26NOV13GSWSAS-SASSCASTLE5-25",
+  "player": "Stephon Castle",
+  "strike": 25,
+  "hit": false,
+  "pre": 0.095,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 79
+ },
+ {
+  "market": "KXNBAPTS-26NOV13GSWSAS-SASSCASTLE5-20",
+  "player": "Stephon Castle",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.245,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 102
+ },
+ {
+  "market": "KXNBAPTS-26NOV13GSWSAS-SASSCASTLE5-15",
+  "player": "Stephon Castle",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.535,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 62
+ },
+ {
+  "market": "KXNBAPTS-26NOV13GSWSAS-SASSCASTLE5-10",
+  "player": "Stephon Castle",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.8200000000000001,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 70
+ },
+ {
+  "market": "KXNBAPTS-26NOV13GSWSAS-SASDVASSELL24-20",
+  "player": "Devin Vassell",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.09,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 119
+ },
+ {
+  "market": "KXNBAPTS-26NOV13GSWSAS-SASDVASSELL24-15",
+  "player": "Devin Vassell",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.295,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 114
+ },
+ {
+  "market": "KXNBAPTS-26NOV13GSWSAS-SASDVASSELL24-10",
+  "player": "Devin Vassell",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.61,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 101
+ },
+ {
+  "market": "KXNBAPTS-26NOV13GSWSAS-SASDHARPER2-25",
+  "player": "Dylan Harper",
+  "strike": 25,
+  "hit": false,
+  "pre": 0.14500000000000002,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 124
+ },
+ {
+  "market": "KXNBAPTS-26NOV13GSWSAS-SASDHARPER2-20",
+  "player": "Dylan Harper",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.345,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 131
+ },
+ {
+  "market": "KXNBAPTS-26NOV13GSWSAS-SASDHARPER2-15",
+  "player": "Dylan Harper",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.63,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 110
+ },
+ {
+  "market": "KXNBAPTS-26NOV13GSWSAS-SASDHARPER2-10",
+  "player": "Dylan Harper",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.865,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 153
+ },
+ {
+  "market": "KXNBAPTS-26NOV13GSWSAS-SASDFOX4-20",
+  "player": "De'Aaron Fox",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.16,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 118
+ },
+ {
+  "market": "KXNBAPTS-26NOV13GSWSAS-SASDFOX4-15",
+  "player": "De'Aaron Fox",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.435,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 86
+ },
+ {
+  "market": "KXNBAPTS-26NOV13GSWSAS-SASDFOX4-10",
+  "player": "De'Aaron Fox",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.755,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 88
+ },
+ {
+  "market": "KXNBAPTS-26NOV13GSWSAS-GSWYLENDEBORG1-30",
+  "player": "Yaxel Lendeborg",
+  "strike": 30,
+  "hit": false,
+  "pre": 0.155,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 56
+ },
+ {
+  "market": "KXNBAPTS-26NOV13GSWSAS-GSWYLENDEBORG1-25",
+  "player": "Yaxel Lendeborg",
+  "strike": 25,
+  "hit": false,
+  "pre": 0.315,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 75
+ },
+ {
+  "market": "KXNBAPTS-26NOV13GSWSAS-GSWYLENDEBORG1-20",
+  "player": "Yaxel Lendeborg",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.585,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 104
+ },
+ {
+  "market": "KXNBAPTS-26NOV13GSWSAS-GSWYLENDEBORG1-15",
+  "player": "Yaxel Lendeborg",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.815,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 112
+ },
+ {
+  "market": "KXNBAPTS-26NOV13GSWSAS-GSWDMELTON8-20",
+  "player": "De'Anthony Melton",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.14500000000000002,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 89
+ },
+ {
+  "market": "KXNBAPTS-26NOV13GSWSAS-GSWDMELTON8-15",
+  "player": "De'Anthony Melton",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.355,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 115
+ },
+ {
+  "market": "KXNBAPTS-26NOV13GSWSAS-GSWDMELTON8-10",
+  "player": "De'Anthony Melton",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.675,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 115
+ },
+ {
+  "market": "KXNBAPTS-26NOV13GSWSAS-GSWDGREEN23-15",
+  "player": "Draymond Green",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.04,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 97
+ },
+ {
+  "market": "KXNBAPTS-26NOV13GSWSAS-GSWDGREEN23-10",
+  "player": "Draymond Green",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.185,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 94
+ },
+ {
+  "market": "KXNBAPTS-26NOV13GSWSAS-GSWBPODZIEMSKI2-25",
+  "player": "Brandin Podziemski",
+  "strike": 25,
+  "hit": false,
+  "pre": 0.165,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 79
+ },
+ {
+  "market": "KXNBAPTS-26NOV13GSWSAS-GSWBPODZIEMSKI2-20",
+  "player": "Brandin Podziemski",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.365,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 107
+ },
+ {
+  "market": "KXNBAPTS-26NOV13GSWSAS-GSWBPODZIEMSKI2-15",
+  "player": "Brandin Podziemski",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.645,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 105
+ },
+ {
+  "market": "KXNBAPTS-26NOV13GSWSAS-GSWBPODZIEMSKI2-10",
+  "player": "Brandin Podziemski",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.855,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 124
+ },
+ {
+  "market": "KXNBAPTS-26NOV13GSWSAS-GSWAHORFORD20-15",
+  "player": "Al Horford",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.05500000000000001,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 95
+ },
+ {
+  "market": "KXNBAPTS-26NOV13GSWSAS-GSWAHORFORD20-10",
+  "player": "Al Horford",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.21000000000000002,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 167
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-ATLDDANIELS5-20",
+  "player": "Dyson Daniels",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.07500000000000001,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 74
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-ATLDDANIELS5-15",
+  "player": "Dyson Daniels",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.25,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 94
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-ATLDDANIELS5-10",
+  "player": "Dyson Daniels",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.61,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 61
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-ATLJJOHNSON1-30",
+  "player": "Jalen Johnson",
+  "strike": 30,
+  "hit": false,
+  "pre": 0.165,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 69
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-ATLJJOHNSON1-25",
+  "player": "Jalen Johnson",
+  "strike": 25,
+  "hit": false,
+  "pre": 0.395,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 56
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-ATLJJOHNSON1-20",
+  "player": "Jalen Johnson",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.645,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 50
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-ATLJJOHNSON1-15",
+  "player": "Jalen Johnson",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.8200000000000001,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 77
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-ATLOOKONGWU17-25",
+  "player": "Onyeka Okongwu",
+  "strike": 25,
+  "hit": false,
+  "pre": 0.04,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 61
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-ATLOOKONGWU17-20",
+  "player": "Onyeka Okongwu",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.195,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 135
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-LACRHACHIMURA28-25",
+  "player": "Rui Hachimura",
+  "strike": 25,
+  "hit": false,
+  "pre": 0.07,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 114
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-ATLOOKONGWU17-15",
+  "player": "Onyeka Okongwu",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.475,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 50
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-ATLOOKONGWU17-10",
+  "player": "Onyeka Okongwu",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.78,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 73
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-MIAKTHOMPSON11-25",
+  "player": "Klay Thompson",
+  "strike": 25,
+  "hit": false,
+  "pre": 0.07500000000000001,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 35
+ },
+ {
+  "market": "KXNBAPTS-26NOV13NYKIND-INDPSIAKAM43-30",
+  "player": "Pascal Siakam",
+  "strike": 30,
+  "hit": false,
+  "pre": 0.10500000000000001,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 78
+ },
+ {
+  "market": "KXNBAPTS-26NOV13NYKIND-INDPSIAKAM43-25",
+  "player": "Pascal Siakam",
+  "strike": 25,
+  "hit": false,
+  "pre": 0.27,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 91
+ },
+ {
+  "market": "KXNBAPTS-26NOV13NYKIND-INDPSIAKAM43-20",
+  "player": "Pascal Siakam",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.545,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 98
+ },
+ {
+  "market": "KXNBAPTS-26NOV13NYKIND-INDPSIAKAM43-15",
+  "player": "Pascal Siakam",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.795,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 89
+ },
+ {
+  "market": "KXNBAPTS-26NOV13NYKIND-INDOTOPPIN1-20",
+  "player": "Obi Toppin",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.065,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 86
+ },
+ {
+  "market": "KXNBAPTS-26NOV13NYKIND-INDOTOPPIN1-15",
+  "player": "Obi Toppin",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.195,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 113
+ },
+ {
+  "market": "KXNBAPTS-26NOV13NYKIND-INDOTOPPIN1-10",
+  "player": "Obi Toppin",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.515,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 65
+ },
+ {
+  "market": "KXNBAPTS-26NOV13NYKIND-INDKOUBRE10-20",
+  "player": "Kelly Oubre Jr.",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.08,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 72
+ },
+ {
+  "market": "KXNBAPTS-26NOV13NYKIND-INDKOUBRE10-15",
+  "player": "Kelly Oubre Jr.",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.245,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 102
+ },
+ {
+  "market": "KXNBAPTS-26NOV13NYKIND-INDKOUBRE10-10",
+  "player": "Kelly Oubre Jr.",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.58,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 102
+ },
+ {
+  "market": "KXNBAPTS-26NOV13NYKIND-INDIZUBAC40-20",
+  "player": "Ivica Zubac",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.10500000000000001,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 74
+ },
+ {
+  "market": "KXNBAPTS-26NOV13NYKIND-INDIZUBAC40-15",
+  "player": "Ivica Zubac",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.305,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 96
+ },
+ {
+  "market": "KXNBAPTS-26NOV13NYKIND-INDIZUBAC40-10",
+  "player": "Ivica Zubac",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.66,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 123
+ },
+ {
+  "market": "KXNBAPTS-26NOV13NYKIND-INDANEMBHARD2-25",
+  "player": "Andrew Nembhard",
+  "strike": 25,
+  "hit": false,
+  "pre": 0.09,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 115
+ },
+ {
+  "market": "KXNBAPTS-26NOV13NYKIND-INDANEMBHARD2-20",
+  "player": "Andrew Nembhard",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.22999999999999998,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 107
+ },
+ {
+  "market": "KXNBAPTS-26NOV13NYKIND-INDANEMBHARD2-15",
+  "player": "Andrew Nembhard",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.48,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 97
+ },
+ {
+  "market": "KXNBAPTS-26NOV13NYKIND-INDANEMBHARD2-10",
+  "player": "Andrew Nembhard",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.75,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 109
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-ATLNALEXANDERWALKER7-30",
+  "player": "Nickeil Alexander-Walker",
+  "strike": 30,
+  "hit": false,
+  "pre": 0.195,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 118
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-ATLNALEXANDERWALKER7-25",
+  "player": "Nickeil Alexander-Walker",
+  "strike": 25,
+  "hit": false,
+  "pre": 0.385,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 83
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-ATLNALEXANDERWALKER7-20",
+  "player": "Nickeil Alexander-Walker",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.625,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 80
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-ATLNALEXANDERWALKER7-15",
+  "player": "Nickeil Alexander-Walker",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.825,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 78
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-NOPZWILLIAMSON1-30",
+  "player": "Zion Williamson",
+  "strike": 30,
+  "hit": false,
+  "pre": 0.155,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 72
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-NOPZWILLIAMSON1-25",
+  "player": "Zion Williamson",
+  "strike": 25,
+  "hit": false,
+  "pre": 0.33999999999999997,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 65
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-NOPZWILLIAMSON1-20",
+  "player": "Zion Williamson",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.615,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 51
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-NOPZWILLIAMSON1-15",
+  "player": "Zion Williamson",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.84,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 110
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-NOPSBEY41-25",
+  "player": "Saddiq Bey",
+  "strike": 25,
+  "hit": false,
+  "pre": 0.165,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 68
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-NOPSBEY41-20",
+  "player": "Saddiq Bey",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.375,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 78
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-NOPSBEY41-15",
+  "player": "Saddiq Bey",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.685,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 45
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-NOPSBEY41-10",
+  "player": "Saddiq Bey",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.87,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 69
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-NOPKMATKOVIC17-15",
+  "player": "Karlo Matkovi\u0107",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.07,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 62
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-NOPKMATKOVIC17-10",
+  "player": "Karlo Matkovi\u0107",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.25,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 61
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-NOPJFEARS0-25",
+  "player": "Jeremiah Fears",
+  "strike": 25,
+  "hit": false,
+  "pre": 0.245,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 55
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-NOPJFEARS0-20",
+  "player": "Jeremiah Fears",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.475,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 51
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-NOPJFEARS0-15",
+  "player": "Jeremiah Fears",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.715,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 76
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-NOPJFEARS0-10",
+  "player": "Jeremiah Fears",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.895,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 66
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-NOPHJONES2-15",
+  "player": "Herbert Jones",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.12,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 66
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-NOPHJONES2-10",
+  "player": "Herbert Jones",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.385,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 59
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-NOPDQUEEN22-20",
+  "player": "Derik Queen",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.075,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 66
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-NOPDQUEEN22-15",
+  "player": "Derik Queen",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.245,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 89
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-NOPDQUEEN22-10",
+  "player": "Derik Queen",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.56,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 57
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-NOPDMURRAY5-25",
+  "player": "Dejounte Murray",
+  "strike": 25,
+  "hit": false,
+  "pre": 0.10500000000000001,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 19
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-NOPDMURRAY5-20",
+  "player": "Dejounte Murray",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.23500000000000001,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 27
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-NOPDMURRAY5-15",
+  "player": "Dejounte Murray",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.43,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 25
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-NOPDMURRAY5-10",
+  "player": "Dejounte Murray",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.765,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 33
+ },
+ {
+  "market": "KXNBAPTS-26NOV13NYKIND-NYKJHART3-20",
+  "player": "Josh Hart",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.04,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 70
+ },
+ {
+  "market": "KXNBAPTS-26NOV13NYKIND-NYKJHART3-15",
+  "player": "Josh Hart",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.16,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 88
+ },
+ {
+  "market": "KXNBAPTS-26NOV13NYKIND-NYKJHART3-10",
+  "player": "Josh Hart",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.45999999999999996,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 69
+ },
+ {
+  "market": "KXNBAPTS-26NOV13NYKIND-NYKOANUNOBY8-25",
+  "player": "OG Anunoby",
+  "strike": 25,
+  "hit": false,
+  "pre": 0.16,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 78
+ },
+ {
+  "market": "KXNBAPTS-26NOV13NYKIND-NYKOANUNOBY8-20",
+  "player": "OG Anunoby",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.355,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 84
+ },
+ {
+  "market": "KXNBAPTS-26NOV13NYKIND-NYKOANUNOBY8-15",
+  "player": "OG Anunoby",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.645,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 81
+ },
+ {
+  "market": "KXNBAPTS-26NOV13NYKIND-NYKOANUNOBY8-10",
+  "player": "OG Anunoby",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.87,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 80
+ },
+ {
+  "market": "KXNBAPTS-26NOV13NYKIND-NYKLSHAMET44-15",
+  "player": "Landry Shamet",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.14,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 68
+ },
+ {
+  "market": "KXNBAPTS-26NOV13NYKIND-NYKLSHAMET44-10",
+  "player": "Landry Shamet",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.445,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 74
+ },
+ {
+  "market": "KXNBAPTS-26NOV13NYKIND-NYKMMCBRIDE2-15",
+  "player": "Miles McBride",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.09,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 106
+ },
+ {
+  "market": "KXNBAPTS-26NOV13NYKIND-NYKMMCBRIDE2-10",
+  "player": "Miles McBride",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.325,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 88
+ },
+ {
+  "market": "KXNBAPTS-26NOV13NYKIND-NYKJBRUNSON11-35",
+  "player": "Jalen Brunson",
+  "strike": 35,
+  "hit": false,
+  "pre": 0.13,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 78
+ },
+ {
+  "market": "KXNBAPTS-26NOV13NYKIND-NYKJBRUNSON11-30",
+  "player": "Jalen Brunson",
+  "strike": 30,
+  "hit": false,
+  "pre": 0.295,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 84
+ },
+ {
+  "market": "KXNBAPTS-26NOV13NYKIND-NYKJBRUNSON11-25",
+  "player": "Jalen Brunson",
+  "strike": 25,
+  "hit": false,
+  "pre": 0.545,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 99
+ },
+ {
+  "market": "KXNBAPTS-26NOV13NYKIND-NYKJBRUNSON11-20",
+  "player": "Jalen Brunson",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.775,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 97
+ },
+ {
+  "market": "KXNBAPTS-26NOV13NYKIND-NYKJBRUNSON11-15",
+  "player": "Jalen Brunson",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.91,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 89
+ },
+ {
+  "market": "KXNBAPTS-26NOV13NYKIND-NYKMBRIDGES25-15",
+  "player": "Mikal Bridges",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.115,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 83
+ },
+ {
+  "market": "KXNBAPTS-26NOV13NYKIND-NYKMBRIDGES25-10",
+  "player": "Mikal Bridges",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.365,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 99
+ },
+ {
+  "market": "KXNBAPTS-26NOV13NYKIND-NYKKTOWNS32-30",
+  "player": "Karl-Anthony Towns",
+  "strike": 30,
+  "hit": false,
+  "pre": 0.11,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 87
+ },
+ {
+  "market": "KXNBAPTS-26NOV13NYKIND-NYKKTOWNS32-25",
+  "player": "Karl-Anthony Towns",
+  "strike": 25,
+  "hit": false,
+  "pre": 0.27,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 96
+ },
+ {
+  "market": "KXNBAPTS-26NOV13NYKIND-NYKKTOWNS32-20",
+  "player": "Karl-Anthony Towns",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.54,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 103
+ },
+ {
+  "market": "KXNBAPTS-26NOV13NYKIND-NYKKTOWNS32-15",
+  "player": "Karl-Anthony Towns",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.78,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 104
+ },
+ {
+  "market": "KXNBAPTS-26NOV13NYKIND-NYKKTOWNS32-10",
+  "player": "Karl-Anthony Towns",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.945,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 71
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-MEMCCOWARD23-20",
+  "player": "Cedric Coward",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.16999999999999998,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 95
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-MEMCCOWARD23-15",
+  "player": "Cedric Coward",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.385,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 64
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-MEMCCOWARD23-10",
+  "player": "Cedric Coward",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.705,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 72
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-MEMCBOOZER27-25",
+  "player": "Cameron Boozer",
+  "strike": 25,
+  "hit": false,
+  "pre": 0.16,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 56
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-MEMCBOOZER27-20",
+  "player": "Cameron Boozer",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.375,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 55
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-MEMCBOOZER27-15",
+  "player": "Cameron Boozer",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.65,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 66
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-MEMCBOOZER27-10",
+  "player": "Cameron Boozer",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.88,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 45
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-MEMJWELLS0-20",
+  "player": "Jaylen Wells",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.095,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 44
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-MEMJWELLS0-15",
+  "player": "Jaylen Wells",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.255,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 54
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-MEMJWELLS0-10",
+  "player": "Jaylen Wells",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.585,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 56
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-MEMISTEWART28-20",
+  "player": "Isaiah Stewart",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.09,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 79
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-MEMISTEWART28-15",
+  "player": "Isaiah Stewart",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.265,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 71
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-MEMISTEWART28-10",
+  "player": "Isaiah Stewart",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.585,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 45
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-MEMCSPENCER24-15",
+  "player": "Cam Spencer",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.11,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 81
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-MEMCSPENCER24-10",
+  "player": "Cam Spencer",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.35,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 115
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-MEMTJEROME2-30",
+  "player": "Ty Jerome",
+  "strike": 30,
+  "hit": false,
+  "pre": 0.245,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 76
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-MEMTJEROME2-25",
+  "player": "Ty Jerome",
+  "strike": 25,
+  "hit": false,
+  "pre": 0.475,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 43
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-MEMTJEROME2-20",
+  "player": "Ty Jerome",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.685,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 47
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-MEMTJEROME2-15",
+  "player": "Ty Jerome",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.875,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 38
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-MEMJGRANT9-20",
+  "player": "Jerami Grant",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.09,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 61
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-MEMJGRANT9-15",
+  "player": "Jerami Grant",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.265,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 99
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-MEMJGRANT9-10",
+  "player": "Jerami Grant",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.575,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 53
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-LACDGARLAND10-30",
+  "player": "Darius Garland",
+  "strike": 30,
+  "hit": false,
+  "pre": 0.1,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 126
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-NOPJFEARS0-30",
+  "player": "Jeremiah Fears",
+  "strike": 30,
+  "hit": false,
+  "pre": 0.1,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 51
+ },
+ {
+  "market": "KXNBAPTS-26NOV13NYKIND-INDANESMITH23-20",
+  "player": "Aaron Nesmith",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.11,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 141
+ },
+ {
+  "market": "KXNBAPTS-26NOV13NYKIND-INDANESMITH23-15",
+  "player": "Aaron Nesmith",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.32,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 123
+ },
+ {
+  "market": "KXNBAPTS-26NOV13NYKIND-INDANESMITH23-10",
+  "player": "Aaron Nesmith",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.615,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 97
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-ORLTDASILVA23-20",
+  "player": "Tristan da Silva",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.16,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 169
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-ORLTDASILVA23-15",
+  "player": "Tristan da Silva",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.385,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 141
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-ORLTDASILVA23-10",
+  "player": "Tristan da Silva",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.665,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 145
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-ORLFWAGNER22-15",
+  "player": "Franz Wagner",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.86,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 78
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-ORLDBANE3-10",
+  "player": "Desmond Bane",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.925,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 91
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-ORLABLACK0-25",
+  "player": "Anthony Black",
+  "strike": 25,
+  "hit": false,
+  "pre": 0.115,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 95
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-ORLABLACK0-20",
+  "player": "Anthony Black",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.28500000000000003,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 109
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-ORLABLACK0-15",
+  "player": "Anthony Black",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.52,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 112
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-SACPACHIUWA9-20",
+  "player": "Precious Achiuwa",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.07,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 13
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-ORLABLACK0-10",
+  "player": "Anthony Black",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.79,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 80
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-ORLDBANE3-30",
+  "player": "Desmond Bane",
+  "strike": 30,
+  "hit": false,
+  "pre": 0.11,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 86
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-ORLDBANE3-25",
+  "player": "Desmond Bane",
+  "strike": 25,
+  "hit": false,
+  "pre": 0.26,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 101
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-ORLDBANE3-20",
+  "player": "Desmond Bane",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.51,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 99
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-ORLDBANE3-15",
+  "player": "Desmond Bane",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.755,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 90
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-ORLJSUGGS4-20",
+  "player": "Jalen Suggs",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.05,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 103
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-ORLJSUGGS4-15",
+  "player": "Jalen Suggs",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.13,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 117
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-ORLJSUGGS4-10",
+  "player": "Jalen Suggs",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.38,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 107
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-ORLWCARTER34-20",
+  "player": "Wendell Carter Jr.",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.115,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 84
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-ORLWCARTER34-15",
+  "player": "Wendell Carter Jr.",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.33499999999999996,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 115
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-ORLWCARTER34-10",
+  "player": "Wendell Carter Jr.",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.665,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 111
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-ORLFWAGNER22-35",
+  "player": "Franz Wagner",
+  "strike": 35,
+  "hit": false,
+  "pre": 0.11,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 85
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-ORLFWAGNER22-30",
+  "player": "Franz Wagner",
+  "strike": 30,
+  "hit": false,
+  "pre": 0.24,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 105
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-ORLFWAGNER22-25",
+  "player": "Franz Wagner",
+  "strike": 25,
+  "hit": false,
+  "pre": 0.505,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 88
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-ORLFWAGNER22-20",
+  "player": "Franz Wagner",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.745,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 66
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-OKCACARUSO9-15",
+  "player": "Alex Caruso",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.08499999999999999,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 113
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-OKCACARUSO9-10",
+  "player": "Alex Caruso",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.29500000000000004,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 109
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-OKCBSTIRTZ14-15",
+  "player": "Bennett Stirtz",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.15000000000000002,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 139
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-OKCBSTIRTZ14-10",
+  "player": "Bennett Stirtz",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.435,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 125
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-CLETPROCTOR24-15",
+  "player": "Tyrese Proctor",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.07,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 48
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-CLETPROCTOR24-10",
+  "player": "Tyrese Proctor",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.275,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 46
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-LACKWAGLER1-20",
+  "player": "Keaton Wagler",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.060000000000000005,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 159
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-CLEJTYSON20-20",
+  "player": "Jaylon Tyson",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.07,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 69
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-LACKWAGLER1-15",
+  "player": "Keaton Wagler",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.215,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 130
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-CLEJTYSON20-15",
+  "player": "Jaylon Tyson",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.22999999999999998,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 91
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-LACKWAGLER1-10",
+  "player": "Keaton Wagler",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.505,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 86
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-CLEJTYSON20-10",
+  "player": "Jaylon Tyson",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.535,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 53
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-LACMSTRUSSF-20",
+  "player": "Max Strus",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.05500000000000001,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 124
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-CLEDMITCHELL45-15",
+  "player": "Donovan Mitchell",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.89,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 70
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-LACMSTRUSSF-15",
+  "player": "Max Strus",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.2,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 120
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-CLEMHEZONJA33-15",
+  "player": "Mario Hezonja",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.09,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 73
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-LACMSTRUSSF-10",
+  "player": "Max Strus",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.46499999999999997,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 113
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-CLEMHEZONJA33-10",
+  "player": "Mario Hezonja",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.31,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 83
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-LACKSANDERS4-15",
+  "player": "Kobe Sanders",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.09,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 158
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-CLEMTHOMAS15-20",
+  "player": "Meleek Thomas",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.12,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 40
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-LACKSANDERS4-10",
+  "player": "Kobe Sanders",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.355,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 120
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-CLEMTHOMAS15-15",
+  "player": "Meleek Thomas",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.28,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 71
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-CLEMTHOMAS15-10",
+  "player": "Meleek Thomas",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.615,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 25
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-PORSHENDERSON00-20",
+  "player": "Scoot Henderson",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.09,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 111
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-PORSHENDERSON00-15",
+  "player": "Scoot Henderson",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.24,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 118
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-PORSHENDERSON00-10",
+  "player": "Scoot Henderson",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.555,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 94
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-PORJHOLIDAY5-20",
+  "player": "Jrue Holiday",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.155,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 117
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-PORJHOLIDAY5-15",
+  "player": "Jrue Holiday",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.395,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 97
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-PORJHOLIDAY5-10",
+  "player": "Jrue Holiday",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.705,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 115
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-PORRWILLIAMS35-15",
+  "player": "Robert Williams III",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.060000000000000005,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 102
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-PORRWILLIAMS35-10",
+  "player": "Robert Williams III",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.245,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 104
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-MILTHERRO11-30",
+  "player": "Tyler Herro",
+  "strike": 30,
+  "hit": false,
+  "pre": 0.11,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 117
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-MILTHERRO11-25",
+  "player": "Tyler Herro",
+  "strike": 25,
+  "hit": false,
+  "pre": 0.29000000000000004,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 128
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-MILTHERRO11-20",
+  "player": "Tyler Herro",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.555,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 83
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-MILTHERRO11-15",
+  "player": "Tyler Herro",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.805,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 85
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-MILNAMENT15-20",
+  "player": "Nate Ament",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.035,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 103
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-MILNAMENT15-15",
+  "player": "Nate Ament",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.095,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 117
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-MILNAMENT15-10",
+  "player": "Nate Ament",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.305,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 107
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-MILMTURNER3-20",
+  "player": "Myles Turner",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.035,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 77
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-MILMTURNER3-15",
+  "player": "Myles Turner",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.16,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 76
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-MILMTURNER3-10",
+  "player": "Myles Turner",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.445,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 78
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-MILKKUZMA18-20",
+  "player": "Kyle Kuzma",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.07500000000000001,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 72
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-MILKKUZMA18-15",
+  "player": "Kyle Kuzma",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.245,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 103
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-MILKKUZMA18-10",
+  "player": "Kyle Kuzma",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.565,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 97
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-MILJJAQUEZ24-20",
+  "player": "Jaime Jaquez Jr.",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.18,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 128
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-MILJJAQUEZ24-15",
+  "player": "Jaime Jaquez Jr.",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.425,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 100
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-MILJJAQUEZ24-10",
+  "player": "Jaime Jaquez Jr.",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.725,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 76
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-MILBBURRIES0-20",
+  "player": "Brayden Burries",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.10500000000000001,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 64
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-MILBBURRIES0-15",
+  "player": "Brayden Burries",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.28,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 84
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-MILBBURRIES0-10",
+  "player": "Brayden Burries",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.615,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 93
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-ATLCMCCOLLUM3-25",
+  "player": "CJ McCollum",
+  "strike": 25,
+  "hit": false,
+  "pre": 0.065,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 70
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-ATLCMCCOLLUM3-20",
+  "player": "CJ McCollum",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.195,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 89
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-ATLCMCCOLLUM3-15",
+  "player": "CJ McCollum",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.455,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 71
+ },
+ {
+  "market": "KXNBAPTS-26NOV13GSWSAS-SASKJOHNSON3-20",
+  "player": "Keldon Johnson",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.03,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 81
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-ATLCMCCOLLUM3-10",
+  "player": "CJ McCollum",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.74,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 57
+ },
+ {
+  "market": "KXNBAPTS-26NOV13GSWSAS-SASKJOHNSON3-15",
+  "player": "Keldon Johnson",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.19,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 133
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-ATLAWIGGINS2-20",
+  "player": "Aaron Wiggins",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.13,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 107
+ },
+ {
+  "market": "KXNBAPTS-26NOV13GSWSAS-SASKJOHNSON3-10",
+  "player": "Keldon Johnson",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.485,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 82
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-ATLAWIGGINS2-15",
+  "player": "Aaron Wiggins",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.33999999999999997,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 83
+ },
+ {
+  "market": "KXNBAPTS-26NOV13GSWSAS-SASJCHAMPAGNIE30-20",
+  "player": "Julian Champagnie",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.060000000000000005,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 85
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-ATLAWIGGINS2-10",
+  "player": "Aaron Wiggins",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.645,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 86
+ },
+ {
+  "market": "KXNBAPTS-26NOV13GSWSAS-SASJCHAMPAGNIE30-15",
+  "player": "Julian Champagnie",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.18,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 119
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-ATLKFLEMINGS4-20",
+  "player": "Kingston Flemings",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.030000000000000002,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 66
+ },
+ {
+  "market": "KXNBAPTS-26NOV13GSWSAS-SASJCHAMPAGNIE30-10",
+  "player": "Julian Champagnie",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.485,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 87
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-ATLKFLEMINGS4-15",
+  "player": "Kingston Flemings",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.175,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 86
+ },
+ {
+  "market": "KXNBAPTS-26NOV13GSWSAS-GSWWRICHARD3-15",
+  "player": "Will Richard",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.035,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 55
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-ATLKFLEMINGS4-10",
+  "player": "Kingston Flemings",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.475,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 47
+ },
+ {
+  "market": "KXNBAPTS-26NOV13GSWSAS-GSWWRICHARD3-10",
+  "player": "Will Richard",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.14500000000000002,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 81
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-MIADMITCHELL2-25",
+  "player": "Davion Mitchell",
+  "strike": 25,
+  "hit": false,
+  "pre": 0.07500000000000001,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 59
+ },
+ {
+  "market": "KXNBAPTS-26NOV13NYKIND-NYKLSHAMET44-20",
+  "player": "Landry Shamet",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.055,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 55
+ },
+ {
+  "market": "KXNBAPTS-26NOV13NYKIND-NYKADRUMMOND0-10",
+  "player": "Andre Drummond",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.095,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 65
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-VGKWKARLSSON71-2",
+  "player": "William Karlsson",
+  "strike": 2,
+  "hit": false,
+  "pre": 0.015,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 94
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-VGKWKARLSSON71-1",
+  "player": "William Karlsson",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.195,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 105
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-VGKVOLOFSSON95-2",
+  "player": "Victor Olofsson",
+  "strike": 2,
+  "hit": false,
+  "pre": 0.03,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 93
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-VGKVOLOFSSON95-1",
+  "player": "Victor Olofsson",
+  "strike": 1,
+  "hit": true,
+  "pre": 0.265,
+  "two_min_before": 0.22,
+  "just_before": 0.215,
+  "ticks": 29
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-VGKTHERTL48-3",
+  "player": "Tomas Hertl",
+  "strike": 3,
+  "hit": false,
+  "pre": 0.005,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 78
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-VGKTHERTL48-2",
+  "player": "Tomas Hertl",
+  "strike": 2,
+  "hit": false,
+  "pre": 0.05,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 80
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-VGKTHERTL48-1",
+  "player": "Tomas Hertl",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.305,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 117
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-VGKTCONNELLY24-2",
+  "player": "Trevor Connelly",
+  "strike": 2,
+  "hit": false,
+  "pre": 0.03,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 78
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-VGKTCONNELLY24-1",
+  "player": "Trevor Connelly",
+  "strike": 1,
+  "hit": true,
+  "pre": 0.235,
+  "two_min_before": 0.09,
+  "just_before": 0.005,
+  "ticks": 101
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-VGKSTHEODORE27-1",
+  "player": "Shea Theodore",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.10500000000000001,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 67
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-VGKRANDERSSON4-1",
+  "player": "Rasmus Andersson",
+  "strike": 1,
+  "hit": true,
+  "pre": 0.095,
+  "two_min_before": 0.05,
+  "just_before": 0.045000000000000005,
+  "ticks": 61
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-VGKPWOTHERSPOON29-1",
+  "player": "Parker Wotherspoon",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.035,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 73
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-VGKNDOWD26-1",
+  "player": "Nic Dowd",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.095,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 65
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-VGKMSTONE61-3",
+  "player": "Mark Stone",
+  "strike": 3,
+  "hit": false,
+  "pre": 0.015,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 110
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-VGKMSTONE61-2",
+  "player": "Mark Stone",
+  "strike": 2,
+  "hit": false,
+  "pre": 0.060000000000000005,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 100
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-VGKMSTONE61-1",
+  "player": "Mark Stone",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.325,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 132
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-VGKMMARNER93-2",
+  "player": "Mitch Marner",
+  "strike": 2,
+  "hit": false,
+  "pre": 0.035,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 100
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-VGKMMARNER93-1",
+  "player": "Mitch Marner",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.275,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 115
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-VGKMGATCOMB17-1",
+  "player": "Marc Gatcomb",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.095,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 71
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-VGKJLAUZON5-1",
+  "player": "Jeremy Lauzon",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.04,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 86
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-VGKJEICHEL9-3",
+  "player": "Jack Eichel",
+  "strike": 3,
+  "hit": false,
+  "pre": 0.015,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 99
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-VGKJEICHEL9-2",
+  "player": "Jack Eichel",
+  "strike": 2,
+  "hit": false,
+  "pre": 0.055,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 104
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-VGKJEICHEL9-1",
+  "player": "Jack Eichel",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.325,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 150
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-VGKIBARBASHEV49-2",
+  "player": "Ivan Barbashev",
+  "strike": 2,
+  "hit": false,
+  "pre": 0.025,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 84
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-VGKIBARBASHEV49-1",
+  "player": "Ivan Barbashev",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.20500000000000002,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 97
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-VGKDCOGHLAN52-1",
+  "player": "Dylan Coghlan",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.045,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 89
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-VGKBMCNABB3-1",
+  "player": "Brayden McNabb",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.065,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 84
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-VGKBHOWDEN21-2",
+  "player": "Brett Howden",
+  "strike": 2,
+  "hit": false,
+  "pre": 0.015,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 82
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-VGKBHOWDEN21-1",
+  "player": "Brett Howden",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.175,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 108
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-VGKBBOWMAN42-2",
+  "player": "Braeden Bowman",
+  "strike": 2,
+  "hit": false,
+  "pre": 0.005,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 86
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-VGKBBOWMAN42-1",
+  "player": "Braeden Bowman",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.125,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 101
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-NSHVPINCHUK51-2",
+  "player": "Vitali Pinchuk",
+  "strike": 2,
+  "hit": false,
+  "pre": 0.015,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 71
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-NSHVPINCHUK51-1",
+  "player": "Vitali Pinchuk",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.11,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 77
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-NSHSWRIGHT51-2",
+  "player": "Shane Wright",
+  "strike": 2,
+  "hit": false,
+  "pre": 0.015,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 85
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-NSHSWRIGHT51-1",
+  "player": "Shane Wright",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.16,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 102
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-NSHSSTAMKOS91-3",
+  "player": "Steven Stamkos",
+  "strike": 3,
+  "hit": false,
+  "pre": 0.015,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 91
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-NSHSSTAMKOS91-2",
+  "player": "Steven Stamkos",
+  "strike": 2,
+  "hit": false,
+  "pre": 0.060000000000000005,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 107
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-NSHSSTAMKOS91-1",
+  "player": "Steven Stamkos",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.355,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 114
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-NSHRSCHAEFER49-1",
+  "player": "Reid Schaefer",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.08499999999999999,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 81
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-NSHROREILLY90-2",
+  "player": "Ryan O'Reilly",
+  "strike": 2,
+  "hit": true,
+  "pre": 0.035,
+  "two_min_before": 0.07,
+  "just_before": 0.16999999999999998,
+  "ticks": 74
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-NSHROREILLY90-1",
+  "player": "Ryan O'Reilly",
+  "strike": 1,
+  "hit": true,
+  "pre": 0.255,
+  "two_min_before": 0.255,
+  "just_before": 0.255,
+  "ticks": 43
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-NSHRJOSI59-2",
+  "player": "Roman Josi",
+  "strike": 2,
+  "hit": false,
+  "pre": 0.015,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 80
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-NSHRJOSI59-1",
+  "player": "Roman Josi",
+  "strike": 1,
+  "hit": true,
+  "pre": 0.155,
+  "two_min_before": 0.005,
+  "just_before": 0.005,
+  "ticks": 91
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-NSHRCOLTON79-2",
+  "player": "Ross Colton",
+  "strike": 2,
+  "hit": false,
+  "pre": 0.015,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 87
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-NSHRCOLTON79-1",
+  "player": "Ross Colton",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.14500000000000002,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 90
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-NSHNPERBIX48-1",
+  "player": "Nick Perbix",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.035,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 69
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-NSHNHOGLANDER21-2",
+  "player": "Nils Hoglander",
+  "strike": 2,
+  "hit": false,
+  "pre": 0.015,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 90
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-NSHNHOGLANDER21-1",
+  "player": "Nils Hoglander",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.14500000000000002,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 79
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-NSHMBOURQUE22-2",
+  "player": "Mavrik Bourque",
+  "strike": 2,
+  "hit": false,
+  "pre": 0.025,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 84
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-NSHMBOURQUE22-1",
+  "player": "Mavrik Bourque",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.20500000000000002,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 104
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-NSHJSTRUBLE47-1",
+  "player": "Jayden Struble",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.025,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 78
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-NSHJDRURY18-2",
+  "player": "Jack Drury",
+  "strike": 2,
+  "hit": false,
+  "pre": 0.005,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 88
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-NSHJDRURY18-1",
+  "player": "Jack Drury",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.10500000000000001,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 81
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-NSHFFORSBERG9-3",
+  "player": "Filip Forsberg",
+  "strike": 3,
+  "hit": false,
+  "pre": 0.005,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 84
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-NSHFFORSBERG9-2",
+  "player": "Filip Forsberg",
+  "strike": 2,
+  "hit": false,
+  "pre": 0.05,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 84
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-NSHFFORSBERG9-1",
+  "player": "Filip Forsberg",
+  "strike": 1,
+  "hit": true,
+  "pre": 0.315,
+  "two_min_before": 0.005,
+  "just_before": 0.005,
+  "ticks": 127
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-NSHDHUNT48-1",
+  "player": "Daemon Hunt",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.035,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 68
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-NSHBSKJEI76-1",
+  "player": "Brady Skjei",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.065,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 77
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-NSHAWILSBY2-1",
+  "player": "Adam Wilsby",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.045,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 77
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-NSHAKERFOOT14-2",
+  "player": "Alexander Kerfoot",
+  "strike": 2,
+  "hit": false,
+  "pre": 0.015,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 79
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-NSHAKERFOOT14-1",
+  "player": "Alexander Kerfoot",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.11499999999999999,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 74
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-NSHAEDSTROM84-2",
+  "player": "Adam Edstrom",
+  "strike": 2,
+  "hit": false,
+  "pre": 0.015,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 81
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-NSHAEDSTROM84-1",
+  "player": "Adam Edstrom",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.155,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 79
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-VANZBUIUM8-1",
+  "player": "Zeev Buium",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.065,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 83
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-VANTWILLANDER5-1",
+  "player": "Tom Willander",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.035,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 30
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-VANPCOTTER47-2",
+  "player": "Paul Cotter",
+  "strike": 2,
+  "hit": false,
+  "pre": 0.015,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 47
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-VANPCOTTER47-1",
+  "player": "Paul Cotter",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.11499999999999999,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 47
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-VANMSASSON63-2",
+  "player": "Max Sasson",
+  "strike": 2,
+  "hit": false,
+  "pre": 0.005,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 44
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-VANMSASSON63-1",
+  "player": "Max Sasson",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.1,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 36
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-VANMROSSI23-2",
+  "player": "Marco Rossi",
+  "strike": 2,
+  "hit": false,
+  "pre": 0.015,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 49
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-VANMROSSI23-1",
+  "player": "Marco Rossi",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.14500000000000002,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 56
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-VANLOHGREN92-2",
+  "player": "Liam Ohgren",
+  "strike": 2,
+  "hit": false,
+  "pre": 0.015,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 44
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-VANLOHGREN92-1",
+  "player": "Liam Ohgren",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.135,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 45
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-VANLKARLSSON94-2",
+  "player": "Linus Karlsson",
+  "strike": 2,
+  "hit": false,
+  "pre": 0.015,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 48
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-VANLKARLSSON94-1",
+  "player": "Linus Karlsson",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.155,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 45
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-VANJOLEKSIAK4-1",
+  "player": "Jamie Oleksiak",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.045,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 26
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-VANJLEKKERIMKI88-2",
+  "player": "Jonathan Lekkerim\u00e4ki",
+  "strike": 2,
+  "hit": false,
+  "pre": 0.025,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 59
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-VANJLEKKERIMKI88-1",
+  "player": "Jonathan Lekkerim\u00e4ki",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.22,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 68
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-VANJDEBRUSK74-2",
+  "player": "Jake DeBrusk",
+  "strike": 2,
+  "hit": false,
+  "pre": 0.045,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 74
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-VANJDEBRUSK74-1",
+  "player": "Jake DeBrusk",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.27,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 57
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-VANFHRONEK17-2",
+  "player": "Filip Hronek",
+  "strike": 2,
+  "hit": false,
+  "pre": 0.005,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 40
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-VANFHRONEK17-1",
+  "player": "Filip Hronek",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.095,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 46
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-VANEPETTERSSON40-2",
+  "player": "Elias Pettersson (#40)",
+  "strike": 2,
+  "hit": false,
+  "pre": 0.03,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 18
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-VANEPETTERSSON40-1",
+  "player": "Elias Pettersson (#40)",
+  "strike": 1,
+  "hit": true,
+  "pre": 0.16,
+  "two_min_before": 0.16,
+  "just_before": 0.16,
+  "ticks": 37
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-VANEPETTERSSON25-1",
+  "player": "Elias Pettersson (#25)",
+  "strike": 1,
+  "hit": true,
+  "pre": 0.105,
+  "two_min_before": 0.105,
+  "just_before": 0.105,
+  "ticks": 54
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-VANDOCONNOR18-2",
+  "player": "Drew O'Connor",
+  "strike": 2,
+  "hit": false,
+  "pre": 0.015,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 40
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-VANDOCONNOR18-1",
+  "player": "Drew O'Connor",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.125,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 35
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-VANCCROTTY5-1",
+  "player": "Cameron Crotty",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.045,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 31
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-VANBGALLAGHER7-2",
+  "player": "Brendan Gallagher",
+  "strike": 2,
+  "hit": false,
+  "pre": 0.005,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 36
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-VANBGALLAGHER7-1",
+  "player": "Brendan Gallagher",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.10500000000000001,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 38
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-VANBBOESER6-2",
+  "player": "Brock Boeser",
+  "strike": 2,
+  "hit": false,
+  "pre": 0.045,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 62
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-VANBBOESER6-1",
+  "player": "Brock Boeser",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.275,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 53
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-NYRWCUYLLE50-2",
+  "player": "Will Cuylle",
+  "strike": 2,
+  "hit": false,
+  "pre": 0.035,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 52
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-NYRWCUYLLE50-1",
+  "player": "Will Cuylle",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.235,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 61
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-NYRVGAVRIKOV44-1",
+  "player": "Vladislav Gavrikov",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.095,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 35
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-NYRTKARTYE24-2",
+  "player": "Tye Kartye",
+  "strike": 2,
+  "hit": false,
+  "pre": 0.025,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 61
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-NYRTKARTYE24-1",
+  "player": "Tye Kartye",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.225,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 59
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-NYRSMORROW60-1",
+  "player": "Scott Morrow",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.060000000000000005,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 57
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-NYRPDOROFEYEV16-3",
+  "player": "Pavel Dorofeyev",
+  "strike": 3,
+  "hit": false,
+  "pre": 0.015,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 35
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-NYRPDOROFEYEV16-2",
+  "player": "Pavel Dorofeyev",
+  "strike": 2,
+  "hit": false,
+  "pre": 0.07500000000000001,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 37
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-NYRPDOROFEYEV16-1",
+  "player": "Pavel Dorofeyev",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.385,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 56
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-NYROBJORKSTRAND28-2",
+  "player": "Oliver Bjorkstrand",
+  "strike": 2,
+  "hit": false,
+  "pre": 0.025,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 63
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-NYROBJORKSTRAND28-1",
+  "player": "Oliver Bjorkstrand",
+  "strike": 1,
+  "hit": true,
+  "pre": 0.21000000000000002,
+  "two_min_before": 0.21000000000000002,
+  "just_before": 0.21000000000000002,
+  "ticks": 31
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-NYRNLABA42-2",
+  "player": "Noah Laba",
+  "strike": 2,
+  "hit": false,
+  "pre": 0.015,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 39
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-NYRNLABA42-1",
+  "player": "Noah Laba",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.125,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 58
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-NYRMZIBANEJAD93-3",
+  "player": "Mika Zibanejad",
+  "strike": 3,
+  "hit": false,
+  "pre": 0.015,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 30
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-NYRMZIBANEJAD93-2",
+  "player": "Mika Zibanejad",
+  "strike": 2,
+  "hit": false,
+  "pre": 0.07500000000000001,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 51
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-NYRMZIBANEJAD93-1",
+  "player": "Mika Zibanejad",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.345,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 60
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-NYRMROBERTSON29-1",
+  "player": "Matthew Robertson",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.05,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 29
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-NYRMPETTERSSON26-1",
+  "player": "Marcus Pettersson",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.045,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 38
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-NYRJMILLER8-2",
+  "player": "J.T. Miller",
+  "strike": 2,
+  "hit": false,
+  "pre": 0.035,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 69
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-NYRJMILLER8-1",
+  "player": "J.T. Miller",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.28,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 61
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-NYRJCHMELAR49-2",
+  "player": "Jaroslav Chmelar",
+  "strike": 2,
+  "hit": false,
+  "pre": 0.005,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 41
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-NYRJCHMELAR49-1",
+  "player": "Jaroslav Chmelar",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.10500000000000001,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 40
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-NYRGPERREAULT94-3",
+  "player": "Gabe Perreault",
+  "strike": 3,
+  "hit": false,
+  "pre": 0.005,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 46
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-NYRGPERREAULT94-2",
+  "player": "Gabe Perreault",
+  "strike": 2,
+  "hit": false,
+  "pre": 0.045,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 64
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-NYRGPERREAULT94-1",
+  "player": "Gabe Perreault",
+  "strike": 1,
+  "hit": true,
+  "pre": 0.295,
+  "two_min_before": 0.295,
+  "just_before": 0.295,
+  "ticks": 22
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-NYRETOLVANEN17-2",
+  "player": "Eeli Tolvanen",
+  "strike": 2,
+  "hit": false,
+  "pre": 0.015,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 45
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-NYRETOLVANEN17-1",
+  "player": "Eeli Tolvanen",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.125,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 45
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-NYRBSCHNEIDER4-1",
+  "player": "Braden Schneider",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.055,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 37
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-NYRALAFRENIERE13-3",
+  "player": "Alexis Lafreniere",
+  "strike": 3,
+  "hit": false,
+  "pre": 0.005,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 55
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-NYRALAFRENIERE13-2",
+  "player": "Alexis Lafreniere",
+  "strike": 2,
+  "hit": false,
+  "pre": 0.055,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 77
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-NYRALAFRENIERE13-1",
+  "player": "Alexis Lafreniere",
+  "strike": 1,
+  "hit": true,
+  "pre": 0.315,
+  "two_min_before": 0.345,
+  "just_before": 0.32,
+  "ticks": 42
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-NYRAFOX23-2",
+  "player": "Adam Fox",
+  "strike": 2,
+  "hit": false,
+  "pre": 0.015,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 45
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NYRVAN-NYRAFOX23-1",
+  "player": "Adam Fox",
+  "strike": 1,
+  "hit": false,
+  "pre": 0.155,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 49
+ },
+ {
+  "market": "KXNBAPTS-26NOV13NYKIND-NYKJHART3-5",
+  "player": "Josh Hart",
+  "strike": 5,
+  "hit": false,
+  "pre": 0.8200000000000001,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 84
+ },
+ {
+  "market": "KXNBAPTS-26NOV13NYKIND-NYKADRUMMOND0-5",
+  "player": "Andre Drummond",
+  "strike": 5,
+  "hit": false,
+  "pre": 0.415,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 110
+ },
+ {
+  "market": "KXNBAPTS-26NOV13NYKIND-NYKLSHAMET44-5",
+  "player": "Landry Shamet",
+  "strike": 5,
+  "hit": false,
+  "pre": 0.79,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 109
+ },
+ {
+  "market": "KXNBAPTS-26NOV13NYKIND-NYKMMCBRIDE2-5",
+  "player": "Miles McBride",
+  "strike": 5,
+  "hit": false,
+  "pre": 0.71,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 90
+ },
+ {
+  "market": "KXNBAPTS-26NOV13NYKIND-NYKMBRIDGES25-5",
+  "player": "Mikal Bridges",
+  "strike": 5,
+  "hit": false,
+  "pre": 0.76,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 91
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-MILNAMENT15-5",
+  "player": "Nate Ament",
+  "strike": 5,
+  "hit": false,
+  "pre": 0.6100000000000001,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 127
+ },
+ {
+  "market": "KXNBAPTS-26NOV13NYKIND-INDOTOPPIN1-5",
+  "player": "Obi Toppin",
+  "strike": 5,
+  "hit": false,
+  "pre": 0.845,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 67
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-MILMTURNER3-5",
+  "player": "Myles Turner",
+  "strike": 5,
+  "hit": false,
+  "pre": 0.8,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 69
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-OKCACARUSO9-5",
+  "player": "Alex Caruso",
+  "strike": 5,
+  "hit": false,
+  "pre": 0.69,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 118
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-LACMSTRUSSF-5",
+  "player": "Max Strus",
+  "strike": 5,
+  "hit": false,
+  "pre": 0.81,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 121
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-OKCBSTIRTZ14-5",
+  "player": "Bennett Stirtz",
+  "strike": 5,
+  "hit": false,
+  "pre": 0.755,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 95
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-OKCIHARTENSTEIN55-5",
+  "player": "Isaiah Hartenstein",
+  "strike": 5,
+  "hit": false,
+  "pre": 0.87,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 49
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-LACKDUNN8-5",
+  "player": "Kris Dunn",
+  "strike": 5,
+  "hit": false,
+  "pre": 0.71,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 118
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-LACKSANDERS4-5",
+  "player": "Kobe Sanders",
+  "strike": 5,
+  "hit": false,
+  "pre": 0.745,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 57
+ },
+ {
+  "market": "KXNBAPTS-26NOV13GSWSAS-GSWAHORFORD20-5",
+  "player": "Al Horford",
+  "strike": 5,
+  "hit": false,
+  "pre": 0.625,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 107
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-OKCKWILLIAMSSF-5",
+  "player": "Kenrich Williams",
+  "strike": 5,
+  "hit": false,
+  "pre": 0.75,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 74
+ },
+ {
+  "market": "KXNBAPTS-26NOV13GSWSAS-SASKJOHNSON3-5",
+  "player": "Keldon Johnson",
+  "strike": 5,
+  "hit": false,
+  "pre": 0.83,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 51
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-UTAJHAYES11-5",
+  "player": "Jaxson Hayes",
+  "strike": 5,
+  "hit": false,
+  "pre": 0.755,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 78
+ },
+ {
+  "market": "KXNBAPTS-26NOV13GSWSAS-SASJCHAMPAGNIE30-5",
+  "player": "Julian Champagnie",
+  "strike": 5,
+  "hit": false,
+  "pre": 0.8200000000000001,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 39
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-NOPKMATKOVIC17-5",
+  "player": "Karlo Matkovi\u0107",
+  "strike": 5,
+  "hit": false,
+  "pre": 0.5900000000000001,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 82
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-PORSCISSOKO91-5",
+  "player": "Sidy Cissoko",
+  "strike": 5,
+  "hit": false,
+  "pre": 0.775,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 112
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-UTAICOLLIER8-5",
+  "player": "Isaiah Collier",
+  "strike": 5,
+  "hit": false,
+  "pre": 0.63,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 65
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-CLETPROCTOR24-5",
+  "player": "Tyrese Proctor",
+  "strike": 5,
+  "hit": false,
+  "pre": 0.675,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 67
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-CHIIOKORO35-5",
+  "player": "Isaac Okoro",
+  "strike": 5,
+  "hit": false,
+  "pre": 0.645,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 55
+ },
+ {
+  "market": "KXNBAPTS-26NOV13GSWSAS-GSWDGREEN23-5",
+  "player": "Draymond Green",
+  "strike": 5,
+  "hit": false,
+  "pre": 0.585,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 81
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-MEMCSPENCER24-5",
+  "player": "Cam Spencer",
+  "strike": 5,
+  "hit": false,
+  "pre": 0.77,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 51
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-PORRWILLIAMS35-5",
+  "player": "Robert Williams III",
+  "strike": 5,
+  "hit": false,
+  "pre": 0.6799999999999999,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 114
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-UTAJGREEN5-5",
+  "player": "Josh Green",
+  "strike": 5,
+  "hit": false,
+  "pre": 0.46499999999999997,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 76
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-CLEMHEZONJA33-5",
+  "player": "Mario Hezonja",
+  "strike": 5,
+  "hit": false,
+  "pre": 0.725,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 96
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-CHIPWILLIAMS44-5",
+  "player": "Patrick Williams",
+  "strike": 5,
+  "hit": false,
+  "pre": 0.71,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 60
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-NOPHJONES2-5",
+  "player": "Herbert Jones",
+  "strike": 5,
+  "hit": false,
+  "pre": 0.765,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 46
+ },
+ {
+  "market": "KXNBAPTS-26NOV13GSWSAS-GSWWRICHARD3-5",
+  "player": "Will Richard",
+  "strike": 5,
+  "hit": false,
+  "pre": 0.495,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 96
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-SACPACHIUWA9-5",
+  "player": "Precious Achiuwa",
+  "strike": 5,
+  "hit": false,
+  "pre": 0.67,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 12
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-HOUTEASON17-5",
+  "player": "Tari Eason",
+  "strike": 5,
+  "hit": false,
+  "pre": 0.85,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 66
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-MIABPORTIS95-15",
+  "player": "Bobby Portis",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.12,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 74
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-MIABPORTIS95-10",
+  "player": "Bobby Portis",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.405,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 68
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-MIABPORTIS95-5",
+  "player": "Bobby Portis",
+  "strike": 5,
+  "hit": false,
+  "pre": 0.775,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 61
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-UTASMYKHAILIUK10-15",
+  "player": "Svi Mykhailiuk",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.03,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 38
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-UTASMYKHAILIUK10-10",
+  "player": "Svi Mykhailiuk",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.13,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 127
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-UTASMYKHAILIUK10-5",
+  "player": "Svi Mykhailiuk",
+  "strike": 5,
+  "hit": false,
+  "pre": 0.535,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 72
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-UTABSENSABAUGH28-15",
+  "player": "Brice Sensabaugh",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.165,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 109
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-UTABSENSABAUGH28-10",
+  "player": "Brice Sensabaugh",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.435,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 75
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-UTABSENSABAUGH28-5",
+  "player": "Brice Sensabaugh",
+  "strike": 5,
+  "hit": false,
+  "pre": 0.765,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 48
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-SACDCARDWELL32-15",
+  "player": "Dylan Cardwell",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.035,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 100
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-UTAJOKOGIE21-10",
+  "player": "Josh Okogie",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.13,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 90
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-SACDCARDWELL32-10",
+  "player": "Dylan Cardwell",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.19,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 186
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-UTAJOKOGIE21-5",
+  "player": "Josh Okogie",
+  "strike": 5,
+  "hit": false,
+  "pre": 0.495,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 79
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-SACDCARDWELL32-5",
+  "player": "Dylan Cardwell",
+  "strike": 5,
+  "hit": false,
+  "pre": 0.585,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 91
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-ORLJSUGGS4-5",
+  "player": "Jalen Suggs",
+  "strike": 5,
+  "hit": false,
+  "pre": 0.78,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 109
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-MIARCONWELL4-15",
+  "player": "Ryan Conwell",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.165,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 57
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-MIARCONWELL4-10",
+  "player": "Ryan Conwell",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.395,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 58
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-MIARCONWELL4-5",
+  "player": "Ryan Conwell",
+  "strike": 5,
+  "hit": false,
+  "pre": 0.775,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 65
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-MILRROLLINS13-20",
+  "player": "Ryan Rollins",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.05,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 85
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-MILRROLLINS13-15",
+  "player": "Ryan Rollins",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.18,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 91
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-MILRROLLINS13-10",
+  "player": "Ryan Rollins",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.53,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 74
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-MILRROLLINS13-5",
+  "player": "Ryan Rollins",
+  "strike": 5,
+  "hit": false,
+  "pre": 0.815,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 76
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-MILKWARE9-15",
+  "player": "Kel'el Ware",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.09,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 80
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-MILKWARE9-10",
+  "player": "Kel'el Ware",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.235,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 86
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-MILKWARE9-5",
+  "player": "Kel'el Ware",
+  "strike": 5,
+  "hit": false,
+  "pre": 0.6,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 40
+ },
+ {
+  "market": "KXNBAPTS-26NOV13NYKIND-INDQJACKSON29-15",
+  "player": "Quenton Jackson",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.11000000000000001,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 59
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-ORLJCAIN8-15",
+  "player": "Jamal Cain",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.06,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 75
+ },
+ {
+  "market": "KXNBAPTS-26NOV13NYKIND-INDQJACKSON29-10",
+  "player": "Quenton Jackson",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.33499999999999996,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 87
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-ORLJCAIN8-10",
+  "player": "Jamal Cain",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.28500000000000003,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 74
+ },
+ {
+  "market": "KXNBAPTS-26NOV13NYKIND-INDQJACKSON29-5",
+  "player": "Quenton Jackson",
+  "strike": 5,
+  "hit": false,
+  "pre": 0.72,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 78
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-MIARCONWELL4-20",
+  "player": "Ryan Conwell",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.045000000000000005,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 75
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-MEMTJEROME2-35",
+  "player": "Ty Jerome",
+  "strike": 35,
+  "hit": false,
+  "pre": 0.085,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 64
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-ORLJCAIN8-5",
+  "player": "Jamal Cain",
+  "strike": 5,
+  "hit": false,
+  "pre": 0.615,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 73
+ },
+ {
+  "market": "KXNBAPTS-26NOV13NYKIND-INDPSIAKAM43-10",
+  "player": "Pascal Siakam",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.865,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 55
+ },
+ {
+  "market": "KXNBAPTS-26NOV13GSWSAS-GSWGSANTOS15-15",
+  "player": "Gui Santos",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.07500000000000001,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 77
+ },
+ {
+  "market": "KXNBAPTS-26NOV13GSWSAS-GSWGSANTOS15-10",
+  "player": "Gui Santos",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.235,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 83
+ },
+ {
+  "market": "KXNBAPTS-26NOV13GSWSAS-GSWGSANTOS15-5",
+  "player": "Gui Santos",
+  "strike": 5,
+  "hit": false,
+  "pre": 0.65,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 31
+ },
+ {
+  "market": "KXNBAPTS-26NOV13GSWSAS-GSWGNIANGPF-15",
+  "player": "Georges Niang",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.08499999999999999,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 114
+ },
+ {
+  "market": "KXNBAPTS-26NOV13GSWSAS-GSWGNIANGPF-10",
+  "player": "Georges Niang",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.305,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 100
+ },
+ {
+  "market": "KXNBAPTS-26NOV13GSWSAS-GSWGNIANGPF-5",
+  "player": "Georges Niang",
+  "strike": 5,
+  "hit": false,
+  "pre": 0.7,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 59
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-NOPBMATHURIN9-20",
+  "player": "Bennedict Mathurin",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.04,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 49
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-NOPBMATHURIN9-15",
+  "player": "Bennedict Mathurin",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.13,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 57
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-NOPBMATHURIN9-10",
+  "player": "Bennedict Mathurin",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.46499999999999997,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 53
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-ATLKFLEMINGS4-5",
+  "player": "Kingston Flemings",
+  "strike": 5,
+  "hit": false,
+  "pre": 0.845,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 68
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-NOPBMATHURIN9-5",
+  "player": "Bennedict Mathurin",
+  "strike": 5,
+  "hit": false,
+  "pre": 0.675,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 44
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-HOUASENGUN28-10",
+  "player": "Alperen Sengun",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.89,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 33
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-CHINCLAXTON9-15",
+  "player": "Nic Claxton",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.06,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 42
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-CHINCLAXTON9-10",
+  "player": "Nic Claxton",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.33999999999999997,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 61
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-CHINCLAXTON9-5",
+  "player": "Nic Claxton",
+  "strike": 5,
+  "hit": false,
+  "pre": 0.64,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 55
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-CHITJONES30-20",
+  "player": "Tre Jones",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.08,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 47
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-CHITJONES30-15",
+  "player": "Tre Jones",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.25,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 43
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-CHITJONES30-10",
+  "player": "Tre Jones",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.5549999999999999,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 50
+ },
+ {
+  "market": "KXNBAPTS-26NOV13NYKIND-NYKKTOWNS32-35",
+  "player": "Karl-Anthony Towns",
+  "strike": 35,
+  "hit": false,
+  "pre": null,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 43
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-ORLTDASILVA23-25",
+  "player": "Tristan da Silva",
+  "strike": 25,
+  "hit": false,
+  "pre": null,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 40
+ },
+ {
+  "market": "KXNBAPTS-26NOV13NYKIND-NYKMBRIDGES25-20",
+  "player": "Mikal Bridges",
+  "strike": 20,
+  "hit": false,
+  "pre": null,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 18
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-ORLFWAGNER22-40",
+  "player": "Franz Wagner",
+  "strike": 40,
+  "hit": false,
+  "pre": null,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 30
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-MIATHARDAWAY10-20",
+  "player": "Tim Hardaway Jr.",
+  "strike": 20,
+  "hit": false,
+  "pre": 0.055,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 44
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-MIATHARDAWAY10-15",
+  "player": "Tim Hardaway Jr.",
+  "strike": 15,
+  "hit": false,
+  "pre": 0.185,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 38
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-MIATHARDAWAY10-10",
+  "player": "Tim Hardaway Jr.",
+  "strike": 10,
+  "hit": false,
+  "pre": 0.475,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 30
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MILORL-MILMTURNER3-25",
+  "player": "Myles Turner",
+  "strike": 25,
+  "hit": false,
+  "pre": null,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 9
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-NOPZWILLIAMSON1-35",
+  "player": "Zion Williamson",
+  "strike": 35,
+  "hit": false,
+  "pre": null,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 9
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-MIABADEBAYO13-30",
+  "player": "Bam Adebayo",
+  "strike": 30,
+  "hit": false,
+  "pre": null,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 3
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-HOUASENGUN28-40",
+  "player": "Alperen Sengun",
+  "strike": 40,
+  "hit": false,
+  "pre": null,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 29
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-SACDSABONIS11-25",
+  "player": "Domantas Sabonis",
+  "strike": 25,
+  "hit": false,
+  "pre": null,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 94
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-UTADPETERSON22-30",
+  "player": "Darryn Peterson",
+  "strike": 30,
+  "hit": false,
+  "pre": null,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 40
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-MIABADEBAYO13-35",
+  "player": "Bam Adebayo",
+  "strike": 35,
+  "hit": false,
+  "pre": null,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 1
+ },
+ {
+  "market": "KXNBAPTS-26NOV13GSWSAS-SASSCASTLE5-30",
+  "player": "Stephon Castle",
+  "strike": 30,
+  "hit": false,
+  "pre": null,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 45
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-MEMCSPENCER24-20",
+  "player": "Cam Spencer",
+  "strike": 20,
+  "hit": false,
+  "pre": null,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 11
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-CLEJHARDEN1-30",
+  "player": "James Harden",
+  "strike": 30,
+  "hit": false,
+  "pre": null,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 13
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-MIAGANTETOKOUNMPO7-45",
+  "player": "Giannis Antetokounmpo",
+  "strike": 45,
+  "hit": false,
+  "pre": null,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 19
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-MEMJGRANT9-25",
+  "player": "Jerami Grant",
+  "strike": 25,
+  "hit": false,
+  "pre": null,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 4
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-MEMCCOWARD23-25",
+  "player": "Cedric Coward",
+  "strike": 25,
+  "hit": false,
+  "pre": null,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 4
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-UTAJHAYES11-20",
+  "player": "Jaxson Hayes",
+  "strike": 20,
+  "hit": false,
+  "pre": null,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 4
+ },
+ {
+  "market": "KXNBAPTS-26NOV13MEMNOP-NOPSBEY41-30",
+  "player": "Saddiq Bey",
+  "strike": 30,
+  "hit": false,
+  "pre": null,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 2
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-CHIIOKORO35-25",
+  "player": "Isaac Okoro",
+  "strike": 25,
+  "hit": false,
+  "pre": null,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 1
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-CHIJGIDDEY3-25",
+  "player": "Josh Giddey",
+  "strike": 25,
+  "hit": false,
+  "pre": null,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 12
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-HOUASENGUN28-35",
+  "player": "Alperen Sengun",
+  "strike": 35,
+  "hit": false,
+  "pre": null,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 19
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-CHIIOKORO35-20",
+  "player": "Isaac Okoro",
+  "strike": 20,
+  "hit": false,
+  "pre": null,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 12
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-CLETPROCTOR24-25",
+  "player": "Tyrese Proctor",
+  "strike": 25,
+  "hit": false,
+  "pre": null,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 10
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-LACKWAGLER1-5",
+  "player": "Keaton Wagler",
+  "strike": 5,
+  "hit": false,
+  "pre": 0.84,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 37
+ },
+ {
+  "market": "KXNBAPTS-26NOV13CLEMIA-CLETPROCTOR24-20",
+  "player": "Tyrese Proctor",
+  "strike": 20,
+  "hit": false,
+  "pre": null,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 9
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-UTAJOKOGIE21-15",
+  "player": "Josh Okogie",
+  "strike": 15,
+  "hit": false,
+  "pre": null,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 36
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-UTADPETERSON22-35",
+  "player": "Darryn Peterson",
+  "strike": 35,
+  "hit": false,
+  "pre": null,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 35
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-HOUFVANVLEET5-25",
+  "player": "Fred VanVleet",
+  "strike": 25,
+  "hit": false,
+  "pre": null,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 30
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-ATLJJOHNSON1-35",
+  "player": "Jalen Johnson",
+  "strike": 35,
+  "hit": false,
+  "pre": null,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 5
+ },
+ {
+  "market": "KXNBAPTS-26NOV13ATLCHI-CHINPOWELL24-35",
+  "player": "Norman Powell",
+  "strike": 35,
+  "hit": false,
+  "pre": null,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 10
+ },
+ {
+  "market": "KXNBAPTS-26NOV13UTAHOU-HOUASENGUN28-45",
+  "player": "Alperen Sengun",
+  "strike": 45,
+  "hit": false,
+  "pre": null,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 28
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-OKCSGILGEOUSALEXANDER2-45",
+  "player": "Shai Gilgeous-Alexander",
+  "strike": 45,
+  "hit": false,
+  "pre": null,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 106
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-LACBLOPEZ11-25",
+  "player": "Brook Lopez",
+  "strike": 25,
+  "hit": false,
+  "pre": null,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 80
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-PORDAVDIJA8-35",
+  "player": "Deni Avdija",
+  "strike": 35,
+  "hit": false,
+  "pre": null,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 69
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-PORTCAMARA33-25",
+  "player": "Toumani Camara",
+  "strike": 25,
+  "hit": false,
+  "pre": null,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 63
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-SACDHUNTER15-25",
+  "player": "De'Andre Hunter",
+  "strike": 25,
+  "hit": false,
+  "pre": null,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 66
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-OKCSGILGEOUSALEXANDER2-50",
+  "player": "Shai Gilgeous-Alexander",
+  "strike": 50,
+  "hit": false,
+  "pre": null,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 82
+ },
+ {
+  "market": "KXNBAPTS-26NOV13GSWSAS-SASSCASTLE5-35",
+  "player": "Stephon Castle",
+  "strike": 35,
+  "hit": false,
+  "pre": null,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 41
+ },
+ {
+  "market": "KXNBAPTS-26NOV13GSWSAS-SASSCASTLE5-40",
+  "player": "Stephon Castle",
+  "strike": 40,
+  "hit": false,
+  "pre": null,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 23
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-VGKRANDERSSON4-2",
+  "player": "Rasmus Andersson",
+  "strike": 2,
+  "hit": false,
+  "pre": null,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 25
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-SACDHUNTER15-30",
+  "player": "De'Andre Hunter",
+  "strike": 30,
+  "hit": false,
+  "pre": null,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 21
+ },
+ {
+  "market": "KXNBAPTS-26NOV13PORSAC-PORDLILLARD0-35",
+  "player": "Damian Lillard",
+  "strike": 35,
+  "hit": false,
+  "pre": null,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 25
+ },
+ {
+  "market": "KXNHLGOAL-26NOV13NSHVGK-NSHROREILLY90-3",
+  "player": "Ryan O'Reilly",
+  "strike": 3,
+  "hit": false,
+  "pre": null,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 11
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-OKCJMCCAIN3-30",
+  "player": "Jared McCain",
+  "strike": 30,
+  "hit": false,
+  "pre": null,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 24
+ },
+ {
+  "market": "KXNBAPTS-26NOV13OKCLAC-OKCIHARTENSTEIN55-25",
+  "player": "Isaiah Hartenstein",
+  "strike": 25,
+  "hit": false,
+  "pre": null,
+  "two_min_before": null,
+  "just_before": null,
+  "ticks": 17
  }
 ]
