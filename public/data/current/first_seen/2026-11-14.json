@@ -450,6 +450,56 @@
    "value": "Expected:Norman Powell|Isaac Okoro|Josh Giddey|Matas Buzelis|Jalen Smith",
    "first_seen_utc": "2026-11-14T18:04:14Z",
    "mins_before_start": 416
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892719",
+   "start_utc": "2026-11-15T03:00Z",
+   "team": "NYI",
+   "what": "goalie",
+   "value": "Semyon Varlamov",
+   "first_seen_utc": "2026-11-14T22:26:17Z",
+   "mins_before_start": 274
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892720",
+   "start_utc": "2026-11-15T03:00Z",
+   "team": "LA",
+   "what": "goalie",
+   "value": "Anton Forsberg",
+   "first_seen_utc": "2026-11-14T22:26:17Z",
+   "mins_before_start": 274
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909981",
+   "start_utc": "2026-11-15T00:30Z",
+   "team": "CLE",
+   "what": "starters",
+   "value": "Expected:Donovan Mitchell|Peyton Watson|James Harden|Jaylon Tyson|Jarrett Allen",
+   "first_seen_utc": "2026-11-14T22:26:17Z",
+   "mins_before_start": 124
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909982",
+   "start_utc": "2026-11-15T01:00Z",
+   "team": "MIA",
+   "what": "starters",
+   "value": "Expected:Klay Thompson|Myron Gardner|Davion Mitchell|Giannis Antetokounmpo|Bam Adebayo",
+   "first_seen_utc": "2026-11-14T22:26:17Z",
+   "mins_before_start": 154
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909983",
+   "start_utc": "2026-11-15T01:00Z",
+   "team": "MEM",
+   "what": "starters",
+   "value": "Expected:Cedric Coward|Jaylen Wells|Cam Spencer|Cameron Boozer|Zach Edey",
+   "first_seen_utc": "2026-11-14T22:26:17Z",
+   "mins_before_start": 154
   }
  ]
 }
