@@ -1,0 +1,2269 @@
+{
+ "sport": "nhl",
+ "fetched_utc": "2026-11-15T0200Z",
+ "date_et": "2026-11-14",
+ "rows": [
+  {
+   "sport": "nhl",
+   "player": "Mats Zuccarello",
+   "game": "CGY@LA",
+   "starts_at": "2026-11-15T03:00:00.000Z",
+   "market": "Any assist",
+   "line": null,
+   "book": "draftkings",
+   "price": 200,
+   "ticker": "KXNHLAST-26NOV14CGYLA-LAMZUCCARELLO36-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+186/-194",
+   "resting_usd": [
+    98,
+    0
+   ],
+   "top_ev_pct": 3.5,
+   "fair_pct": 34.49,
+   "fetched_utc": "2026-11-15T02:00:40.425130+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+186/-194",
+     "ev": 0.0346,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -203",
+     "quote": "+186/-203",
+     "ev": 0.0194,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -212",
+     "quote": "+186/-212",
+     "ev": 0.0049,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +178",
+     "quote": "+178/-194",
+     "ev": 0.0496,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +170",
+     "quote": "+170/-194",
+     "ev": 0.0654,
+     "flag": "IGNORED (thin)"
+    }
+   ],
+   "actual": 0,
+   "result": "loss",
+   "profit": -1.0
+  },
+  {
+   "sport": "nhl",
+   "player": "Bo Horvat",
+   "game": "NYI@ANA",
+   "starts_at": "2026-11-15T03:00:00.000Z",
+   "market": "Any assist",
+   "line": null,
+   "book": "betmgm",
+   "price": 155,
+   "ticker": "KXNHLAST-26NOV14NYIANA-NYIBHORVAT14-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+144/-156",
+   "resting_usd": [
+    636,
+    29
+   ],
+   "top_ev_pct": 2.1,
+   "fair_pct": 40.02,
+   "fetched_utc": "2026-11-15T02:00:40.425130+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+144/-156",
+     "ev": 0.0205,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -163",
+     "quote": "+144/-163",
+     "ev": 0.0071,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -170",
+     "quote": "+144/-170",
+     "ev": -0.0056,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +138",
+     "quote": "+138/-156",
+     "ev": 0.0336,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +133",
+     "quote": "+133/-156",
+     "ev": 0.045,
+     "flag": "IGNORED (thin)"
+    }
+   ],
+   "actual": 1,
+   "result": "win",
+   "profit": 1.55
+  },
+  {
+   "sport": "nhl",
+   "player": "Matvei Gridin",
+   "game": "CGY@LA",
+   "starts_at": "2026-11-15T03:00:00.000Z",
+   "market": "Any point (G+A)",
+   "line": null,
+   "book": "espnbet",
+   "price": 115,
+   "ticker": "KXNHLPTS-26NOV14CGYLA-CGYMGRIDIN92-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+108/-117",
+   "resting_usd": [
+    310,
+    6
+   ],
+   "top_ev_pct": 1.2,
+   "fair_pct": 47.08,
+   "fetched_utc": "2026-11-15T02:00:40.425130+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+108/-117",
+     "ev": 0.0122,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -122",
+     "quote": "+108/-122",
+     "ev": 0.001,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -127",
+     "quote": "+108/-127",
+     "ev": -0.0097,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +104",
+     "quote": "+104/-117",
+     "ev": 0.0223,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -100",
+     "quote": "-100/-117",
+     "ev": 0.0328,
+     "flag": "IGNORED (thin)"
+    }
+   ],
+   "actual": 1,
+   "result": "win",
+   "profit": 1.15
+  },
+  {
+   "sport": "nhl",
+   "player": "Matthew Schaefer",
+   "game": "NYI@ANA",
+   "starts_at": "2026-11-15T03:00:00.000Z",
+   "market": "Anytime goal",
+   "line": null,
+   "book": "betmgm",
+   "price": 310,
+   "ticker": "KXNHLGOAL-26NOV14NYIANA-NYIMSCHAEFER48-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+300/-317",
+   "resting_usd": [
+    6092,
+    38
+   ],
+   "top_ev_pct": 0.4,
+   "fair_pct": 24.49,
+   "fetched_utc": "2026-11-15T02:00:40.425130+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+300/-317",
+     "ev": 0.004,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -335",
+     "quote": "+300/-335",
+     "ev": -0.0167,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -355",
+     "quote": "+300/-355",
+     "ev": -0.0381,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +285",
+     "quote": "+285/-317",
+     "ev": 0.0236,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +270",
+     "quote": "+270/-317",
+     "ev": 0.0447,
+     "flag": "IGNORED (thin)"
+    }
+   ],
+   "actual": 0,
+   "result": "loss",
+   "profit": -1.0
+  },
+  {
+   "sport": "nhl",
+   "player": "Adrian Kempe",
+   "game": "CGY@LA",
+   "starts_at": "2026-11-15T03:00:00.000Z",
+   "market": "Any point (G+A)",
+   "line": null,
+   "book": "espnbet",
+   "price": -155,
+   "ticker": "KXNHLPTS-26NOV14CGYLA-LAAKEMPE9-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "-163/+150",
+   "resting_usd": [
+    47,
+    1
+   ],
+   "top_ev_pct": 0.3,
+   "fair_pct": 60.99,
+   "fetched_utc": "2026-11-15T02:00:40.425130+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "-163/+150",
+     "ev": 0.0034,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side +144",
+     "quote": "-163/+144",
+     "ev": -0.0046,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side +138",
+     "quote": "-163/+138",
+     "ev": -0.013,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -170",
+     "quote": "-170/+150",
+     "ev": 0.0116,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -178",
+     "quote": "-178/+150",
+     "ev": 0.0205,
+     "flag": "IGNORED (thin)"
+    }
+   ],
+   "actual": 0,
+   "result": "loss",
+   "profit": -1.0
+  },
+  {
+   "sport": "nhl",
+   "player": "Zayne Parekh",
+   "game": "CGY@LA",
+   "starts_at": "2026-11-15T03:00:00.000Z",
+   "market": "Anytime goal",
+   "line": null,
+   "book": "betmgm",
+   "price": 700,
+   "ticker": "KXNHLGOAL-26NOV14CGYLA-CGYZPAREKH19-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+669/-733",
+   "resting_usd": [
+    435,
+    17
+   ],
+   "top_ev_pct": -0.0,
+   "fair_pct": 12.5,
+   "fetched_utc": "2026-11-15T02:00:40.425130+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+669/-733",
+     "ev": -0.0002,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -809",
+     "quote": "+669/-809",
+     "ev": -0.0422,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -900",
+     "quote": "+669/-900",
+     "ev": -0.0855,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +614",
+     "quote": "+614/-733",
+     "ev": 0.0383,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +567",
+     "quote": "+567/-733",
+     "ev": 0.0753,
+     "flag": "IGNORED (thin)"
+    }
+   ],
+   "actual": 0,
+   "result": "loss",
+   "profit": -1.0
+  },
+  {
+   "sport": "nhl",
+   "player": "Bo Horvat",
+   "game": "NYI@ANA",
+   "starts_at": "2026-11-15T03:00:00.000Z",
+   "market": "Anytime goal",
+   "line": null,
+   "book": "betmgm",
+   "price": 165,
+   "ticker": "KXNHLGOAL-26NOV14NYIANA-NYIBHORVAT14-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+163/-170",
+   "resting_usd": [
+    73,
+    1244
+   ],
+   "top_ev_pct": -0.5,
+   "fair_pct": 37.53,
+   "fetched_utc": "2026-11-15T02:00:40.425130+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+163/-170",
+     "ev": -0.0055,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -178",
+     "quote": "+163/-178",
+     "ev": -0.0197,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -186",
+     "quote": "+163/-186",
+     "ev": -0.0332,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +156",
+     "quote": "+156/-170",
+     "ev": 0.0082,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +150",
+     "quote": "+150/-170",
+     "ev": 0.0205,
+     "flag": "IGNORED (thin)"
+    }
+   ],
+   "actual": 1,
+   "result": "win",
+   "profit": 1.65
+  },
+  {
+   "sport": "nhl",
+   "player": "Tristan Luneau",
+   "game": "NYI@ANA",
+   "starts_at": "2026-11-15T03:00:00.000Z",
+   "market": "Any assist",
+   "line": null,
+   "book": "draftkings",
+   "price": 260,
+   "ticker": "KXNHLAST-26NOV14NYIANA-ANATLUNEAU67-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+257/-270",
+   "resting_usd": [
+    429,
+    14
+   ],
+   "top_ev_pct": -0.9,
+   "fair_pct": 27.52,
+   "fetched_utc": "2026-11-15T02:00:40.425130+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+257/-270",
+     "ev": -0.0094,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -285",
+     "quote": "+257/-285",
+     "ev": -0.0286,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -300",
+     "quote": "+257/-300",
+     "ev": -0.0466,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +245",
+     "quote": "+245/-270",
+     "ev": 0.0079,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +233",
+     "quote": "+233/-270",
+     "ev": 0.0263,
+     "flag": "IGNORED (thin)"
+    }
+   ],
+   "actual": 1,
+   "result": "win",
+   "profit": 2.6
+  },
+  {
+   "sport": "nhl",
+   "player": "Drew Doughty",
+   "game": "CGY@LA",
+   "starts_at": "2026-11-15T03:00:00.000Z",
+   "market": "Any point (G+A)",
+   "line": null,
+   "book": "draftkings",
+   "price": 160,
+   "ticker": "KXNHLPTS-26NOV14CGYLA-LADDOUGHTY8-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+156/-170",
+   "resting_usd": [
+    31,
+    188
+   ],
+   "top_ev_pct": -1.1,
+   "fair_pct": 38.05,
+   "fetched_utc": "2026-11-15T02:00:40.425130+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+156/-170",
+     "ev": -0.0108,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -178",
+     "quote": "+156/-178",
+     "ev": -0.0248,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -186",
+     "quote": "+156/-186",
+     "ev": -0.0381,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +150",
+     "quote": "+150/-170",
+     "ev": 0.0013,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +144",
+     "quote": "+144/-170",
+     "ev": 0.0139,
+     "flag": "IGNORED (thin)"
+    }
+   ],
+   "actual": 0,
+   "result": "loss",
+   "profit": -1.0
+  },
+  {
+   "sport": "nhl",
+   "player": "Tony Deangelo",
+   "game": "NYI@ANA",
+   "starts_at": "2026-11-15T03:00:00.000Z",
+   "market": "Any assist",
+   "line": null,
+   "book": "draftkings",
+   "price": 280,
+   "ticker": "KXNHLAST-26NOV14NYIANA-NYITDEANGELO77-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+270/-300",
+   "resting_usd": [
+    853,
+    12
+   ],
+   "top_ev_pct": -1.2,
+   "fair_pct": 26.0,
+   "fetched_utc": "2026-11-15T02:00:40.425130+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+270/-300",
+     "ev": -0.0119,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -317",
+     "quote": "+270/-317",
+     "ev": -0.0318,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -335",
+     "quote": "+270/-335",
+     "ev": -0.0514,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +257",
+     "quote": "+257/-300",
+     "ev": 0.0064,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +245",
+     "quote": "+245/-300",
+     "ev": 0.0243,
+     "flag": "IGNORED (thin)"
+    }
+   ],
+   "actual": 0,
+   "result": "loss",
+   "profit": -1.0
+  },
+  {
+   "sport": "nhl",
+   "player": "Bo Horvat",
+   "game": "NYI@ANA",
+   "starts_at": "2026-11-15T03:00:00.000Z",
+   "market": "Any point (G+A)",
+   "line": null,
+   "book": "betmgm",
+   "price": -165,
+   "ticker": "KXNHLPTS-26NOV14NYIANA-NYIBHORVAT14-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "-163/+156",
+   "resting_usd": [
+    55,
+    21
+   ],
+   "top_ev_pct": -1.3,
+   "fair_pct": 61.46,
+   "fetched_utc": "2026-11-15T02:00:40.425130+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "-163/+156",
+     "ev": -0.0129,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side +150",
+     "quote": "-163/+150",
+     "ev": -0.0204,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side +144",
+     "quote": "-163/+144",
+     "ev": -0.0283,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -170",
+     "quote": "-170/+156",
+     "ev": -0.005,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -178",
+     "quote": "-178/+156",
+     "ev": 0.0037,
+     "flag": "IGNORED (thin)"
+    }
+   ],
+   "actual": 2,
+   "result": "win",
+   "profit": 0.6061
+  },
+  {
+   "sport": "nhl",
+   "player": "Simon Holmstrom",
+   "game": "NYI@ANA",
+   "starts_at": "2026-11-15T03:00:00.000Z",
+   "market": "Anytime goal",
+   "line": null,
+   "book": "draftkings",
+   "price": 320,
+   "ticker": "KXNHLGOAL-26NOV14NYIANA-NYISHOLMSTROM92-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+317/-335",
+   "resting_usd": [
+    2155,
+    7
+   ],
+   "top_ev_pct": -1.4,
+   "fair_pct": 23.48,
+   "fetched_utc": "2026-11-15T02:00:40.425130+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+317/-335",
+     "ev": -0.0138,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -355",
+     "quote": "+317/-355",
+     "ev": -0.0354,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -376",
+     "quote": "+317/-376",
+     "ev": -0.0564,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +300",
+     "quote": "+300/-335",
+     "ev": 0.0073,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +285",
+     "quote": "+285/-335",
+     "ev": 0.0272,
+     "flag": "IGNORED (thin)"
+    }
+   ],
+   "actual": 3,
+   "result": "win",
+   "profit": 3.2
+  },
+  {
+   "sport": "nhl",
+   "player": "Mats Zuccarello",
+   "game": "CGY@LA",
+   "starts_at": "2026-11-15T03:00:00.000Z",
+   "market": "Any point (G+A)",
+   "line": null,
+   "book": "draftkings",
+   "price": 135,
+   "ticker": "KXNHLPTS-26NOV14CGYLA-LAMZUCCARELLO36-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+133/-144",
+   "resting_usd": [
+    22,
+    383
+   ],
+   "top_ev_pct": -1.4,
+   "fair_pct": 41.95,
+   "fetched_utc": "2026-11-15T02:00:40.425130+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+133/-144",
+     "ev": -0.0142,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -150",
+     "quote": "+133/-150",
+     "ev": -0.0258,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -156",
+     "quote": "+133/-156",
+     "ev": -0.037,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +127",
+     "quote": "+127/-144",
+     "ev": -0.001,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +122",
+     "quote": "+122/-144",
+     "ev": 0.0106,
+     "flag": "IGNORED (thin)"
+    }
+   ],
+   "actual": 1,
+   "result": "win",
+   "profit": 1.35
+  },
+  {
+   "sport": "nhl",
+   "player": "Drew Doughty",
+   "game": "CGY@LA",
+   "starts_at": "2026-11-15T03:00:00.000Z",
+   "market": "Anytime goal",
+   "line": null,
+   "book": "draftkings",
+   "price": 1000,
+   "ticker": "KXNHLGOAL-26NOV14CGYLA-LADDOUGHTY8-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+900/-1150",
+   "resting_usd": [
+    8869,
+    1
+   ],
+   "top_ev_pct": -1.5,
+   "fair_pct": 8.96,
+   "fetched_utc": "2026-11-15T02:00:40.425130+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+900/-1150",
+     "ev": -0.0146,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -1329",
+     "quote": "+900/-1329",
+     "ev": -0.0762,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -1567",
+     "quote": "+900/-1567",
+     "ev": -0.1413,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +809",
+     "quote": "+809/-1150",
+     "ev": 0.0354,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +733",
+     "quote": "+733/-1150",
+     "ev": 0.084,
+     "flag": "IGNORED (thin)"
+    }
+   ],
+   "actual": 0,
+   "result": "loss",
+   "profit": -1.0
+  },
+  {
+   "sport": "nhl",
+   "player": "Adrian Kempe",
+   "game": "CGY@LA",
+   "starts_at": "2026-11-15T03:00:00.000Z",
+   "market": "Anytime goal",
+   "line": null,
+   "book": "betmgm",
+   "price": 170,
+   "ticker": "KXNHLGOAL-26NOV14CGYLA-LAAKEMPE9-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+163/-186",
+   "resting_usd": [
+    2297,
+    484
+   ],
+   "top_ev_pct": -1.5,
+   "fair_pct": 36.48,
+   "fetched_utc": "2026-11-15T02:00:40.425130+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+163/-186",
+     "ev": -0.015,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -194",
+     "quote": "+163/-194",
+     "ev": -0.028,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -203",
+     "quote": "+163/-203",
+     "ev": -0.042,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +156",
+     "quote": "+156/-186",
+     "ev": -0.0011,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +150",
+     "quote": "+150/-186",
+     "ev": 0.0113,
+     "flag": "IGNORED (thin)"
+    }
+   ],
+   "actual": 0,
+   "result": "loss",
+   "profit": -1.0
+  },
+  {
+   "sport": "nhl",
+   "player": "Matthew Schaefer",
+   "game": "NYI@ANA",
+   "starts_at": "2026-11-15T03:00:00.000Z",
+   "market": "Any point (G+A)",
+   "line": null,
+   "book": "espnbet",
+   "price": -175,
+   "ticker": "KXNHLPTS-26NOV14NYIANA-NYIMSCHAEFER48-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "-178/+156",
+   "resting_usd": [
+    264,
+    1096
+   ],
+   "top_ev_pct": -1.8,
+   "fair_pct": 62.49,
+   "fetched_utc": "2026-11-15T02:00:40.425130+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "-178/+156",
+     "ev": -0.018,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side +150",
+     "quote": "-178/+150",
+     "ev": -0.0252,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side +144",
+     "quote": "-178/+144",
+     "ev": -0.0328,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -186",
+     "quote": "-186/+156",
+     "ev": -0.0099,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -194",
+     "quote": "-194/+156",
+     "ev": -0.0023,
+     "flag": "IGNORED (thin)"
+    }
+   ],
+   "actual": 3,
+   "result": "win",
+   "profit": 0.5714
+  },
+  {
+   "sport": "nhl",
+   "player": "Jackson Lacombe",
+   "game": "NYI@ANA",
+   "starts_at": "2026-11-15T03:00:00.000Z",
+   "market": "Any assist",
+   "line": null,
+   "book": "betmgm",
+   "price": -120,
+   "ticker": "KXNHLAST-26NOV14NYIANA-ANAJLACOMBE2-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "-122/+108",
+   "resting_usd": [
+    397,
+    202
+   ],
+   "top_ev_pct": -2.0,
+   "fair_pct": 53.44,
+   "fetched_utc": "2026-11-15T02:00:40.425130+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "-122/+108",
+     "ev": -0.0202,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side +104",
+     "quote": "-122/+104",
+     "ev": -0.0289,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -100",
+     "quote": "-122/-100",
+     "ev": -0.0378,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -127",
+     "quote": "-127/+108",
+     "ev": -0.0111,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -133",
+     "quote": "-133/+108",
+     "ev": -0.0006,
+     "flag": "IGNORED (thin)"
+    }
+   ],
+   "actual": 0,
+   "result": "loss",
+   "profit": -1.0
+  },
+  {
+   "sport": "nhl",
+   "player": "Victor Eklund",
+   "game": "NYI@ANA",
+   "starts_at": "2026-11-15T03:00:00.000Z",
+   "market": "Any point (G+A)",
+   "line": null,
+   "book": "betmgm",
+   "price": 115,
+   "ticker": "KXNHLPTS-26NOV14NYIANA-NYIVEKLUND73-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+117/-122",
+   "resting_usd": [
+    150,
+    477
+   ],
+   "top_ev_pct": -2.0,
+   "fair_pct": 45.56,
+   "fetched_utc": "2026-11-15T02:00:40.425130+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+117/-122",
+     "ev": -0.0204,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -127",
+     "quote": "+117/-127",
+     "ev": -0.0311,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -133",
+     "quote": "+117/-133",
+     "ev": -0.0433,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +113",
+     "quote": "+113/-122",
+     "ev": -0.0111,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +108",
+     "quote": "+108/-122",
+     "ev": 0.001,
+     "flag": "IGNORED (thin)"
+    }
+   ],
+   "actual": 1,
+   "result": "win",
+   "profit": 1.15
+  },
+  {
+   "sport": "nhl",
+   "player": "Kyle Palmieri",
+   "game": "NYI@ANA",
+   "starts_at": "2026-11-15T03:00:00.000Z",
+   "market": "Anytime goal",
+   "line": null,
+   "book": "fanduel",
+   "price": 300,
+   "ticker": "KXNHLGOAL-26NOV14NYIANA-NYIKPALMIERI21-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+300/-317",
+   "resting_usd": [
+    5691,
+    7
+   ],
+   "top_ev_pct": -2.0,
+   "fair_pct": 24.49,
+   "fetched_utc": "2026-11-15T02:00:40.425130+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+300/-317",
+     "ev": -0.0205,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -335",
+     "quote": "+300/-335",
+     "ev": -0.0407,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -355",
+     "quote": "+300/-355",
+     "ev": -0.0615,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +285",
+     "quote": "+285/-317",
+     "ev": -0.0013,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +270",
+     "quote": "+270/-317",
+     "ev": 0.0192,
+     "flag": "IGNORED (thin)"
+    }
+   ],
+   "actual": 0,
+   "result": "loss",
+   "profit": -1.0
+  },
+  {
+   "sport": "nhl",
+   "player": "Cutter Gauthier",
+   "game": "NYI@ANA",
+   "starts_at": "2026-11-15T03:00:00.000Z",
+   "market": "Anytime goal",
+   "line": null,
+   "book": "espnbet",
+   "price": 110,
+   "ticker": "KXNHLGOAL-26NOV14NYIANA-ANACGAUTHIER61-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+113/-117",
+   "resting_usd": [
+    1375,
+    86
+   ],
+   "top_ev_pct": -2.3,
+   "fair_pct": 46.52,
+   "fetched_utc": "2026-11-15T02:00:40.425130+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+113/-117",
+     "ev": -0.0232,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -122",
+     "quote": "+113/-122",
+     "ev": -0.0341,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -127",
+     "quote": "+113/-127",
+     "ev": -0.0445,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +108",
+     "quote": "+108/-117",
+     "ev": -0.0113,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +104",
+     "quote": "+104/-117",
+     "ev": -0.0015,
+     "flag": "IGNORED (thin)"
+    }
+   ],
+   "actual": 1,
+   "result": "win",
+   "profit": 1.1
+  },
+  {
+   "sport": "nhl",
+   "player": "Simon Nemec",
+   "game": "CGY@LA",
+   "starts_at": "2026-11-15T03:00:00.000Z",
+   "market": "Any point (G+A)",
+   "line": null,
+   "book": "fanduel",
+   "price": 210,
+   "ticker": "KXNHLPTS-26NOV14CGYLA-CGYSNEMEC71-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+212/-223",
+   "resting_usd": [
+    524,
+    16
+   ],
+   "top_ev_pct": -2.3,
+   "fair_pct": 31.5,
+   "fetched_utc": "2026-11-15T02:00:40.425130+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+212/-223",
+     "ev": -0.0234,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -233",
+     "quote": "+212/-233",
+     "ev": -0.038,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -245",
+     "quote": "+212/-245",
+     "ev": -0.0545,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +203",
+     "quote": "+203/-223",
+     "ev": -0.0088,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +194",
+     "quote": "+194/-223",
+     "ev": 0.0066,
+     "flag": "IGNORED (thin)"
+    }
+   ],
+   "actual": 0,
+   "result": "loss",
+   "profit": -1.0
+  },
+  {
+   "sport": "nhl",
+   "player": "Matt Coronato",
+   "game": "CGY@LA",
+   "starts_at": "2026-11-15T03:00:00.000Z",
+   "market": "Any point (G+A)",
+   "line": null,
+   "book": "espnbet",
+   "price": -105,
+   "ticker": "KXNHLPTS-26NOV14CGYLA-CGYMCORONATO27-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "-104/-104",
+   "resting_usd": [
+    250,
+    11
+   ],
+   "top_ev_pct": -2.4,
+   "fair_pct": 50.0,
+   "fetched_utc": "2026-11-15T02:00:40.425130+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "-104/-104",
+     "ev": -0.0238,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -108",
+     "quote": "-104/-108",
+     "ev": -0.033,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -113",
+     "quote": "-104/-113",
+     "ev": -0.0441,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -108",
+     "quote": "-108/-104",
+     "ev": -0.0146,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -113",
+     "quote": "-113/-104",
+     "ev": -0.0036,
+     "flag": "IGNORED (thin)"
+    }
+   ],
+   "actual": 0,
+   "result": "loss",
+   "profit": -1.0
+  },
+  {
+   "sport": "nhl",
+   "player": "Judd Caulfield",
+   "game": "NYI@ANA",
+   "starts_at": "2026-11-15T03:00:00.000Z",
+   "market": "Any point (G+A)",
+   "line": null,
+   "book": "draftkings",
+   "price": 195,
+   "ticker": "KXNHLPTS-26NOV14NYIANA-ANAJCAULFIELD28-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+194/-212",
+   "resting_usd": [
+    33,
+    180
+   ],
+   "top_ev_pct": -2.6,
+   "fair_pct": 33.03,
+   "fetched_utc": "2026-11-15T02:00:40.425130+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+194/-212",
+     "ev": -0.0257,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -223",
+     "quote": "+194/-223",
+     "ev": -0.0421,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +186",
+     "quote": "+186/-212",
+     "ev": -0.0119,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +178",
+     "quote": "+178/-212",
+     "ev": 0.0027,
+     "flag": "IGNORED (thin)"
+    }
+   ],
+   "actual": 0,
+   "result": "loss",
+   "profit": -1.0
+  },
+  {
+   "sport": "nhl",
+   "player": "Matt Coronato",
+   "game": "CGY@LA",
+   "starts_at": "2026-11-15T03:00:00.000Z",
+   "market": "Anytime goal",
+   "line": null,
+   "book": "espnbet",
+   "price": 290,
+   "ticker": "KXNHLGOAL-26NOV14CGYLA-CGYMCORONATO27-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+285/-317",
+   "resting_usd": [
+    26,
+    30
+   ],
+   "top_ev_pct": -2.6,
+   "fair_pct": 24.97,
+   "fetched_utc": "2026-11-15T02:00:40.425130+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+285/-317",
+     "ev": -0.0263,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -335",
+     "quote": "+285/-335",
+     "ev": -0.0462,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -355",
+     "quote": "+285/-355",
+     "ev": -0.0667,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +270",
+     "quote": "+270/-317",
+     "ev": -0.0063,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +257",
+     "quote": "+257/-317",
+     "ev": 0.0123,
+     "flag": "IGNORED (thin)"
+    }
+   ],
+   "actual": 0,
+   "result": "loss",
+   "profit": -1.0
+  },
+  {
+   "sport": "nhl",
+   "player": "Joel Farabee",
+   "game": "CGY@LA",
+   "starts_at": "2026-11-15T03:00:00.000Z",
+   "market": "Any assist",
+   "line": null,
+   "book": "fanduel",
+   "price": 190,
+   "ticker": "KXNHLAST-26NOV14CGYLA-CGYJFARABEE86-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+194/-203",
+   "resting_usd": [
+    787,
+    10
+   ],
+   "top_ev_pct": -2.8,
+   "fair_pct": 33.51,
+   "fetched_utc": "2026-11-15T02:00:40.425130+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+194/-203",
+     "ev": -0.0283,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -212",
+     "quote": "+194/-212",
+     "ev": -0.0422,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -223",
+     "quote": "+194/-223",
+     "ev": -0.0583,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +186",
+     "quote": "+186/-203",
+     "ev": -0.0146,
+     "flag": "IGNORED (thin)"
+    }
+   ],
+   "actual": 0,
+   "result": "loss",
+   "profit": -1.0
+  },
+  {
+   "sport": "nhl",
+   "player": "Mikael Granlund",
+   "game": "NYI@ANA",
+   "starts_at": "2026-11-15T03:00:00.000Z",
+   "market": "Any point (G+A)",
+   "line": null,
+   "book": "espnbet",
+   "price": -170,
+   "ticker": "KXNHLPTS-26NOV14NYIANA-ANAMGRANLUND64-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "-170/+144",
+   "resting_usd": [
+    694,
+    842
+   ],
+   "top_ev_pct": -3.1,
+   "fair_pct": 61.0,
+   "fetched_utc": "2026-11-15T02:00:40.425130+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "-170/+144",
+     "ev": -0.0311,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side +138",
+     "quote": "-170/+138",
+     "ev": -0.0392,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side +133",
+     "quote": "-170/+133",
+     "ev": -0.0463,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -178",
+     "quote": "-178/+144",
+     "ev": -0.0225,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -186",
+     "quote": "-186/+144",
+     "ev": -0.0143,
+     "flag": "IGNORED (thin)"
+    }
+   ],
+   "actual": 0,
+   "result": "loss",
+   "profit": -1.0
+  },
+  {
+   "sport": "nhl",
+   "player": "Matt Coronato",
+   "game": "CGY@LA",
+   "starts_at": "2026-11-15T03:00:00.000Z",
+   "market": "Any assist",
+   "line": null,
+   "book": "betmgm",
+   "price": 185,
+   "ticker": "KXNHLAST-26NOV14CGYLA-CGYMCORONATO27-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+186/-203",
+   "resting_usd": [
+    332,
+    8
+   ],
+   "top_ev_pct": -3.2,
+   "fair_pct": 33.98,
+   "fetched_utc": "2026-11-15T02:00:40.425130+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+186/-203",
+     "ev": -0.0316,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -212",
+     "quote": "+186/-212",
+     "ev": -0.0454,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -223",
+     "quote": "+186/-223",
+     "ev": -0.0613,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +178",
+     "quote": "+178/-203",
+     "ev": -0.0175,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +170",
+     "quote": "+170/-203",
+     "ev": -0.0025,
+     "flag": "IGNORED (thin)"
+    }
+   ],
+   "actual": 0,
+   "result": "loss",
+   "profit": -1.0
+  },
+  {
+   "sport": "nhl",
+   "player": "Beckett Sennecke",
+   "game": "NYI@ANA",
+   "starts_at": "2026-11-15T03:00:00.000Z",
+   "market": "Any assist",
+   "line": null,
+   "book": "espnbet",
+   "price": 125,
+   "ticker": "KXNHLAST-26NOV14NYIANA-ANABSENNECKE45-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+127/-138",
+   "resting_usd": [
+    262,
+    19
+   ],
+   "top_ev_pct": -3.2,
+   "fair_pct": 43.03,
+   "fetched_utc": "2026-11-15T02:00:40.425130+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+127/-138",
+     "ev": -0.0318,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -144",
+     "quote": "+127/-144",
+     "ev": -0.0435,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -150",
+     "quote": "+127/-150",
+     "ev": -0.0546,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +122",
+     "quote": "+122/-138",
+     "ev": -0.0207,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +117",
+     "quote": "+117/-138",
+     "ev": -0.0091,
+     "flag": "IGNORED (thin)"
+    }
+   ],
+   "actual": 0,
+   "result": "loss",
+   "profit": -1.0
+  },
+  {
+   "sport": "nhl",
+   "player": "Matias Maccelli",
+   "game": "NYI@ANA",
+   "starts_at": "2026-11-15T03:00:00.000Z",
+   "market": "Any point (G+A)",
+   "line": null,
+   "book": "espnbet",
+   "price": 125,
+   "ticker": "KXNHLPTS-26NOV14NYIANA-NYIMMACCELLI63-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+127/-138",
+   "resting_usd": [
+    325,
+    1
+   ],
+   "top_ev_pct": -3.2,
+   "fair_pct": 43.03,
+   "fetched_utc": "2026-11-15T02:00:40.425130+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+127/-138",
+     "ev": -0.0318,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -144",
+     "quote": "+127/-144",
+     "ev": -0.0435,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -150",
+     "quote": "+127/-150",
+     "ev": -0.0546,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +122",
+     "quote": "+122/-138",
+     "ev": -0.0207,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +117",
+     "quote": "+117/-138",
+     "ev": -0.0091,
+     "flag": "IGNORED (thin)"
+    }
+   ],
+   "actual": 2,
+   "result": "win",
+   "profit": 1.25
+  },
+  {
+   "sport": "nhl",
+   "player": "Cutter Gauthier",
+   "game": "NYI@ANA",
+   "starts_at": "2026-11-15T03:00:00.000Z",
+   "market": "Any point (G+A)",
+   "line": null,
+   "book": "espnbet",
+   "price": -200,
+   "ticker": "KXNHLPTS-26NOV14NYIANA-ANACGAUTHIER61-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "-186/+178",
+   "resting_usd": [
+    41,
+    26
+   ],
+   "top_ev_pct": -3.2,
+   "fair_pct": 64.53,
+   "fetched_utc": "2026-11-15T02:00:40.425130+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "-186/+178",
+     "ev": -0.032,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side +170",
+     "quote": "-186/+170",
+     "ev": -0.0399,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -194",
+     "quote": "-194/+178",
+     "ev": -0.0248,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -203",
+     "quote": "-203/+178",
+     "ev": -0.0171,
+     "flag": "IGNORED (thin)"
+    }
+   ],
+   "actual": 1,
+   "result": "win",
+   "profit": 0.5
+  },
+  {
+   "sport": "nhl",
+   "player": "Brandt Clarke",
+   "game": "CGY@LA",
+   "starts_at": "2026-11-15T03:00:00.000Z",
+   "market": "Any point (G+A)",
+   "line": null,
+   "book": "betmgm",
+   "price": 120,
+   "ticker": "KXNHLPTS-26NOV14CGYLA-LABCLARKE92-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+122/-133",
+   "resting_usd": [
+    274,
+    601
+   ],
+   "top_ev_pct": -3.2,
+   "fair_pct": 43.98,
+   "fetched_utc": "2026-11-15T02:00:40.425130+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+122/-133",
+     "ev": -0.0324,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -138",
+     "quote": "+122/-138",
+     "ev": -0.0424,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -144",
+     "quote": "+122/-144",
+     "ev": -0.0539,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +117",
+     "quote": "+117/-133",
+     "ev": -0.0211,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +113",
+     "quote": "+113/-133",
+     "ev": -0.0116,
+     "flag": "IGNORED (thin)"
+    }
+   ],
+   "actual": 1,
+   "result": "win",
+   "profit": 1.2
+  },
+  {
+   "sport": "nhl",
+   "player": "Yegor Sharangovich",
+   "game": "CGY@LA",
+   "starts_at": "2026-11-15T03:00:00.000Z",
+   "market": "Any point (G+A)",
+   "line": null,
+   "book": "espnbet",
+   "price": 180,
+   "ticker": "KXNHLPTS-26NOV14CGYLA-CGYYSHARANGOVICH17-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+178/-203",
+   "resting_usd": [
+    320,
+    338
+   ],
+   "top_ev_pct": -3.5,
+   "fair_pct": 34.48,
+   "fetched_utc": "2026-11-15T02:00:40.425130+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+178/-203",
+     "ev": -0.0347,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -212",
+     "quote": "+178/-212",
+     "ev": -0.0483,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -223",
+     "quote": "+178/-223",
+     "ev": -0.064,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +170",
+     "quote": "+170/-203",
+     "ev": -0.02,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +163",
+     "quote": "+163/-203",
+     "ev": -0.0065,
+     "flag": "IGNORED (thin)"
+    }
+   ],
+   "actual": 2,
+   "result": "win",
+   "profit": 1.8
+  },
+  {
+   "sport": "nhl",
+   "player": "Simon Holmstrom",
+   "game": "NYI@ANA",
+   "starts_at": "2026-11-15T03:00:00.000Z",
+   "market": "Any point (G+A)",
+   "line": null,
+   "book": "draftkings",
+   "price": 105,
+   "ticker": "KXNHLPTS-26NOV14NYIANA-NYISHOLMSTROM92-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+108/-117",
+   "resting_usd": [
+    0,
+    33
+   ],
+   "top_ev_pct": -3.5,
+   "fair_pct": 47.08,
+   "fetched_utc": "2026-11-15T02:00:40.425130+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+108/-117",
+     "ev": -0.0349,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -122",
+     "quote": "+108/-122",
+     "ev": -0.0456,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -127",
+     "quote": "+108/-127",
+     "ev": -0.0558,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +104",
+     "quote": "+104/-117",
+     "ev": -0.0252,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -100",
+     "quote": "-100/-117",
+     "ev": -0.0152,
+     "flag": "IGNORED (thin)"
+    }
+   ],
+   "actual": 3,
+   "result": "win",
+   "profit": 1.05
+  },
+  {
+   "sport": "nhl",
+   "player": "Jackson Lacombe",
+   "game": "NYI@ANA",
+   "starts_at": "2026-11-15T03:00:00.000Z",
+   "market": "Any point (G+A)",
+   "line": null,
+   "book": "betmgm",
+   "price": -155,
+   "ticker": "KXNHLPTS-26NOV14NYIANA-ANAJLACOMBE2-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "-150/+133",
+   "resting_usd": [
+    320,
+    62
+   ],
+   "top_ev_pct": -3.7,
+   "fair_pct": 58.55,
+   "fetched_utc": "2026-11-15T02:00:40.425130+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "-150/+133",
+     "ev": -0.0368,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side +127",
+     "quote": "-150/+127",
+     "ev": -0.0461,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side +122",
+     "quote": "-150/+122",
+     "ev": -0.0542,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -156",
+     "quote": "-156/+133",
+     "ev": -0.029,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -163",
+     "quote": "-163/+133",
+     "ev": -0.0203,
+     "flag": "IGNORED (thin)"
+    }
+   ],
+   "actual": 0,
+   "result": "loss",
+   "profit": -1.0
+  },
+  {
+   "sport": "nhl",
+   "player": "Beckett Sennecke",
+   "game": "NYI@ANA",
+   "starts_at": "2026-11-15T03:00:00.000Z",
+   "market": "Any point (G+A)",
+   "line": null,
+   "book": "espnbet",
+   "price": -190,
+   "ticker": "KXNHLPTS-26NOV14NYIANA-ANABSENNECKE45-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "-178/+163",
+   "resting_usd": [
+    56,
+    501
+   ],
+   "top_ev_pct": -3.8,
+   "fair_pct": 63.01,
+   "fetched_utc": "2026-11-15T02:00:40.425130+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "-178/+163",
+     "ev": -0.0383,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side +156",
+     "quote": "-178/+156",
+     "ev": -0.0462,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side +150",
+     "quote": "-178/+150",
+     "ev": -0.0532,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -186",
+     "quote": "-186/+163",
+     "ev": -0.0305,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -194",
+     "quote": "-194/+163",
+     "ev": -0.0231,
+     "flag": "IGNORED (thin)"
+    }
+   ],
+   "actual": 0,
+   "result": "loss",
+   "profit": -1.0
+  },
+  {
+   "sport": "nhl",
+   "player": "Matias Maccelli",
+   "game": "NYI@ANA",
+   "starts_at": "2026-11-15T03:00:00.000Z",
+   "market": "Any assist",
+   "line": null,
+   "book": "draftkings",
+   "price": 205,
+   "ticker": "KXNHLAST-26NOV14NYIANA-NYIMMACCELLI63-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+212/-223",
+   "resting_usd": [
+    765,
+    45
+   ],
+   "top_ev_pct": -3.9,
+   "fair_pct": 31.5,
+   "fetched_utc": "2026-11-15T02:00:40.425130+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+212/-223",
+     "ev": -0.0391,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -233",
+     "quote": "+212/-233",
+     "ev": -0.0535,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -245",
+     "quote": "+212/-245",
+     "ev": -0.0697,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +203",
+     "quote": "+203/-223",
+     "ev": -0.0248,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +194",
+     "quote": "+194/-223",
+     "ev": -0.0096,
+     "flag": "IGNORED (thin)"
+    }
+   ],
+   "actual": 2,
+   "result": "win",
+   "profit": 2.05
+  },
+  {
+   "sport": "nhl",
+   "player": "Leo Carlsson",
+   "game": "NYI@ANA",
+   "starts_at": "2026-11-15T03:00:00.000Z",
+   "market": "Any point (G+A)",
+   "line": null,
+   "book": "betmgm",
+   "price": -200,
+   "ticker": "KXNHLPTS-26NOV14NYIANA-ANALCARLSSON91-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "-186/+170",
+   "resting_usd": [
+    33,
+    353
+   ],
+   "top_ev_pct": -4.0,
+   "fair_pct": 64.0,
+   "fetched_utc": "2026-11-15T02:00:40.425130+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "-186/+170",
+     "ev": -0.0399,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side +163",
+     "quote": "-186/+163",
+     "ev": -0.0472,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side +156",
+     "quote": "-186/+156",
+     "ev": -0.0549,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -194",
+     "quote": "-194/+170",
+     "ev": -0.0327,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -203",
+     "quote": "-203/+170",
+     "ev": -0.025,
+     "flag": "IGNORED (thin)"
+    }
+   ],
+   "actual": 1,
+   "result": "win",
+   "profit": 0.5
+  },
+  {
+   "sport": "nhl",
+   "player": "Matthew Schaefer",
+   "game": "NYI@ANA",
+   "starts_at": "2026-11-15T03:00:00.000Z",
+   "market": "Any assist",
+   "line": null,
+   "book": "fanduel",
+   "price": -111,
+   "ticker": "KXNHLAST-26NOV14NYIANA-NYIMSCHAEFER48-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "-104/-100",
+   "resting_usd": [
+    31,
+    71
+   ],
+   "top_ev_pct": -4.0,
+   "fair_pct": 50.49,
+   "fetched_utc": "2026-11-15T02:00:40.425130+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "-104/-100",
+     "ev": -0.0402,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -104",
+     "quote": "-104/-104",
+     "ev": -0.0495,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -108",
+     "quote": "-104/-108",
+     "ev": -0.0585,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -108",
+     "quote": "-108/-100",
+     "ev": -0.0313,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -113",
+     "quote": "-113/-100",
+     "ev": -0.0205,
+     "flag": "IGNORED (thin)"
+    }
+   ],
+   "actual": 3,
+   "result": "win",
+   "profit": 0.9009
+  },
+  {
+   "sport": "nhl",
+   "player": "Mikael Granlund",
+   "game": "NYI@ANA",
+   "starts_at": "2026-11-15T03:00:00.000Z",
+   "market": "Any assist",
+   "line": null,
+   "book": "fanduel",
+   "price": 100,
+   "ticker": "KXNHLAST-26NOV14NYIANA-ANAMGRANLUND64-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+104/-113",
+   "resting_usd": [
+    2615,
+    334
+   ],
+   "top_ev_pct": -4.0,
+   "fair_pct": 47.98,
+   "fetched_utc": "2026-11-15T02:00:40.425130+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+104/-113",
+     "ev": -0.0403,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -117",
+     "quote": "+104/-117",
+     "ev": -0.049,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -122",
+     "quote": "+104/-122",
+     "ev": -0.0594,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -100",
+     "quote": "-100/-113",
+     "ev": -0.0305,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -104",
+     "quote": "-104/-113",
+     "ev": -0.0207,
+     "flag": "IGNORED (thin)"
+    }
+   ],
+   "actual": 0,
+   "result": "loss",
+   "profit": -1.0
+  },
+  {
+   "sport": "nhl",
+   "player": "Mikael Backlund",
+   "game": "CGY@LA",
+   "starts_at": "2026-11-15T03:00:00.000Z",
+   "market": "Any assist",
+   "line": null,
+   "book": "draftkings",
+   "price": 300,
+   "ticker": "KXNHLAST-26NOV14CGYLA-CGYMBACKLUND11-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+300/-335",
+   "resting_usd": [
+    1173,
+    115
+   ],
+   "top_ev_pct": -4.1,
+   "fair_pct": 23.98,
+   "fetched_utc": "2026-11-15T02:00:40.425130+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+300/-335",
+     "ev": -0.0407,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -355",
+     "quote": "+300/-355",
+     "ev": -0.0615,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -376",
+     "quote": "+300/-376",
+     "ev": -0.0818,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +285",
+     "quote": "+285/-335",
+     "ev": -0.0217,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +270",
+     "quote": "+270/-335",
+     "ev": -0.0014,
+     "flag": "IGNORED (thin)"
+    }
+   ],
+   "actual": 0,
+   "result": "loss",
+   "profit": -1.0
+  }
+ ]
+}
