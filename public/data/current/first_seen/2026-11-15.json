@@ -1,0 +1,105 @@
+{
+ "day": "2026-11-15",
+ "events": [
+  {
+   "sport": "nhl",
+   "game_id": "401892721",
+   "start_utc": "2026-11-16T00:30Z",
+   "team": "PHI",
+   "what": "goalie",
+   "value": "Dan Vladar",
+   "first_seen_utc": "2026-11-15T06:44:36Z",
+   "mins_before_start": 1065
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892721",
+   "start_utc": "2026-11-16T00:30Z",
+   "team": "EDM",
+   "what": "goalie",
+   "value": "Tristan Jarry",
+   "first_seen_utc": "2026-11-15T06:44:36Z",
+   "mins_before_start": 1065
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892722",
+   "start_utc": "2026-11-16T01:00Z",
+   "team": "DAL",
+   "what": "goalie",
+   "value": "Casey DeSmith",
+   "first_seen_utc": "2026-11-15T06:44:36Z",
+   "mins_before_start": 1095
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892722",
+   "start_utc": "2026-11-16T01:00Z",
+   "team": "FLA",
+   "what": "goalie",
+   "value": "Akira Schmid",
+   "first_seen_utc": "2026-11-15T06:44:36Z",
+   "mins_before_start": 1095
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892723",
+   "start_utc": "2026-11-16T01:00Z",
+   "team": "ANA",
+   "what": "goalie",
+   "value": "Ville Husso",
+   "first_seen_utc": "2026-11-15T06:44:36Z",
+   "mins_before_start": 1095
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892723",
+   "start_utc": "2026-11-16T01:00Z",
+   "team": "CGY",
+   "what": "goalie",
+   "value": "Devin Cooley",
+   "first_seen_utc": "2026-11-15T06:44:36Z",
+   "mins_before_start": 1095
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892724",
+   "start_utc": "2026-11-16T02:00Z",
+   "team": "VGK",
+   "what": "goalie",
+   "value": "Carter Hart",
+   "first_seen_utc": "2026-11-15T06:44:36Z",
+   "mins_before_start": 1155
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892724",
+   "start_utc": "2026-11-16T02:00Z",
+   "team": "VAN",
+   "what": "goalie",
+   "value": "Leevi Merilainen",
+   "first_seen_utc": "2026-11-15T06:44:36Z",
+   "mins_before_start": 1155
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892725",
+   "start_utc": "2026-11-16T02:00Z",
+   "team": "SJ",
+   "what": "goalie",
+   "value": "Alex Nedeljkovic",
+   "first_seen_utc": "2026-11-15T06:44:36Z",
+   "mins_before_start": 1155
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892725",
+   "start_utc": "2026-11-16T02:00Z",
+   "team": "NSH",
+   "what": "goalie",
+   "value": "Juuse Saros",
+   "first_seen_utc": "2026-11-15T06:44:36Z",
+   "mins_before_start": 1155
+  }
+ ]
+}
