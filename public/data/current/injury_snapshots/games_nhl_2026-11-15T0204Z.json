@@ -1,0 +1,97 @@
+[
+ {
+  "sport": "nhl",
+  "game_id": "401892721",
+  "start_utc": "2026-11-16T00:30Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "PHI",
+    "probable_goalie": "Dan Vladar"
+   },
+   "away": {
+    "team": "EDM",
+    "probable_goalie": "Tristan Jarry"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "EDM -155",
+  "total": 6.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892722",
+  "start_utc": "2026-11-16T01:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "DAL",
+    "probable_goalie": "Casey DeSmith"
+   },
+   "away": {
+    "team": "FLA",
+    "probable_goalie": "Akira Schmid"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "DAL -135",
+  "total": 5.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892723",
+  "start_utc": "2026-11-16T01:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "ANA",
+    "probable_goalie": "Ville Husso"
+   },
+   "away": {
+    "team": "CGY",
+    "probable_goalie": "Devin Cooley"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "ANA -155",
+  "total": 6.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892724",
+  "start_utc": "2026-11-16T02:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "VGK",
+    "probable_goalie": "Carter Hart"
+   },
+   "away": {
+    "team": "VAN",
+    "probable_goalie": "Leevi Merilainen"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "VGK -410",
+  "total": 6.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892725",
+  "start_utc": "2026-11-16T02:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "SJ",
+    "probable_goalie": "Alex Nedeljkovic"
+   },
+   "away": {
+    "team": "NSH",
+    "probable_goalie": "Juuse Saros"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "NSH -170",
+  "total": 6.5
+ }
+]
