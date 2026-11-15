@@ -72,6 +72,27 @@ and safeties from scoringPlays; points_allowed is the opponent's score.
 
 Never invents a number: anything ESPN did not say is absent or 0 with a
 log line, never estimated.
+
+THE WEEK FILE (2026-11-15): nfl_fantasy_stats_<season>_wNN.json. FRANCHISE
+weeks 4, 5, 6, 8 and 9 never finished: the Monday night game went final after
+this job's last run, the slate rolled to the next week on Tuesday, and the
+site (which only merges a stats file whose week IS the slate's) could never
+reach the old week again -- every Monday player scored 0 and five weeks of
+standings stayed open until they were repaired by hand. So every run now also
+writes the week it scored to its OWN file, and that file only ever GAINS:
+
+  * it is merged over the copy already published (a line joined on Sunday,
+    while that team was still on the slate, is never lost to a later run
+    whose slate has moved on -- a club on bye next week is not on next
+    week's slate, so its espn ids would no longer join);
+  * it carries the espn -> gsis ids it has seen (`xw`), for the same reason;
+  * it says which game each line belongs to (`player_game`), so the site can
+    close ONE stranded game without touching the rest of the week;
+  * `closed` is true once every game of the week is final.
+
+And once ESPN has moved on to the next week, a run first finishes LAST week's
+file if it is not closed. The site's scoring cron reads the week file for any
+week it still has open (lib/fantasy/strandedWeeks.js).
 """
 from __future__ import annotations
 
@@ -93,6 +114,9 @@ import sealed_data  # noqa: E402
 
 WEEK_JSON = ("https://raw.githubusercontent.com/donthebuilder/"
              "dash-network-bot/data/public/data/current/nfl_week.json")
+WEEK_FILE = "nfl_fantasy_stats_{season}_w{week:02d}.json"
+WEEK_URL = ("https://raw.githubusercontent.com/donthebuilder/"
+            "dash-network-bot/data/public/data/current/" + WEEK_FILE)
 TIMEOUT = 30
 
 PLAYER_KEYS = ("passing_yards", "passing_touchdowns", "interceptions",
@@ -285,14 +309,18 @@ def _slate_crosswalk(week_json: dict) -> tuple[dict[str, str], int, int]:
     return xw, int(week_json.get("season") or 0), int(week_json.get("week") or 0)
 
 
-def build(week_json: dict, year: int, week_override: int | None = None) -> dict:
+def build(week_json: dict, year: int, week_override: int | None = None,
+          extra_xw: dict[str, str] | None = None) -> dict:
     xw, slate_season, slate_week = _slate_crosswalk(week_json)
+    # ids an earlier run of this week already joined (the week file's `xw`); the slate's own id wins
+    xw = {**(extra_xw or {}), **xw}
     week = week_override or nfl_espn.current_week(year) or slate_week
     season = year or slate_season
     games = nfl_espn.fetch(seasontype=2, week=week, year=season)
     print(f"  season {season} week {week}: {len(games)} game(s) on ESPN, {len(xw)} slate ids to join")
 
     out_games, players_out, defense_out = [], {}, {}
+    player_game: dict[str, str] = {}
     joined = unjoined = 0
     for g in games:
         state = g.get("state")
@@ -315,6 +343,7 @@ def build(week_json: dict, year: int, week_override: int | None = None) -> dict:
                 continue
             joined += 1
             players_out[gsis] = {k: row[k] for k in PLAYER_KEYS}
+            player_game[gsis] = str(g["game_id"])
         for n in notes[:8]:
             print(f"    note {g['away']}@{g['home']}: {n}")
         print(f"  {g['away']}@{g['home']} [{state}] {len(players)} lines")
@@ -326,9 +355,65 @@ def build(week_json: dict, year: int, week_override: int | None = None) -> dict:
         "games": out_games,
         "players": players_out,
         "defense": defense_out,
+        "player_game": player_game,
+        "xw": xw,
         "counts": {"games": len(out_games), "scored_games": sum(1 for g in out_games if g["state"] in ("in", "post")),
                    "players": len(players_out), "unjoined": unjoined},
     }
+
+
+def _done(g: dict) -> bool:
+    return bool(g.get("completed")) or str(g.get("state") or "") == "post"
+
+
+def merge_week(old: dict | None, new: dict) -> dict:
+    """The week file: `new` laid over the copy already published. It only gains.
+
+    Games come from the newer build (ESPN's own state), except that a game the
+    old copy has as final is never taken back to not-final. A player line, a
+    defence line, a line's game and an id already in the old copy stay unless
+    the new build has its own. A copy from another season or week is ignored.
+    """
+    same = bool(old) and int(old.get("season") or 0) == int(new["season"]) and int(old.get("week") or 0) == int(new["week"])
+    o = old if same else {}
+    old_games = {str(g.get("game_id")): g for g in (o.get("games") or [])}
+    games = []
+    for g in new["games"]:
+        was = old_games.get(str(g.get("game_id")))
+        games.append(was if (was and _done(was) and not _done(g)) else g)
+    seen = {str(g.get("game_id")) for g in games}
+    games += [g for gid, g in old_games.items() if gid not in seen]
+    out = {
+        "season": new["season"], "week": new["week"], "built_at": new["built_at"], "source": new.get("source", "espn"),
+        "games": games,
+        "players": {**(o.get("players") or {}), **new["players"]},
+        "defense": {**(o.get("defense") or {}), **new["defense"]},
+        "player_game": {**(o.get("player_game") or {}), **(new.get("player_game") or {})},
+        "xw": {**(o.get("xw") or {}), **(new.get("xw") or {})},
+    }
+    out["closed"] = bool(games) and all(_done(g) for g in games)
+    out["counts"] = {"games": len(games), "final_games": sum(1 for g in games if _done(g)), "players": len(out["players"])}
+    return out
+
+
+def fetch_week_file(season: int, week: int) -> dict | None:
+    """The week file as published, or None (never published, unreachable, unreadable)."""
+    try:
+        r = requests.get(WEEK_URL.format(season=season, week=week), timeout=TIMEOUT)
+        if r.status_code != 200:
+            return None
+        j = r.json()
+        return j if isinstance(j, dict) else None
+    except Exception:
+        return None
+
+
+def write_week_file(out: Path, payload: dict, published: dict | None) -> dict:
+    merged = merge_week(published, payload)
+    name = WEEK_FILE.format(season=merged["season"], week=merged["week"])
+    (out / name).write_text(json.dumps(merged, separators=(",", ":")))
+    print(f"wrote {out / name}: {merged['counts']} closed={merged['closed']}")
+    return merged
 
 
 def main() -> int:
@@ -349,14 +434,32 @@ def main() -> int:
         except Exception as exc:
             print(f"slate unavailable ({type(exc).__name__}: {exc}); nothing to join against")
             return 1
-    payload = build(week_json, a.season, a.week)
+    week = a.week or nfl_espn.current_week(a.season) or int(week_json.get("week") or 0)
+    published = fetch_week_file(a.season, week) if week else None
+    payload = build(week_json, a.season, week or None, extra_xw=(published or {}).get("xw"))
     if not payload["games"]:
         print("no games from ESPN -- refusing to publish an empty file over a good one")
         return 1
     out = Path(a.out)
     out.mkdir(parents=True, exist_ok=True)
-    (out / "nfl_fantasy_stats.json").write_text(json.dumps(payload, separators=(",", ":")))
+    # the live file is what it always was: the two week-file keys stay out of it
+    live = {k: v for k, v in payload.items() if k not in ("xw", "player_game")}
+    (out / "nfl_fantasy_stats.json").write_text(json.dumps(live, separators=(",", ":")))
     print(f"wrote {out / 'nfl_fantasy_stats.json'}: {payload['counts']}")
+    write_week_file(out, payload, published)
+    # LAST WEEK, IF IT NEVER CLOSED. Only on a scheduled run (no --week), only once ESPN is on a later week, and
+    # only until that file says closed -- one extra pass a week in the usual case. A failure here never fails the run.
+    if not a.week and payload["week"] > 1:
+        try:
+            last = payload["week"] - 1
+            prev = fetch_week_file(a.season, last)
+            if not (prev and prev.get("closed")):
+                print(f"week {last} is not closed in its week file -- finishing it")
+                back = build(week_json, a.season, last, extra_xw=(prev or {}).get("xw"))
+                if back["games"]:
+                    write_week_file(out, back, prev)
+        except Exception as exc:
+            print(f"  last week's file could not be finished ({type(exc).__name__}: {exc}); the next run tries again")
     return 0
 
 

@@ -68,5 +68,34 @@ def main():
     print(f"ok  {len(players)} lines parsed, {len(notes)} note(s)")
 
 
+def test_week_file():
+    """THE WEEK FILE only gains (TEST data: made-up ids and lines)."""
+    def g(gid, done):
+        return {"game_id": gid, "week": 8, "home": "AAA", "away": "BBB", "home_score": 1, "away_score": 2,
+                "state": "post" if done else "pre", "completed": done}
+    base = {"season": 2026, "week": 8, "built_at": "t1", "source": "espn"}
+    # Sunday: the Sunday game is final, Monday's has not started; the slate still lists the Monday clubs
+    sunday = {**base, "games": [g("1", True), g("2", False)], "players": {"p-sun": {"receptions": 3}},
+              "defense": {"AAA": {"def_sacks": 1}}, "player_game": {"p-sun": "1"}, "xw": {"e-sun": "p-sun", "e-mon": "p-mon"}}
+    one = fs.merge_week(None, sunday)
+    check(one["closed"] is False and one["counts"]["final_games"] == 1, one["counts"])
+    # a later run: Monday's game is final, but this run's slate has moved on and no longer joins the Sunday man
+    later = {**base, "built_at": "t2", "games": [g("1", True), g("2", True)], "players": {"p-mon": {"receptions": 7}},
+             "defense": {"CCC": {"def_sacks": 2}}, "player_game": {"p-mon": "2"}, "xw": {"e-mon": "p-mon"}}
+    two = fs.merge_week(one, later)
+    check(two["closed"] is True, "every game final closes the week")
+    check(two["players"] == {"p-sun": {"receptions": 3}, "p-mon": {"receptions": 7}}, "a line already joined is never lost")
+    check(two["player_game"] == {"p-sun": "1", "p-mon": "2"} and two["xw"]["e-sun"] == "p-sun", "its game and its id stay too")
+    check(set(two["defense"]) == {"AAA", "CCC"}, two["defense"])
+    # a final game is never taken back; a copy of another week is ignored
+    back = fs.merge_week(two, {**base, "built_at": "t3", "games": [g("1", True), g("2", False)], "players": {}, "defense": {}})
+    check(back["closed"] is True, "a game the file has as final stays final")
+    other = fs.merge_week({**two, "week": 7}, sunday)
+    check(other["players"] == {"p-sun": {"receptions": 3}} and other["closed"] is False, "another week's copy is not merged in")
+    check(fs.WEEK_FILE.format(season=2026, week=9) == "nfl_fantasy_stats_2026_w09.json", "the name the site asks for")
+    print("ok  week file: only gains, closes when every game is final")
+
+
 if __name__ == "__main__":
     main()
+    test_week_file()

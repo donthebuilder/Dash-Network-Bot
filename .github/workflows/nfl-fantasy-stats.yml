@@ -32,10 +32,19 @@ on:
     # off the quarter-hours (2026-10-04: GitHub started none of the */15 runs
     # 16:31-17:50 on a Sunday; its scheduler drops most at :00/:15/:30/:45)
     - cron: '7,22,37,52 0-5 * * 0,1,2,5'
-    # No Tuesday "correction" pass: the slate rolls to next week Tue 13:00Z
-    # and the site only merges a stats file whose week matches the slate's,
-    # so a Tuesday rebuild of last week could never reach a page. The last
-    # useful pass for a week is the Monday-night window above.
+    # THE CLOSE-OUT PASSES (2026-11-15). The slate rolls to next week Tue
+    # 13:00Z and the site only merges the live file when its week is the
+    # slate's, so a Monday night game that went final after the last run above
+    # used to be lost for good (FRANCHISE weeks 4, 5, 6, 8, 9). The site now
+    # closes an old week from that week's OWN file
+    # (nfl_fantasy_stats_<season>_wNN.json), which every run writes and which
+    # a run on the following week finishes if it is still open. These slots
+    # make sure one such run happens soon after Monday night instead of waiting
+    # for Thursday: Tue (ESPN is still on the old week) and Wed + Thu (ESPN
+    # has rolled; the run finishes last week's file). Three slots because
+    # GitHub drops most scheduled runs of this workflow.
+    - cron: '37 9,15 * * 2'
+    - cron: '37 15 * * 3,4'
   workflow_dispatch:
     inputs:
       week:

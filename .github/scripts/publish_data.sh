@@ -396,6 +396,15 @@ NFL_SIGNAL_LOG_KEEP=300
 NFL_MATCHUP_WEEK_GLOB="nfl_matchup_week_*.json"
 NFL_MATCHUP_WEEK_KEEP=40
 
+# nfl_fantasy_stats_<season>_wNN.json (2026-11-15): ONE FILE PER WEEK, the box
+# scores FRANCHISE scores a week on, kept after the slate moves on. Written and
+# merged by bots/nfl/nfl_fantasy_stats.py (see THE WEEK FILE there): five weeks
+# of fantasy standings stayed open because the Monday night game's lines had
+# nowhere to live once nfl_fantasy_stats.json was on the next week. ~80 KB a
+# week; 25 keeps a season. The glob does NOT match nfl_fantasy_stats.json.
+NFL_FANTASY_WEEK_GLOB="nfl_fantasy_stats_20*_w*.json"
+NFL_FANTASY_WEEK_KEEP=25
+
 # nfl_outcome_log_*.jsonl: ONE FILE PER DATE, same as OUTCOME_LOG_GLOB --
 # append_nfl_outcome_log() in bots/nfl/nfl_results.py appends a new line to
 # that date's file every grading pass rather than opening a new file. Real
@@ -730,6 +739,7 @@ stage_local() {
            "$SRC"/data/$NFL_POR_LOG_GLOB "$SRC"/data/current/$NFL_POR_LOG_GLOB \
            "$SRC"/data/$NFL_SIGNAL_LOG_GLOB "$SRC"/data/current/$NFL_SIGNAL_LOG_GLOB \
            "$SRC"/data/$NFL_MATCHUP_WEEK_GLOB "$SRC"/data/current/$NFL_MATCHUP_WEEK_GLOB \
+           "$SRC"/data/current/$NFL_FANTASY_WEEK_GLOB \
            "$SRC"/data/$NFL_NEXT_PICKS_GLOB "$SRC"/data/current/$NFL_NEXT_PICKS_GLOB \
            "$SRC"/data/$NFL_NEXT_PRED_LOG_GLOB "$SRC"/data/current/$NFL_NEXT_PRED_LOG_GLOB \
            "$SRC"/data/current/$NFL_GAME_CALLS_LOG_GLOB \
@@ -896,6 +906,7 @@ carry_forward() {
               "$NFL_NEXT_PRED_LOG_GLOB:$NFL_NEXT_PRED_LOG_KEEP" \
               "$NFL_SIGNAL_LOG_GLOB:$NFL_SIGNAL_LOG_KEEP" \
               "$NFL_MATCHUP_WEEK_GLOB:$NFL_MATCHUP_WEEK_KEEP" \
+              "$NFL_FANTASY_WEEK_GLOB:$NFL_FANTASY_WEEK_KEEP" \
               "$NFL_GAME_CALLS_LOG_GLOB:$NFL_GAME_CALLS_LOG_KEEP" \
               "$NFL_GAME_CALLS_GRADED_GLOB:$NFL_GAME_CALLS_GRADED_KEEP" \
               "$NFL_GAME_CALLS_TOTALS_GLOB:$NFL_GAME_CALLS_TOTALS_KEEP"; do
