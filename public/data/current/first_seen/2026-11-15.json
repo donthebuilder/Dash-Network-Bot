@@ -260,6 +260,56 @@
    "value": "Expected:Jared McCain|Ajay Mitchell|Shai Gilgeous-Alexander|Aday Mara|Isaiah Hartenstein",
    "first_seen_utc": "2026-11-15T18:52:37Z",
    "mins_before_start": 427
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909989",
+   "start_utc": "2026-11-15T23:00Z",
+   "team": "BOS",
+   "what": "starters",
+   "value": "Confirmed:Jordan Walsh|Paul George|Derrick White|Jayson Tatum|Neemias Queta",
+   "first_seen_utc": "2026-11-15T23:23:34Z",
+   "mins_before_start": -24
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909989",
+   "start_utc": "2026-11-15T23:00Z",
+   "team": "DAL",
+   "what": "starters",
+   "value": "Confirmed:Cooper Flagg|Caleb Martin|Naji Marshall|P.J. Washington|Daniel Gafford",
+   "first_seen_utc": "2026-11-15T23:23:34Z",
+   "mins_before_start": -24
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909990",
+   "start_utc": "2026-11-15T23:00Z",
+   "team": "TOR",
+   "what": "starters",
+   "value": "Confirmed:Ja'Kobe Walter|RJ Barrett|Immanuel Quickley|Scottie Barnes|Collin Murray-Boyles",
+   "first_seen_utc": "2026-11-15T23:23:34Z",
+   "mins_before_start": -24
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909990",
+   "start_utc": "2026-11-15T23:00Z",
+   "team": "NY",
+   "what": "starters",
+   "value": "Confirmed:Mikal Bridges|Josh Hart|Jalen Brunson|OG Anunoby|Karl-Anthony Towns",
+   "first_seen_utc": "2026-11-15T23:23:34Z",
+   "mins_before_start": -24
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909991",
+   "start_utc": "2026-11-16T00:00Z",
+   "team": "HOU",
+   "what": "starters",
+   "value": "Expected:Kevin Durant|Jabari Smith Jr.|Amen Thompson|Alperen Sengun|Steven Adams",
+   "first_seen_utc": "2026-11-15T23:23:34Z",
+   "mins_before_start": 36
   }
  ]
 }
