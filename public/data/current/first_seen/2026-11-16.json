@@ -1,0 +1,45 @@
+{
+ "day": "2026-11-16",
+ "events": [
+  {
+   "sport": "nhl",
+   "game_id": "401892726",
+   "start_utc": "2026-11-17T00:30Z",
+   "team": "NYR",
+   "what": "goalie",
+   "value": "Joonas Korpisalo",
+   "first_seen_utc": "2026-11-16T06:43:47Z",
+   "mins_before_start": 1066
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892726",
+   "start_utc": "2026-11-17T00:30Z",
+   "team": "MTL",
+   "what": "goalie",
+   "value": "Jacob Fowler",
+   "first_seen_utc": "2026-11-16T06:43:47Z",
+   "mins_before_start": 1066
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892727",
+   "start_utc": "2026-11-17T02:30Z",
+   "team": "UTA",
+   "what": "goalie",
+   "value": "Karel Vejmelka",
+   "first_seen_utc": "2026-11-16T06:43:47Z",
+   "mins_before_start": 1186
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892727",
+   "start_utc": "2026-11-17T02:30Z",
+   "team": "VAN",
+   "what": "goalie",
+   "value": "Kevin Lankinen",
+   "first_seen_utc": "2026-11-16T06:43:47Z",
+   "mins_before_start": 1186
+  }
+ ]
+}
