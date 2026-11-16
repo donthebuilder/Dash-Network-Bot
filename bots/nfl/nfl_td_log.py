@@ -201,6 +201,10 @@ def main() -> int:
         with open(a.out, "w") as f:
             for r in rows:
                 f.write(json.dumps(r) + "\n")
+        print(f"wrote {len(rows)} rows to {a.out} (the file the site's NFL tick copies in)")
+    if not a.apply:
+        print("DRY RUN: nothing was written to the database (no --apply). "
+              "The site copies the file into nfl_td_log on Mondays and Tuesdays at :11.")
     if a.apply:
         url, key = os.environ.get("SUPABASE_URL"), os.environ.get("SUPABASE_SERVICE_ROLE_KEY")
         if not url or not key:
