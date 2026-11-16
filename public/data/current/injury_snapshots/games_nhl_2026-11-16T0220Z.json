@@ -1,0 +1,40 @@
+[
+ {
+  "sport": "nhl",
+  "game_id": "401892726",
+  "start_utc": "2026-11-17T00:30Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "NYR",
+    "probable_goalie": "Joonas Korpisalo"
+   },
+   "away": {
+    "team": "MTL",
+    "probable_goalie": "Jacob Fowler"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "NYR -110",
+  "total": 6.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892727",
+  "start_utc": "2026-11-17T02:30Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "UTA",
+    "probable_goalie": "Karel Vejmelka"
+   },
+   "away": {
+    "team": "VAN",
+    "probable_goalie": "Kevin Lankinen"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "UTAH -340",
+  "total": 6.5
+ }
+]
