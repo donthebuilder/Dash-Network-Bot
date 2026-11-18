@@ -1,0 +1,895 @@
+{
+ "sport": "nba",
+ "fetched_utc": "2026-11-18T0346Z",
+ "date_et": "2026-11-17",
+ "rows": [
+  {
+   "sport": "nba",
+   "player": "Sandro Mamukelashvili",
+   "game": "CHA@LAL",
+   "starts_at": "2026-11-18T04:00:00.000Z",
+   "market": "PRA",
+   "line": "19.5",
+   "book": "betmgm",
+   "price": 125,
+   "ticker": "KXNBAPRA-26NOV17CHALAL-LALSMAMUKELASHVILI54-20",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "-104/-100",
+   "resting_usd": [
+    3,
+    25
+   ],
+   "top_ev_pct": 13.6,
+   "fair_pct": 50.49,
+   "fetched_utc": "2026-11-18T03:46:09.619005+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "-104/-100",
+     "ev": 0.136,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -104",
+     "quote": "-104/-104",
+     "ev": 0.125,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -108",
+     "quote": "-104/-108",
+     "ev": 0.1144,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -122",
+     "quote": "-122/-100",
+     "ev": 0.1809,
+     "flag": "IGNORED (thin)"
+    }
+   ],
+   "actual": 8,
+   "result": "loss",
+   "profit": -1.0
+  },
+  {
+   "sport": "nba",
+   "player": "Sandro Mamukelashvili",
+   "game": "CHA@LAL",
+   "starts_at": "2026-11-18T04:00:00.000Z",
+   "market": "Rebounds",
+   "line": "5.5",
+   "book": "bovada",
+   "price": 110,
+   "ticker": "KXNBAREB-26NOV17CHALAL-LALSMAMUKELASHVILI54-6",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "-100/-104",
+   "resting_usd": [
+    8531,
+    28
+   ],
+   "top_ev_pct": 4.0,
+   "fair_pct": 49.51,
+   "fetched_utc": "2026-11-18T03:46:09.619005+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "-100/-104",
+     "ev": 0.0397,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -117",
+     "quote": "-100/-117",
+     "ev": 0.0088,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -104",
+     "quote": "-104/-104",
+     "ev": 0.05,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -108",
+     "quote": "-108/-104",
+     "ev": 0.0599,
+     "flag": "IGNORED (thin)"
+    }
+   ],
+   "actual": 3,
+   "result": "loss",
+   "profit": -1.0
+  },
+  {
+   "sport": "nba",
+   "player": "Ryan Kalkbrenner",
+   "game": "CHA@LAL",
+   "starts_at": "2026-11-18T04:00:00.000Z",
+   "market": "Points",
+   "line": "4.5",
+   "book": "fanduel",
+   "price": 102,
+   "ticker": "KXNBAPTS-26NOV17CHALAL-CHARKALKBRENNER11-5",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "-100/-108",
+   "resting_usd": [
+    210,
+    112
+   ],
+   "top_ev_pct": -0.9,
+   "fair_pct": 49.04,
+   "fetched_utc": "2026-11-18T03:46:09.619005+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "-100/-108",
+     "ev": -0.0094,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -113",
+     "quote": "-100/-113",
+     "ev": -0.0208,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -117",
+     "quote": "-100/-117",
+     "ev": -0.0296,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -104",
+     "quote": "-104/-108",
+     "ev": 0.0005,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -108",
+     "quote": "-108/-108",
+     "ev": 0.01,
+     "flag": "IGNORED (thin)"
+    }
+   ],
+   "actual": 6,
+   "result": "win",
+   "profit": 1.02
+  },
+  {
+   "sport": "nba",
+   "player": "Sandro Mamukelashvili",
+   "game": "CHA@LAL",
+   "starts_at": "2026-11-18T04:00:00.000Z",
+   "market": "Assists",
+   "line": "1.5",
+   "book": "draftkings",
+   "price": -106,
+   "ticker": "KXNBAAST-26NOV17CHALAL-LALSMAMUKELASHVILI54-2",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "-104/-100",
+   "resting_usd": [
+    245,
+    85
+   ],
+   "top_ev_pct": -1.9,
+   "fair_pct": 50.49,
+   "fetched_utc": "2026-11-18T03:46:09.619005+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "-104/-100",
+     "ev": -0.0188,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -108",
+     "quote": "-104/-108",
+     "ev": -0.0375,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -108",
+     "quote": "-108/-100",
+     "ev": -0.0096,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -113",
+     "quote": "-113/-100",
+     "ev": 0.0014,
+     "flag": "IGNORED (thin)"
+    }
+   ],
+   "actual": 2,
+   "result": "win",
+   "profit": 0.9434
+  },
+  {
+   "sport": "nba",
+   "player": "Moussa Diabate",
+   "game": "CHA@LAL",
+   "starts_at": "2026-11-18T04:00:00.000Z",
+   "market": "Rebounds",
+   "line": "9.5",
+   "book": "draftkings",
+   "price": 101,
+   "ticker": "KXNBAREB-26NOV17CHALAL-CHAMDIABATE14-10",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 4,
+   "kalshi_yes_no": "+104/-108",
+   "resting_usd": [
+    3244,
+    4057
+   ],
+   "top_ev_pct": -2.4,
+   "fair_pct": 48.55,
+   "fetched_utc": "2026-11-18T03:46:09.619005+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+104/-108",
+     "ev": -0.0242,
+     "flag": "RED"
+    },
+    {
+     "source": "Kalshi no-side -113",
+     "quote": "+104/-113",
+     "ev": -0.0355,
+     "flag": "RED"
+    },
+    {
+     "source": "Kalshi no-side -117",
+     "quote": "+104/-117",
+     "ev": -0.0443,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -100",
+     "quote": "-100/-108",
+     "ev": -0.0143,
+     "flag": "RED"
+    },
+    {
+     "source": "Kalshi yes-side -104",
+     "quote": "-104/-108",
+     "ev": -0.0045,
+     "flag": "RED"
+    }
+   ],
+   "actual": 16,
+   "result": "win",
+   "profit": 1.01
+  },
+  {
+   "sport": "nba",
+   "player": "Coby White",
+   "game": "CHA@LAL",
+   "starts_at": "2026-11-18T04:00:00.000Z",
+   "market": "Assists",
+   "line": "3.5",
+   "book": "fanduel",
+   "price": -104,
+   "ticker": "KXNBAAST-26NOV17CHALAL-CHACWHITE3-4",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "-100/-104",
+   "resting_usd": [
+    4319,
+    245
+   ],
+   "top_ev_pct": -2.9,
+   "fair_pct": 49.51,
+   "fetched_utc": "2026-11-18T03:46:09.619005+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "-100/-104",
+     "ev": -0.0288,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -108",
+     "quote": "-100/-108",
+     "ev": -0.0381,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -113",
+     "quote": "-100/-113",
+     "ev": -0.0492,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -104",
+     "quote": "-104/-104",
+     "ev": -0.0192,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -108",
+     "quote": "-108/-104",
+     "ev": -0.01,
+     "flag": "IGNORED (thin)"
+    }
+   ],
+   "actual": 4,
+   "result": "win",
+   "profit": 0.9615
+  },
+  {
+   "sport": "nba",
+   "player": "Quentin Grimes",
+   "game": "CHA@LAL",
+   "starts_at": "2026-11-18T04:00:00.000Z",
+   "market": "Rebounds",
+   "line": "3.5",
+   "book": "draftkings",
+   "price": -117,
+   "ticker": "KXNBAREB-26NOV17CHALAL-LALQGRIMES5-4",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "-113/+104",
+   "resting_usd": [
+    335,
+    234
+   ],
+   "top_ev_pct": -3.5,
+   "fair_pct": 52.02,
+   "fetched_utc": "2026-11-18T03:46:09.619005+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "-113/+104",
+     "ev": -0.0352,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -100",
+     "quote": "-113/-100",
+     "ev": -0.0443,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -104",
+     "quote": "-113/-104",
+     "ev": -0.0534,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -117",
+     "quote": "-117/+104",
+     "ev": -0.0272,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -122",
+     "quote": "-122/+104",
+     "ev": -0.0175,
+     "flag": "IGNORED (thin)"
+    }
+   ],
+   "actual": 6,
+   "result": "win",
+   "profit": 0.8547
+  },
+  {
+   "sport": "nba",
+   "player": "Jake Laravia",
+   "game": "CHA@LAL",
+   "starts_at": "2026-11-18T04:00:00.000Z",
+   "market": "PRA",
+   "line": "14.5",
+   "book": "fanduel",
+   "price": 102,
+   "ticker": "KXNBAPRA-26NOV17CHALAL-LALJLARAVIA12-15",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+108/-117",
+   "resting_usd": [
+    4912,
+    1
+   ],
+   "top_ev_pct": -4.9,
+   "fair_pct": 47.08,
+   "fetched_utc": "2026-11-18T03:46:09.619005+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+108/-117",
+     "ev": -0.049,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -122",
+     "quote": "+108/-122",
+     "ev": -0.0595,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -127",
+     "quote": "+108/-127",
+     "ev": -0.0696,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +104",
+     "quote": "+104/-117",
+     "ev": -0.0395,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -100",
+     "quote": "-100/-117",
+     "ev": -0.0296,
+     "flag": "IGNORED (thin)"
+    }
+   ],
+   "actual": 11,
+   "result": "loss",
+   "profit": -1.0
+  },
+  {
+   "sport": "nba",
+   "player": "Sion James",
+   "game": "CHA@LAL",
+   "starts_at": "2026-11-18T04:00:00.000Z",
+   "market": "PRA",
+   "line": "14.5",
+   "book": "caesars",
+   "price": 102,
+   "ticker": "KXNBAPRA-26NOV17CHALAL-CHASJAMES4-15",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+113/-117",
+   "resting_usd": [
+    31,
+    100
+   ],
+   "top_ev_pct": -6.0,
+   "fair_pct": 46.52,
+   "fetched_utc": "2026-11-18T03:46:09.619005+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+113/-117",
+     "ev": -0.0604,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -122",
+     "quote": "+113/-122",
+     "ev": -0.0709,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -127",
+     "quote": "+113/-127",
+     "ev": -0.0809,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +108",
+     "quote": "+108/-117",
+     "ev": -0.049,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +104",
+     "quote": "+104/-117",
+     "ev": -0.0395,
+     "flag": "IGNORED (thin)"
+    }
+   ],
+   "actual": 13,
+   "result": "loss",
+   "profit": -1.0
+  },
+  {
+   "sport": "nba",
+   "player": "Luka Doncic",
+   "game": "CHA@LAL",
+   "starts_at": "2026-11-18T04:00:00.000Z",
+   "market": "Rebounds",
+   "line": "7.5",
+   "book": "draftkings",
+   "price": -112,
+   "ticker": "KXNBAREB-26NOV17CHALAL-LALLDONCIC77-8",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "-100/-104",
+   "resting_usd": [
+    225,
+    3
+   ],
+   "top_ev_pct": -6.3,
+   "fair_pct": 49.51,
+   "fetched_utc": "2026-11-18T03:46:09.619005+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "-100/-104",
+     "ev": -0.0629,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -108",
+     "quote": "-100/-108",
+     "ev": -0.0718,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -113",
+     "quote": "-100/-113",
+     "ev": -0.0825,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -104",
+     "quote": "-104/-104",
+     "ev": -0.0536,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -108",
+     "quote": "-108/-104",
+     "ev": -0.0446,
+     "flag": "IGNORED (thin)"
+    }
+   ],
+   "actual": 6,
+   "result": "loss",
+   "profit": -1.0
+  },
+  {
+   "sport": "nba",
+   "player": "Ziaire Williams",
+   "game": "CHA@LAL",
+   "starts_at": "2026-11-18T04:00:00.000Z",
+   "market": "Points",
+   "line": "9.5",
+   "book": "caesars",
+   "price": 100,
+   "ticker": "KXNBAPTS-26NOV17CHALAL-LALZWILLIAMS11-10",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+113/-117",
+   "resting_usd": [
+    397,
+    57
+   ],
+   "top_ev_pct": -7.0,
+   "fair_pct": 46.52,
+   "fetched_utc": "2026-11-18T03:46:09.619005+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+113/-117",
+     "ev": -0.0697,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -122",
+     "quote": "+113/-122",
+     "ev": -0.0801,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -127",
+     "quote": "+113/-127",
+     "ev": -0.09,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +108",
+     "quote": "+108/-117",
+     "ev": -0.0584,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +104",
+     "quote": "+104/-117",
+     "ev": -0.049,
+     "flag": "IGNORED (thin)"
+    }
+   ],
+   "actual": 0,
+   "result": "loss",
+   "profit": -1.0
+  },
+  {
+   "sport": "nba",
+   "player": "Sion James",
+   "game": "CHA@LAL",
+   "starts_at": "2026-11-18T04:00:00.000Z",
+   "market": "Rebounds",
+   "line": "3.5",
+   "book": "espnbet",
+   "price": -120,
+   "ticker": "KXNBAREB-26NOV17CHALAL-CHASJAMES4-4",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "-104/-100",
+   "resting_usd": [
+    1145,
+    205
+   ],
+   "top_ev_pct": -7.4,
+   "fair_pct": 50.49,
+   "fetched_utc": "2026-11-18T03:46:09.619005+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "-104/-100",
+     "ev": -0.0743,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -104",
+     "quote": "-104/-104",
+     "ev": -0.0833,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -108",
+     "quote": "-104/-108",
+     "ev": -0.092,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -108",
+     "quote": "-108/-100",
+     "ev": -0.0657,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -113",
+     "quote": "-113/-100",
+     "ev": -0.0553,
+     "flag": "IGNORED (thin)"
+    }
+   ],
+   "actual": 6,
+   "result": "win",
+   "profit": 0.8333
+  },
+  {
+   "sport": "nba",
+   "player": "Naz Reid",
+   "game": "CHA@LAL",
+   "starts_at": "2026-11-18T04:00:00.000Z",
+   "market": "Rebounds",
+   "line": "7.5",
+   "book": "fanduel",
+   "price": 100,
+   "ticker": "KXNBAREB-26NOV17CHALAL-CHANREID0-8",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+117/-122",
+   "resting_usd": [
+    1795,
+    128
+   ],
+   "top_ev_pct": -8.9,
+   "fair_pct": 45.56,
+   "fetched_utc": "2026-11-18T03:46:09.619005+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+117/-122",
+     "ev": -0.0887,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -127",
+     "quote": "+117/-127",
+     "ev": -0.0987,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -133",
+     "quote": "+117/-133",
+     "ev": -0.1101,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +108",
+     "quote": "+108/-122",
+     "ev": -0.0688,
+     "flag": "IGNORED (thin)"
+    }
+   ],
+   "actual": 11,
+   "result": "win",
+   "profit": 1.0
+  },
+  {
+   "sport": "nba",
+   "player": "Matisse Thybulle",
+   "game": "CHA@LAL",
+   "starts_at": "2026-11-18T04:00:00.000Z",
+   "market": "Assists",
+   "line": "1.5",
+   "book": "espnbet",
+   "price": 160,
+   "ticker": "KXNBAAST-26NOV17CHALAL-LALMTHYBULLE26-2",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+178/-194",
+   "resting_usd": [
+    321,
+    34
+   ],
+   "top_ev_pct": -9.0,
+   "fair_pct": 34.99,
+   "fetched_utc": "2026-11-18T03:46:09.619005+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+178/-194",
+     "ev": -0.0903,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -203",
+     "quote": "+178/-203",
+     "ev": -0.1036,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -212",
+     "quote": "+178/-212",
+     "ev": -0.1163,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +170",
+     "quote": "+170/-194",
+     "ev": -0.0766,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +163",
+     "quote": "+163/-194",
+     "ev": -0.064,
+     "flag": "IGNORED (thin)"
+    }
+   ],
+   "actual": 0,
+   "result": "loss",
+   "profit": -1.0
+  },
+  {
+   "sport": "nba",
+   "player": "Ziaire Williams",
+   "game": "CHA@LAL",
+   "starts_at": "2026-11-18T04:00:00.000Z",
+   "market": "Assists",
+   "line": "1.5",
+   "book": "draftkings",
+   "price": 108,
+   "ticker": "KXNBAAST-26NOV17CHALAL-LALZWILLIAMS11-2",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+127/-133",
+   "resting_usd": [
+    189,
+    16
+   ],
+   "top_ev_pct": -9.6,
+   "fair_pct": 43.48,
+   "fetched_utc": "2026-11-18T03:46:09.619005+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+127/-133",
+     "ev": -0.0955,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -138",
+     "quote": "+127/-138",
+     "ev": -0.1049,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -144",
+     "quote": "+127/-144",
+     "ev": -0.1157,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +122",
+     "quote": "+122/-133",
+     "ev": -0.0852,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +117",
+     "quote": "+117/-133",
+     "ev": -0.0745,
+     "flag": "IGNORED (thin)"
+    }
+   ],
+   "actual": 1,
+   "result": "loss",
+   "profit": -1.0
+  },
+  {
+   "sport": "nba",
+   "player": "Sion James",
+   "game": "CHA@LAL",
+   "starts_at": "2026-11-18T04:00:00.000Z",
+   "market": "Assists",
+   "line": "3.5",
+   "book": "caesars",
+   "price": 124,
+   "ticker": "KXNBAAST-26NOV17CHALAL-CHASJAMES4-4",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+150/-156",
+   "resting_usd": [
+    2597,
+    43
+   ],
+   "top_ev_pct": -11.5,
+   "fair_pct": 39.53,
+   "fetched_utc": "2026-11-18T03:46:09.619005+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+150/-156",
+     "ev": -0.1145,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -163",
+     "quote": "+150/-163",
+     "ev": -0.1262,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -170",
+     "quote": "+150/-170",
+     "ev": -0.1374,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +144",
+     "quote": "+144/-156",
+     "ev": -0.1036,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +138",
+     "quote": "+138/-156",
+     "ev": -0.0921,
+     "flag": "IGNORED (thin)"
+    }
+   ],
+   "actual": 4,
+   "result": "win",
+   "profit": 1.24
+  }
+ ]
+}
