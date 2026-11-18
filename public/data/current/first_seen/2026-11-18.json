@@ -1,0 +1,65 @@
+{
+ "day": "2026-11-18",
+ "events": [
+  {
+   "sport": "nhl",
+   "game_id": "401892739",
+   "start_utc": "2026-11-19T00:30Z",
+   "team": "DET",
+   "what": "goalie",
+   "value": "Daniil Tarasov",
+   "first_seen_utc": "2026-11-18T07:39:34Z",
+   "mins_before_start": 1010
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892739",
+   "start_utc": "2026-11-19T00:30Z",
+   "team": "BOS",
+   "what": "goalie",
+   "value": "Jeremy Swayman",
+   "first_seen_utc": "2026-11-18T07:39:34Z",
+   "mins_before_start": 1010
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892740",
+   "start_utc": "2026-11-19T00:30Z",
+   "team": "NJ",
+   "what": "goalie",
+   "value": "Connor Hellebuyck",
+   "first_seen_utc": "2026-11-18T07:39:34Z",
+   "mins_before_start": 1010
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892740",
+   "start_utc": "2026-11-19T00:30Z",
+   "team": "MTL",
+   "what": "goalie",
+   "value": "Jacob Fowler",
+   "first_seen_utc": "2026-11-18T07:39:34Z",
+   "mins_before_start": 1010
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892741",
+   "start_utc": "2026-11-19T03:00Z",
+   "team": "UTA",
+   "what": "goalie",
+   "value": "Karel Vejmelka",
+   "first_seen_utc": "2026-11-18T07:39:34Z",
+   "mins_before_start": 1160
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892741",
+   "start_utc": "2026-11-19T03:00Z",
+   "team": "COL",
+   "what": "goalie",
+   "value": "Mackenzie Blackwood",
+   "first_seen_utc": "2026-11-18T07:39:34Z",
+   "mins_before_start": 1160
+  }
+ ]
+}
