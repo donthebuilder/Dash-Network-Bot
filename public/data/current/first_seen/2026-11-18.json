@@ -310,6 +310,36 @@
    "value": "Expected:Jalen Green|Dillon Brooks|Devin Booker|Miles Bridges|Oso Ighodaro",
    "first_seen_utc": "2026-11-18T20:33:40Z",
    "mins_before_start": 386
+  },
+  {
+   "sport": "nba",
+   "game_id": "401910015",
+   "start_utc": "2026-11-19T02:30Z",
+   "team": "DEN",
+   "what": "starters",
+   "value": "Confirmed:Christian Braun|Cameron Johnson|Jamal Murray|Aaron Gordon|Nikola Joki\u0107",
+   "first_seen_utc": "2026-11-19T02:35:01Z",
+   "mins_before_start": -5
+  },
+  {
+   "sport": "nba",
+   "game_id": "401910015",
+   "start_utc": "2026-11-19T02:30Z",
+   "team": "BOS",
+   "what": "starters",
+   "value": "Confirmed:Jordan Walsh|Paul George|Derrick White|Jayson Tatum|Neemias Queta",
+   "first_seen_utc": "2026-11-19T02:35:01Z",
+   "mins_before_start": -5
+  },
+  {
+   "sport": "nba",
+   "game_id": "401910017",
+   "start_utc": "2026-11-19T03:00Z",
+   "team": "LAL",
+   "what": "starters",
+   "value": "Expected:Quentin Grimes|Matisse Thybulle|Luka Don\u010di\u0107|Jake LaRavia|Walker Kessler",
+   "first_seen_utc": "2026-11-19T02:35:01Z",
+   "mins_before_start": 25
   }
  ]
 }
