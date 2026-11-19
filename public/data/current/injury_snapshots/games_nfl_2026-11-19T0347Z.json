@@ -1,0 +1,21 @@
+[
+ {
+  "sport": "nfl",
+  "game_id": "401873066",
+  "start_utc": "2026-11-20T01:15Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "HOU",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "IND",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": "HOU -12.5",
+  "total": 43.5
+ }
+]
