@@ -45,7 +45,12 @@ jobs:
             n=$(basename "$t")
             # run as a local run would: GitHub's run id makes every run_id in this
             # job identical, and two tests check that separate runs differ
-            if timeout 180 env -u GITHUB_RUN_ID -u GITHUB_RUN_ATTEMPT -u GITHUB_ACTIONS python "$t" > "/tmp/$n.log" 2>&1; then
+            # A pytest-style file (def test_..., no __main__ runner) run as a plain script only DEFINES its
+            # tests and exits 0: 21 of 114 files passed that way without one assertion running, which hid two
+            # failing registry tests and a stale prediction-log shape test (2026-11-19). Those run under pytest.
+            run="python"
+            if grep -q "^def test_" "$t" && ! grep -q "__main__" "$t"; then run="python -m pytest -q -p no:cacheprovider"; fi
+            if timeout 180 env -u GITHUB_RUN_ID -u GITHUB_RUN_ATTEMPT -u GITHUB_ACTIONS $run "$t" > "/tmp/$n.log" 2>&1; then
               passed=$((passed+1))
             elif [[ " $KNOWN_BROKEN " == *" $n "* ]]; then
               echo "::warning::$n is on KNOWN_BROKEN (still failing)"

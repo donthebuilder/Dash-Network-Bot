@@ -91,7 +91,6 @@ MODEL_FAMILY = "moonshot-nfl"
 # string, never rewrite a version string in place.
 MODEL_VERSIONS: Dict[str, str] = {
     "TD":       "nfl_td_v2",   # v2 2026-09-14: candidate C weights (see nfl_scoring.py)
-    "TD_USAGE": "nfl_td_v4",   # usage-trend x lane model (bots/tuddy_v2_scorer.py); v3 is the shadow of TD
     "REC_YDS":  "nfl_recyds_v2",   # v2 2026-10-17: bar 40 -> 100
     "REC":      "nfl_rec_v1",
     "RUSH_YDS": "nfl_rushyds_v3",  # v3 2026-11-19: depth roles break ties in a fixed order (oppr_rush_soft input); v2 2026-10-17: bar 50 -> 100, + oppr_rush_soft .15
@@ -99,6 +98,10 @@ MODEL_VERSIONS: Dict[str, str] = {
     "PASS_YDS": "nfl_passyds_v2",  # v2 2026-10-17: bar 225 -> 300
     "KICK_PTS": "nfl_kickpts_v1",
 }
+# NOT HERE ON PURPOSE (2026-11-19): shadow models. This registry is the version OF RECORD per market that
+# nfl_scoring.MODELS scores (nfl_scoring.py SHADOW_MODELS says the same). The usage-trend x lane model,
+# nfl_td_v4, is a shadow with its own constant (bots/tuddy_v2_scorer.py MODEL_VERSION, written into its own
+# output); it sat here as "TD_USAGE" and broke tests/test_nfl_registry.py's two key checks. Nothing read it.
 
 # The shape of a published/archived record. Bump only when the record
 # structure itself changes (a field added/renamed/dropped in the NFL
