@@ -136,7 +136,15 @@ def collect_nhl(cache):
         sid = f"{season}{season + 1}"
         bp = cache / f"bios_{sid}.json"
         if not bp.exists():
-            bp.write_text(json.dumps(curl_json(f"https://api.nhle.com/stats/rest/en/skater/bios?isAggregate=false&isGame=false&limit=-1&cayenneExp=seasonId%3D{sid}%20and%20gameTypeId%3D2")["data"]))
+            # every page: 100 rows a request since 2026-11-19 (limit=-1 is ignored), sorted so pages never overlap
+            bios, start = [], 0
+            while True:
+                j = curl_json(f"https://api.nhle.com/stats/rest/en/skater/bios?isAggregate=false&isGame=false&limit=100&start={start}"
+                              f"&sort=%5B%7B%22property%22%3A%22playerId%22%2C%22direction%22%3A%22ASC%22%7D%5D&cayenneExp=seasonId%3D{sid}%20and%20gameTypeId%3D2")
+                bios += j.get("data", []); start += 100
+                if not j.get("data") or start >= int(j.get("total") or 0):
+                    break
+            bp.write_text(json.dumps(bios))
         for r in json.load(open(bp)):
             birth[r["playerId"]] = r.get("birthDate")
     def jer(pid):

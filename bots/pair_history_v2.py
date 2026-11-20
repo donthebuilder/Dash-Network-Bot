@@ -333,9 +333,18 @@ NHL_ROW_CAP = 10000   # the stats API silently stops at 10,000 rows (limit=-1 in
 
 def _nhl_window(session: Any, url: str, lo: dt.date, hi: dt.date) -> List[Dict[str, Any]]:
     cay = f'gameDate>="{lo.isoformat()}" and gameDate<="{hi.isoformat()}" and gameTypeId=2'
-    body = _get_json(session, url, {"isAggregate": "false", "isGame": "true", "start": 0, "limit": -1, "cayenneExp": cay})
-    rows = body.get("data", [])
-    time.sleep(1.0)   # the stats API rate-limits (429) a fast reader
+    # EVERY PAGE (2026-11-19): the league now answers at most 100 rows a request, whatever limit is asked for, so page
+    # start=0,100,... to the report's own total, sorted by player then game (unsorted pages overlap).
+    sort = '[{"property":"playerId","direction":"ASC"},{"property":"gameId","direction":"ASC"}]'
+    rows, start = [], 0
+    while True:
+        body = _get_json(session, url, {"isAggregate": "false", "isGame": "true", "start": start, "limit": 100, "sort": sort, "cayenneExp": cay})
+        page = body.get("data", [])
+        rows += page
+        time.sleep(1.0)   # the stats API rate-limits (429) a fast reader
+        start += 100
+        if not page or start >= int(body.get("total") or 0):
+            break
     if len(rows) < NHL_ROW_CAP or lo >= hi:
         return rows
     mid = lo + (hi - lo) // 2

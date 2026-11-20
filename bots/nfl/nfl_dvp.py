@@ -81,22 +81,37 @@ def depth_roles(season: int) -> pl.DataFrame:
             # Week 1 has no history at all. Everyone is unranked rather than
             # guessed at; the row simply carries no role.
             continue
-        usage = hist.group_by(["player_id", "team", "position"]).agg(
-            pl.col("targets").sum().alias("tgt"),
-            pl.col("carries").sum().alias("car"),
-            pl.len().alias("gp"))
+        # TRADES (2026-11-19, Donovan: "we gotta be more updated on when there are trades"). A man is ranked inside the club he is
+        # on NOW -- his newest club through this week (this week's row says only which club, never how he did) -- on his trailing
+        # usage from EVERY club. Before, usage was keyed on (player, club): a traded man had no role in his first game for the new
+        # club (his touchdowns fell out of the role rows) and a thin one after, while his old club kept him in its depth order.
+        # A man with no earlier game anywhere (a debut) ranks on 0 and lands in the deep bucket instead of dropping out.
+        seen = wk.filter(pl.col("week") <= w).sort(["player_id", "week"])
+        now = seen.group_by("player_id").agg(pl.col("team").last(), pl.col("position").last())
+        usage = now.join(
+            hist.group_by("player_id").agg(
+                pl.col("targets").sum().alias("tgt"),
+                pl.col("carries").sum().alias("car"),
+                pl.len().alias("gp")),
+            on="player_id", how="left").with_columns(
+            pl.col("tgt").fill_null(0), pl.col("car").fill_null(0), pl.col("gp").fill_null(0))
 
         parts = []
+        # A FIXED ORDER ON A TIE (2026-11-19): rank("ordinal") breaks ties by row order, and a group_by's row
+        # order changes run to run -- measured: 54-76 of 4,338 player-weeks changed role between four runs on
+        # the same data (HOU's WR2 TDs read 5, 5, 6, 5). Ties now go to more games, then the lower player id.
         for pos, depth in PASS_ROLES:
-            r = usage.filter(pl.col("position") == pos).with_columns(
-                pl.col("tgt").rank("ordinal", descending=True).over("team").alias("rk"))
+            r = (usage.filter(pl.col("position") == pos)
+                      .sort(["team", "tgt", "gp", "player_id"], descending=[False, True, True, False])
+                      .with_columns(pl.int_range(1, pl.len() + 1).over("team").alias("rk")))
             parts.append(r.with_columns(
                 pl.when(pl.col("rk") <= depth)
                   .then(pl.format("{}{}", pl.lit(pos), pl.col("rk")))
                   .otherwise(pl.format("Other {}", pl.lit(pos))).alias("role")))
         for pos, depth in RUSH_ROLES:
-            r = usage.filter(pl.col("position") == pos).with_columns(
-                pl.col("car").rank("ordinal", descending=True).over("team").alias("rk"))
+            r = (usage.filter(pl.col("position") == pos)
+                      .sort(["team", "car", "gp", "player_id"], descending=[False, True, True, False])
+                      .with_columns(pl.int_range(1, pl.len() + 1).over("team").alias("rk")))
             parts.append(r.with_columns(
                 pl.when(pl.col("rk") <= depth)
                   .then(pl.format("{}{}", pl.lit(pos), pl.col("rk")))
@@ -195,27 +210,36 @@ def build(season: int) -> dict:
     return out
 
 
-TOTAL_STATS = ["rec_g", "recyd_g", "rsha_g", "rshyd_g", "yds_g"]
+# td / rectd / rshtd / rz_tgts / rz_car (2026-11-19, Donovan: "total touchdowns, total receiving touchdowns, rushing
+# touchdowns, red zone targets ... isn't showing up" on the Slate's Total row). Same units as the role cells in build():
+# COUNTS over the window, not per game; the site's Total row fills a column only when the cell carries it.
+TOTAL_STATS = ["td", "rectd", "rshtd", "rec_g", "recyd_g", "rsha_g", "rshyd_g", "rz_tgts", "rz_car", "yds_g"]
 
 
 def build_total(season: int) -> dict:
     """{window: {defense_team: {stat: value, stat_rank: n, g: games}}} -- the
     WHOLE defense, every player who caught or carried against it (no depth
-    role, no role join), per game, with the league rank. 1 = allows the most.
+    role, no role join), with the league rank. 1 = allows the most.
 
-    yds_g is receiving + rushing yards: sack yards and QB scrambles lost are
-    not netted, so it is the yards the pass catchers and rushers gained, not
-    the NFL's official team total. Published under its own key (dvp_total),
-    never as a pseudo-role inside dvp: several readers walk every role in a
-    team's dvp blob and a team-wide row is not a role.
+    rec_g / recyd_g / rsha_g / rshyd_g / yds_g are per game; td / rectd / rshtd /
+    rz_tgts / rz_car are counts over the window, the same units the role cells use.
+    td is receiving + rushing touchdowns by catchers and rushers (no return or
+    defensive scores). yds_g is receiving + rushing yards: sack yards and QB
+    scrambles lost are not netted, so it is the yards the pass catchers and
+    rushers gained, not the NFL's official team total. Published under its own
+    key (dvp_total), never as a pseudo-role inside dvp: several readers walk
+    every role in a team's dvp blob and a team-wide row is not a role.
     """
     wk = _weekly(season).select(
-        ["opponent_team", "week", "receiving_yards", "rushing_yards", "receptions", "carries"])
-    for c in ("receiving_yards", "rushing_yards", "receptions", "carries"):
+        ["player_id", "opponent_team", "week", "receiving_tds", "rushing_tds",
+         "receiving_yards", "rushing_yards", "receptions", "carries"])
+    for c in ("receiving_tds", "rushing_tds", "receiving_yards", "rushing_yards", "receptions", "carries"):
         wk = wk.with_columns(pl.col(c).fill_null(0))
     wk = wk.filter(pl.col("opponent_team").is_not_null())
     if wk.height == 0:
         return {}
+    wk = (wk.join(_rz(season), on=["player_id", "week"], how="left")
+            .with_columns(pl.col("rz_tgts").fill_null(0), pl.col("rz_car").fill_null(0)))
     max_week = int(wk["week"].max())
     out: dict = {}
     for wname, wlen in WINDOWS.items():
@@ -224,6 +248,11 @@ def build_total(season: int) -> dict:
             continue
         agg = (sub.group_by("opponent_team").agg(
                     pl.col("week").n_unique().alias("g"),
+                    (pl.col("receiving_tds") + pl.col("rushing_tds")).sum().alias("td"),
+                    pl.col("receiving_tds").sum().alias("rectd"),
+                    pl.col("rushing_tds").sum().alias("rshtd"),
+                    pl.col("rz_tgts").sum().alias("rz_tgts"),
+                    pl.col("rz_car").sum().alias("rz_car"),
                     pl.col("receptions").sum().alias("rec"),
                     pl.col("receiving_yards").sum().alias("recyd"),
                     pl.col("carries").sum().alias("rsha"),
@@ -349,7 +378,8 @@ def current_roles(season: int) -> dict:
             for row in r.filter(pl.col("week") == last).iter_rows(named=True)}
 
 
-TOTAL_LABELS = {"rec_g": "REC/G", "recyd_g": "RECYD/G", "rsha_g": "ATT/G", "rshyd_g": "RSHYDS/G", "yds_g": "TOT YDS/G"}
+TOTAL_LABELS = {"td": "TD", "rectd": "RECTD", "rshtd": "RSHTD", "rec_g": "REC/G", "recyd_g": "RECYD/G", "rsha_g": "ATT/G",
+                "rshyd_g": "RSHYDS/G", "rz_tgts": "RZ TGTS", "rz_car": "RZ CAR", "yds_g": "TOT YDS/G"}
 
 ROLE_ORDER = ["WR1", "WR2", "WR3", "Other WR", "TE1", "TE2", "Other TE",
               "RB1", "RB2", "Other RB", "QB"]

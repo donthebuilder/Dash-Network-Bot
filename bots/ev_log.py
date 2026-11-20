@@ -84,10 +84,27 @@ def stats_nba(day):
     return out
 
 
+def _nhl_stats_all(url):
+    """Every row of an api.nhle.com/stats report: the league answers at most 100 rows a request since 2026-11-19
+    (limit=-1 is ignored), so page start=0,100,... to its own total, sorted by player then game so pages never overlap."""
+    from urllib.parse import quote
+    base = url.replace("&limit=-1", "").replace("limit=-1&", "")
+    sort = quote('[{"property":"playerId","direction":"ASC"},{"property":"gameId","direction":"ASC"}]')
+    rows, start = [], 0
+    while True:
+        j = curl(f"{base}&limit=100&start={start}&sort={sort}")
+        page = j.get("data", []) if isinstance(j, dict) else []
+        rows += page
+        total = int((j or {}).get("total") or 0) if isinstance(j, dict) else 0
+        start += 100
+        if not page or start >= total:
+            return {"data": rows, "total": total}
+
+
 def stats_nhl(day):
     q = f'gameDate="{day}" and gameTypeId=2'
     from urllib.parse import quote
-    rows = curl(f"https://api.nhle.com/stats/rest/en/skater/summary?isAggregate=false&isGame=true&limit=-1&cayenneExp={quote(q)}").get("data", [])
+    rows = _nhl_stats_all(f"https://api.nhle.com/stats/rest/en/skater/summary?isAggregate=false&isGame=true&limit=-1&cayenneExp={quote(q)}").get("data", [])   # every page (100 a request since 2026-11-19)
     return {I.key(r["skaterFullName"]): {"Anytime goal": r["goals"], "Any assist": r["assists"], "Any point (G+A)": r["points"], "Shots on goal": r["shots"]} for r in rows}
 
 
