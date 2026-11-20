@@ -103,6 +103,7 @@ def test_prediction_log_row_shape_and_values():
         "player_id", "player", "team", "opp", "position", "market",
         "run_id", "generated_at", "model_version", "config_hash",
         "score", "components", "carryover", "questionable", "low_sample",
+        "thin",   # LEFTOVERS B14 (2026-11-05): no last-season baseline, scored on under MIN_GP games of his own
     }
     for row in rows:
         assert set(row.keys()) == expected_keys

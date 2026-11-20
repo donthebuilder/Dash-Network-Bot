@@ -59,7 +59,6 @@ def test_versions_are_pinned_deliberately():
     # when a market's version changes, never silently.
     assert R.MODEL_VERSIONS == {
         "TD": "nfl_td_v2",
-        "TD_USAGE": "nfl_td_v4",
         "REC_YDS": "nfl_recyds_v2",
         "REC": "nfl_rec_v1",
         "RUSH_YDS": "nfl_rushyds_v3",   # 2026-11-19: depth-role ties in a fixed order
