@@ -89,9 +89,16 @@ def assign_roles(wk: pl.DataFrame, form: pl.DataFrame) -> pl.DataFrame:
     base = base.with_columns(
         pl.when(pl.col("position") == "RB").then(pl.col("f_carries"))
           .otherwise(pl.col("f_targets")).alias("_usage"))
-    base = base.with_columns(
-        pl.col("_usage").rank("ordinal", descending=True)
-          .over(["team", "week", "position"]).alias("_depth"))
+    # A FIXED ORDER ON A TIE (2026-11-19): rank("ordinal") broke ties by row order, which changes with the inputs' order --
+    # shuffled inputs moved ~300 of 3,358 player-weeks between roles (RB1 <-> RB2 among them) and 379 of 3,113 cells of
+    # f_oppr_dr_car, the carries-allowed-to-his-role input of RUSH_ATT and RUSH_YDS. Ties now go to the other usage
+    # number, then the lower player id. Shipped as nfl_rushatt_v2 / nfl_rushyds_v3 (nfl_registry.py).
+    base = (base.with_columns(
+                pl.when(pl.col("position") == "RB").then(pl.col("f_targets"))
+                  .otherwise(pl.col("f_carries")).alias("_usage2"))
+              .sort(["team", "week", "position", "_usage", "_usage2", "player_id"],
+                    descending=[False, False, False, True, True, False])
+              .with_columns(pl.int_range(1, pl.len() + 1).over(["team", "week", "position"]).alias("_depth")))
     return base.with_columns(
         pl.when(pl.col("position") == "QB").then(pl.lit("QB"))
           .otherwise(pl.col("position") + pl.min_horizontal(

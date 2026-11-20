@@ -94,8 +94,8 @@ MODEL_VERSIONS: Dict[str, str] = {
     "TD_USAGE": "nfl_td_v4",   # usage-trend x lane model (bots/tuddy_v2_scorer.py); v3 is the shadow of TD
     "REC_YDS":  "nfl_recyds_v2",   # v2 2026-10-17: bar 40 -> 100
     "REC":      "nfl_rec_v1",
-    "RUSH_YDS": "nfl_rushyds_v2",  # v2 2026-10-17: bar 50 -> 100, + oppr_rush_soft .15
-    "RUSH_ATT": "nfl_rushatt_v1",
+    "RUSH_YDS": "nfl_rushyds_v3",  # v3 2026-11-19: depth roles break ties in a fixed order (oppr_rush_soft input); v2 2026-10-17: bar 50 -> 100, + oppr_rush_soft .15
+    "RUSH_ATT": "nfl_rushatt_v2",  # v2 2026-11-19: depth roles break ties in a fixed order (oppr_rush_soft input)
     "PASS_YDS": "nfl_passyds_v2",  # v2 2026-10-17: bar 225 -> 300
     "KICK_PTS": "nfl_kickpts_v1",
 }
