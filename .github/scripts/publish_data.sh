@@ -244,7 +244,7 @@ done
 # .txt feeds backtest_report.py; .json feeds the Results tab's Yesterday view.
 GRADED_GLOB="graded_results_*.txt"
 GRADED_JSON_GLOB="graded_results_*.json"
-GRADED_KEEP=150
+GRADED_KEEP=200   # 2026-11-19: 133 regular-season nights + ~30 of spring training must not prune a 2026 night (KNOWN-ISSUES #91; the board is also in Supabase mlb_board_log, 131 days)
 
 # Pre-game odds snapshots, one per slate date, written by bots/odds_fetch.py.
 # These ACCUMULATE like the graded files and for the same reason: a closing

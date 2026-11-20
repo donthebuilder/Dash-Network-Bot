@@ -3639,10 +3639,12 @@ def parse_pitcher_situational_splits(client: MLBClient, db: CacheDB, pitcher_id:
     except Exception as exc:
         out = {"status": f"error:{type(exc).__name__}"}
 
-    try:
-        db.set(key, out)
-    except Exception:
-        pass
+    # a FAILED read is not kept (2026-11-19, KNOWN-ISSUES #89, the B10 rule): an error cached 2 days hid his splits for 2 days
+    if not str(out.get("status", "")).startswith("error"):
+        try:
+            db.set(key, out)
+        except Exception:
+            pass
     return out
 
 
@@ -6723,6 +6725,7 @@ def build_batter_vs_pitcher_profile(db: CacheDB, batter_id: int, pitcher_id: int
     except Exception as exc:
         out = dict(defaults)
         out["status"] = f"error:{type(exc).__name__}"
+        return out   # a FAILED read is not kept (2026-11-19, KNOWN-ISSUES #89, the B10 rule): cached 2 days it read as "No BvP sample"
     db.set(key, out)
     return out
 
