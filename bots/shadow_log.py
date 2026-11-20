@@ -139,11 +139,28 @@ def report_first(out_dir):
     print(f"  mean predicted {100 * sum(r['p_first_basket'] for r in rows) / len(rows):.1f}% vs actual {100 * sum(r['y'] for r in rows) / len(rows):.1f}% per starter")
 
 
+def _nhl_stats_all(url):
+    """Every row of an api.nhle.com/stats report: the league answers at most 100 rows a request since 2026-11-19
+    (limit=-1 is ignored), so page start=0,100,... to its own total, sorted by player then game so pages never overlap."""
+    from urllib.parse import quote
+    base = url.replace("&limit=-1", "").replace("limit=-1&", "")
+    sort = quote('[{"property":"playerId","direction":"ASC"},{"property":"gameId","direction":"ASC"}]')
+    rows, start = [], 0
+    while True:
+        j = curl(f"{base}&limit=100&start={start}&sort={sort}")
+        page = j.get("data", []) if isinstance(j, dict) else []
+        rows += page
+        total = int((j or {}).get("total") or 0) if isinstance(j, dict) else 0
+        start += 100
+        if not page or start >= total:
+            return {"data": rows, "total": total}
+
+
 def outcomes_nhl(day):
     url = ('https://api.nhle.com/stats/rest/en/skater/summary?isAggregate=false&isGame=true&limit=-1&cayenneExp='
            f'gameDate>="{day}" and gameDate<="{day}" and gameTypeId=2').replace(" ", "%20").replace('"', "%22")
     out = {}
-    for r in curl(url).get("data", []):
+    for r in _nhl_stats_all(url).get("data", []):   # every page (100 rows a request since 2026-11-19)
         out[r["skaterFullName"]] = {"goal": int(r["goals"] >= 1), "points": int(r["points"] >= 1), "assists": int(r["assists"] >= 1), "shots3": int(r["shots"] >= 3)}
     return out
 
