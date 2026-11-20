@@ -1,0 +1,185 @@
+{
+ "day": "2026-11-20",
+ "events": [
+  {
+   "sport": "nba",
+   "game_id": "401909305",
+   "start_utc": "2026-11-21T00:00Z",
+   "team": "ATL",
+   "what": "starters",
+   "value": "Expected:Nickeil Alexander-Walker|Dyson Daniels|Kingston Flemings|Jalen Johnson|Onyeka Okongwu",
+   "first_seen_utc": "2026-11-20T20:23:23Z",
+   "mins_before_start": 217
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909305",
+   "start_utc": "2026-11-21T00:00Z",
+   "team": "CHA",
+   "what": "starters",
+   "value": "Expected:Brandon Miller|Sion James|Coby White|Naz Reid|Moussa Diabat\u00e9",
+   "first_seen_utc": "2026-11-20T20:23:23Z",
+   "mins_before_start": 217
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909306",
+   "start_utc": "2026-11-21T00:30Z",
+   "team": "BKN",
+   "what": "starters",
+   "value": "Expected:Egor D\u00ebmin|Michael Porter Jr.|Nolan Traore|Julius Randle|Day'Ron Sharpe",
+   "first_seen_utc": "2026-11-20T20:23:23Z",
+   "mins_before_start": 247
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909306",
+   "start_utc": "2026-11-21T00:30Z",
+   "team": "ORL",
+   "what": "starters",
+   "value": "Expected:Anthony Black|Desmond Bane|Jalen Suggs|Franz Wagner|Wendell Carter Jr.",
+   "first_seen_utc": "2026-11-20T20:23:23Z",
+   "mins_before_start": 247
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909307",
+   "start_utc": "2026-11-21T00:30Z",
+   "team": "CLE",
+   "what": "starters",
+   "value": "Expected:Donovan Mitchell|Tyrese Proctor|James Harden|Peyton Watson|Jarrett Allen",
+   "first_seen_utc": "2026-11-20T20:23:23Z",
+   "mins_before_start": 247
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909307",
+   "start_utc": "2026-11-21T00:30Z",
+   "team": "IND",
+   "what": "starters",
+   "value": "Expected:Kelly Oubre Jr.|Aaron Nesmith|Andrew Nembhard|Pascal Siakam|Ivica Zubac",
+   "first_seen_utc": "2026-11-20T20:23:23Z",
+   "mins_before_start": 247
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909308",
+   "start_utc": "2026-11-21T00:30Z",
+   "team": "DET",
+   "what": "starters",
+   "value": "Expected:Daniss Jenkins|Kevin Huerter|Cade Cunningham|Ausar Thompson|John Collins",
+   "first_seen_utc": "2026-11-20T20:23:23Z",
+   "mins_before_start": 247
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909308",
+   "start_utc": "2026-11-21T00:30Z",
+   "team": "TOR",
+   "what": "starters",
+   "value": "Expected:Ja'Kobe Walter|Jamison Battle|Immanuel Quickley|Scottie Barnes|Jakob Poeltl",
+   "first_seen_utc": "2026-11-20T20:23:23Z",
+   "mins_before_start": 247
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909309",
+   "start_utc": "2026-11-21T01:00Z",
+   "team": "CHI",
+   "what": "starters",
+   "value": "Expected:Norman Powell|Isaac Okoro|Josh Giddey|Matas Buzelis|Jalen Smith",
+   "first_seen_utc": "2026-11-20T20:23:23Z",
+   "mins_before_start": 277
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909309",
+   "start_utc": "2026-11-21T01:00Z",
+   "team": "WSH",
+   "what": "starters",
+   "value": "Expected:Kyshawn George|AJ Dybantsa|Trae Young|Anthony Davis|Alex Sarr",
+   "first_seen_utc": "2026-11-20T20:23:23Z",
+   "mins_before_start": 277
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909310",
+   "start_utc": "2026-11-21T01:00Z",
+   "team": "OKC",
+   "what": "starters",
+   "value": "Expected:Jared McCain|Ajay Mitchell|Shai Gilgeous-Alexander|Aday Mara|Isaiah Hartenstein",
+   "first_seen_utc": "2026-11-20T20:23:23Z",
+   "mins_before_start": 277
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909310",
+   "start_utc": "2026-11-21T01:00Z",
+   "team": "NO",
+   "what": "starters",
+   "value": "Expected:Trey Murphy III|Saddiq Bey|Jeremiah Fears|Zion Williamson|Yves Missi",
+   "first_seen_utc": "2026-11-20T20:23:23Z",
+   "mins_before_start": 277
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909311",
+   "start_utc": "2026-11-21T02:30Z",
+   "team": "UTAH",
+   "what": "starters",
+   "value": "Expected:Darryn Peterson|Josh Green|Keyonte George|Ace Bailey|Jaxson Hayes",
+   "first_seen_utc": "2026-11-20T20:23:23Z",
+   "mins_before_start": 367
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909311",
+   "start_utc": "2026-11-21T02:30Z",
+   "team": "PHX",
+   "what": "starters",
+   "value": "Expected:Jalen Green|Dillon Brooks|Devin Booker|Miles Bridges|Oso Ighodaro",
+   "first_seen_utc": "2026-11-20T20:23:23Z",
+   "mins_before_start": 367
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909312",
+   "start_utc": "2026-11-21T03:00Z",
+   "team": "DEN",
+   "what": "starters",
+   "value": "Expected:Christian Braun|Cameron Johnson|Jamal Murray|Aaron Gordon|Nikola Joki\u0107",
+   "first_seen_utc": "2026-11-20T20:23:23Z",
+   "mins_before_start": 397
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909312",
+   "start_utc": "2026-11-21T03:00Z",
+   "team": "HOU",
+   "what": "starters",
+   "value": "Expected:Amen Thompson|Kevin Durant|Fred VanVleet|Jabari Smith Jr.|Alperen Sengun",
+   "first_seen_utc": "2026-11-20T20:23:23Z",
+   "mins_before_start": 397
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909313",
+   "start_utc": "2026-11-21T03:00Z",
+   "team": "LAL",
+   "what": "starters",
+   "value": "Expected:Quentin Grimes|Matisse Thybulle|Luka Don\u010di\u0107|Ziaire Williams|Walker Kessler",
+   "first_seen_utc": "2026-11-20T20:23:23Z",
+   "mins_before_start": 397
+  },
+  {
+   "sport": "nba",
+   "game_id": "401909313",
+   "start_utc": "2026-11-21T03:00Z",
+   "team": "SAC",
+   "what": "starters",
+   "value": "Expected:Zach LaVine|De'Andre Hunter|Darius Acuff Jr.|Keegan Murray|Domantas Sabonis",
+   "first_seen_utc": "2026-11-20T20:23:23Z",
+   "mins_before_start": 397
+  }
+ ]
+}
