@@ -440,6 +440,66 @@
    "value": "Expected:Jordan Walsh|Jayson Tatum|Derrick White|Paul George|Neemias Queta",
    "first_seen_utc": "2026-11-21T19:17:28Z",
    "mins_before_start": 463
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892763",
+   "start_utc": "2026-11-22T00:00Z",
+   "team": "STL",
+   "what": "goalie",
+   "value": "Jordan Binnington",
+   "first_seen_utc": "2026-11-21T23:49:46Z",
+   "mins_before_start": 10
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892764",
+   "start_utc": "2026-11-22T00:00Z",
+   "team": "VGK",
+   "what": "goalie",
+   "value": "Carter Hart",
+   "first_seen_utc": "2026-11-21T23:49:46Z",
+   "mins_before_start": 10
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892765",
+   "start_utc": "2026-11-22T02:00Z",
+   "team": "ANA",
+   "what": "goalie",
+   "value": "Ville Husso",
+   "first_seen_utc": "2026-11-21T23:49:46Z",
+   "mins_before_start": 130
+  },
+  {
+   "sport": "nba",
+   "game_id": "401910024",
+   "start_utc": "2026-11-22T00:30Z",
+   "team": "NY",
+   "what": "starters",
+   "value": "Expected:Landry Shamet|Josh Hart|Jalen Brunson|Mikal Bridges|Andre Drummond",
+   "first_seen_utc": "2026-11-21T23:49:46Z",
+   "mins_before_start": 40
+  },
+  {
+   "sport": "nba",
+   "game_id": "401910025",
+   "start_utc": "2026-11-22T01:00Z",
+   "team": "DAL",
+   "what": "starters",
+   "value": "Expected:Caleb Martin|Cooper Flagg|Kyrie Irving|Naji Marshall|Daniel Gafford",
+   "first_seen_utc": "2026-11-21T23:49:46Z",
+   "mins_before_start": 70
+  },
+  {
+   "sport": "nba",
+   "game_id": "401910028",
+   "start_utc": "2026-11-22T03:00Z",
+   "team": "BOS",
+   "what": "starters",
+   "value": "Expected:Jordan Walsh|Baylor Scheierman|Payton Pritchard|Paul George|Neemias Queta",
+   "first_seen_utc": "2026-11-21T23:49:46Z",
+   "mins_before_start": 190
   }
  ]
 }
