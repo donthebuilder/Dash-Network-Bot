@@ -11,10 +11,14 @@ name: Pen Door Watch
 
 on:
   workflow_dispatch:
-  schedule:
+    # OFF FOR THE MLB OFFSEASON (2026-11-20, Donovan: "fix the workflows for the bots"). Measured Nov 13-20: GitHub started this repo's
+    # scheduled runs 4-9 hours late (my-picks due 13:30Z, ran 18:00-23:00Z, every day since Oct 27) and dropped most of the rest
+    # (nfl.yml: 25 runs for 151 slots). ~1,100 of the ~2,500 weekly slots were these MLB jobs, every one an offseason-guard skip.
+    # RE-ENABLE for spring training (late Feb 2027): uncomment the schedule block below. Hand runs (Run workflow) still work.
+  # schedule:
     # every 10 min, 17:00–06:50 UTC = 1:00pm–2:50am ET
-    - cron: '*/10 17-23 * * *'
-    - cron: '*/10 0-6 * * *'
+    #- cron: '*/10 17-23 * * *'
+    #- cron: '*/10 0-6 * * *'
 
 permissions:
   contents: read

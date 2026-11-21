@@ -10,9 +10,13 @@ name: MLB nightly caches
 # until 6am, which the rollover made unnecessary.
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '23 7 * * *'    # 12:23am PHX
-    - cron: '23 9 * * *'    # backup 2h later -- runner-acquisition insurance
+    # OFF FOR THE MLB OFFSEASON (2026-11-20, Donovan: "fix the workflows for the bots"). Measured Nov 13-20: GitHub started this repo's
+    # scheduled runs 4-9 hours late (my-picks due 13:30Z, ran 18:00-23:00Z, every day since Oct 27) and dropped most of the rest
+    # (nfl.yml: 25 runs for 151 slots). ~1,100 of the ~2,500 weekly slots were these MLB jobs, every one an offseason-guard skip.
+    # RE-ENABLE for spring training (late Feb 2027): uncomment the schedule block below. Hand runs (Run workflow) still work.
+  # schedule:
+    #- cron: '23 7 * * *'    # 12:23am PHX
+    #- cron: '23 9 * * *'    # backup 2h later -- runner-acquisition insurance
 
 permissions:
   contents: write
