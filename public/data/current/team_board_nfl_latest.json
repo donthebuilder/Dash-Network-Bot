@@ -1,0 +1,19 @@
+{
+ "date": "2026-11-19",
+ "games": [
+  {
+   "espn_id": "401873066",
+   "home": "HOU",
+   "away": "IND",
+   "start": "2026-11-19 20:15",
+   "status": "Scheduled",
+   "model_spread_home": -7.6,
+   "model_p_home": 0.7225,
+   "book_spread_home": -12.5,
+   "book_total": 44.5,
+   "gap_pts": 4.9,
+   "history_games": 60,
+   "model_version": "nfl_team_v1"
+  }
+ ]
+}
