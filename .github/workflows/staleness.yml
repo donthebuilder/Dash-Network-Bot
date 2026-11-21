@@ -20,8 +20,9 @@ on:
     # Every 30 min through the MLB refresh window (UTC 12:00-07:59). This is
     # its own schedule, deliberately offset from today.yml's, so the two are
     # unlikely to be dropped together.
-    - cron: "15,45 12-23 * * *"
-    - cron: "15,45 0-7 * * *"
+    # HOURLY (2026-11-20): half the slots -- the repo was asking GitHub for ~2,500 scheduled runs a week and getting them hours late
+    - cron: "15 12-23 * * *"
+    - cron: "15 0-7 * * *"
 
 permissions:
   contents: read

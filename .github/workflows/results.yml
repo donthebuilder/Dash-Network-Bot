@@ -1,7 +1,11 @@
 name: MLB HR Bot — Grade Results (data branch only)
 
 on:
-  schedule:
+    # OFF FOR THE MLB OFFSEASON (2026-11-20, Donovan: "fix the workflows for the bots"). Measured Nov 13-20: GitHub started this repo's
+    # scheduled runs 4-9 hours late (my-picks due 13:30Z, ran 18:00-23:00Z, every day since Oct 27) and dropped most of the rest
+    # (nfl.yml: 25 runs for 151 slots). ~1,100 of the ~2,500 weekly slots were these MLB jobs, every one an offseason-guard skip.
+    # RE-ENABLE for spring training (late Feb 2027): uncomment the schedule block below. Hand runs (Run workflow) still work.
+  # schedule:
     # OFF THE HOUR (2026-09-27): GitHub drops scheduled runs under load, worst at
     # :00 and :30 (09-25: results ran 7 of ~64 slots, today 11 of 24). Minutes
     # moved 3-7 later; the Vercel dispatcher (/api/gh/dispatch) backs them up.
@@ -62,9 +66,9 @@ on:
     # close to :10 (40 minutes after today.yml's 10:30 UTC rollover, per the
     # 2026-08-14 note above) while adding one more pass an hour; :10/:40
     # off-slate is untouched.
-    - cron: "7,27,47 16-23 * * *"
-    - cron: "7,27,47 0-5 * * *"
-    - cron: "13,43 6-15 * * *"
+    #- cron: "7,27,47 16-23 * * *"
+    #- cron: "7,27,47 0-5 * * *"
+    #- cron: "13,43 6-15 * * *"
   workflow_dispatch:
     inputs:
       scheduled:
