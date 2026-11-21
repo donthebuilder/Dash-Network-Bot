@@ -1,0 +1,116 @@
+[
+ {
+  "sport": "nba",
+  "game_id": "401910023",
+  "start_utc": "2026-11-21T18:00Z",
+  "status": "Final",
+  "sides": {
+   "home": {
+    "team": "PHI",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "MIL",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": null,
+  "total": null
+ },
+ {
+  "sport": "nba",
+  "game_id": "401910024",
+  "start_utc": "2026-11-22T00:30Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "NY",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "POR",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": "NY -2.5",
+  "total": 215.5
+ },
+ {
+  "sport": "nba",
+  "game_id": "401910025",
+  "start_utc": "2026-11-22T01:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "DAL",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "LAC",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": "DAL -4.5",
+  "total": 230.5
+ },
+ {
+  "sport": "nba",
+  "game_id": "401910026",
+  "start_utc": "2026-11-22T01:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "MIN",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "MEM",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": "MIN -6.5",
+  "total": 228.5
+ },
+ {
+  "sport": "nba",
+  "game_id": "401910027",
+  "start_utc": "2026-11-22T01:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "SA",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "NO",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": "SA -18.5",
+  "total": 228.5
+ },
+ {
+  "sport": "nba",
+  "game_id": "401910028",
+  "start_utc": "2026-11-22T03:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "SAC",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "BOS",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": "BOS -12.5",
+  "total": 216.5
+ }
+]
