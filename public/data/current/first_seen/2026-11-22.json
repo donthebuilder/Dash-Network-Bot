@@ -1,0 +1,105 @@
+{
+ "day": "2026-11-22",
+ "events": [
+  {
+   "sport": "nhl",
+   "game_id": "401892768",
+   "start_utc": "2026-11-22T17:30Z",
+   "team": "NYR",
+   "what": "goalie",
+   "value": "Dylan Garand",
+   "first_seen_utc": "2026-11-22T07:01:30Z",
+   "mins_before_start": 628
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892768",
+   "start_utc": "2026-11-22T17:30Z",
+   "team": "CAR",
+   "what": "goalie",
+   "value": "Brandon Bussi",
+   "first_seen_utc": "2026-11-22T07:01:30Z",
+   "mins_before_start": 628
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892769",
+   "start_utc": "2026-11-22T22:00Z",
+   "team": "TB",
+   "what": "goalie",
+   "value": "Andrei Vasilevskiy",
+   "first_seen_utc": "2026-11-22T07:01:30Z",
+   "mins_before_start": 898
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892769",
+   "start_utc": "2026-11-22T22:00Z",
+   "team": "BUF",
+   "what": "goalie",
+   "value": "Ukko-Pekka Luukkonen",
+   "first_seen_utc": "2026-11-22T07:01:30Z",
+   "mins_before_start": 898
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892770",
+   "start_utc": "2026-11-23T00:00Z",
+   "team": "STL",
+   "what": "goalie",
+   "value": "Joel Hofer",
+   "first_seen_utc": "2026-11-22T07:01:30Z",
+   "mins_before_start": 1018
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892770",
+   "start_utc": "2026-11-23T00:00Z",
+   "team": "EDM",
+   "what": "goalie",
+   "value": "Tristan Jarry",
+   "first_seen_utc": "2026-11-22T07:01:30Z",
+   "mins_before_start": 1018
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892771",
+   "start_utc": "2026-11-23T00:00Z",
+   "team": "DAL",
+   "what": "goalie",
+   "value": "Jake Oettinger",
+   "first_seen_utc": "2026-11-22T07:01:30Z",
+   "mins_before_start": 1018
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892771",
+   "start_utc": "2026-11-23T00:00Z",
+   "team": "PIT",
+   "what": "goalie",
+   "value": "Arturs Silovs",
+   "first_seen_utc": "2026-11-22T07:01:30Z",
+   "mins_before_start": 1018
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892772",
+   "start_utc": "2026-11-23T01:00Z",
+   "team": "VAN",
+   "what": "goalie",
+   "value": "Nikita Tolopilo",
+   "first_seen_utc": "2026-11-22T07:01:30Z",
+   "mins_before_start": 1078
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892772",
+   "start_utc": "2026-11-23T01:00Z",
+   "team": "CHI",
+   "what": "goalie",
+   "value": "Drew Commesso",
+   "first_seen_utc": "2026-11-22T07:01:30Z",
+   "mins_before_start": 1078
+  }
+ ]
+}
