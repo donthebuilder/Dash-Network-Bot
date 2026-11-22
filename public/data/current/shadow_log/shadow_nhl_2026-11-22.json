@@ -1,0 +1,1 @@
+{"date": "2026-11-22", "sport": "nhl", "model_versions": "nhl_goal_v2", "rows": [{"name": "Connor McDavid", "team": "EDM", "opp": "STL", "p_play": 1.0, "p": {"goal": 0.2204, "points": 0.6222, "assists": 0.4492, "shots3": 0.459}, "b": {"goal": 0.6, "points": 2.2, "assists": 1.6, "shots3": 3.8}}]}

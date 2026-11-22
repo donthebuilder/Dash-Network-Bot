@@ -1,0 +1,1 @@
+{"date": "2026-11-22", "sport": "nhl", "sims": 20000, "players": [{"name": "Connor McDavid", "team": "EDM", "opp": "STL", "game": "EDM@STL", "p_team_win": 0.543, "p_goal_sim": 0.9449, "p_goal_board": 0.2204, "p_point_sim": 0.9449, "p_points_board": 0.6222, "p_goal_and_win": 0.5405, "p_goal_given_win": 0.9954, "p_goal_given_loss": 0.885, "p_2plus_goals": 0.7839}]}
