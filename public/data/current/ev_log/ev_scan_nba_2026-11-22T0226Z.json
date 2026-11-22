@@ -1,0 +1,495 @@
+{
+ "sport": "nba",
+ "fetched_utc": "2026-11-22T0226Z",
+ "date_et": "2026-11-21",
+ "props": 31,
+ "matched": 9,
+ "rows": [
+  {
+   "sport": "nba",
+   "player": "Domantas Sabonis",
+   "game": "BOS@SAC",
+   "starts_at": "2026-11-22T03:00:00.000Z",
+   "market": "Rebounds",
+   "line": "11.5",
+   "book": "bovada",
+   "price": 100,
+   "ticker": "KXNBAREB-26NOV21BOSSAC-SACDSABONIS11-12",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "-100/-104",
+   "resting_usd": [
+    625,
+    56
+   ],
+   "top_ev_pct": -1.0,
+   "fair_pct": 49.51,
+   "fetched_utc": "2026-11-22T02:26:42.258836+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "-100/-104",
+     "ev": -0.0098,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -108",
+     "quote": "-100/-108",
+     "ev": -0.0192,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -113",
+     "quote": "-100/-113",
+     "ev": -0.0305,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -104",
+     "quote": "-104/-104",
+     "ev": 0.0,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -108",
+     "quote": "-108/-104",
+     "ev": 0.0094,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "player": "Payton Pritchard",
+   "game": "BOS@SAC",
+   "starts_at": "2026-11-22T03:00:00.000Z",
+   "market": "Rebounds",
+   "line": "3.5",
+   "book": "draftkings",
+   "price": -103,
+   "ticker": "KXNBAREB-26NOV21BOSSAC-BOSPPRITCHARD11-4",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "-104/-108",
+   "resting_usd": [
+    93,
+    110
+   ],
+   "top_ev_pct": -2.4,
+   "fair_pct": 49.53,
+   "fetched_utc": "2026-11-22T02:26:42.258836+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "-104/-108",
+     "ev": -0.0239,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -113",
+     "quote": "-104/-113",
+     "ev": -0.035,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -117",
+     "quote": "-104/-117",
+     "ev": -0.0436,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -104",
+     "quote": "-104/-108",
+     "ev": -0.0239,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -108",
+     "quote": "-108/-108",
+     "ev": -0.0146,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "player": "Paul George",
+   "game": "BOS@SAC",
+   "starts_at": "2026-11-22T03:00:00.000Z",
+   "market": "Rebounds",
+   "line": "5.5",
+   "book": "espnbet",
+   "price": 100,
+   "ticker": "KXNBAREB-26NOV21BOSSAC-BOSPGEORGE13-6",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+104/-108",
+   "resting_usd": [
+    1229,
+    0
+   ],
+   "top_ev_pct": -2.9,
+   "fair_pct": 48.55,
+   "fetched_utc": "2026-11-22T02:26:42.258836+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+104/-108",
+     "ev": -0.029,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -117",
+     "quote": "+104/-117",
+     "ev": -0.049,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -122",
+     "quote": "+104/-122",
+     "ev": -0.0594,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -100",
+     "quote": "-100/-108",
+     "ev": -0.0192,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -104",
+     "quote": "-104/-108",
+     "ev": -0.0094,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "player": "Darius Acuff",
+   "game": "BOS@SAC",
+   "starts_at": "2026-11-22T03:00:00.000Z",
+   "market": "Rebounds",
+   "line": "3.5",
+   "book": "bovada",
+   "price": 130,
+   "ticker": "KXNBAREB-26NOV21BOSSAC-SACDACUFF5-4",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+138/-144",
+   "resting_usd": [
+    1477,
+    77
+   ],
+   "top_ev_pct": -4.6,
+   "fair_pct": 41.5,
+   "fetched_utc": "2026-11-22T02:26:42.258836+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+138/-144",
+     "ev": -0.0455,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -150",
+     "quote": "+138/-150",
+     "ev": -0.0569,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -156",
+     "quote": "+138/-156",
+     "ev": -0.0677,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +133",
+     "quote": "+133/-144",
+     "ev": -0.0352,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +127",
+     "quote": "+127/-144",
+     "ev": -0.0222,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "player": "Domantas Sabonis",
+   "game": "BOS@SAC",
+   "starts_at": "2026-11-22T03:00:00.000Z",
+   "market": "PRA",
+   "line": "29.5",
+   "book": "betmgm",
+   "price": -105,
+   "ticker": "KXNBAPRA-26NOV21BOSSAC-SACDSABONIS11-30",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "-100/-113",
+   "resting_usd": [
+    3882,
+    76
+   ],
+   "top_ev_pct": -5.4,
+   "fair_pct": 48.47,
+   "fetched_utc": "2026-11-22T02:26:42.258836+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "-100/-113",
+     "ev": -0.0536,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -122",
+     "quote": "-100/-122",
+     "ev": -0.0723,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -127",
+     "quote": "-100/-127",
+     "ev": -0.082,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -104",
+     "quote": "-104/-113",
+     "ev": -0.0441,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -108",
+     "quote": "-108/-113",
+     "ev": -0.0348,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "player": "Deandre Hunter",
+   "game": "BOS@SAC",
+   "starts_at": "2026-11-22T03:00:00.000Z",
+   "market": "Assists",
+   "line": "1.5",
+   "book": "bovada",
+   "price": -132,
+   "ticker": "KXNBAAST-26NOV21BOSSAC-SACDHUNTER15-2",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "-117/+113",
+   "resting_usd": [
+    198,
+    77
+   ],
+   "top_ev_pct": -6.0,
+   "fair_pct": 53.48,
+   "fetched_utc": "2026-11-22T02:26:42.258836+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "-117/+113",
+     "ev": -0.06,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side +108",
+     "quote": "-117/+108",
+     "ev": -0.0699,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side +104",
+     "quote": "-117/+104",
+     "ev": -0.0781,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -122",
+     "quote": "-122/+113",
+     "ev": -0.0508,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -127",
+     "quote": "-127/+113",
+     "ev": -0.0421,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "player": "Baylor Scheierman",
+   "game": "BOS@SAC",
+   "starts_at": "2026-11-22T03:00:00.000Z",
+   "market": "Rebounds",
+   "line": "5.5",
+   "book": "fanduel",
+   "price": 120,
+   "ticker": "KXNBAREB-26NOV21BOSSAC-BOSBSCHEIERMAN55-6",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+133/-138",
+   "resting_usd": [
+    93,
+    440
+   ],
+   "top_ev_pct": -6.6,
+   "fair_pct": 42.47,
+   "fetched_utc": "2026-11-22T02:26:42.258836+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+133/-138",
+     "ev": -0.0657,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -144",
+     "quote": "+133/-144",
+     "ev": -0.0771,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -150",
+     "quote": "+133/-150",
+     "ev": -0.088,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +127",
+     "quote": "+127/-138",
+     "ev": -0.0533,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +122",
+     "quote": "+122/-138",
+     "ev": -0.0424,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "player": "Paul George",
+   "game": "BOS@SAC",
+   "starts_at": "2026-11-22T03:00:00.000Z",
+   "market": "Assists",
+   "line": "5.5",
+   "book": "caesars",
+   "price": 125,
+   "ticker": "KXNBAAST-26NOV21BOSSAC-BOSPGEORGE13-6",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+144/-150",
+   "resting_usd": [
+    247,
+    581
+   ],
+   "top_ev_pct": -8.9,
+   "fair_pct": 40.49,
+   "fetched_utc": "2026-11-22T02:26:42.258836+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+144/-150",
+     "ev": -0.089,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -156",
+     "quote": "+144/-156",
+     "ev": -0.0995,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -163",
+     "quote": "+144/-163",
+     "ev": -0.1113,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +138",
+     "quote": "+138/-150",
+     "ev": -0.0774,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +133",
+     "quote": "+133/-150",
+     "ev": -0.0673,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nba",
+   "player": "Domantas Sabonis",
+   "game": "BOS@SAC",
+   "starts_at": "2026-11-22T03:00:00.000Z",
+   "market": "Assists",
+   "line": "5.5",
+   "book": "caesars",
+   "price": 125,
+   "ticker": "KXNBAAST-26NOV21BOSSAC-SACDSABONIS11-6",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+156/-163",
+   "resting_usd": [
+    3269,
+    295
+   ],
+   "top_ev_pct": -13.3,
+   "fair_pct": 38.54,
+   "fetched_utc": "2026-11-22T02:26:42.258836+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+156/-163",
+     "ev": -0.1328,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -170",
+     "quote": "+156/-170",
+     "ev": -0.144,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -178",
+     "quote": "+156/-178",
+     "ev": -0.1561,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +150",
+     "quote": "+150/-163",
+     "ev": -0.1223,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +144",
+     "quote": "+144/-163",
+     "ev": -0.1113,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  }
+ ]
+}

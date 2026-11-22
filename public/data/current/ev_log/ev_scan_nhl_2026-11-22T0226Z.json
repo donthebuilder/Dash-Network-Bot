@@ -1,0 +1,2115 @@
+{
+ "sport": "nhl",
+ "fetched_utc": "2026-11-22T0226Z",
+ "date_et": "2026-11-21",
+ "props": 188,
+ "matched": 131,
+ "rows": [
+  {
+   "sport": "nhl",
+   "player": "Brock Faber",
+   "game": "MIN@VAN",
+   "starts_at": "2026-11-22T03:00:00.000Z",
+   "market": "Anytime goal",
+   "line": null,
+   "book": "betmgm",
+   "price": 525,
+   "ticker": "KXNHLGOAL-26NOV21MINVAN-MINBFABER7-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+456/-525",
+   "resting_usd": [
+    2669,
+    100
+   ],
+   "top_ev_pct": 6.1,
+   "fair_pct": 16.97,
+   "fetched_utc": "2026-11-22T02:26:52.738031+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+456/-525",
+     "ev": 0.0609,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -567",
+     "quote": "+456/-567",
+     "ev": 0.0278,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -614",
+     "quote": "+456/-614",
+     "ev": -0.0054,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +426",
+     "quote": "+426/-525",
+     "ev": 0.0915,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +400",
+     "quote": "+400/-525",
+     "ev": 0.1206,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "player": "Liam Ohgren",
+   "game": "MIN@VAN",
+   "starts_at": "2026-11-22T03:00:00.000Z",
+   "market": "Anytime goal",
+   "line": null,
+   "book": "betmgm",
+   "price": 700,
+   "ticker": "KXNHLGOAL-26NOV21MINVAN-VANLOHGREN92-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+614/-733",
+   "resting_usd": [
+    28,
+    6
+   ],
+   "top_ev_pct": 3.8,
+   "fair_pct": 12.98,
+   "fetched_utc": "2026-11-22T02:26:52.738031+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+614/-733",
+     "ev": 0.0383,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -809",
+     "quote": "+614/-809",
+     "ev": -0.0048,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -900",
+     "quote": "+614/-900",
+     "ev": -0.0493,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +567",
+     "quote": "+567/-733",
+     "ev": 0.0753,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +525",
+     "quote": "+525/-733",
+     "ev": 0.1124,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "player": "Matt Boldy",
+   "game": "MIN@VAN",
+   "starts_at": "2026-11-22T03:00:00.000Z",
+   "market": "Any assist",
+   "line": null,
+   "book": "betmgm",
+   "price": -125,
+   "ticker": "KXNHLAST-26NOV21MINVAN-MINMBOLDY12-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "-138/+122",
+   "resting_usd": [
+    67,
+    1
+   ],
+   "top_ev_pct": 1.7,
+   "fair_pct": 56.47,
+   "fetched_utc": "2026-11-22T02:26:52.738031+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "-138/+122",
+     "ev": 0.0165,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side +117",
+     "quote": "-138/+117",
+     "ev": 0.0072,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side +113",
+     "quote": "-138/+113",
+     "ev": -0.0005,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -144",
+     "quote": "-144/+122",
+     "ev": 0.0259,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -150",
+     "quote": "-150/+122",
+     "ev": 0.0349,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "player": "Ryker Evans",
+   "game": "SEA@SJ",
+   "starts_at": "2026-11-22T03:00:00.000Z",
+   "market": "Anytime goal",
+   "line": null,
+   "book": "betmgm",
+   "price": 1600,
+   "ticker": "KXNHLGOAL-26NOV21SEASJ-SEAREVANS41-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+1329/-1900",
+   "resting_usd": [
+    7845,
+    2
+   ],
+   "top_ev_pct": 0.9,
+   "fair_pct": 5.93,
+   "fetched_utc": "2026-11-22T02:26:52.738031+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+1329/-1900",
+     "ev": 0.0087,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -2400",
+     "quote": "+1329/-2400",
+     "ev": -0.0933,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -3233",
+     "quote": "+1329/-3233",
+     "ev": -0.2071,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +1150",
+     "quote": "+1150/-1900",
+     "ev": 0.0818,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +1011",
+     "quote": "+1011/-1900",
+     "ev": 0.1517,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "player": "Kirill Kaprizov",
+   "game": "MIN@VAN",
+   "starts_at": "2026-11-22T03:00:00.000Z",
+   "market": "Anytime goal",
+   "line": null,
+   "book": "betmgm",
+   "price": -105,
+   "ticker": "KXNHLGOAL-26NOV21MINVAN-MINKKAPRIZOV97-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "-108/+104",
+   "resting_usd": [
+    463,
+    1021
+   ],
+   "top_ev_pct": 0.5,
+   "fair_pct": 51.45,
+   "fetched_utc": "2026-11-22T02:26:52.738031+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "-108/+104",
+     "ev": 0.0045,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -100",
+     "quote": "-108/-100",
+     "ev": -0.005,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -104",
+     "quote": "-108/-104",
+     "ev": -0.0146,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -113",
+     "quote": "-113/+104",
+     "ev": 0.0156,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -117",
+     "quote": "-117/+104",
+     "ev": 0.024,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "player": "Mackie Samoskevich",
+   "game": "SEA@SJ",
+   "starts_at": "2026-11-22T03:00:00.000Z",
+   "market": "Any point (G+A)",
+   "line": null,
+   "book": "draftkings",
+   "price": 120,
+   "ticker": "KXNHLPTS-26NOV21SEASJ-SEAMSAMOSKEVICH11-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+117/-122",
+   "resting_usd": [
+    2006,
+    1
+   ],
+   "top_ev_pct": 0.2,
+   "fair_pct": 45.56,
+   "fetched_utc": "2026-11-22T02:26:52.738031+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+117/-122",
+     "ev": 0.0024,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -133",
+     "quote": "+117/-133",
+     "ev": -0.0211,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +113",
+     "quote": "+113/-122",
+     "ev": 0.0119,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +108",
+     "quote": "+108/-122",
+     "ev": 0.0243,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "player": "Brandon Montour",
+   "game": "SEA@SJ",
+   "starts_at": "2026-11-22T03:00:00.000Z",
+   "market": "Any point (G+A)",
+   "line": null,
+   "book": "espnbet",
+   "price": 130,
+   "ticker": "KXNHLPTS-26NOV21SEASJ-SEABMONTOUR62-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+127/-133",
+   "resting_usd": [
+    1,
+    1
+   ],
+   "top_ev_pct": 0.0,
+   "fair_pct": 43.48,
+   "fetched_utc": "2026-11-22T02:26:52.738031+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+127/-133",
+     "ev": 0.0002,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -138",
+     "quote": "+127/-138",
+     "ev": -0.0103,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -144",
+     "quote": "+127/-144",
+     "ev": -0.0222,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +117",
+     "quote": "+117/-133",
+     "ev": 0.0234,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "player": "Kirill Kaprizov",
+   "game": "MIN@VAN",
+   "starts_at": "2026-11-22T03:00:00.000Z",
+   "market": "Any assist",
+   "line": null,
+   "book": "betmgm",
+   "price": -140,
+   "ticker": "KXNHLAST-26NOV21MINVAN-MINKKAPRIZOV97-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "-144/+133",
+   "resting_usd": [
+    2100,
+    26
+   ],
+   "top_ev_pct": -0.5,
+   "fair_pct": 58.05,
+   "fetched_utc": "2026-11-22T02:26:52.738031+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "-144/+133",
+     "ev": -0.0048,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side +127",
+     "quote": "-144/+127",
+     "ev": -0.0145,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side +122",
+     "quote": "-144/+122",
+     "ev": -0.0229,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -150",
+     "quote": "-150/+133",
+     "ev": 0.0037,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -156",
+     "quote": "-156/+133",
+     "ev": 0.0118,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "player": "Dmitry Orlov",
+   "game": "SEA@SJ",
+   "starts_at": "2026-11-22T03:00:00.000Z",
+   "market": "Any assist",
+   "line": null,
+   "book": "betmgm",
+   "price": 165,
+   "ticker": "KXNHLAST-26NOV21SEASJ-SJDORLOV9-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+163/-170",
+   "resting_usd": [
+    111,
+    0
+   ],
+   "top_ev_pct": -0.5,
+   "fair_pct": 37.53,
+   "fetched_utc": "2026-11-22T02:26:52.738031+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+163/-170",
+     "ev": -0.0055,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -186",
+     "quote": "+163/-186",
+     "ev": -0.0332,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -194",
+     "quote": "+163/-194",
+     "ev": -0.046,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +150",
+     "quote": "+150/-170",
+     "ev": 0.0205,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +144",
+     "quote": "+144/-170",
+     "ev": 0.0334,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "player": "Jonathan Lekkerimaki",
+   "game": "MIN@VAN",
+   "starts_at": "2026-11-22T03:00:00.000Z",
+   "market": "Any assist",
+   "line": null,
+   "book": "espnbet",
+   "price": 225,
+   "ticker": "KXNHLAST-26NOV21MINVAN-VANJLEKKERIMKI88-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+223/-233",
+   "resting_usd": [
+    415,
+    31
+   ],
+   "top_ev_pct": -0.9,
+   "fair_pct": 30.49,
+   "fetched_utc": "2026-11-22T02:26:52.738031+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+223/-233",
+     "ev": -0.009,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -257",
+     "quote": "+223/-257",
+     "ev": -0.0423,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -270",
+     "quote": "+223/-270",
+     "ev": -0.0587,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +213",
+     "quote": "+213/-233",
+     "ev": 0.0069,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +203",
+     "quote": "+203/-233",
+     "ev": 0.0238,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "player": "Berkly Catton",
+   "game": "SEA@SJ",
+   "starts_at": "2026-11-22T03:00:00.000Z",
+   "market": "Anytime goal",
+   "line": null,
+   "book": "draftkings",
+   "price": 340,
+   "ticker": "KXNHLGOAL-26NOV21SEASJ-SEABCATTON27-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+335/-355",
+   "resting_usd": [
+    8672,
+    0
+   ],
+   "top_ev_pct": -1.1,
+   "fair_pct": 22.48,
+   "fetched_utc": "2026-11-22T02:26:52.738031+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+335/-355",
+     "ev": -0.0109,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -376",
+     "quote": "+335/-376",
+     "ev": -0.0326,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -400",
+     "quote": "+335/-400",
+     "ev": -0.0556,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +317",
+     "quote": "+317/-355",
+     "ev": 0.0106,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +300",
+     "quote": "+300/-355",
+     "ev": 0.0323,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "player": "Kirill Kaprizov",
+   "game": "MIN@VAN",
+   "starts_at": "2026-11-22T03:00:00.000Z",
+   "market": "Any point (G+A)",
+   "line": null,
+   "book": "draftkings",
+   "price": -475,
+   "ticker": "KXNHLPTS-26NOV21MINVAN-MINKKAPRIZOV97-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "-456/+426",
+   "resting_usd": [
+    242,
+    120
+   ],
+   "top_ev_pct": -1.3,
+   "fair_pct": 81.51,
+   "fetched_utc": "2026-11-22T02:26:52.738031+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "-456/+426",
+     "ev": -0.0133,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side +376",
+     "quote": "-456/+376",
+     "ev": -0.0251,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -488",
+     "quote": "-488/+426",
+     "ev": -0.0073,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -525",
+     "quote": "-525/+426",
+     "ev": -0.0009,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "player": "Macklin Celebrini",
+   "game": "SEA@SJ",
+   "starts_at": "2026-11-22T03:00:00.000Z",
+   "market": "Any assist",
+   "line": null,
+   "book": "betmgm",
+   "price": -135,
+   "ticker": "KXNHLAST-26NOV21SEASJ-SJMCELEBRINI71-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "-133/+127",
+   "resting_usd": [
+    1,
+    1
+   ],
+   "top_ev_pct": -1.6,
+   "fair_pct": 56.52,
+   "fetched_utc": "2026-11-22T02:26:52.738031+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "-133/+127",
+     "ev": -0.0162,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side +122",
+     "quote": "-133/+122",
+     "ev": -0.0248,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side +117",
+     "quote": "-133/+117",
+     "ev": -0.0338,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -138",
+     "quote": "-138/+127",
+     "ev": -0.0083,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -144",
+     "quote": "-144/+127",
+     "ev": 0.0007,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "player": "Berkly Catton",
+   "game": "SEA@SJ",
+   "starts_at": "2026-11-22T03:00:00.000Z",
+   "market": "Any point (G+A)",
+   "line": null,
+   "book": "draftkings",
+   "price": 105,
+   "ticker": "KXNHLPTS-26NOV21SEASJ-SEABCATTON27-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+104/-113",
+   "resting_usd": [
+    1,
+    1
+   ],
+   "top_ev_pct": -1.6,
+   "fair_pct": 47.98,
+   "fetched_utc": "2026-11-22T02:26:52.738031+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+104/-113",
+     "ev": -0.0163,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -117",
+     "quote": "+104/-117",
+     "ev": -0.0252,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -122",
+     "quote": "+104/-122",
+     "ev": -0.0359,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -100",
+     "quote": "-100/-113",
+     "ev": -0.0063,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -104",
+     "quote": "-104/-113",
+     "ev": 0.0037,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "player": "Brock Boeser",
+   "game": "MIN@VAN",
+   "starts_at": "2026-11-22T03:00:00.000Z",
+   "market": "Any point (G+A)",
+   "line": null,
+   "book": "betmgm",
+   "price": -120,
+   "ticker": "KXNHLPTS-26NOV21MINVAN-VANBBOESER6-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "-122/+108",
+   "resting_usd": [
+    141,
+    1
+   ],
+   "top_ev_pct": -2.0,
+   "fair_pct": 53.44,
+   "fetched_utc": "2026-11-22T02:26:52.738031+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "-122/+108",
+     "ev": -0.0202,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side +104",
+     "quote": "-122/+104",
+     "ev": -0.0289,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -100",
+     "quote": "-122/-100",
+     "ev": -0.0378,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -127",
+     "quote": "-127/+108",
+     "ev": -0.0111,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -133",
+     "quote": "-133/+108",
+     "ev": -0.0006,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "player": "Jonathan Lekkerimaki",
+   "game": "MIN@VAN",
+   "starts_at": "2026-11-22T03:00:00.000Z",
+   "market": "Any point (G+A)",
+   "line": null,
+   "book": "espnbet",
+   "price": 125,
+   "ticker": "KXNHLPTS-26NOV21MINVAN-VANJLEKKERIMKI88-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+127/-133",
+   "resting_usd": [
+    84,
+    33
+   ],
+   "top_ev_pct": -2.2,
+   "fair_pct": 43.48,
+   "fetched_utc": "2026-11-22T02:26:52.738031+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+127/-133",
+     "ev": -0.0216,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -138",
+     "quote": "+127/-138",
+     "ev": -0.0318,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -144",
+     "quote": "+127/-144",
+     "ev": -0.0435,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +122",
+     "quote": "+122/-133",
+     "ev": -0.0105,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +117",
+     "quote": "+117/-133",
+     "ev": 0.0012,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "player": "Michael Misa",
+   "game": "SEA@SJ",
+   "starts_at": "2026-11-22T03:00:00.000Z",
+   "market": "Any point (G+A)",
+   "line": null,
+   "book": "espnbet",
+   "price": 130,
+   "ticker": "KXNHLPTS-26NOV21SEASJ-SJMMISA77-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+127/-144",
+   "resting_usd": [
+    61,
+    87
+   ],
+   "top_ev_pct": -2.2,
+   "fair_pct": 42.51,
+   "fetched_utc": "2026-11-22T02:26:52.738031+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+127/-144",
+     "ev": -0.0222,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -150",
+     "quote": "+127/-150",
+     "ev": -0.0336,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -156",
+     "quote": "+127/-156",
+     "ev": -0.0446,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +122",
+     "quote": "+122/-144",
+     "ev": -0.0109,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +117",
+     "quote": "+117/-144",
+     "ev": 0.001,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "player": "Will Smith",
+   "game": "SEA@SJ",
+   "starts_at": "2026-11-22T03:00:00.000Z",
+   "market": "Anytime goal",
+   "line": null,
+   "book": "fanduel",
+   "price": 200,
+   "ticker": "KXNHLGOAL-26NOV21SEASJ-SJWSMITH2-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+203/-212",
+   "resting_usd": [
+    44,
+    16
+   ],
+   "top_ev_pct": -2.4,
+   "fair_pct": 32.53,
+   "fetched_utc": "2026-11-22T02:26:52.738031+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+203/-212",
+     "ev": -0.0242,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -223",
+     "quote": "+203/-223",
+     "ev": -0.0408,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -233",
+     "quote": "+203/-233",
+     "ev": -0.0549,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +194",
+     "quote": "+194/-212",
+     "ev": -0.0092,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +186",
+     "quote": "+186/-212",
+     "ev": 0.0049,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "player": "Kaapo Kakko",
+   "game": "SEA@SJ",
+   "starts_at": "2026-11-22T03:00:00.000Z",
+   "market": "Any assist",
+   "line": null,
+   "book": "draftkings",
+   "price": 205,
+   "ticker": "KXNHLAST-26NOV21SEASJ-SEAKKAKKO84-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+203/-223",
+   "resting_usd": [
+    1,
+    31
+   ],
+   "top_ev_pct": -2.5,
+   "fair_pct": 31.97,
+   "fetched_utc": "2026-11-22T02:26:52.738031+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+203/-223",
+     "ev": -0.0248,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -233",
+     "quote": "+203/-233",
+     "ev": -0.0392,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -245",
+     "quote": "+203/-245",
+     "ev": -0.0555,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +194",
+     "quote": "+194/-223",
+     "ev": -0.0096,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +186",
+     "quote": "+186/-223",
+     "ev": 0.0046,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "player": "Ryan Hartman",
+   "game": "MIN@VAN",
+   "starts_at": "2026-11-22T03:00:00.000Z",
+   "market": "Anytime goal",
+   "line": null,
+   "book": "espnbet",
+   "price": 400,
+   "ticker": "KXNHLGOAL-26NOV21MINVAN-MINRHARTMAN38-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+400/-426",
+   "resting_usd": [
+    351,
+    543
+   ],
+   "top_ev_pct": -2.5,
+   "fair_pct": 19.5,
+   "fetched_utc": "2026-11-22T02:26:52.738031+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+400/-426",
+     "ev": -0.0249,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -488",
+     "quote": "+400/-488",
+     "ev": -0.0767,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -525",
+     "quote": "+400/-525",
+     "ev": -0.1035,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +376",
+     "quote": "+376/-426",
+     "ev": -0.0003,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +355",
+     "quote": "+355/-426",
+     "ev": 0.0231,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "player": "Joel Eriksson Ek",
+   "game": "MIN@VAN",
+   "starts_at": "2026-11-22T03:00:00.000Z",
+   "market": "Any assist",
+   "line": null,
+   "book": "betmgm",
+   "price": 105,
+   "ticker": "KXNHLAST-26NOV21MINVAN-MINJERIKSSONEK14-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+108/-113",
+   "resting_usd": [
+    116,
+    31
+   ],
+   "top_ev_pct": -2.6,
+   "fair_pct": 47.51,
+   "fetched_utc": "2026-11-22T02:26:52.738031+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+108/-113",
+     "ev": -0.026,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -117",
+     "quote": "+108/-117",
+     "ev": -0.0349,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -122",
+     "quote": "+108/-122",
+     "ev": -0.0456,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +104",
+     "quote": "+104/-113",
+     "ev": -0.0163,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -100",
+     "quote": "-100/-113",
+     "ev": -0.0063,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "player": "Michael Mccarron",
+   "game": "MIN@VAN",
+   "starts_at": "2026-11-22T03:00:00.000Z",
+   "market": "Anytime goal",
+   "line": null,
+   "book": "draftkings",
+   "price": 550,
+   "ticker": "KXNHLGOAL-26NOV21MINVAN-MINMMCCARRON47-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+525/-614",
+   "resting_usd": [
+    129,
+    6
+   ],
+   "top_ev_pct": -2.6,
+   "fair_pct": 14.98,
+   "fetched_utc": "2026-11-22T02:26:52.738031+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+525/-614",
+     "ev": -0.0263,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -669",
+     "quote": "+525/-669",
+     "ev": -0.0608,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -733",
+     "quote": "+525/-733",
+     "ev": -0.0962,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +488",
+     "quote": "+488/-614",
+     "ev": 0.0048,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +456",
+     "quote": "+456/-614",
+     "ev": 0.0344,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "player": "Matthew Wood",
+   "game": "SEA@SJ",
+   "starts_at": "2026-11-22T03:00:00.000Z",
+   "market": "Any assist",
+   "line": null,
+   "book": "draftkings",
+   "price": 400,
+   "ticker": "KXNHLAST-26NOV21SEASJ-SEAMWOOD71-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+376/-456",
+   "resting_usd": [
+    3906,
+    27
+   ],
+   "top_ev_pct": -2.7,
+   "fair_pct": 19.46,
+   "fetched_utc": "2026-11-22T02:26:52.738031+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+376/-456",
+     "ev": -0.0269,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -488",
+     "quote": "+376/-488",
+     "ev": -0.0529,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -525",
+     "quote": "+376/-525",
+     "ev": -0.0801,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +355",
+     "quote": "+355/-456",
+     "ev": -0.0039,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +335",
+     "quote": "+335/-456",
+     "ev": 0.0198,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "player": "Brock Faber",
+   "game": "MIN@VAN",
+   "starts_at": "2026-11-22T03:00:00.000Z",
+   "market": "Any assist",
+   "line": null,
+   "book": "espnbet",
+   "price": -115,
+   "ticker": "KXNHLAST-26NOV21MINVAN-MINBFABER7-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "-113/+104",
+   "resting_usd": [
+    3142,
+    76
+   ],
+   "top_ev_pct": -2.8,
+   "fair_pct": 52.02,
+   "fetched_utc": "2026-11-22T02:26:52.738031+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "-113/+104",
+     "ev": -0.0275,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -104",
+     "quote": "-113/-104",
+     "ev": -0.0458,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -117",
+     "quote": "-117/+104",
+     "ev": -0.0194,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -122",
+     "quote": "-122/+104",
+     "ev": -0.0097,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "player": "Joel Eriksson Ek",
+   "game": "MIN@VAN",
+   "starts_at": "2026-11-22T03:00:00.000Z",
+   "market": "Any point (G+A)",
+   "line": null,
+   "book": "espnbet",
+   "price": -200,
+   "ticker": "KXNHLPTS-26NOV21MINVAN-MINJERIKSSONEK14-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "-186/+178",
+   "resting_usd": [
+    558,
+    157
+   ],
+   "top_ev_pct": -3.2,
+   "fair_pct": 64.53,
+   "fetched_utc": "2026-11-22T02:26:52.738031+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "-186/+178",
+     "ev": -0.032,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -194",
+     "quote": "-194/+178",
+     "ev": -0.0248,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -203",
+     "quote": "-203/+178",
+     "ev": -0.0171,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "player": "Kaapo Kakko",
+   "game": "SEA@SJ",
+   "starts_at": "2026-11-22T03:00:00.000Z",
+   "market": "Any point (G+A)",
+   "line": null,
+   "book": "draftkings",
+   "price": 120,
+   "ticker": "KXNHLPTS-26NOV21SEASJ-SEAKKAKKO84-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+122/-133",
+   "resting_usd": [
+    344,
+    11
+   ],
+   "top_ev_pct": -3.2,
+   "fair_pct": 43.98,
+   "fetched_utc": "2026-11-22T02:26:52.738031+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+122/-133",
+     "ev": -0.0324,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -144",
+     "quote": "+122/-144",
+     "ev": -0.0539,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -150",
+     "quote": "+122/-150",
+     "ev": -0.0648,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +117",
+     "quote": "+117/-133",
+     "ev": -0.0211,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +113",
+     "quote": "+113/-133",
+     "ev": -0.0116,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "player": "Mackie Samoskevich",
+   "game": "SEA@SJ",
+   "starts_at": "2026-11-22T03:00:00.000Z",
+   "market": "Anytime goal",
+   "line": null,
+   "book": "draftkings",
+   "price": 340,
+   "ticker": "KXNHLGOAL-26NOV21SEASJ-SEAMSAMOSKEVICH11-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+335/-376",
+   "resting_usd": [
+    1832,
+    17
+   ],
+   "top_ev_pct": -3.3,
+   "fair_pct": 21.99,
+   "fetched_utc": "2026-11-22T02:26:52.738031+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+335/-376",
+     "ev": -0.0326,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -400",
+     "quote": "+335/-400",
+     "ev": -0.0556,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -426",
+     "quote": "+335/-426",
+     "ev": -0.0784,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +317",
+     "quote": "+317/-376",
+     "ev": -0.0115,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +300",
+     "quote": "+300/-376",
+     "ev": 0.01,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "player": "Dmitry Orlov",
+   "game": "SEA@SJ",
+   "starts_at": "2026-11-22T03:00:00.000Z",
+   "market": "Any point (G+A)",
+   "line": null,
+   "book": "betmgm",
+   "price": 130,
+   "ticker": "KXNHLPTS-26NOV21SEASJ-SJDORLOV9-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+127/-150",
+   "resting_usd": [
+    136,
+    163
+   ],
+   "top_ev_pct": -3.4,
+   "fair_pct": 42.02,
+   "fetched_utc": "2026-11-22T02:26:52.738031+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+127/-150",
+     "ev": -0.0336,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -156",
+     "quote": "+127/-156",
+     "ev": -0.0446,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -163",
+     "quote": "+127/-163",
+     "ev": -0.0567,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +122",
+     "quote": "+122/-150",
+     "ev": -0.0223,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +117",
+     "quote": "+117/-150",
+     "ev": -0.0105,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "player": "Macklin Celebrini",
+   "game": "SEA@SJ",
+   "starts_at": "2026-11-22T03:00:00.000Z",
+   "market": "Anytime goal",
+   "line": null,
+   "book": "caesars",
+   "price": 112,
+   "ticker": "KXNHLGOAL-26NOV21SEASJ-SJMCELEBRINI71-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+117/-122",
+   "resting_usd": [
+    151,
+    22
+   ],
+   "top_ev_pct": -3.4,
+   "fair_pct": 45.56,
+   "fetched_utc": "2026-11-22T02:26:52.738031+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+117/-122",
+     "ev": -0.0341,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -127",
+     "quote": "+117/-127",
+     "ev": -0.0446,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -133",
+     "quote": "+117/-133",
+     "ev": -0.0567,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +113",
+     "quote": "+113/-122",
+     "ev": -0.0249,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +108",
+     "quote": "+108/-122",
+     "ev": -0.013,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "player": "Mason Marchment",
+   "game": "SEA@SJ",
+   "starts_at": "2026-11-22T03:00:00.000Z",
+   "market": "Any point (G+A)",
+   "line": null,
+   "book": "espnbet",
+   "price": 110,
+   "ticker": "KXNHLPTS-26NOV21SEASJ-SJMMARCHMENT27-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+113/-122",
+   "resting_usd": [
+    0,
+    0
+   ],
+   "top_ev_pct": -3.4,
+   "fair_pct": 46.0,
+   "fetched_utc": "2026-11-22T02:26:52.738031+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+113/-122",
+     "ev": -0.0341,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -127",
+     "quote": "+113/-127",
+     "ev": -0.0445,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +108",
+     "quote": "+108/-122",
+     "ev": -0.0223,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +104",
+     "quote": "+104/-122",
+     "ev": -0.0124,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "player": "Filip Hronek",
+   "game": "MIN@VAN",
+   "starts_at": "2026-11-22T03:00:00.000Z",
+   "market": "Any point (G+A)",
+   "line": null,
+   "book": "espnbet",
+   "price": 110,
+   "ticker": "KXNHLPTS-26NOV21MINVAN-VANFHRONEK17-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+113/-122",
+   "resting_usd": [
+    66,
+    8
+   ],
+   "top_ev_pct": -3.4,
+   "fair_pct": 46.0,
+   "fetched_utc": "2026-11-22T02:26:52.738031+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+113/-122",
+     "ev": -0.0341,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -127",
+     "quote": "+113/-127",
+     "ev": -0.0445,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -133",
+     "quote": "+113/-133",
+     "ev": -0.0565,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +108",
+     "quote": "+108/-122",
+     "ev": -0.0223,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +104",
+     "quote": "+104/-122",
+     "ev": -0.0124,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "player": "Bobby Brink",
+   "game": "MIN@VAN",
+   "starts_at": "2026-11-22T03:00:00.000Z",
+   "market": "Anytime goal",
+   "line": null,
+   "book": "draftkings",
+   "price": 450,
+   "ticker": "KXNHLGOAL-26NOV21MINVAN-MINBBRINK10-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+456/-488",
+   "resting_usd": [
+    6048,
+    9
+   ],
+   "top_ev_pct": -3.8,
+   "fair_pct": 17.49,
+   "fetched_utc": "2026-11-22T02:26:52.738031+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+456/-488",
+     "ev": -0.0379,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -567",
+     "quote": "+456/-567",
+     "ev": -0.0955,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -614",
+     "quote": "+456/-614",
+     "ev": -0.1247,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +426",
+     "quote": "+426/-488",
+     "ev": -0.0105,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +400",
+     "quote": "+400/-488",
+     "ev": 0.0156,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "player": "Joel Eriksson Ek",
+   "game": "MIN@VAN",
+   "starts_at": "2026-11-22T03:00:00.000Z",
+   "market": "Anytime goal",
+   "line": null,
+   "book": "draftkings",
+   "price": 195,
+   "ticker": "KXNHLGOAL-26NOV21MINVAN-MINJERIKSSONEK14-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+203/-212",
+   "resting_usd": [
+    54,
+    206
+   ],
+   "top_ev_pct": -4.0,
+   "fair_pct": 32.53,
+   "fetched_utc": "2026-11-22T02:26:52.738031+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+203/-212",
+     "ev": -0.0405,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -233",
+     "quote": "+203/-233",
+     "ev": -0.0707,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +194",
+     "quote": "+194/-212",
+     "ev": -0.0257,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +186",
+     "quote": "+186/-212",
+     "ev": -0.0119,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "player": "Bobby Brink",
+   "game": "MIN@VAN",
+   "starts_at": "2026-11-22T03:00:00.000Z",
+   "market": "Any assist",
+   "line": null,
+   "book": "espnbet",
+   "price": 225,
+   "ticker": "KXNHLAST-26NOV21MINVAN-MINBBRINK10-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+233/-245",
+   "resting_usd": [
+    74,
+    44
+   ],
+   "top_ev_pct": -4.1,
+   "fair_pct": 29.51,
+   "fetched_utc": "2026-11-22T02:26:52.738031+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+233/-245",
+     "ev": -0.0411,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -270",
+     "quote": "+233/-270",
+     "ev": -0.0734,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -285",
+     "quote": "+233/-285",
+     "ev": -0.0911,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +223",
+     "quote": "+223/-245",
+     "ev": -0.0261,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +213",
+     "quote": "+213/-245",
+     "ev": -0.0103,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "player": "Alexander Wennberg",
+   "game": "SEA@SJ",
+   "starts_at": "2026-11-22T03:00:00.000Z",
+   "market": "Any point (G+A)",
+   "line": null,
+   "book": "espnbet",
+   "price": -105,
+   "ticker": "KXNHLPTS-26NOV21SEASJ-SJAWENNBERG21-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "-100/-108",
+   "resting_usd": [
+    0,
+    1
+   ],
+   "top_ev_pct": -4.3,
+   "fair_pct": 49.04,
+   "fetched_utc": "2026-11-22T02:26:52.738031+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "-100/-108",
+     "ev": -0.0426,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -113",
+     "quote": "-100/-113",
+     "ev": -0.0536,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -117",
+     "quote": "-100/-117",
+     "ev": -0.0621,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -104",
+     "quote": "-104/-108",
+     "ev": -0.033,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -108",
+     "quote": "-108/-108",
+     "ev": -0.0238,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "player": "Mackie Samoskevich",
+   "game": "SEA@SJ",
+   "starts_at": "2026-11-22T03:00:00.000Z",
+   "market": "Any assist",
+   "line": null,
+   "book": "draftkings",
+   "price": 230,
+   "ticker": "KXNHLAST-26NOV21SEASJ-SEAMSAMOSKEVICH11-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+233/-257",
+   "resting_usd": [
+    70,
+    0
+   ],
+   "top_ev_pct": -4.3,
+   "fair_pct": 29.01,
+   "fetched_utc": "2026-11-22T02:26:52.738031+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+233/-257",
+     "ev": -0.0426,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -270",
+     "quote": "+233/-270",
+     "ev": -0.0592,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -285",
+     "quote": "+233/-285",
+     "ev": -0.0771,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +223",
+     "quote": "+223/-257",
+     "ev": -0.0275,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +213",
+     "quote": "+213/-257",
+     "ev": -0.0116,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "player": "Matt Boldy",
+   "game": "MIN@VAN",
+   "starts_at": "2026-11-22T03:00:00.000Z",
+   "market": "Anytime goal",
+   "line": null,
+   "book": "espnbet",
+   "price": 125,
+   "ticker": "KXNHLGOAL-26NOV21MINVAN-MINMBOLDY12-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+133/-138",
+   "resting_usd": [
+    236,
+    903
+   ],
+   "top_ev_pct": -4.4,
+   "fair_pct": 42.47,
+   "fetched_utc": "2026-11-22T02:26:52.738031+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+133/-138",
+     "ev": -0.0445,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -144",
+     "quote": "+133/-144",
+     "ev": -0.0562,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -150",
+     "quote": "+133/-150",
+     "ev": -0.0673,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +127",
+     "quote": "+127/-138",
+     "ev": -0.0318,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +122",
+     "quote": "+122/-138",
+     "ev": -0.0207,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "player": "Will Smith",
+   "game": "SEA@SJ",
+   "starts_at": "2026-11-22T03:00:00.000Z",
+   "market": "Any point (G+A)",
+   "line": null,
+   "book": "betmgm",
+   "price": -165,
+   "ticker": "KXNHLPTS-26NOV21SEASJ-SJWSMITH2-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "-156/+138",
+   "resting_usd": [
+    0,
+    0
+   ],
+   "top_ev_pct": -4.5,
+   "fair_pct": 59.47,
+   "fetched_utc": "2026-11-22T02:26:52.738031+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "-156/+138",
+     "ev": -0.0449,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side +133",
+     "quote": "-156/+133",
+     "ev": -0.0521,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side +127",
+     "quote": "-156/+127",
+     "ev": -0.0611,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -163",
+     "quote": "-163/+138",
+     "ev": -0.0365,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side -170",
+     "quote": "-170/+138",
+     "ev": -0.0284,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "player": "Michael Misa",
+   "game": "SEA@SJ",
+   "starts_at": "2026-11-22T03:00:00.000Z",
+   "market": "Any assist",
+   "line": null,
+   "book": "draftkings",
+   "price": 235,
+   "ticker": "KXNHLAST-26NOV21SEASJ-SJMMISA77-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+245/-257",
+   "resting_usd": [
+    514,
+    21
+   ],
+   "top_ev_pct": -4.5,
+   "fair_pct": 28.5,
+   "fetched_utc": "2026-11-22T02:26:52.738031+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+245/-257",
+     "ev": -0.0454,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -285",
+     "quote": "+245/-285",
+     "ev": -0.0801,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +233",
+     "quote": "+233/-257",
+     "ev": -0.0281,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +223",
+     "quote": "+223/-257",
+     "ev": -0.0128,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  },
+  {
+   "sport": "nhl",
+   "player": "Will Smith",
+   "game": "SEA@SJ",
+   "starts_at": "2026-11-22T03:00:00.000Z",
+   "market": "Any assist",
+   "line": null,
+   "book": "draftkings",
+   "price": 130,
+   "ticker": "KXNHLAST-26NOV21SEASJ-SJWSMITH2-1",
+   "verdict": "PASS",
+   "green": 0,
+   "red": 0,
+   "kalshi_yes_no": "+138/-144",
+   "resting_usd": [
+    1,
+    2
+   ],
+   "top_ev_pct": -4.6,
+   "fair_pct": 41.5,
+   "fetched_utc": "2026-11-22T02:26:52.738031+00:00",
+   "flags": [
+    {
+     "source": "Kalshi top of book",
+     "quote": "+138/-144",
+     "ev": -0.0455,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -150",
+     "quote": "+138/-150",
+     "ev": -0.0569,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi no-side -156",
+     "quote": "+138/-156",
+     "ev": -0.0677,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +133",
+     "quote": "+133/-144",
+     "ev": -0.0352,
+     "flag": "IGNORED (thin)"
+    },
+    {
+     "source": "Kalshi yes-side +127",
+     "quote": "+127/-144",
+     "ev": -0.0222,
+     "flag": "IGNORED (thin)"
+    }
+   ]
+  }
+ ]
+}
