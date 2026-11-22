@@ -1,0 +1,135 @@
+[
+ {
+  "sport": "nba",
+  "game_id": "401910029",
+  "start_utc": "2026-11-22T20:30Z",
+  "status": "End of Period",
+  "sides": {
+   "home": {
+    "team": "ATL",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "DET",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": null,
+  "total": null
+ },
+ {
+  "sport": "nba",
+  "game_id": "401910030",
+  "start_utc": "2026-11-22T23:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "MIA",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "OKC",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": "MIA -4.5",
+  "total": 225.5
+ },
+ {
+  "sport": "nba",
+  "game_id": "401910031",
+  "start_utc": "2026-11-23T00:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "WSH",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "ORL",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": "ORL -4.5",
+  "total": 220.5
+ },
+ {
+  "sport": "nba",
+  "game_id": "401910032",
+  "start_utc": "2026-11-23T00:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "CHI",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "DEN",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": "DEN -9.5",
+  "total": 236.5
+ },
+ {
+  "sport": "nba",
+  "game_id": "401910033",
+  "start_utc": "2026-11-23T00:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "UTAH",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "DAL",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": "DAL -2.5",
+  "total": 225.5
+ },
+ {
+  "sport": "nba",
+  "game_id": "401910034",
+  "start_utc": "2026-11-23T01:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "NY",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "IND",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": "NY -7.5",
+  "total": 213.5
+ },
+ {
+  "sport": "nba",
+  "game_id": "401910035",
+  "start_utc": "2026-11-23T01:30Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "GS",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "BOS",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": "BOS -7.5",
+  "total": 210.5
+ }
+]

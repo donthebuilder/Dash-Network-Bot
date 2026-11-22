@@ -1,0 +1,211 @@
+[
+ {
+  "sport": "nfl",
+  "game_id": "401873074",
+  "start_utc": "2026-11-22T21:05Z",
+  "status": "In Progress",
+  "sides": {
+   "home": {
+    "team": "LAC",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "NYJ",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": null,
+  "total": null
+ },
+ {
+  "sport": "nfl",
+  "game_id": "401873075",
+  "start_utc": "2026-11-22T21:25Z",
+  "status": "In Progress",
+  "sides": {
+   "home": {
+    "team": "DEN",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "LV",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": null,
+  "total": null
+ },
+ {
+  "sport": "nfl",
+  "game_id": "401873069",
+  "start_utc": "2026-11-22T21:25Z",
+  "status": "In Progress",
+  "sides": {
+   "home": {
+    "team": "NYG",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "JAX",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": null,
+  "total": null
+ },
+ {
+  "sport": "nfl",
+  "game_id": "401873070",
+  "start_utc": "2026-11-22T18:00Z",
+  "status": "Final",
+  "sides": {
+   "home": {
+    "team": "BUF",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "MIA",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": null,
+  "total": null
+ },
+ {
+  "sport": "nfl",
+  "game_id": "401873071",
+  "start_utc": "2026-11-22T18:00Z",
+  "status": "Final",
+  "sides": {
+   "home": {
+    "team": "CHI",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "NO",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": null,
+  "total": null
+ },
+ {
+  "sport": "nfl",
+  "game_id": "401873073",
+  "start_utc": "2026-11-22T18:00Z",
+  "status": "Final",
+  "sides": {
+   "home": {
+    "team": "DAL",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "TEN",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": null,
+  "total": null
+ },
+ {
+  "sport": "nfl",
+  "game_id": "401873072",
+  "start_utc": "2026-11-22T18:00Z",
+  "status": "Final",
+  "sides": {
+   "home": {
+    "team": "DET",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "TB",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": null,
+  "total": null
+ },
+ {
+  "sport": "nfl",
+  "game_id": "401873067",
+  "start_utc": "2026-11-22T18:00Z",
+  "status": "Final",
+  "sides": {
+   "home": {
+    "team": "KC",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "ARI",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": null,
+  "total": null
+ },
+ {
+  "sport": "nfl",
+  "game_id": "401873076",
+  "start_utc": "2026-11-22T18:00Z",
+  "status": "Final",
+  "sides": {
+   "home": {
+    "team": "PHI",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "PIT",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": null,
+  "total": null
+ },
+ {
+  "sport": "nfl",
+  "game_id": "401873068",
+  "start_utc": "2026-11-22T18:00Z",
+  "status": "Final",
+  "sides": {
+   "home": {
+    "team": "CAR",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "BAL",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": null,
+  "total": null
+ },
+ {
+  "sport": "nfl",
+  "game_id": "401873077",
+  "start_utc": "2026-11-23T01:20Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "SF",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "MIN",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": "SF -3.5",
+  "total": 46.5
+ }
+]

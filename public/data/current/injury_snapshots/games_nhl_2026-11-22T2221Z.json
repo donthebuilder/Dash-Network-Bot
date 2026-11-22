@@ -1,0 +1,97 @@
+[
+ {
+  "sport": "nhl",
+  "game_id": "401892768",
+  "start_utc": "2026-11-22T17:30Z",
+  "status": "Final",
+  "sides": {
+   "home": {
+    "team": "NYR",
+    "probable_goalie": "Dylan Garand"
+   },
+   "away": {
+    "team": "CAR",
+    "probable_goalie": "Brandon Bussi"
+   }
+  },
+  "lineup_posted": false,
+  "spread": null,
+  "total": null
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892769",
+  "start_utc": "2026-11-22T22:00Z",
+  "status": "In Progress",
+  "sides": {
+   "home": {
+    "team": "TB",
+    "probable_goalie": "Dennis Hildeby"
+   },
+   "away": {
+    "team": "BUF",
+    "probable_goalie": "Ukko-Pekka Luukkonen"
+   }
+  },
+  "lineup_posted": false,
+  "spread": null,
+  "total": null
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892770",
+  "start_utc": "2026-11-23T00:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "STL",
+    "probable_goalie": "Joel Hofer"
+   },
+   "away": {
+    "team": "EDM",
+    "probable_goalie": "Tristan Jarry"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "STL -125",
+  "total": 6.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892771",
+  "start_utc": "2026-11-23T00:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "DAL",
+    "probable_goalie": "Jake Oettinger"
+   },
+   "away": {
+    "team": "PIT",
+    "probable_goalie": "Arturs Silovs"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "DAL -230",
+  "total": 6.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892772",
+  "start_utc": "2026-11-23T01:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "VAN",
+    "probable_goalie": "Nikita Tolopilo"
+   },
+   "away": {
+    "team": "CHI",
+    "probable_goalie": "Drew Commesso"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "CHI -115",
+  "total": 6.5
+ }
+]
