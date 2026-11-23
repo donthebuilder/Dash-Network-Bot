@@ -5,7 +5,7 @@ Public (fan room)
 - Live digest title when it needs more than one message: "Moonshot — live digest" -> "Moonshot — live digest (1/2)", "(2/2)"; a section that carries over is titled "<SECTION> (cont.)"
 - Pool alert for an old-recipe six-man pool and its halves: three possible "POOL CASHED" lines -> one line naming the six-man pool and which halves cashed
 
-Ops alerts (now sent to DISCORD_OPS_WEBHOOK; falls back to DISCORD_WEBHOOK while that key is unset)
+Ops alerts (these no longer post anywhere: the Discord ops webhook was removed 2026-11-21; the text below is history)
 - Slate blocked (make_slim): "is not a slate" -> "is not a full slate"
 - Slate blocked: "The data branch keeps its previous slate rather than serving a fragment. The site would have shown every hitter as one the model never picked." -> "The site keeps showing the previous slate instead of a partial one. Publishing it would have shown every hitter as a player we never picked."
 - Board alert title (staleness_watch): "Board staleness" -> "Board out of date"

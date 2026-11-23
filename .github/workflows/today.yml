@@ -311,7 +311,6 @@ jobs:
         continue-on-error: true
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
-          DISCORD_OPS_WEBHOOK: ${{ secrets.DISCORD_OPS_WEBHOOK }}
         run: python bots/pick_lock.py --apply
 
       # Shrinks the 76 MB slate JSON to ~3 MB for the Streamlit app by
@@ -324,7 +323,6 @@ jobs:
       - name: Build slim payload for Streamlit
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
-          DISCORD_OPS_WEBHOOK: ${{ secrets.DISCORD_OPS_WEBHOOK }}
         run: python bots/make_slim.py
 
       # ── DID THE DETAIL ACTUALLY GET BUILT? (2026-08-29) ────────────────
@@ -468,7 +466,6 @@ jobs:
       - name: Build slim payload for Streamlit
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
-          DISCORD_OPS_WEBHOOK: ${{ secrets.DISCORD_OPS_WEBHOOK }}
         run: python bots/make_slim.py
 
       # ── DID THE DETAIL ACTUALLY GET BUILT? (2026-08-29) ────────────────

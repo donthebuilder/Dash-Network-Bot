@@ -11,8 +11,7 @@ workflows), so members content cannot leave from here. This test pins that:
   2. with ONLY a members URL in the environment (every bot variable unset), every bot sender
      sends nothing.
   3. with every bot variable set AND a members URL, no bot sender ever calls the members URL.
-  4. documented behaviour: ops alerts no longer fall back to DISCORD_WEBHOOK (2026-10-16); the fan
-     room, while DISCORD_OPS_WEBHOOK is unset.
+  4. there is no ops sender any more (2026-11-21): the ops functions do not exist.
 
 Run: PYTHONPATH=. python3 tests/test_discord_members_no_leak.py
 """
@@ -32,8 +31,7 @@ MEMBERS = "https://example.invalid/api/webhooks/TEST-MEMBERS/TEST"
 FAN = "https://example.invalid/api/webhooks/TEST-FAN/TEST"
 LIVE = "https://example.invalid/api/webhooks/TEST-LIVE/TEST"
 PEN = "https://example.invalid/api/webhooks/TEST-PEN/TEST"
-OPS = "https://example.invalid/api/webhooks/TEST-OPS/TEST"
-BOT_KEYS = ["DISCORD_WEBHOOK", "DISCORD_LIVE_WEBHOOK", "DISCORD_PENDOOR_WEBHOOK", "DISCORD_OPS_WEBHOOK",
+BOT_KEYS = ["DISCORD_WEBHOOK", "DISCORD_LIVE_WEBHOOK", "DISCORD_PENDOOR_WEBHOOK",
             "DISCORD_MEMBERS_WEBHOOK", "DISCORD_HOMER_WEBHOOK"]
 
 
@@ -78,7 +76,6 @@ def senders():
     def add(name, fn):
         out.append((name, fn))
     add("discord_post.post", lambda: discord_post.post(os.environ.get("DISCORD_WEBHOOK", ""), {"content": "TEST"}))
-    add("discord_post.post_ops", lambda: discord_post.post_ops({"content": "TEST"}))
     for modname in ("live_results_tracker", "pen_door_watch", "staleness_watch", "pick_lock", "validate_context", "make_slim"):
         try:
             __import__(modname)
@@ -96,12 +93,8 @@ def senders():
         add("pen_door.post", lambda: p.post("TEST"))
     if "staleness_watch" in m:
         add("staleness.post_discord", lambda: m["staleness_watch"].post_discord(["TEST alert"]))
-    if "pick_lock" in m:
-        add("pick_lock.post_discord", lambda: m["pick_lock"].post_discord(["TEST alert"]))
     if "make_slim" in m:
         add("make_slim._alert_bad_slate", lambda: m["make_slim"]._alert_bad_slate("TEST", "test"))
-    if "validate_context" in m:
-        add("validate_context.post_discord", lambda: m["validate_context"].post_discord({"verdict": "TEST"}))
     return out, missing
 
 
@@ -140,7 +133,7 @@ class MembersUrlOnly(unittest.TestCase):
 
 class AllBotUrlsSet(unittest.TestCase):
     def test_no_sender_ever_calls_the_members_url(self):
-        set_env(DISCORD_WEBHOOK=FAN, DISCORD_LIVE_WEBHOOK=LIVE, DISCORD_PENDOOR_WEBHOOK=PEN, DISCORD_OPS_WEBHOOK=OPS,
+        set_env(DISCORD_WEBHOOK=FAN, DISCORD_LIVE_WEBHOOK=LIVE, DISCORD_PENDOOR_WEBHOOK=PEN,
                 DISCORD_MEMBERS_WEBHOOK=MEMBERS)
         fns, _missing = senders()
         for name, fn in fns:
@@ -152,27 +145,12 @@ class AllBotUrlsSet(unittest.TestCase):
                 self.assertNotIn(MEMBERS, net.urls, f"{name} called the members URL")
 
 
-class OpsFallback(unittest.TestCase):
-    """Documented: while DISCORD_OPS_WEBHOOK is unset, ops alerts post to the fan room."""
+class NoOpsPath(unittest.TestCase):
+    """2026-11-21: the Discord ops webhook is gone, and so are the functions that sent to it."""
 
-    def test_ops_alert_goes_nowhere_when_no_ops_channel(self):
-        set_env(DISCORD_WEBHOOK=FAN, DISCORD_MEMBERS_WEBHOOK=MEMBERS)
-        with Net() as net:
-            ok, bad, used_ops = discord_post.post_ops({"content": "TEST ops"})
-        self.assertEqual(net.urls, [])
-        self.assertFalse(used_ops)
-
-    def test_ops_alert_uses_the_ops_channel_when_set_and_not_the_fan_room(self):
-        set_env(DISCORD_WEBHOOK=FAN, DISCORD_OPS_WEBHOOK=OPS)
-        with Net() as net:
-            discord_post.post_ops({"content": "TEST ops"})
-        self.assertEqual(net.urls, [OPS])
-
-    def test_ops_alert_with_nothing_set_sends_nothing(self):
-        set_env()
-        with Net() as net:
-            discord_post.post_ops({"content": "TEST ops"})
-        self.assertEqual(net.urls, [])
+    def test_the_ops_functions_do_not_exist(self):
+        for name in ("post_ops", "ops_secret", "ops_channel_is_set"):
+            self.assertFalse(hasattr(discord_post, name), name)
 
 
 if __name__ == "__main__":

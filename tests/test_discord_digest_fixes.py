@@ -25,7 +25,6 @@ import digest_budget  # noqa: E402
 import live_results_tracker as t  # noqa: E402
 
 FAN = "https://example.invalid/api/webhooks/TEST-FAN/TEST"
-OPS = "https://example.invalid/api/webhooks/TEST-OPS/TEST"
 
 
 class FakeResp:
@@ -161,7 +160,7 @@ class CashEvents(unittest.TestCase):
 class Poster(unittest.TestCase):
     def setUp(self):
         self._orig = urllib.request.urlopen
-        self._env = {k: os.environ.get(k) for k in ("DISCORD_WEBHOOK", "DISCORD_OPS_WEBHOOK", "DISCORD_LIVE_WEBHOOK")}
+        self._env = {k: os.environ.get(k) for k in ("DISCORD_WEBHOOK", "DISCORD_LIVE_WEBHOOK")}
         os.environ.pop("DISCORD_LIVE_WEBHOOK", None)
 
     def tearDown(self):
@@ -219,7 +218,7 @@ class Poster(unittest.TestCase):
             discord_post.send(FAN, b"{}", opener=opener, sleep=lambda s: None)
         self.assertEqual(len(calls), 1)
 
-    def test_user_agent_on_every_sender_and_ops_routing(self):
+    def test_user_agent_on_every_sender(self):
         seen = []
 
         def fake(req, timeout=0):
@@ -227,56 +226,35 @@ class Poster(unittest.TestCase):
             return FakeResp()
         urllib.request.urlopen = fake
         os.environ["DISCORD_WEBHOOK"] = FAN
-        os.environ["DISCORD_OPS_WEBHOOK"] = OPS
-        import make_slim
-        import validate_context
-        import pick_lock
-        make_slim._alert_bad_slate("TEST slate", "TEST reason")
-        self.assertTrue(validate_context.post_discord({"nights": 1, "through": "2099-01-01", "stats": []}))
-        pick_lock.post_discord(["TEST alert"])
         t._post_discord("TEST fan message")
         t._post_discord_payload({"content": "TEST"})
         t._post_discord_file(b"PNG", "x.png", "TEST")
         # staleness_watch no longer posts (2026-10-24: a stale board turns its run red instead)
-        self.assertEqual(len(seen), 6)
+        self.assertEqual(len(seen), 3)
         for url, ua in seen:
             self.assertEqual(ua, discord_post.USER_AGENT, url)
-        self.assertTrue(all(u == OPS for u, _ in seen[:3]), seen[:3])
-        self.assertTrue(all(u == FAN for u, _ in seen[3:]), seen[3:])
+            self.assertEqual(url, FAN)
 
-    def test_ops_is_off_when_unset_and_never_the_fan_room(self):
+    def test_the_ops_path_is_gone(self):
+        # 2026-11-21: no Discord ops webhook. Nothing in discord_post names it, and a blocked slate says so on stderr only.
+        for name in ("ops_secret", "ops_channel_is_set", "post_ops", "OPS_ENV"):
+            self.assertFalse(hasattr(discord_post, name), name)
+        import make_slim
+        import pick_lock
+        import validate_context
+        self.assertFalse(hasattr(pick_lock, "post_discord"))
+        self.assertFalse(hasattr(validate_context, "post_discord"))
+        seen = []
+        urllib.request.urlopen = lambda req, timeout=0: (seen.append(req.full_url) or FakeResp())
         os.environ["DISCORD_WEBHOOK"] = FAN
-        os.environ.pop("DISCORD_OPS_WEBHOOK", None)
-        self.assertEqual(discord_post.ops_secret(), "")
-
-    def test_failures_are_loud(self):
-        import validate_context
-        os.environ["DISCORD_OPS_WEBHOOK"] = OPS
-
-        def boom(req, timeout=0):
-            raise http_err(403)
-        urllib.request.urlopen = boom
         err, old = io.StringIO(), sys.stderr
         sys.stderr = err
         try:
-            ok = validate_context.post_discord({"nights": 1, "through": "2099-01-01", "stats": []})
+            make_slim._alert_bad_slate("TEST slate", "TEST reason")
         finally:
             sys.stderr = old
-        self.assertFalse(ok)
-        self.assertIn("0 webhook", err.getvalue())
-
-    def test_no_webhook_is_reported_not_skipped(self):
-        import validate_context
-        os.environ.pop("DISCORD_WEBHOOK", None)
-        os.environ.pop("DISCORD_OPS_WEBHOOK", None)
-        err, old = io.StringIO(), sys.stderr
-        sys.stderr = err
-        try:
-            ok = validate_context.post_discord({"nights": 1, "through": "2099-01-01", "stats": []})
-        finally:
-            sys.stderr = old
-        self.assertFalse(ok)
-        self.assertIn("NOT delivered", err.getvalue())
+        self.assertEqual(seen, [])
+        self.assertIn("Slate publish blocked", err.getvalue())
 
 
 if __name__ == "__main__":
