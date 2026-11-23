@@ -7,10 +7,8 @@ hold several URLs separated by commas, whitespace or newlines. Dependency-free
 on purpose (staleness_watch/autopsy must not import the tracker's reportlab
 stack).
 
-Ops alerts (staleness, a blocked slate publish, a held pick lock, a failed
-check) are for the people running the site, not the fan room: ops_secret()
-returns DISCORD_OPS_WEBHOOK when it is set and NOTHING otherwise (2026-10-16:
-no fallback to the shared room; unset = the alarms are off).
+There is no ops channel (2026-11-21: the Discord ops webhook is gone). A check
+that fails says so in the run log and by its exit code.
 """
 from __future__ import annotations
 
@@ -24,25 +22,11 @@ import urllib.request
 USER_AGENT = "moonshot-bot"
 MAX_RETRIES = 3          # extra tries after the first, only ever for a 429
 MAX_WAIT_SECONDS = 30.0  # never sleep longer than this for one Retry-After
-OPS_ENV = "DISCORD_OPS_WEBHOOK"
 FAN_ENV = "DISCORD_WEBHOOK"
 
 
 def webhook_urls(raw: str) -> list[str]:
     return [u.strip() for u in (raw or "").replace(",", "\n").split() if u.strip().startswith("http")]
-
-
-def ops_secret() -> str:
-    """The webhook secret for operational alerts: ONLY the ops channel, when one
-    is configured. Donovan, 2026-10-16: the safety alarms no longer fall back to
-    the shared room, so with DISCORD_OPS_WEBHOOK unset they go nowhere. Set it
-    to a private channel to get them back."""
-    ops = os.environ.get(OPS_ENV, "")
-    return ops if webhook_urls(ops) else ""
-
-
-def ops_channel_is_set() -> bool:
-    return bool(webhook_urls(os.environ.get(OPS_ENV, "")))
 
 
 def _retry_after(err: urllib.error.HTTPError) -> float:
@@ -108,10 +92,3 @@ def post(raw_secret: str, payload: dict, timeout: int = 15,
             print(f"  ! discord post failed: {e}", file=sys.stderr)
             bad += 1
     return ok, bad
-
-
-def post_ops(payload: dict, timeout: int = 15, opener=None, sleep=None) -> tuple[int, int, bool]:
-    """Post an ops alert. Returns (delivered, failed, used_ops_channel)."""
-    used_ops = ops_channel_is_set()
-    ok, bad = post(ops_secret(), payload, timeout=timeout, opener=opener, sleep=sleep)
-    return ok, bad, used_ops

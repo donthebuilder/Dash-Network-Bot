@@ -14,5 +14,5 @@ assert pl.slate_date_fallback({"1": dt.datetime(2026, 10, 6, 2, 10, tzinfo=U)}) 
 assert pl.slate_date_fallback({"1": dt.datetime(2026, 10, 5, 17, 5, tzinfo=U), "2": dt.datetime(2026, 10, 5, 23, 5, tzinfo=U)}) == "2026-10-05"
 assert pl.slate_date_fallback({}, dt.datetime(2026, 10, 6, 3, 0, tzinfo=U)) == "2026-10-05"
 src = inspect.getsource(pl.main)
-assert "if not a.dry_run:\n          post_discord(" in src, "dry-run must not post to Discord"
+assert "post_discord" not in src, "the pick-lock alert to Discord is gone (no ops channel)"
 print("test_pick_lock_slate_date: ok")

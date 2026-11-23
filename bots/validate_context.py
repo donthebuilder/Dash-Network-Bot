@@ -35,13 +35,12 @@ HOW IT MEASURES, and the traps it avoids:
   · VOID LEGS NEVER COUNT. A hitter with no at-bats wasn't asked. Same rule as
     every other grader here.
 
-Output: public/data/current/context_validation.json, plus a Discord summary if
-a Discord webhook is set (DISCORD_OPS_WEBHOOK, else DISCORD_WEBHOOK). It writes a verdict; it does NOT change a weight. A
+Output: public/data/current/context_validation.json. It writes a verdict; it does NOT change a weight. A
 human decides what to do with "earned".
 
 Usage:
     python bots/validate_context.py
-    python bots/validate_context.py --min-n 60 --quiet
+    python bots/validate_context.py --min-n 60
 """
 from __future__ import annotations
 
@@ -142,10 +141,6 @@ FLAGS = [
 # (every graded night from 2026-04-16 to 2026-05-18) and a payload.get() on a
 # list raises AttributeError. Shared in bots/archive.py now.
 from archive import rows_of  # noqa: E402
-try:
-    import discord_post  # noqa: E402
-except ImportError:
-    from bots import discord_post  # noqa: E402
 
 
 def load_rows(days: int | None) -> tuple[list[dict], list[str]]:
@@ -237,46 +232,10 @@ def flag_test(rows: list[dict], key: str, outcome: str, min_n: int) -> dict | No
 ICON = {"earned": "✅", "not proven": "⬜", "harmful": "⛔", "thin": "…"}
 
 
-def build_discord_message(report: dict) -> str:
-    ranked = sorted(
-        [r for r in report["stats"] if r["result"]["status"] != "thin"],
-        key=lambda r: (r["result"]["status"] != "earned", -(r["result"].get("lift") or 0)),
-    )
-    lines = [f"**⚖️ Context validation** — {report['nights']} graded nights through {report['through']}",
-             "_Which context stats have earned a place in how picks are scored, and which haven't._", ""]
-    for r in ranked[:12]:
-        res = r["result"]
-        lines.append(
-            f"{ICON[res['status']]} **{r['label']}** — top {res['top']['pct']}% vs bottom "
-            f"{res['bottom']['pct']}% {OUTCOMES[r['outcome']][0]} (n={res['n']})"
-        )
-    thin = [r["label"] for r in report["stats"] if r["result"]["status"] == "thin"]
-    if thin:
-        lines.append(f"\n… not enough sample yet: {', '.join(thin[:8])}")
-    lines.append("\n_Verdicts compare 95% intervals, not point gaps. Nothing here changes how picks are scored on its own._")
-    return "\n".join(lines)[:1900]
-
-
-def post_discord(report: dict) -> bool:
-    """Ops post (DISCORD_OPS_WEBHOOK, else the shared room until one exists).
-    Returns False, and says why on stderr, when nothing was delivered; a
-    missing webhook is reported, not skipped silently."""
-    if not discord_post.webhook_urls(discord_post.ops_secret()):
-        print("  ! no Discord webhook set (DISCORD_OPS_WEBHOOK / DISCORD_WEBHOOK): "
-              "validation post NOT delivered", file=sys.stderr)
-        return False
-    ok, bad, _ops = discord_post.post_ops({"content": build_discord_message(report)})
-    if not ok:
-        print(f"  ! validation post delivered to 0 webhook(s) ({bad} failed)", file=sys.stderr)
-        return False
-    return True
-
-
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--days", type=int, default=None)
     ap.add_argument("--min-n", type=int, default=40, help="minimum rows per band")
-    ap.add_argument("--quiet", action="store_true", help="skip the Discord post")
     a = ap.parse_args()
 
     rows, dates = load_rows(a.days)
@@ -315,8 +274,6 @@ def main() -> int:
         else:
             print(f"  {ICON[res['status']]} {r['label']:<32} {res['top']['pct']:>5}% vs {res['bottom']['pct']:>5}%  "
                   f"lift {res['lift']}  n={res['n']}")
-    if not a.quiet and not post_discord(report):
-        return 1   # file is written above; a post that went nowhere is a red run, not a quiet one
     return 0
 
 

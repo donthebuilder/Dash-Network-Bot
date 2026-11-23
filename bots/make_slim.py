@@ -31,10 +31,6 @@ import urllib.request
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
-try:
-    import discord_post
-except ImportError:
-    from bots import discord_post
 
 class SlateTooSmall(RuntimeError):
     """Raised when the payload we were asked to publish isn't a slate."""
@@ -42,19 +38,12 @@ class SlateTooSmall(RuntimeError):
 
 def _alert_bad_slate(name: str, how: str) -> None:
     """Say it out loud. A guard that silently skips is a guard nobody knows
-    fired, and this is exactly the failure that hides. Goes to the ops channel
-    (DISCORD_OPS_WEBHOOK, else the shared room until one exists). A failed
-    alert is printed to stderr, never swallowed; the caller raises either way."""
+    fired, and this is exactly the failure that hides. Printed to stderr (the run
+    log); there is no Discord ops channel any more. The caller raises either way."""
     msg = ("**\u26a0\ufe0f Slate publish blocked** \u2014 `" + name + "` is not a full slate (" + how + ").\n"
            "The site keeps showing the previous slate instead of a partial one. "
            "Publishing it would have shown every hitter as a player we never picked.")
-    if not discord_post.webhook_urls(discord_post.ops_secret()):
-        print("  ! no Discord webhook set (DISCORD_OPS_WEBHOOK / DISCORD_WEBHOOK): "
-              f"slate-blocked alert for {name} NOT delivered", file=sys.stderr)
-        return
-    ok, bad, _ops = discord_post.post_ops({"content": msg})
-    if not ok:
-        print(f"  ! slate-blocked alert for {name} delivered to 0 webhook(s) ({bad} failed)", file=sys.stderr)
+    print("  ! " + msg.replace("**", "").replace("`", "").replace("\n", " "), file=sys.stderr)
 
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
