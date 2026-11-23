@@ -240,6 +240,36 @@
    "value": "Expected:Jordan Walsh|Jayson Tatum|Derrick White|Paul George|Neemias Queta",
    "first_seen_utc": "2026-11-22T19:42:36Z",
    "mins_before_start": 347
+  },
+  {
+   "sport": "nba",
+   "game_id": "401910034",
+   "start_utc": "2026-11-23T01:00Z",
+   "team": "NY",
+   "what": "starters",
+   "value": "Confirmed:Landry Shamet|Mikal Bridges|Jalen Brunson|Josh Hart|Karl-Anthony Towns",
+   "first_seen_utc": "2026-11-23T00:54:46Z",
+   "mins_before_start": 5
+  },
+  {
+   "sport": "nba",
+   "game_id": "401910034",
+   "start_utc": "2026-11-23T01:00Z",
+   "team": "IND",
+   "what": "starters",
+   "value": "Confirmed:Kelly Oubre Jr.|Aaron Nesmith|Andrew Nembhard|Pascal Siakam|Ivica Zubac",
+   "first_seen_utc": "2026-11-23T00:54:46Z",
+   "mins_before_start": 5
+  },
+  {
+   "sport": "nba",
+   "game_id": "401910035",
+   "start_utc": "2026-11-23T01:30Z",
+   "team": "BOS",
+   "what": "starters",
+   "value": "Expected:Jordan Walsh|Jayson Tatum|Derrick White|Sam Hauser|Neemias Queta",
+   "first_seen_utc": "2026-11-23T00:54:46Z",
+   "mins_before_start": 35
   }
  ]
 }
