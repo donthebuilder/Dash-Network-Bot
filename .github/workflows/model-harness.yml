@@ -6,8 +6,10 @@ name: Model harness (private scoreboard)
 # remain an optional fallback only.
 # Nightly at 11:23 UTC (7:23 am ET): after the night's games are final and graded. It only reads and prints; nothing is published.
 on:
-  schedule:
-    - cron: "23 11 * * *"
+  # OFF (2026-11-23, Donovan: "anything that's a waste of space and isn't genuinely updating the site gets cut"; run-file batch 3): it only reads and prints a private scoreboard (nothing is published, and nothing reads it); run it by hand when you want the table.
+  # RE-ENABLE: uncomment the `schedule:` line and the cron lines below. Hand runs (Run workflow) still work.
+  # schedule:
+  #  - cron: "23 11 * * *"
   workflow_dispatch:
 
 permissions:
