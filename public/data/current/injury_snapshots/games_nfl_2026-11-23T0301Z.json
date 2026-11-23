@@ -1,0 +1,21 @@
+[
+ {
+  "sport": "nfl",
+  "game_id": "401873078",
+  "start_utc": "2026-11-24T01:15Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "WSH",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "CIN",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": "CIN -6",
+  "total": 54.5
+ }
+]

@@ -1,0 +1,135 @@
+[
+ {
+  "sport": "nhl",
+  "game_id": "401892773",
+  "start_utc": "2026-11-24T00:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "NJ",
+    "probable_goalie": "Connor Hellebuyck"
+   },
+   "away": {
+    "team": "CBJ",
+    "probable_goalie": "Jet Greaves"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "NJ -205",
+  "total": 6.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892774",
+  "start_utc": "2026-11-24T00:30Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "MTL",
+    "probable_goalie": "Jacob Fowler"
+   },
+   "away": {
+    "team": "LA",
+    "probable_goalie": "Darcy Kuemper"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "MTL -148",
+  "total": 6.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892775",
+  "start_utc": "2026-11-24T00:30Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "OTT",
+    "probable_goalie": "Linus Ullmark"
+   },
+   "away": {
+    "team": "CGY",
+    "probable_goalie": "Dustin Wolf"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "OTT -218",
+  "total": 5.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892776",
+  "start_utc": "2026-11-24T00:30Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "NYI",
+    "probable_goalie": "Ilya Sorokin"
+   },
+   "away": {
+    "team": "TOR",
+    "probable_goalie": "Sergei Bobrovsky"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "NYI -162",
+  "total": 6.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892777",
+  "start_utc": "2026-11-24T00:30Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "WPG",
+    "probable_goalie": "Stuart Skinner"
+   },
+   "away": {
+    "team": "UTA",
+    "probable_goalie": "Karel Vejmelka"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "UTAH -112",
+  "total": 6.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892778",
+  "start_utc": "2026-11-24T02:40Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "SEA",
+    "probable_goalie": "Philipp Grubauer"
+   },
+   "away": {
+    "team": "ANA",
+    "probable_goalie": "Lukas Dostal"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "SEA -115",
+  "total": 6.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892779",
+  "start_utc": "2026-11-24T03:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "SJ",
+    "probable_goalie": "Yaroslav Askarov"
+   },
+   "away": {
+    "team": "MIN",
+    "probable_goalie": "Jesper Wallstedt"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "MIN -218",
+  "total": 6.5
+ }
+]
