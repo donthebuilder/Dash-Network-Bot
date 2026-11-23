@@ -7,16 +7,18 @@ name: NHL odds (price history)
 # a manual re-run from burning quota; it freezes a player's row at his game's
 # start. Manual run with probe=true is read-only and prints every market name.
 on:
-  schedule:
+  # OFF (2026-11-23, Donovan: "anything that's a waste of space and isn't genuinely updating the site gets cut"; run-file batch 3): nothing reads its output: the site never fetches these files (it prices from the odds provider directly: lib/odds/adapters.js, lib/nba/oddsQuote.js, lib/nhl/lampQuote.js), no other workflow or bot step consumes the published copy, and staleness.yml watches only the MLB board, the NFL board and nfl_fantasy_stats.json.
+  # RE-ENABLE: uncomment the `schedule:` line and the cron lines below. Hand runs (Run workflow) still work.
+  # schedule:
     # SLOT GATE (2026-11-05): each ET slot is listed at its EDT and its EST hour; .github/scripts/slot_gate.py keeps the one that matches today's clock.
-    - cron: '17 16 * * *'
-    - cron: '17 17 * * *'
-    - cron: '17 20 * * *'
-    - cron: '17 21 * * *'
-    - cron: '17 22 * * *'
-    - cron: '17 23 * * *'
-    - cron: '52 22 * * *'
-    - cron: '52 23 * * *'
+  #  - cron: '17 16 * * *'
+  #  - cron: '17 17 * * *'
+  #  - cron: '17 20 * * *'
+  #  - cron: '17 21 * * *'
+  #  - cron: '17 22 * * *'
+  #  - cron: '17 23 * * *'
+  #  - cron: '52 22 * * *'
+  #  - cron: '52 23 * * *'
   workflow_dispatch:
     inputs:
       slot:

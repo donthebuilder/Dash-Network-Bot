@@ -5,20 +5,22 @@ name: Model boards (NHL, NBA, NFL lanes, team lines, simulations)
 # Own schedule, own concurrency group. NHL/NBA: 16:05 UTC (morning lines), 21:05 and 22:35 UTC (starters confirmed before the 7 pm ET drops). NFL: Thursday night,
 # Sunday morning and Monday night. Nothing here changes a pick or a score the site already shows; these are new files.
 on:
-  schedule:
+  # OFF (2026-11-23, Donovan: "anything that's a waste of space and isn't genuinely updating the site gets cut"; run-file batch 3): nothing reads its output: the site never fetches these files (it prices from the odds provider directly: lib/odds/adapters.js, lib/nba/oddsQuote.js, lib/nhl/lampQuote.js), no other workflow or bot step consumes the published copy, and staleness.yml watches only the MLB board, the NFL board and nfl_fantasy_stats.json.
+  # RE-ENABLE: uncomment the `schedule:` line and the cron lines below. Hand runs (Run workflow) still work.
+  # schedule:
     # SLOT GATE (2026-11-05): each ET slot is listed at its EDT and its EST hour; .github/scripts/slot_gate.py keeps the one that matches today's clock.
-    - cron: '5 16 * * *'
-    - cron: '5 17 * * *'
-    - cron: '5 21 * * *'
-    - cron: '5 22 * * *'
-    - cron: '35 22 * * *'
-    - cron: '35 23 * * *'
-    - cron: '30 12 * * 0'
-    - cron: '30 13 * * 0'
-    - cron: '30 22 * * 4'
-    - cron: '30 23 * * 4'
-    - cron: '30 22 * * 1'
-    - cron: '30 23 * * 1'
+  #  - cron: '5 16 * * *'
+  #  - cron: '5 17 * * *'
+  #  - cron: '5 21 * * *'
+  #  - cron: '5 22 * * *'
+  #  - cron: '35 22 * * *'
+  #  - cron: '35 23 * * *'
+  #  - cron: '30 12 * * 0'
+  #  - cron: '30 13 * * 0'
+  #  - cron: '30 22 * * 4'
+  #  - cron: '30 23 * * 4'
+  #  - cron: '30 22 * * 1'
+  #  - cron: '30 23 * * 1'
   workflow_dispatch:
     inputs:
       slot:

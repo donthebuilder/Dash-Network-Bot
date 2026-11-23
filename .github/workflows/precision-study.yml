@@ -18,8 +18,10 @@ on:
   # First of the month, so the curve gets re-checked as the archive grows
   # without anyone remembering to ask. A finding measured on 25 nights and a
   # finding measured on 90 are different findings.
-  schedule:
-    - cron: '17 13 1 * *'
+  # OFF (2026-11-23, Donovan: "anything that's a waste of space and isn't genuinely updating the site gets cut"; run-file batch 3): a monthly MLB study whose output nothing reads (the site's two mentions of it are comments citing the 25-night measurement); MLB is also in the offseason. Re-enable for spring.
+  # RE-ENABLE: uncomment the `schedule:` line and the cron lines below. Hand runs (Run workflow) still work.
+  # schedule:
+  #  - cron: '17 13 1 * *'
 
 permissions:
   contents: write

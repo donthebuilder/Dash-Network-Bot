@@ -22,8 +22,10 @@ name: Archive health
 on:
   workflow_dispatch:
   # Monday morning, after a full week of slates has landed.
-  schedule:
-    - cron: '23 12 * * 1'
+  # OFF (2026-11-23, Donovan: "anything that's a waste of space and isn't genuinely updating the site gets cut"; run-file batch 3): a weekly MLB leak scan whose output nothing reads; MLB is also in the offseason. Re-enable for spring.
+  # RE-ENABLE: uncomment the `schedule:` line and the cron lines below. Hand runs (Run workflow) still work.
+  # schedule:
+  #  - cron: '23 12 * * 1'
 
 permissions:
   contents: write
