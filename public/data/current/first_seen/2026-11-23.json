@@ -1,0 +1,145 @@
+{
+ "day": "2026-11-23",
+ "events": [
+  {
+   "sport": "nhl",
+   "game_id": "401892773",
+   "start_utc": "2026-11-24T00:00Z",
+   "team": "NJ",
+   "what": "goalie",
+   "value": "Connor Hellebuyck",
+   "first_seen_utc": "2026-11-23T07:50:31Z",
+   "mins_before_start": 969
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892773",
+   "start_utc": "2026-11-24T00:00Z",
+   "team": "CBJ",
+   "what": "goalie",
+   "value": "Jet Greaves",
+   "first_seen_utc": "2026-11-23T07:50:31Z",
+   "mins_before_start": 969
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892774",
+   "start_utc": "2026-11-24T00:30Z",
+   "team": "MTL",
+   "what": "goalie",
+   "value": "Jacob Fowler",
+   "first_seen_utc": "2026-11-23T07:50:31Z",
+   "mins_before_start": 999
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892774",
+   "start_utc": "2026-11-24T00:30Z",
+   "team": "LA",
+   "what": "goalie",
+   "value": "Darcy Kuemper",
+   "first_seen_utc": "2026-11-23T07:50:31Z",
+   "mins_before_start": 999
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892775",
+   "start_utc": "2026-11-24T00:30Z",
+   "team": "OTT",
+   "what": "goalie",
+   "value": "Linus Ullmark",
+   "first_seen_utc": "2026-11-23T07:50:31Z",
+   "mins_before_start": 999
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892775",
+   "start_utc": "2026-11-24T00:30Z",
+   "team": "CGY",
+   "what": "goalie",
+   "value": "Dustin Wolf",
+   "first_seen_utc": "2026-11-23T07:50:31Z",
+   "mins_before_start": 999
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892776",
+   "start_utc": "2026-11-24T00:30Z",
+   "team": "NYI",
+   "what": "goalie",
+   "value": "Ilya Sorokin",
+   "first_seen_utc": "2026-11-23T07:50:31Z",
+   "mins_before_start": 999
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892776",
+   "start_utc": "2026-11-24T00:30Z",
+   "team": "TOR",
+   "what": "goalie",
+   "value": "Sergei Bobrovsky",
+   "first_seen_utc": "2026-11-23T07:50:31Z",
+   "mins_before_start": 999
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892777",
+   "start_utc": "2026-11-24T00:30Z",
+   "team": "WPG",
+   "what": "goalie",
+   "value": "Stuart Skinner",
+   "first_seen_utc": "2026-11-23T07:50:31Z",
+   "mins_before_start": 999
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892777",
+   "start_utc": "2026-11-24T00:30Z",
+   "team": "UTA",
+   "what": "goalie",
+   "value": "Karel Vejmelka",
+   "first_seen_utc": "2026-11-23T07:50:31Z",
+   "mins_before_start": 999
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892778",
+   "start_utc": "2026-11-24T02:40Z",
+   "team": "SEA",
+   "what": "goalie",
+   "value": "Philipp Grubauer",
+   "first_seen_utc": "2026-11-23T07:50:31Z",
+   "mins_before_start": 1129
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892778",
+   "start_utc": "2026-11-24T02:40Z",
+   "team": "ANA",
+   "what": "goalie",
+   "value": "Lukas Dostal",
+   "first_seen_utc": "2026-11-23T07:50:31Z",
+   "mins_before_start": 1129
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892779",
+   "start_utc": "2026-11-24T03:00Z",
+   "team": "SJ",
+   "what": "goalie",
+   "value": "Yaroslav Askarov",
+   "first_seen_utc": "2026-11-23T07:50:31Z",
+   "mins_before_start": 1149
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892779",
+   "start_utc": "2026-11-24T03:00Z",
+   "team": "MIN",
+   "what": "goalie",
+   "value": "Jesper Wallstedt",
+   "first_seen_utc": "2026-11-23T07:50:31Z",
+   "mins_before_start": 1149
+  }
+ ]
+}
