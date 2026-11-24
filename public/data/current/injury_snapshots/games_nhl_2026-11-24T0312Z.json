@@ -1,0 +1,21 @@
+[
+ {
+  "sport": "nhl",
+  "game_id": "401892780",
+  "start_utc": "2026-11-25T01:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "EDM",
+    "probable_goalie": "Devon Levi"
+   },
+   "away": {
+    "team": "VGK",
+    "probable_goalie": "Carter Hart"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "VGK -118",
+  "total": 6.5
+ }
+]
