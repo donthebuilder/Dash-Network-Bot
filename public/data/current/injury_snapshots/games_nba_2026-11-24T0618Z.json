@@ -1,0 +1,59 @@
+[
+ {
+  "sport": "nba",
+  "game_id": "401909314",
+  "start_utc": "2026-11-25T00:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "ORL",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "DET",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": "DET -1.5",
+  "total": 213.5
+ },
+ {
+  "sport": "nba",
+  "game_id": "401909315",
+  "start_utc": "2026-11-25T01:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "WSH",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "BOS",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": "BOS -10.5",
+  "total": 217.5
+ },
+ {
+  "sport": "nba",
+  "game_id": "401909316",
+  "start_utc": "2026-11-25T03:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "DEN",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "DAL",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": "DEN -8.5",
+  "total": 232.5
+ }
+]
