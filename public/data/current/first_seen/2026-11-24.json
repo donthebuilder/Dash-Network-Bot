@@ -1,0 +1,25 @@
+{
+ "day": "2026-11-24",
+ "events": [
+  {
+   "sport": "nhl",
+   "game_id": "401892780",
+   "start_utc": "2026-11-25T01:00Z",
+   "team": "EDM",
+   "what": "goalie",
+   "value": "Devon Levi",
+   "first_seen_utc": "2026-11-24T10:02:05Z",
+   "mins_before_start": 898
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892780",
+   "start_utc": "2026-11-25T01:00Z",
+   "team": "VGK",
+   "what": "goalie",
+   "value": "Carter Hart",
+   "first_seen_utc": "2026-11-24T10:02:05Z",
+   "mins_before_start": 898
+  }
+ ]
+}
