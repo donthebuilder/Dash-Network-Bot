@@ -1,0 +1,21 @@
+[
+ {
+  "sport": "nfl",
+  "game_id": "401873079",
+  "start_utc": "2026-11-26T01:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "LAR",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "GB",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": "LAR -2.5",
+  "total": 43.5
+ }
+]
