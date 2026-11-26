@@ -1,0 +1,59 @@
+[
+ {
+  "sport": "nfl",
+  "game_id": "401873081",
+  "start_utc": "2026-11-26T18:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "DET",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "CHI",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": "CHI -1.5",
+  "total": 55.5
+ },
+ {
+  "sport": "nfl",
+  "game_id": "401873080",
+  "start_utc": "2026-11-26T21:30Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "DAL",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "PHI",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": "DAL -8.5",
+  "total": 48.5
+ },
+ {
+  "sport": "nfl",
+  "game_id": "401873082",
+  "start_utc": "2026-11-27T01:20Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "BUF",
+    "probable_goalie": null
+   },
+   "away": {
+    "team": "KC",
+    "probable_goalie": null
+   }
+  },
+  "lineup_posted": false,
+  "spread": "BUF -3",
+  "total": 45.5
+ }
+]
