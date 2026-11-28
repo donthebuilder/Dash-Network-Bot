@@ -142,6 +142,16 @@ except Exception:
     statcast_batter = None
     statcast_pitcher = None
 
+# SPRING TRAINING IS ITS OWN THING (2026-11-28, bots/spring_training.py): pybaseball's Statcast pulls include spring pitches (hfGT=R|PO|S), and SEASON_START is March 1, so
+# weeks of spring ended up inside the season numbers. Every Statcast frame loses its spring / exhibition rows here, once; the rows are counted aside (outputs/spring_training_<season>.json).
+try:
+    import spring_training
+    if statcast_batter is not None and statcast_pitcher is not None:
+        statcast_batter = spring_training.regular_season_only(statcast_batter, "batter")
+        statcast_pitcher = spring_training.regular_season_only(statcast_pitcher, "pitcher")
+except Exception as _exc:          # never the run: unfiltered is the old behaviour, said out loud
+    print(f"⚠️  spring_training filter not applied: {_exc}", file=sys.stderr)
+
 MLB_BASE = "https://statsapi.mlb.com/api/v1"
 OPEN_METEO = "https://api.open-meteo.com/v1/forecast"
 OWM_BASE   = "https://api.openweathermap.org/data/2.5"
@@ -436,6 +446,13 @@ def statcast_data_end_date(slate_date: dt.date) -> dt.date:
 ROOT_DIR = Path(__file__).resolve().parent
 OUT_DIR = ROOT_DIR / "outputs"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
+# the spring-training pitches the Statcast filter set aside this run (bots/spring_training.py), saved beside the other outputs when the run ends; local only, never published
+try:
+    import atexit
+    import spring_training as _spring
+    atexit.register(lambda: _spring.write_record(OUT_DIR / f"spring_training_{SEASON}.json", SEASON))
+except Exception:
+    pass
 DB_PATH = ROOT_DIR / "mlb_hr_cache.sqlite"
 
 def slate_output_label(slate_date: dt.date) -> str:
