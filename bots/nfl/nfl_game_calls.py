@@ -37,7 +37,12 @@ import glob
 import json
 import math
 import os
+import sys
 from pathlib import Path
+
+# ONE VOICE WITH THE SITE (2026-11-27): who may be CALLED is bots/availability.py, the same rule as the site's lib/calledAvailability.js
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+import availability  # noqa: E402
 
 MARKET = "TD"
 BOARD_SHARE = 1 / 3                 # lib/callStatus.js TD_BOARD_SHARE
@@ -175,7 +180,11 @@ def select_game(game: dict, board: list[dict], legs: list[str]) -> dict:
     rank_of = {id(p): i + 1 for i, p in enumerate(board)}
     sides = []
     for team in (game.get("away"), game.get("home")):
+        # A MAN WHO IS NOT GOING TO PLAY IS NEVER CALLED (2026-11-27, Kenneth Walker): out / IR / suspended / doubtful / on a bye, and a questionable
+        # man before kickoff (a call is only ever written pregame), are not candidates; the next healthy man is the call. His board RANK stays as it was,
+        # so the floor and the top third read the same board the site's tdPool does.
         mine = [p for p in board if p.get("team") == team
+                and not availability.unavailable(p)
                 and not (p.get("position") == "WR" and rank_of[id(p)] > WR_RANK_MAX)]
         sides.append((team, mine[0] if mine else None, mine[1] if len(mine) > 1 else None))
     calls, no_call = [], []
@@ -202,10 +211,19 @@ def select_game(game: dict, board: list[dict], legs: list[str]) -> dict:
                 "of": n, "reason": "no_scored_player",
                 "text": "no call this side -- no TD-scored RB/WR/TE on this team in this build",
             })
+    # who the rule passed over (transparency, never a call): the unavailable men ranked ahead of each side's chosen man
+    passed = []
+    chosen_rank = {team: (rank_of[id(best)] if best is not None else None) for team, best, _ in sides}
+    for p in board:
+        t = p.get("team")
+        if t in chosen_rank and availability.unavailable(p) and (chosen_rank[t] is None or rank_of[id(p)] < chosen_rank[t]):
+            passed.append({"player_id": p.get("player_id"), "name": p.get("name"), "team": t, "rank": rank_of[id(p)],
+                           "why": availability.week_status(p) or "unavailable"})
     return {
         "game_id": game.get("game_id"), "kickoff": game.get("kickoff"),
         "away": game.get("away"), "home": game.get("home"), "state": game.get("state"),
         "calls": calls, "no_call": no_call,
+        **({"unavailable": passed} if passed else {}),
     }
 
 

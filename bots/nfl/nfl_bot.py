@@ -1897,7 +1897,10 @@ def main() -> int:
             edges = (json.loads(rc.read_text()) or {}).get("card_edges", {}) or {}
         except Exception as exc:
             print(f"report card unreadable ({type(exc).__name__}) — card ships without edges")
-    card = nfl_picks.build(payload["players"], edges=edges, depth=nfl_picks.DEPTH)
+    # a questionable man whose game is on or done may be playing (bots/availability.py); only a not-yet-started game keeps him off the card
+    import availability
+    _started = availability.started_teams(payload.get("games") or [])
+    card = nfl_picks.build(payload["players"], edges=edges, depth=nfl_picks.DEPTH, started_teams=_started)
     picks_body = json.dumps({
         # a.season / a.week / a.mode — NOT bare names. Those are locals of
         # build_payload; here they were NameErrors, and the very first live run

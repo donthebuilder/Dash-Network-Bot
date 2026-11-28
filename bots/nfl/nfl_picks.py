@@ -36,6 +36,12 @@ from __future__ import annotations
 
 from nfl_scoring import MODELS
 
+# ONE VOICE WITH THE SITE (2026-11-27): a rung is a man who plays. bots/availability.py is the same rule as the site's lib/calledAvailability.js.
+import sys
+from pathlib import Path as _Path
+sys.path.insert(0, str(_Path(__file__).resolve().parents[1]))
+import availability  # noqa: E402
+
 DEPTH = 5
 
 # Same ladder as lib/nfl/theme.js gradeFor(). Kept here so the published card
@@ -82,14 +88,21 @@ def _select(pool: list[dict], score_of, depth: int) -> list[dict]:
     return sorted(use, key=lambda r: -score_of(r))[:depth]
 
 
-def shadow_ladder(rows: list[dict], shadow_scores: dict, depth: int = DEPTH) -> list[dict]:
+def _playing(rows: list[dict], started_teams=None) -> list[dict]:
+    """The rows that may be a rung: nobody out / IR / suspended / doubtful / on a bye, and no questionable man whose game has not started
+    (bots/availability.py). `started_teams`: clubs whose game is on or done -- a questionable man there may be playing, so he is not hidden."""
+    started = started_teams or set()
+    return [r for r in rows if not availability.unavailable(r, started=r.get("team") in started)]
+
+
+def shadow_ladder(rows: list[dict], shadow_scores: dict, depth: int = DEPTH, started_teams=None) -> list[dict]:
     """Top-`depth` rungs by a SHADOW model's score (nfl_scoring.SHADOW_MODELS),
     for the prediction log only -- never the card. `shadow_scores` is
     {player_id: {"score": float, ...}} from nfl_bot.score_shadow(). Same pool
     flags and same _select() rule as build(), so a v2-vs-shadow comparison is
     the ranking and nothing else. Grading it later must use the latest log
     generated before each player's kickoff, exactly like the real card."""
-    pool = [r for r in rows
+    pool = [r for r in _playing(rows, started_teams)
             if isinstance((shadow_scores.get(str(r.get("player_id"))) or {}).get("score"), (int, float))]
     use = _select(pool, lambda r: float(shadow_scores[str(r["player_id"])]["score"]), depth)
     return [{
@@ -107,7 +120,7 @@ def shadow_ladder(rows: list[dict], shadow_scores: dict, depth: int = DEPTH) -> 
     } for i, r in enumerate(use)]
 
 
-def build(rows: list[dict], edges: dict | None = None, depth: int = DEPTH) -> dict:
+def build(rows: list[dict], edges: dict | None = None, depth: int = DEPTH, started_teams=None) -> dict:
     """{market_key: {label, bar, positions, edge, rungs:[...]}}
 
     `rows` are the finished payload rows — the SAME objects the Boards tab
@@ -118,6 +131,7 @@ def build(rows: list[dict], edges: dict | None = None, depth: int = DEPTH) -> di
     """
     edges = edges or {}
     out: dict = {}
+    rows = _playing(rows, started_teams)
     for key, m in MODELS.items():
         pool = [r for r in rows
                 if isinstance((r.get("scores") or {}).get(key), (int, float))]

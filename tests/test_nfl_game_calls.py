@@ -229,7 +229,7 @@ def test_next_week_preview_never_logged():
 # ── grading ──────────────────────────────────────────────────────────────────
 
 def _log(d, ko):
-    _write(d, [player("A1", "AAA", "BBB", 80), player("B1", "BBB", "AAA", 70, q=True), *filler(3)],
+    _write(d, [player("A1", "AAA", "BBB", 80), player("B1", "BBB", "AAA", 70), *filler(3)],
            [game("g1", "AAA", "BBB", ko), game("g2", "CCC", "DDD", ko + dt.timedelta(days=1))],
            ko - dt.timedelta(hours=1), ko - dt.timedelta(hours=1))
 
@@ -246,7 +246,7 @@ def test_grade_hit_miss_void_pending_and_never_regrade():
     res = {c["player_id"]: c["result"] for c in g["g1"]["calls"]}
     assert res == {"A1": "hit", "B1": "void"}
     vr = next(c for c in g["g1"]["calls"] if c["player_id"] == "B1")["void_reason"]
-    assert "did not play" in vr and "questionable" in vr
+    assert "did not play" in vr
     assert g["g2"]["status"] == "pending"
     s = doc["summary"]
     assert s["top"] == {"n": 1, "hit": 1, "void": 0} and s["second"]["void"] == 1 and s["voids"] == 1
@@ -278,3 +278,59 @@ def test_no_log_writes_nothing():
 if __name__ == "__main__":
     import pytest
     raise SystemExit(pytest.main([__file__, "-v"]))
+
+
+# ── ONE VOICE WITH THE SITE (2026-11-27, Kenneth Walker): a man who is not going to play is never called ──
+
+def _ids(doc, gid="g1"):
+    return [c["player_id"] for c in by_gid(doc)[gid]["calls"]]
+
+
+def test_legacy_questionable_call_still_grades_with_its_note():
+    # rows logged before 2026-11-27 may carry questionable=True: they still grade, and the note still says so
+    assert "questionable at lock" in gc._void_reason("Z", set(), {"questionable": True})
+
+
+def test_out_man_is_never_the_call_the_next_healthy_man_is():
+    ko = NOW + dt.timedelta(hours=3)
+    a1 = player("A1", "AAA", "BBB", 80); a1["injury_status"] = "OUT"
+    ps = [a1, player("A2", "AAA", "BBB", 70), player("B1", "BBB", "AAA", 60), *filler(9)]
+    doc = gc.build_calls(payload(ps, [game("g1", "AAA", "BBB", ko)]))
+    assert "A1" not in _ids(doc) and "A2" in _ids(doc)
+    # his board rank stays as it was (the floor and the top third read the same board as the site): A2 is #2
+    assert next(c for c in by_gid(doc)["g1"]["calls"] if c["player_id"] == "A2")["slate_rank"] == 2
+    assert [m["player_id"] for m in by_gid(doc)["g1"]["unavailable"]] == ["A1"]
+
+
+def test_questionable_doubtful_ir_and_bye_are_not_called_before_kickoff():
+    ko = NOW + dt.timedelta(hours=3)
+    for tag, extra in [("Q", {}), ("D", {}), ("IR", {}), ("SUSP", {}), (None, {"bye": True})]:
+        a1 = player("A1", "AAA", "BBB", 80, **extra)
+        if tag:
+            a1["injury_status"] = tag
+        ps = [a1, player("A2", "AAA", "BBB", 70), player("B1", "BBB", "AAA", 60), *filler(9)]
+        doc = gc.build_calls(payload(ps, [game("g1", "AAA", "BBB", ko)]))
+        assert "A1" not in _ids(doc), tag or "bye"
+
+
+def test_a_side_with_nobody_healthy_has_no_call_and_says_why():
+    ko = NOW + dt.timedelta(hours=3)
+    a1 = player("A1", "AAA", "BBB", 80); a1["injury_status"] = "OUT"
+    ps = [a1, player("B1", "BBB", "AAA", 60), *filler(9)]
+    doc = gc.build_calls(payload(ps, [game("g1", "AAA", "BBB", ko)]))
+    g = by_gid(doc)["g1"]
+    assert _ids(doc) == ["B1"] and any(n["reason"] == "no_scored_player" for n in g["no_call"])
+
+
+def test_the_pick_card_ladder_skips_them_too():
+    import nfl_picks
+    rows = [player("A1", "AAA", "BBB", 80), player("A2", "AAA", "BBB", 70), player("A3", "AAA", "BBB", 60)]
+    rows[0]["injury_status"] = "OUT"
+    for r in rows:
+        r["scores"]["TD"] = r["scores"]["TD"]
+    card = nfl_picks.build(rows, depth=3)
+    assert "A1" not in [r["player_id"] for blk in card.values() for r in blk["rungs"]]
+    # a questionable man whose game has started may be playing: not hidden
+    rows[0]["injury_status"] = "Q"
+    card = nfl_picks.build(rows, depth=3, started_teams={"AAA"})
+    assert "A1" in [r["player_id"] for blk in card.values() for r in blk["rungs"]]
