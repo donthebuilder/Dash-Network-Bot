@@ -1,0 +1,265 @@
+{
+ "day": "2026-11-28",
+ "events": [
+  {
+   "sport": "nhl",
+   "game_id": "401892810",
+   "start_utc": "2026-11-28T21:00Z",
+   "team": "VGK",
+   "what": "goalie",
+   "value": "Adin Hill",
+   "first_seen_utc": "2026-11-28T07:58:45Z",
+   "mins_before_start": 781
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892810",
+   "start_utc": "2026-11-28T21:00Z",
+   "team": "MTL",
+   "what": "goalie",
+   "value": "Jakub Dobes",
+   "first_seen_utc": "2026-11-28T07:58:45Z",
+   "mins_before_start": 781
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892811",
+   "start_utc": "2026-11-28T23:00Z",
+   "team": "FLA",
+   "what": "goalie",
+   "value": "Akira Schmid",
+   "first_seen_utc": "2026-11-28T07:58:45Z",
+   "mins_before_start": 901
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892811",
+   "start_utc": "2026-11-28T23:00Z",
+   "team": "TB",
+   "what": "goalie",
+   "value": "Andrei Vasilevskiy",
+   "first_seen_utc": "2026-11-28T07:58:45Z",
+   "mins_before_start": 901
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892812",
+   "start_utc": "2026-11-29T00:00Z",
+   "team": "DET",
+   "what": "goalie",
+   "value": "Daniil Tarasov",
+   "first_seen_utc": "2026-11-28T07:58:45Z",
+   "mins_before_start": 961
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892812",
+   "start_utc": "2026-11-29T00:00Z",
+   "team": "NSH",
+   "what": "goalie",
+   "value": "Justus Annunen",
+   "first_seen_utc": "2026-11-28T07:58:45Z",
+   "mins_before_start": 961
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892813",
+   "start_utc": "2026-11-29T00:00Z",
+   "team": "NJ",
+   "what": "goalie",
+   "value": "Connor Hellebuyck",
+   "first_seen_utc": "2026-11-28T07:58:45Z",
+   "mins_before_start": 961
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892813",
+   "start_utc": "2026-11-29T00:00Z",
+   "team": "WPG",
+   "what": "goalie",
+   "value": "Nico Daws",
+   "first_seen_utc": "2026-11-28T07:58:45Z",
+   "mins_before_start": 961
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892814",
+   "start_utc": "2026-11-29T00:00Z",
+   "team": "NYR",
+   "what": "goalie",
+   "value": "Joonas Korpisalo",
+   "first_seen_utc": "2026-11-28T07:58:45Z",
+   "mins_before_start": 961
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892814",
+   "start_utc": "2026-11-29T00:00Z",
+   "team": "CGY",
+   "what": "goalie",
+   "value": "Dustin Wolf",
+   "first_seen_utc": "2026-11-28T07:58:45Z",
+   "mins_before_start": 961
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892815",
+   "start_utc": "2026-11-29T00:00Z",
+   "team": "PIT",
+   "what": "goalie",
+   "value": "Arturs Silovs",
+   "first_seen_utc": "2026-11-28T07:58:45Z",
+   "mins_before_start": 961
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892815",
+   "start_utc": "2026-11-29T00:00Z",
+   "team": "TOR",
+   "what": "goalie",
+   "value": "Sergei Bobrovsky",
+   "first_seen_utc": "2026-11-28T07:58:45Z",
+   "mins_before_start": 961
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892816",
+   "start_utc": "2026-11-29T00:00Z",
+   "team": "CAR",
+   "what": "goalie",
+   "value": "Pyotr Kochetkov",
+   "first_seen_utc": "2026-11-28T07:58:45Z",
+   "mins_before_start": 961
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892816",
+   "start_utc": "2026-11-29T00:00Z",
+   "team": "OTT",
+   "what": "goalie",
+   "value": "Samuel Ersson",
+   "first_seen_utc": "2026-11-28T07:58:45Z",
+   "mins_before_start": 961
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892817",
+   "start_utc": "2026-11-29T00:00Z",
+   "team": "STL",
+   "what": "goalie",
+   "value": "Jordan Binnington",
+   "first_seen_utc": "2026-11-28T07:58:45Z",
+   "mins_before_start": 961
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892817",
+   "start_utc": "2026-11-29T00:00Z",
+   "team": "WSH",
+   "what": "goalie",
+   "value": "Charlie Lindgren",
+   "first_seen_utc": "2026-11-28T07:58:45Z",
+   "mins_before_start": 961
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892818",
+   "start_utc": "2026-11-29T00:30Z",
+   "team": "PHI",
+   "what": "goalie",
+   "value": "Joseph Woll",
+   "first_seen_utc": "2026-11-28T07:58:45Z",
+   "mins_before_start": 991
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892818",
+   "start_utc": "2026-11-29T00:30Z",
+   "team": "NYI",
+   "what": "goalie",
+   "value": "Ilya Sorokin",
+   "first_seen_utc": "2026-11-28T07:58:45Z",
+   "mins_before_start": 991
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892819",
+   "start_utc": "2026-11-29T01:00Z",
+   "team": "DAL",
+   "what": "goalie",
+   "value": "Jake Oettinger",
+   "first_seen_utc": "2026-11-28T07:58:45Z",
+   "mins_before_start": 1021
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892819",
+   "start_utc": "2026-11-29T01:00Z",
+   "team": "UTA",
+   "what": "goalie",
+   "value": "Sebastian Cossa",
+   "first_seen_utc": "2026-11-28T07:58:45Z",
+   "mins_before_start": 1021
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892820",
+   "start_utc": "2026-11-29T02:00Z",
+   "team": "COL",
+   "what": "goalie",
+   "value": "Scott Wedgewood",
+   "first_seen_utc": "2026-11-28T07:58:45Z",
+   "mins_before_start": 1081
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892820",
+   "start_utc": "2026-11-29T02:00Z",
+   "team": "SJ",
+   "what": "goalie",
+   "value": "Alex Nedeljkovic",
+   "first_seen_utc": "2026-11-28T07:58:45Z",
+   "mins_before_start": 1081
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892821",
+   "start_utc": "2026-11-29T02:00Z",
+   "team": "LA",
+   "what": "goalie",
+   "value": "Anton Forsberg",
+   "first_seen_utc": "2026-11-28T07:58:45Z",
+   "mins_before_start": 1081
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892821",
+   "start_utc": "2026-11-29T02:00Z",
+   "team": "ANA",
+   "what": "goalie",
+   "value": "Lukas Dostal",
+   "first_seen_utc": "2026-11-28T07:58:45Z",
+   "mins_before_start": 1081
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892822",
+   "start_utc": "2026-11-29T03:00Z",
+   "team": "SEA",
+   "what": "goalie",
+   "value": "Joey Daccord",
+   "first_seen_utc": "2026-11-28T07:58:45Z",
+   "mins_before_start": 1141
+  },
+  {
+   "sport": "nhl",
+   "game_id": "401892822",
+   "start_utc": "2026-11-29T03:00Z",
+   "team": "EDM",
+   "what": "goalie",
+   "value": "Devon Levi",
+   "first_seen_utc": "2026-11-28T07:58:45Z",
+   "mins_before_start": 1141
+  }
+ ]
+}
