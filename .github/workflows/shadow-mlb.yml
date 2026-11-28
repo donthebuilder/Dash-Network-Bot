@@ -55,14 +55,17 @@ jobs:
         with:
           python-version: "3.11"
       - run: pip install numpy requests
+      # ROLLING CACHE (2026-11-28): the key used to be the year (dash-mlbhits-2026), so the first cache was reused unchanged all season and 2027 would have been scored from
+      # end-of-2026 form. Now every run saves what it grew (a new key each run) and restores the newest (restore-keys also matches the old dash-mlbhits-2026), and the pull below
+      # is incremental: a finished season is never re-read, the current one gains yesterday, and out of season it reads nothing.
       - name: Cache the MLB game logs
         id: logs
         uses: actions/cache@v4
         with:
           path: ~/.cache/dash_mlbhits
-          key: dash-mlbhits-2026
-      - name: Pull the game logs once (cache miss)
-        if: steps.logs.outputs.cache-hit != 'true'
+          key: dash-mlbhits-${{ github.run_id }}
+          restore-keys: dash-mlbhits-
+      - name: Grow the game-log cache (incremental; a no-op out of season)
         run: python3 bots/mlb_hits_data.py $HOME/.cache/dash_mlbhits
       - name: Fit the lanes if the model files are missing
         run: ls bots/models/mlb_hit_v1.json >/dev/null 2>&1 || python3 bots/mlb_lanes.py fit $HOME/.cache/dash_mlbhits
