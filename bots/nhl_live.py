@@ -26,6 +26,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import nhl_backtest as nb      # noqa: E402
 import lineups                 # noqa: E402
 import injury_status           # noqa: E402
+import availability            # noqa: E402
 from headline_lane import headline_lane   # noqa: E402
 
 ESPN_TO_NHL = {"NJ": "NJD", "LA": "LAK", "SJ": "SJS", "TB": "TBL", "UTAH": "UTA"}
@@ -153,6 +154,16 @@ def main():
     for r in rows:
         r["headline_lane"] = headline_lane({"pts": r.get("p_points"), "ast": r.get("p_assist"), "sog": r.get("p_sog3")}, r["lane_base"], "nhl")
     injury_status.apply(rows, inj)
+    # A MAN WHO IS NOT GOING TO PLAY IS NOT ON THE BOARD (2026-11-27, ONE VOICE WITH THE SITE: bots/availability.py, lib/nhl/injuryRule.js).
+    # OUT / IL / DOUBTFUL never; DAY-TO-DAY not before puck drop (this feed has no posted NHL lineup, so nothing keeps him pregame). The tiers below
+    # are cut from the men who are left, so a scratched man never moves a cut line. A dead feed (no rows) removes nobody.
+    left_out = []
+    for r in rows:
+        w = availability.report_block(r["name"], r["team"], inj, started=availability.started_at(r.get("start_utc")), lineup_in=False)
+        if w:
+            left_out.append({"name": r["name"], "team": r["team"], "status": w})
+    gone = {(x["name"], x["team"]) for x in left_out}
+    rows = [r for r in rows if (r["name"], r["team"]) not in gone]
     for r in rows:
         r["p_goal_adj"] = round(r["p_goal"] * r["p_play"], 4)
     order = sorted(r["p_goal"] for r in rows)
@@ -162,8 +173,8 @@ def main():
     rows.sort(key=lambda r: (r["p_goal_adj"], r["p_goal_raw"]), reverse=True)   # the calibrated top block has ties; raw breaks them
     out = Path(a.out) if a.out else Path(__file__).resolve().parent / "outputs" / "nhl_board_latest.json"
     out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(json.dumps({"date": day, "model_version": model["model_version"], "players": rows}, indent=1))
-    print(f"{len(games)} games, {len(rows)} skaters -> {out}")
+    out.write_text(json.dumps({"date": day, "model_version": model["model_version"], "players": rows, "left_out_unavailable": left_out}, indent=1))
+    print(f"{len(games)} games, {len(rows)} skaters, {len(left_out)} left out as not expected to play -> {out}")
     print(f"{'player':<22}{'team':<5}{'vs':<5}{'pos':<4}{'p(goal)':>8}{'plays':>7}{'adj':>7}{'g/gm':>6}{'sh/gm':>7}{'toi':>6}  tier / goalie")
     for r in rows[:12]:
         print(f"{r['name'][:21]:<22}{r['team']:<5}{r['opponent']:<5}{r['pos']:<4}{100 * r['p_goal']:>7.1f}%{100 * r['p_play']:>6.0f}%{100 * r['p_goal_adj']:>6.1f}%{r['goals_per_gm']:>6.2f}{r['shots_per_gm']:>7.1f}{r['toi_min']:>6.1f}  {r['tier']} / {r['opp_goalie']}")
