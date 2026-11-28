@@ -17,6 +17,8 @@ from pathlib import Path
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 
 from bots import mlb_dashboard as m
+# offline: the role map reads ESPN's live MLB injury report; these fixtures use real surnames, so pin an empty report (tests/test_mlb_role_availability.py proves the rule)
+m._MLB_INJ_OVERRIDE = []
 from bots import live_results_tracker as t
 
 
