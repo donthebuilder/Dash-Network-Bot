@@ -24,11 +24,14 @@ import urllib.error
 import urllib.request
 
 # keep in step with SEALED_RE in .github/scripts/seal_data.sh (tests/test_seal_data.py compares the two)
+# 2026-11-28 (MLB opening-day readiness): the MLB text sheets and boards name tonight's picks too -- today.txt / tomorrow.txt print THE FOUR (HR / HIT / HRR by name),
+# results_live.txt the live results, moonshot_v4_latest.json and mlb_board_latest.json per-player scores -- and were published PLAIN beside the sealed slim files.
 SEALED_RE = re.compile(
     r"^(nfl_(next_)?(week|game_calls|picks)\.json|(today|tomorrow)_slim\.json|results_live\.json|pick_changes\.json"
     r"|pair_builder_latest\.json|nfl_pick_lock\.json|pick_lock\.json|nhl_board_latest\.json|nba_board_latest\.json"
     r"|nba_first_board_latest\.json|(nhl|nba)_sim_latest\.json|nfl_(next_)?picks_[0-9]{4}_w[0-9]{2}\.json|nfl_td_log_[0-9]{4}\.jsonl"
-    r"|nfl_game_calls_log_[0-9]{4}_w[0-9]{2}\.jsonl|por_rows_[0-9]{4}-[0-9]{2}-[0-9]{2}\.jsonl)$"
+    r"|nfl_game_calls_log_[0-9]{4}_w[0-9]{2}\.jsonl|por_rows_[0-9]{4}-[0-9]{2}-[0-9]{2}\.jsonl"
+    r"|(today|tomorrow)\.txt|results_live\.txt|moonshot_v4_latest\.json|mlb_board_latest\.json)$"
 )
 # Run logs are sealed only while their game is still ahead (seal_data.sh log_is_live); an older one is plain. A reader
 # cannot tell which from the name, so it asks for the sealed copy first and takes the plain one on a 404.
