@@ -20,6 +20,7 @@ import buckets_backtest as bb       # noqa: E402
 import game_lines as G              # noqa: E402
 import lineups                      # noqa: E402
 import injury_status                # noqa: E402
+import availability                 # noqa: E402
 import nba_first as nf              # noqa: E402
 from nba_live import athlete, parse_spread   # noqa: E402
 
@@ -64,6 +65,10 @@ def main():
                                         "scored_first": int(first_pid == p["pid"]), "scored_team_first": int(tf == p["pid"])})
                     if g["date"] >= start26:
                         season_games[p["pid"]] += 1
+    try:
+        inj = injury_status.fetch("nba")
+    except Exception as e:                                  # a dead feed removes nobody
+        print(f"[availability] nba injuries unread ({e})", file=sys.stderr); inj = None
     real = lineups.nba_starters(day)                       # NBA's daily lineups: Confirmed near tip, Expected before
     names = {}
     out_rows = []
@@ -89,6 +94,13 @@ def main():
                 if len(got) >= 4:
                     cands, src = got, f"{real[ab]['status'].lower()} (NBA daily lineups)"
             to = T[opp]
+            # A MAN WHO IS NOT GOING TO PLAY IS NEVER CALLED (2026-11-27, ONE VOICE WITH THE SITE: bots/availability.py). Out of the pool before the shares are
+            # cut, so the next starter is the call. In the announced five (Confirmed / Expected) a day-to-day man stays; OUT / IL / DOUBTFUL never.
+            inj_now = inj if inj is not None else []
+            five = {injury_status.key(n) for n in real[ab]["players"]} if ab in real else set()
+            cands = [(pid, nm) for pid, nm in cands
+                     if not availability.report_block(nm or athlete(pid, a.cache)["name"], ab, inj_now, started=availability.started_at(g.get("start_utc")),
+                                                      lineup_in=injury_status.key(nm or athlete(pid, a.cache)["name"] or "") in five)]
             for pid, nm in cands:
                 h = P[pid] if pid is not None else []
                 if len(h) < 8:                               # no history: an average starter (the model's own means), flagged

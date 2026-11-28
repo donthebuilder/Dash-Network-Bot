@@ -29,6 +29,7 @@ import buckets_backtest as bb   # noqa: E402
 import game_lines as G
 from headline_lane import headline_lane          # noqa: E402
 import injury_status            # noqa: E402
+import availability             # noqa: E402
 import lineups                  # noqa: E402
 
 
@@ -84,6 +85,10 @@ def main():
     a = ap.parse_args()
     day = a.day
     tonight = [g for g in lineups.espn("nba", day) if g["status"] not in ("Final",)]
+    try:                                                   # NBA's announced five (Confirmed or Expected) keeps a day-to-day man; a dead feed keeps nobody
+        starters_in = {ab: {injury_status.key(n) for n in v["players"]} for ab, v in lineups.nba_starters(day).items()}
+    except Exception:
+        starters_in = {}
     if not tonight:
         print(f"no NBA games left on {day}")
         return 0
@@ -131,6 +136,12 @@ def main():
                 hit = inj_by_key.get(injury_status.key(name or ""))
                 if hit and hit["p_play"] < 0.5:
                     skipped.append((name, abbr, hit["status"], hit["p_play"]))
+                    continue
+                # THE RULE (2026-11-27, ONE VOICE WITH THE SITE: bots/availability.py, lib/nba/board.js availLegs): OUT / IL / DOUBTFUL never,
+                # DAY-TO-DAY / QUESTIONABLE not before tip unless he is in the announced starting five. Only ever ADDS to the old p_play skip above.
+                w = availability.report_block(name, abbr, inj, started=availability.started_at(g.get("start_utc")), lineup_in=injury_status.key(name or "") in starters_in.get(abbr, ()))
+                if w:
+                    skipped.append((name, abbr, w, 0.0))
                     continue
                 players.append({"pid": pid, "min": 30.0, "pts": 0, "fga": 0, "fta": 0, "to": 0, "oreb": 0, "reb": 0, "ast": 0, "tpm": 0, "tpa": 0, "stl": 0, "blk": 0})
             teams.append({"abbr": abbr, "home": is_home, "players": players})
