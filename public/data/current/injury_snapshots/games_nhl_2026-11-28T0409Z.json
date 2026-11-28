@@ -1,0 +1,249 @@
+[
+ {
+  "sport": "nhl",
+  "game_id": "401892810",
+  "start_utc": "2026-11-28T21:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "VGK",
+    "probable_goalie": "Adin Hill"
+   },
+   "away": {
+    "team": "MTL",
+    "probable_goalie": "Jakub Dobes"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "VGK -122",
+  "total": 6.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892811",
+  "start_utc": "2026-11-28T23:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "FLA",
+    "probable_goalie": "Akira Schmid"
+   },
+   "away": {
+    "team": "TB",
+    "probable_goalie": "Andrei Vasilevskiy"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "FLA -115",
+  "total": 6.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892812",
+  "start_utc": "2026-11-29T00:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "DET",
+    "probable_goalie": "Daniil Tarasov"
+   },
+   "away": {
+    "team": "NSH",
+    "probable_goalie": "Justus Annunen"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "DET -112",
+  "total": 5.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892813",
+  "start_utc": "2026-11-29T00:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "NJ",
+    "probable_goalie": "Connor Hellebuyck"
+   },
+   "away": {
+    "team": "WPG",
+    "probable_goalie": "Nico Daws"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "NJ -205",
+  "total": 6.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892814",
+  "start_utc": "2026-11-29T00:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "NYR",
+    "probable_goalie": "Joonas Korpisalo"
+   },
+   "away": {
+    "team": "CGY",
+    "probable_goalie": "Dustin Wolf"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "NYR -185",
+  "total": 5.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892815",
+  "start_utc": "2026-11-29T00:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "PIT",
+    "probable_goalie": "Arturs Silovs"
+   },
+   "away": {
+    "team": "TOR",
+    "probable_goalie": "Sergei Bobrovsky"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "PIT -122",
+  "total": 6.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892816",
+  "start_utc": "2026-11-29T00:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "CAR",
+    "probable_goalie": "Pyotr Kochetkov"
+   },
+   "away": {
+    "team": "OTT",
+    "probable_goalie": "Samuel Ersson"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "CAR -265",
+  "total": 6.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892817",
+  "start_utc": "2026-11-29T00:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "STL",
+    "probable_goalie": "Jordan Binnington"
+   },
+   "away": {
+    "team": "WSH",
+    "probable_goalie": "Charlie Lindgren"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "STL -112",
+  "total": 6.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892818",
+  "start_utc": "2026-11-29T00:30Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "PHI",
+    "probable_goalie": "Joseph Woll"
+   },
+   "away": {
+    "team": "NYI",
+    "probable_goalie": "Ilya Sorokin"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "NYI -118",
+  "total": 5.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892819",
+  "start_utc": "2026-11-29T01:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "DAL",
+    "probable_goalie": "Jake Oettinger"
+   },
+   "away": {
+    "team": "UTA",
+    "probable_goalie": "Sebastian Cossa"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "DAL -155",
+  "total": 5.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892820",
+  "start_utc": "2026-11-29T02:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "COL",
+    "probable_goalie": "Scott Wedgewood"
+   },
+   "away": {
+    "team": "SJ",
+    "probable_goalie": "Alex Nedeljkovic"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "COL -258",
+  "total": 6.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892821",
+  "start_utc": "2026-11-29T02:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "LA",
+    "probable_goalie": "Anton Forsberg"
+   },
+   "away": {
+    "team": "ANA",
+    "probable_goalie": "Lukas Dostal"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "LA -142",
+  "total": 6.5
+ },
+ {
+  "sport": "nhl",
+  "game_id": "401892822",
+  "start_utc": "2026-11-29T03:00Z",
+  "status": "Scheduled",
+  "sides": {
+   "home": {
+    "team": "SEA",
+    "probable_goalie": "Joey Daccord"
+   },
+   "away": {
+    "team": "EDM",
+    "probable_goalie": "Devon Levi"
+   }
+  },
+  "lineup_posted": false,
+  "spread": "EDM -170",
+  "total": 6.5
+ }
+]
