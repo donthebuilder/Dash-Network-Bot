@@ -19,7 +19,7 @@
 #   seal_data.sh unseal <in.sealed> <out>        (also used by tests)
 set -euo pipefail
 
-SEALED_RE='^(nfl_(next_)?(week|game_calls|picks)\.json|(today|tomorrow)_slim\.json|results_live\.json|pick_changes\.json|pair_builder_latest\.json|nfl_pick_lock\.json|pick_lock\.json|nhl_board_latest\.json|nba_board_latest\.json|nba_first_board_latest\.json|(nhl|nba)_sim_latest\.json|nfl_(next_)?picks_[0-9]{4}_w[0-9]{2}\.json|nfl_td_log_[0-9]{4}\.jsonl|nfl_game_calls_log_[0-9]{4}_w[0-9]{2}\.jsonl|por_rows_[0-9]{4}-[0-9]{2}-[0-9]{2}\.jsonl)$'
+SEALED_RE='^(nfl_(next_)?(week|game_calls|picks)\.json|(today|tomorrow)_slim\.json|results_live\.json|pick_changes\.json|pair_builder_latest\.json|nfl_pick_lock\.json|pick_lock\.json|nhl_board_latest\.json|nba_board_latest\.json|nba_first_board_latest\.json|(nhl|nba)_sim_latest\.json|nfl_(next_)?picks_[0-9]{4}_w[0-9]{2}\.json|nfl_td_log_[0-9]{4}\.jsonl|nfl_game_calls_log_[0-9]{4}_w[0-9]{2}\.jsonl|por_rows_[0-9]{4}-[0-9]{2}-[0-9]{2}\.jsonl|(today|tomorrow)\.txt|results_live\.txt|moonshot_v4_latest\.json|mlb_board_latest\.json)$'
 
 # RUN LOGS (2026-11-11, Donovan: "Yes, seal them"): every model run's per-player scores. Sealed only while LIVE:
 #   ..._<season>-wkNN.<run>.jsonl  while NN is the newest week on the branch or later (nfl_next_* is next week's, so it is)

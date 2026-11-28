@@ -151,3 +151,29 @@ if __name__ == "__main__":   # tests.yml runs each file as a script
         with tempfile.TemporaryDirectory() as d:
             fn(Path(d))
     print("test_seal_data: ok")
+
+
+MLB_TEXT_FILES = ["today.txt", "tomorrow.txt", "results_live.txt", "moonshot_v4_latest.json", "mlb_board_latest.json"]
+
+
+def test_the_mlb_sheets_and_boards_that_name_picks_are_sealed(tmp_path):
+    """2026-11-28 (MLB opening-day readiness): these five carried tonight's HR / HIT / HRR picks and scores PLAIN on the public data branch, beside the sealed slim files.
+    TEST data: a made-up pick line. Each is sealed, its plain copy leaves the tree, and the bot's https readers know the name."""
+    import sys
+    sys.path.insert(0, str(SCRIPT.parent.parent.parent / "bots"))
+    import sealed_data
+    key = secrets.token_hex(64)
+    for name in MLB_TEXT_FILES:
+        (tmp_path / name).write_text("THE FOUR\nHR TEST Player One (TST) 99.9\n")
+    r = _run(f'source "{SCRIPT}"; seal_tree "{tmp_path}"', key, tmp_path)
+    assert r.returncode == 0, r.stderr
+    for name in MLB_TEXT_FILES:
+        assert (tmp_path / f"{name}.sealed").exists(), f"{name} was published without a sealed copy"
+        assert not (tmp_path / name).exists(), f"{name}: the plain copy must not stay in the tree that is pushed"
+        assert "TEST Player One" not in (tmp_path / f"{name}.sealed").read_text()
+        assert sealed_data.is_sealed_name(name), f"{name}: the https readers do not know it is sealed"
+    # a job with no key must refuse to publish them, as it does for every listed file
+    for name in MLB_TEXT_FILES:
+        (tmp_path / name).write_text("THE FOUR\n")
+    r = _run(f'source "{SCRIPT}"; seal_tree "{tmp_path}"', "", tmp_path)
+    assert r.returncode != 0, "a job with no key published a listed MLB file"
