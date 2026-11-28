@@ -1,0 +1,402 @@
+{
+ "_about": "ONE VOICE: this exact file is in BOTH repos (bot tests/fixtures/availability_cases.json, site scripts/fixtures/availability-cases.json). Each repo's test runs every case through its own code. expect: out = may NOT be called, ok = may. TEST DATA about statuses only; no player.",
+ "version": 1,
+ "cases": [
+  {
+   "id": "nfl OUT pregame",
+   "via": "week",
+   "input": {
+    "injury_status": "OUT"
+   },
+   "started": false,
+   "lineup_in": false,
+   "expect": "out"
+  },
+  {
+   "id": "nfl OUT after kickoff",
+   "via": "week",
+   "input": {
+    "injury_status": "OUT"
+   },
+   "started": true,
+   "lineup_in": false,
+   "expect": "out"
+  },
+  {
+   "id": "nfl lowercase out",
+   "via": "week",
+   "input": {
+    "injury_status": "out"
+   },
+   "started": false,
+   "lineup_in": false,
+   "expect": "out"
+  },
+  {
+   "id": "nfl IR",
+   "via": "week",
+   "input": {
+    "injury_status": "IR"
+   },
+   "started": false,
+   "lineup_in": false,
+   "expect": "out"
+  },
+  {
+   "id": "nfl SUSP",
+   "via": "week",
+   "input": {
+    "injury_status": "SUSP"
+   },
+   "started": false,
+   "lineup_in": false,
+   "expect": "out"
+  },
+  {
+   "id": "nfl PUP",
+   "via": "week",
+   "input": {
+    "injury_status": "PUP"
+   },
+   "started": false,
+   "lineup_in": false,
+   "expect": "out"
+  },
+  {
+   "id": "nfl NFI",
+   "via": "week",
+   "input": {
+    "injury_status": "NFI"
+   },
+   "started": false,
+   "lineup_in": false,
+   "expect": "out"
+  },
+  {
+   "id": "nfl on bye",
+   "via": "week",
+   "input": {
+    "on_bye": true
+   },
+   "started": false,
+   "lineup_in": false,
+   "expect": "out"
+  },
+  {
+   "id": "nfl on bye after kickoff",
+   "via": "week",
+   "input": {
+    "on_bye": true
+   },
+   "started": true,
+   "lineup_in": false,
+   "expect": "out"
+  },
+  {
+   "id": "nfl doubtful pregame",
+   "via": "week",
+   "input": {
+    "injury_status": "D"
+   },
+   "started": false,
+   "lineup_in": false,
+   "expect": "out"
+  },
+  {
+   "id": "nfl doubtful after kickoff",
+   "via": "week",
+   "input": {
+    "injury_status": "D"
+   },
+   "started": true,
+   "lineup_in": false,
+   "expect": "out"
+  },
+  {
+   "id": "nfl questionable pregame",
+   "via": "week",
+   "input": {
+    "injury_status": "Q"
+   },
+   "started": false,
+   "lineup_in": false,
+   "expect": "out"
+  },
+  {
+   "id": "nfl questionable after kickoff",
+   "via": "week",
+   "input": {
+    "injury_status": "Q"
+   },
+   "started": true,
+   "lineup_in": false,
+   "expect": "ok"
+  },
+  {
+   "id": "nfl questionable boolean only",
+   "via": "week",
+   "input": {
+    "questionable": true
+   },
+   "started": false,
+   "lineup_in": false,
+   "expect": "out"
+  },
+  {
+   "id": "nfl questionable boolean only, game on",
+   "via": "week",
+   "input": {
+    "questionable": true
+   },
+   "started": true,
+   "lineup_in": false,
+   "expect": "ok"
+  },
+  {
+   "id": "nfl no tag",
+   "via": "week",
+   "input": {},
+   "started": false,
+   "lineup_in": false,
+   "expect": "ok"
+  },
+  {
+   "id": "nfl no tag after kickoff",
+   "via": "week",
+   "input": {},
+   "started": true,
+   "lineup_in": false,
+   "expect": "ok"
+  },
+  {
+   "id": "espn Out",
+   "via": "espn",
+   "input": {
+    "word": "Out"
+   },
+   "started": false,
+   "lineup_in": false,
+   "expect": "out"
+  },
+  {
+   "id": "espn Out after start",
+   "via": "espn",
+   "input": {
+    "word": "Out"
+   },
+   "started": true,
+   "lineup_in": false,
+   "expect": "out"
+  },
+  {
+   "id": "espn Out with lineup",
+   "via": "espn",
+   "input": {
+    "word": "Out"
+   },
+   "started": false,
+   "lineup_in": true,
+   "expect": "out"
+  },
+  {
+   "id": "espn Injured Reserve",
+   "via": "espn",
+   "input": {
+    "word": "Injured Reserve"
+   },
+   "started": true,
+   "lineup_in": false,
+   "expect": "out"
+  },
+  {
+   "id": "espn 60-Day-IL",
+   "via": "espn",
+   "input": {
+    "word": "60-Day-IL"
+   },
+   "started": true,
+   "lineup_in": false,
+   "expect": "out"
+  },
+  {
+   "id": "espn 15-Day-IL",
+   "via": "espn",
+   "input": {
+    "word": "15-Day-IL"
+   },
+   "started": true,
+   "lineup_in": false,
+   "expect": "out"
+  },
+  {
+   "id": "espn 10-Day-IL",
+   "via": "espn",
+   "input": {
+    "word": "10-Day-IL"
+   },
+   "started": true,
+   "lineup_in": false,
+   "expect": "out"
+  },
+  {
+   "id": "espn 7-Day-IL",
+   "via": "espn",
+   "input": {
+    "word": "7-Day-IL"
+   },
+   "started": true,
+   "lineup_in": false,
+   "expect": "out"
+  },
+  {
+   "id": "espn Suspension",
+   "via": "espn",
+   "input": {
+    "word": "Suspension"
+   },
+   "started": true,
+   "lineup_in": false,
+   "expect": "out"
+  },
+  {
+   "id": "espn Suspended",
+   "via": "espn",
+   "input": {
+    "word": "Suspended"
+   },
+   "started": true,
+   "lineup_in": false,
+   "expect": "out"
+  },
+  {
+   "id": "espn Paternity",
+   "via": "espn",
+   "input": {
+    "word": "Paternity"
+   },
+   "started": true,
+   "lineup_in": false,
+   "expect": "out"
+  },
+  {
+   "id": "espn Doubtful",
+   "via": "espn",
+   "input": {
+    "word": "Doubtful"
+   },
+   "started": false,
+   "lineup_in": false,
+   "expect": "out"
+  },
+  {
+   "id": "espn Doubtful after start",
+   "via": "espn",
+   "input": {
+    "word": "Doubtful"
+   },
+   "started": true,
+   "lineup_in": false,
+   "expect": "out"
+  },
+  {
+   "id": "espn Doubtful lineup posted",
+   "via": "espn",
+   "input": {
+    "word": "Doubtful"
+   },
+   "started": false,
+   "lineup_in": true,
+   "expect": "ok"
+  },
+  {
+   "id": "espn Questionable pregame",
+   "via": "espn",
+   "input": {
+    "word": "Questionable"
+   },
+   "started": false,
+   "lineup_in": false,
+   "expect": "out"
+  },
+  {
+   "id": "espn Questionable after start",
+   "via": "espn",
+   "input": {
+    "word": "Questionable"
+   },
+   "started": true,
+   "lineup_in": false,
+   "expect": "ok"
+  },
+  {
+   "id": "espn Questionable lineup posted",
+   "via": "espn",
+   "input": {
+    "word": "Questionable"
+   },
+   "started": false,
+   "lineup_in": true,
+   "expect": "ok"
+  },
+  {
+   "id": "espn Day-To-Day pregame",
+   "via": "espn",
+   "input": {
+    "word": "Day-To-Day"
+   },
+   "started": false,
+   "lineup_in": false,
+   "expect": "out"
+  },
+  {
+   "id": "espn Day-To-Day after start",
+   "via": "espn",
+   "input": {
+    "word": "Day-To-Day"
+   },
+   "started": true,
+   "lineup_in": false,
+   "expect": "ok"
+  },
+  {
+   "id": "espn Day-To-Day lineup posted",
+   "via": "espn",
+   "input": {
+    "word": "Day-To-Day"
+   },
+   "started": false,
+   "lineup_in": true,
+   "expect": "ok"
+  },
+  {
+   "id": "espn Active",
+   "via": "espn",
+   "input": {
+    "word": "Active"
+   },
+   "started": false,
+   "lineup_in": false,
+   "expect": "ok"
+  },
+  {
+   "id": "espn empty",
+   "via": "espn",
+   "input": {
+    "word": ""
+   },
+   "started": false,
+   "lineup_in": false,
+   "expect": "ok"
+  },
+  {
+   "id": "espn unknown word never guessed",
+   "via": "espn",
+   "input": {
+    "word": "Surprise Word"
+   },
+   "started": false,
+   "lineup_in": false,
+   "expect": "ok"
+  }
+ ]
+}
