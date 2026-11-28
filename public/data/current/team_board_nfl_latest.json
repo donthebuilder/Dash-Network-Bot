@@ -1,0 +1,61 @@
+{
+ "date": "2026-11-22",
+ "games": [
+  {
+   "espn_id": "401873069",
+   "home": "NYG",
+   "away": "JAX",
+   "start": "2026-11-22 16:25",
+   "status": "Scheduled",
+   "model_spread_home": 5.4,
+   "model_p_home": 0.3357,
+   "book_spread_home": 6.0,
+   "book_total": 45.5,
+   "gap_pts": -0.6,
+   "history_games": 60,
+   "model_version": "nfl_team_v1"
+  },
+  {
+   "espn_id": "401873074",
+   "home": "LAC",
+   "away": "NYJ",
+   "start": "2026-11-22 16:05",
+   "status": "Scheduled",
+   "model_spread_home": -3.9,
+   "model_p_home": 0.62,
+   "book_spread_home": -3.0,
+   "book_total": 43.5,
+   "gap_pts": -0.9,
+   "history_games": 60,
+   "model_version": "nfl_team_v1"
+  },
+  {
+   "espn_id": "401873075",
+   "home": "DEN",
+   "away": "LV",
+   "start": "2026-11-22 16:25",
+   "status": "Scheduled",
+   "model_spread_home": -12.6,
+   "model_p_home": 0.8365,
+   "book_spread_home": -11.5,
+   "book_total": 41.5,
+   "gap_pts": -1.1,
+   "history_games": 60,
+   "model_version": "nfl_team_v1"
+  },
+  {
+   "espn_id": "401873077",
+   "home": "SF",
+   "away": "MIN",
+   "start": "2026-11-22 20:20",
+   "status": "Scheduled",
+   "model_spread_home": -2.8,
+   "model_p_home": 0.5874,
+   "book_spread_home": -3.5,
+   "book_total": 46.5,
+   "gap_pts": 0.7,
+   "history_games": 60,
+   "model_version": "nfl_team_v1"
+  }
+ ]
+}
