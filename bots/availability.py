@@ -112,3 +112,31 @@ def started_teams(games: list, now: "dt.datetime | None" = None) -> set:
         if (g.get("state") not in (None, "pre")) or (ko is not None and ko <= now):
             out.update(t for t in (g.get("home"), g.get("away")) if t)
     return out
+
+
+# ── MLB: the role map's candidates (2026-11-27) ──────────────────────────────
+
+def mlb_unavailable(hitter, injuries: list, now: "dt.datetime | None" = None) -> bool:
+    """True when this HitterRecord-like man (name, team, game_time, lineup_confirmed) may not be a TOP / HR / HIT / HRR / CONTACT pick.
+    `injuries` are bots/injury_status.py fetch('mlb') rows (name key, team, ESPN's raw `status`). Matched by his normalised name; if the
+    name is on the report for more than one club, by his club. The site's rule exactly: OUT / IL / DOUBTFUL never (a confirmed lineup keeps a
+    DOUBTFUL man, never an OUT one), DAY-TO-DAY before first pitch unless his lineup is posted. No report = nothing."""
+    if not injuries:
+        return False
+    from injury_status import key as _key           # one normaliser for both sides
+    k = _key(getattr(hitter, "name", "") or "")
+    hits = [r for r in injuries if r.get("key") == k]
+    if len(hits) > 1:
+        team = str(getattr(hitter, "team", "") or "")
+        hits = [r for r in hits if r.get("team") == team] or hits[:0]
+    if not hits:
+        return False
+    now = now or dt.datetime.now(dt.timezone.utc)
+    start = _ts(getattr(hitter, "game_time", ""))
+    started = start is not None and start <= now
+    return any(unavailable_espn(r.get("status"), started=started, lineup_in=bool(getattr(hitter, "lineup_confirmed", False))) for r in hits)
+
+
+def playable_hitters(hitters: list, injuries: list, now: "dt.datetime | None" = None) -> list:
+    """The hitters left once the unavailable men are out. Never pads, never reorders; a game with nobody left returns []."""
+    return [h for h in hitters if not mlb_unavailable(h, injuries, now)]
