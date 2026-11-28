@@ -34,8 +34,8 @@ def load(c):
     c = Path(c)
     games = {int(k): v for k, v in json.load(open(c / "games.json")).items()}
     people = {}
-    for s in (2024, 2025, 2026):
-        for p in json.load(open(c / f"people_{s}.json")):
+    for f in sorted(c.glob("people_*.json")):          # every season on disk (a 2027 rookie must be in here, not only 2024-26)
+        for p in json.load(open(f)):
             people[p["id"]] = p
     hit = defaultdict(list); pit = defaultdict(list)
     for f in c.glob("hit_*.json"):

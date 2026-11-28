@@ -104,7 +104,7 @@ jobs:
           case "$G" in *active=true*) ;; *) echo "no MLB game today: MLB lanes skipped"; exit 0 ;; esac
           D=public/data/current
           ET=$(python3 -c "from datetime import datetime,timedelta,timezone;print((datetime.now(timezone.utc)-timedelta(hours=5)).date())")
-          [ -e $HOME/.cache/dash_mlbhits/games.json ] || python3 bots/mlb_hits_data.py $HOME/.cache/dash_mlbhits
+          python3 bots/mlb_hits_data.py $HOME/.cache/dash_mlbhits || true   # incremental (2026-11-28): grows the cache a day at a time; a finished season is never re-read, out of season it reads nothing
           ls bots/models/mlb_hit_v1.json >/dev/null 2>&1 || python3 bots/mlb_lanes.py fit $HOME/.cache/dash_mlbhits
           python3 bots/mlb_lanes.py board $HOME/.cache/dash_mlbhits "$ET" --out $D/mlb_board_latest.json || true
       - name: NFL lanes and team lines (Thursday, Sunday, Monday runs)
