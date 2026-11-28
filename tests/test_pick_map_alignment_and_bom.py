@@ -24,6 +24,8 @@ import sys
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "bots"))
 import bots.mlb_dashboard as md  # noqa: E402
+# offline: the role map reads ESPN's live MLB injury report; these fixtures use real surnames, so pin an empty report (tests/test_mlb_role_availability.py proves the rule)
+md._MLB_INJ_OVERRIDE = []
 from bots import savant_feeds as SF  # noqa: E402
 
 FAILED: list[str] = []
