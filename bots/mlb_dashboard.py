@@ -11504,10 +11504,49 @@ def _top_and_hr_slots(hitters: List[HitterRecord]) -> Tuple[HitterRecord, Hitter
     return top_pick, hr_pick
 
 
+# A MAN WHO IS NOT GOING TO PLAY IS NEVER A PICK (2026-11-27, Donovan; ONE VOICE WITH THE SITE: bots/availability.py, the site's lib/calledAvailability.js).
+# The role map (TOP / HR / HIT / HRR / CONTACT) and the builder's game_pick_type_map both draw from the game's hitters: an OUT / IL / DOUBTFUL man is not a
+# candidate, a DAY-TO-DAY man is not one before first pitch unless his lineup is posted. The next healthy man takes the slot; ranks are not rewritten.
+# ESPN's MLB injury feed, read once per 20 minutes. A dead feed returns [] and the rule adds nothing (it never empties a slate).
+_MLB_INJ_CACHE: Dict[str, Any] = {"at": 0.0, "rows": []}
+_MLB_INJ_OVERRIDE: Optional[List[Dict[str, Any]]] = None      # tests set this; None = read the feed
+
+
+def _mlb_injuries() -> List[Dict[str, Any]]:
+    if _MLB_INJ_OVERRIDE is not None:
+        return _MLB_INJ_OVERRIDE
+    now = time.time()
+    if now - float(_MLB_INJ_CACHE["at"]) < 1200:
+        return _MLB_INJ_CACHE["rows"]
+    try:
+        import injury_status
+        rows = injury_status.fetch("mlb")
+    except Exception as e:                              # a dead feed must not cost the slate its picks
+        print(f"[availability] mlb injuries unread ({e}); the rule adds nothing this run", file=sys.stderr)
+        rows = []
+    _MLB_INJ_CACHE["at"], _MLB_INJ_CACHE["rows"] = now, rows
+    return rows
+
+
+def _playable_by_game(by_game: Dict[int, List[HitterRecord]]) -> Dict[int, List[HitterRecord]]:
+    """by_game with the men who may not be picked taken out; a game left with nobody is dropped (no pick, never a forced one)."""
+    inj = _mlb_injuries()
+    if not inj:
+        return by_game
+    try:
+        import availability
+        out = {g: availability.playable_hitters(hs, inj) for g, hs in by_game.items()}
+    except Exception as e:
+        print(f"[availability] mlb filter failed ({e}); unfiltered", file=sys.stderr)
+        return by_game
+    return {g: hs for g, hs in out.items() if hs}
+
+
 def build_game_pick_role_map(rows: List[HitterRecord]) -> Dict[Tuple[int, int], str]:
     by_game: Dict[int, List[HitterRecord]] = {}
     for r in rows:
         by_game.setdefault(r.game_pk, []).append(r)
+    by_game = _playable_by_game(by_game)
     role_map: Dict[Tuple[int, int], List[str]] = {}
     for game_pk, hitters in by_game.items():
         used: set[int] = set()
@@ -12200,6 +12239,7 @@ def game_pick_type_map(rows: List[HitterRecord]) -> Dict[int, str]:
     by_game: Dict[int, List[HitterRecord]] = {}
     for r in rows:
         by_game.setdefault(r.game_pk, []).append(r)
+    by_game = _playable_by_game(by_game)
 
     tag_map: Dict[int, str] = {}
     for _, hitters in by_game.items():
